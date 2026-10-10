@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "29909e62d41a4ab289ce865cc4578a84",
+    "created": 1791534573,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[{\"frame_id\": 61, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整白掌植物，含花盆及整体叶片，背景可见自行车轮，整株参照明确\"}, {\"frame_id\": 62, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整植物正面视角，花盆、叶片均清晰可见，背景参照稳定\"}, {\"frame_id\": 63, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整植物侧视，整株及花盆均在画面中，背景参照明确\"}, {\"frame_id\": 64, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整植物，叶片舒展，花盆完整可见，背景参照清晰\"}, {\"frame_id\": 65, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"植物整体可见，角度略有变化但仍为整株参照，背景稳定\"}, {\"frame_id\": 66, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"完整植物，含花盆及叶片，背景参照明确，无接近迹象\"}, {\"frame_id\": 67, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"植物完整，背景出现其他植物，整体参照仍明确，无尺度变化\"}, {\"frame_id\": 68, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"完整植物侧后视角，花盆、叶片均可见，背景参照清晰\"}, {\"frame_id\": 69, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"植物完整，叶片朝上，花盆及整体参照明确，无接近运动\"}, {\"frame_id\": 70, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"完整植物俯视角度，整株及花盆仍在画面中，背景参照清晰\"}, {\"frame_id\": 71, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"植物整体可见，叶片舒展，花盆完整，背景参照稳定\"}, {\"frame_id\": 72, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"完整植物，花盆及叶片均在画面，整体参照明确，无接近迹象\"}]\n```",
+          "role": "assistant",
+          "reasoning_content": "用户要求我对一个植物视频进行逐帧接触表分析，返回JSON数组。让我仔细查看这些图片。\n\n从图片来看：\n- 视频展示了一盆白掌（Spathiphyllum）植物\n- 摄像头似乎在做环绕拍摄，展示植物的不同角度\n- 每帧都有植物完整可见，包括花盆和大部分叶片\n\n让我逐一分析每帧：\n\nframe_id 61 (t=30.02s): 植物完整可见，包含花盆、叶片，背景有自行车轮。这是GLOBAL视角。\n\nframe_id 62 (t=30.52s): 同样是完整植物，GLOBAL视角。\n\nframe_id 63 (t=31.02s): 完整植物，GLOBAL。\n\nframe_id 64 (t=31.52s): 完整植物，GLOBAL。\n\nframe_id 65 (t=32.02s): 完整植物，但角度稍有变化，GLOBAL。\n\nframe_id 66 (t=32.52s): 完整植物，GLOBAL。\n\nframe_id 67 (t=33.02s): 植物完整，但背景中出现了其他植物，说明相机位置有所移动。仍然是GLOBAL视角。\n\nframe_id 68 (t=33.52s): 完整植物，GLOBAL。\n\nframe_id 69 (t=34.02s): 完整植物，GLOBAL。\n\nframe_id 70 (t=34.52s): 植物完整，GLOBAL。\n\nframe_id 71 (t=35.02s): 完整植物，GLOBAL。\n\nframe_id 72 (t=35.52s): 完整植物，GLOBAL。\n\n所有这些帧都显示完整的植物（包括花盆和叶片），所以都应该标记为GLOBAL。没有明显的接近（APPROACH）或过渡（TRANSITION）迹象。置信度都很高（0.9+）。\n\n我需要创建一个JSON数组，每个元素包含frame_id、label、confidence和description字段。\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 974,
+      "prompt_tokens": 1694,
+      "total_tokens": 2668,
+      "completion_tokens_details": {
+        "reasoning_tokens": 443,
+        "text_tokens": 531
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:29:34.588727+00:00",
+  "frame_ids": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+  ],
+  "model": "agnes-2.5-flash"
+}

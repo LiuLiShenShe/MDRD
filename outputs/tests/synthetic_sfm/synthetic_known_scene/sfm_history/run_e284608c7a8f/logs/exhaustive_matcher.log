@@ -1,0 +1,8 @@
+COMMAND ["colmap", "exhaustive_matcher", "--database_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/database.db", "--SiftMatching.use_gpu", "0", "--SiftMatching.num_threads", "4"]
+I20261009 18:19:10.524619 2756582 misc.cc:198] 
+==============================================================================
+Exhaustive feature matching
+==============================================================================
+I20261009 18:19:10.526540 2756582 feature_matching.cc:231] Matching block [1/1, 1/1]
+I20261009 18:19:13.613093 2756582 feature_matching.cc:46]  in 3.087s
+I20261009 18:19:13.615644 2756582 timer.cc:91] Elapsed time: 0.052 [minutes]

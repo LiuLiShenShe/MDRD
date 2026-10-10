@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "245ea1f56d4a47c9915c267845dae797",
+    "created": 1791534603,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 13, \"label\": \"GLOBAL\", \"confidence\": 0.97, \"description\": \"一盆栽种于棕色塑料盆中的绿色植物（Peperomia类）完整放置在黄色木质凳面上，周围可见背景物品及其他植物，整株与整体背景参照均清晰可见\"},\n  {\"frame_id\": 14, \"label\": \"GLOBAL\", \"confidence\": 0.97, \"description\": \"同帧13场景，相机位置略有变化，整株植物及花盆仍在画面中完全呈现\"},\n  {\"frame_id\": 15, \"label\": \"GLOBAL\", \"confidence\": 0.97, \"description\": \"同帧14场景，微小视角偏移，植株主体与背景参照仍完整可见\"},\n  {\"frame_id\": 16, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"相机向后方略退，视野更广，黄色凳面、整株植物及周边环境（包括背景中其他盆栽）均清晰可见\"},\n  {\"frame_id\": 17, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"同帧16视角，位置微调，植物全株与背景参照持续完整呈现\"},\n  {\"frame_id\": 18, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"同帧16场景，相机轻微移动，植株整体及周围环境保持可见\"},\n  {\"frame_id\": 19, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"相机移至更高角度俯视，但整株植物和花盆仍完整包含在画面内，背景参照可见\"},\n  {\"frame_id\": 20, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"同帧19高角度俯视，植株全貌清晰，整盆+整体背景参照均存在\"},\n  {\"frame_id\": 21, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"同帧19视角，位置轻微调整，整株植物及背景环境仍完整可见\"},\n  {\"frame_id\": 22, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"同帧19场景，俯视角度保持不变，植株主体与背景参照持续完整\"},\n  {\"frame_id\": 23, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"同帧19视角，轻微位置变化，整株植物与背景参照均清晰呈现\"},\n  {\"frame_id\": 24, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"同帧19场景，最后帧，整株植物及其背景参照均完整可见\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "I need to analyze each frame from the provided image. Let me look at each one carefully.\n\nLooking at the frames:\n- Frame 13: Shows a potted plant (looks like a Peperomia) on a yellow wooden stool/table. The entire plant and pot are visible, plus background shows other plants and items. This is GLOBAL - whole plant visible.\n- Frame 14: Similar view, slight angle change. Still shows whole plant on the stool. GLOBAL.\n- Frame 15: Same setup, slight camera movement. GLOBAL.\n- Frame 16: Camera seems to have moved slightly, showing more of the background. The plant is still fully visible on the stool. GLOBAL.\n- Frame 17: Similar to frame 16, slight position change. \n\nThe remaining frames continue this pattern—all show the complete plant on the stool from slightly varying angles, maintaining the GLOBAL classification throughout. There's no zooming in or shifting to local details, just subtle camera repositioning around the same scene.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 843,
+      "prompt_tokens": 1718,
+      "total_tokens": 2561,
+      "completion_tokens_details": {
+        "reasoning_tokens": 217,
+        "text_tokens": 626
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:30:03.227247+00:00",
+  "frame_ids": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "model": "agnes-2.5-flash"
+}

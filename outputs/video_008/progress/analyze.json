@@ -1,0 +1,18 @@
+{
+  "stage": "analyze",
+  "started_at": "2026-10-09T15:04:08.798004+00:00",
+  "signature": "68f61dd255e41200eee8c9240427f60afa1b294f58f14883ded2b75b344d177c",
+  "configuration": {
+    "max_reprojection_error": 4.0,
+    "min_track_length": 3,
+    "min_common_points": 20,
+    "temporal_block_sec": 3.0,
+    "min_independent_blocks": 4,
+    "high_covisibility": 0.25,
+    "low_angle_deg": 3.0,
+    "adequate_angle_deg": 5.0
+  },
+  "status": "completed",
+  "finished_at": "2026-10-09T15:04:17.347991+00:00",
+  "elapsed_sec": 8.550005986820906
+}

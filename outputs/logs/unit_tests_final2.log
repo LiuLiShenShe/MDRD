@@ -1,0 +1,97 @@
+/home/test/biosoft/enter/lib/python3.13/site-packages/pytest_asyncio/plugin.py:207: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+................................F                                        [100%]
+=================================== FAILURES ===================================
+_______________ test_empty_evidence_does_not_support_hypotheses ________________
+
+    def test_empty_evidence_does_not_support_hypotheses():
+        groups = pd.DataFrame([{"group": label, "valid_pairs": 0} for label in ["GLOBAL_GLOBAL", "LOCAL_LOCAL", "GLOBAL_LOCAL"]])
+        blocks = pd.DataFrame(columns=["group", "jaccard", "angle_median"])
+        tracks = pd.DataFrame(columns=["local_without_global", "global_local_shared"])
+        matching = pd.DataFrame()
+        audit = pd.DataFrame(columns=["segment", "registered"])
+        parameters = {"high_covisibility": .25, "low_angle_deg": 3, "adequate_angle_deg": 5, "min_independent_blocks": 4}
+>       result = diagnose("test", None, groups, blocks, tracks, matching, audit, parameters)
+
+MDRD/tests/unit/test_reporting.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+video_id = 'test', cameras = None
+groups =            group  valid_pairs
+0  GLOBAL_GLOBAL            0
+1    LOCAL_LOCAL            0
+2   GLOBAL_LOCAL            0
+blocks = Empty DataFrame
+Columns: [group, jaccard, angle_median]
+Index: []
+tracks = Empty DataFrame
+Columns: [local_without_global, global_local_shared]
+Index: []
+matching = Empty DataFrame
+Columns: []
+Index: []
+audit = Empty DataFrame
+Columns: [segment, registered]
+Index: []
+parameters = {'adequate_angle_deg': 5, 'high_covisibility': 0.25, 'low_angle_deg': 3, 'min_independent_blocks': 4}
+
+    def diagnose(video_id, cameras, groups, blocks, tracks, matching, audit, parameters):
+        grouped = groups.set_index("group").to_dict("index")
+        local = grouped.get("LOCAL_LOCAL", {})
+        global_pairs = grouped.get("GLOBAL_GLOBAL", {})
+        mixed = grouped.get("GLOBAL_LOCAL", {})
+        local_blocks = blocks[blocks.group == "LOCAL_LOCAL"]
+        high_low = (local_blocks.jaccard >= parameters["high_covisibility"]) & (local_blocks.angle_median < parameters["low_angle_deg"])
+        fraction = float(high_low.mean()) if len(local_blocks) else None
+        hypotheses = {}
+        hypotheses["H1"] = {"status": "INCONCLUSIVE", "evidence": {"target_pixel_coverage": None, "local_pair_angle_median_deg": local.get("angle_median"), "global_pair_angle_median_deg": global_pairs.get("angle_median"), "local_only_reconstructed_points": int(tracks.local_without_global.sum()) if len(tracks) else 0, "shared_global_local_points": int(tracks.global_local_shared.sum()) if len(tracks) else 0}, "basis": "No verified plant mask or correspondence-defined leaf ROI: increased target pixel coverage cannot be established. Ray angles are not reconstruction-accuracy measurements.", "figures": ["geometry/triangulation_angles.png", "geometry/point_track_geometry.csv"], "required_followup": "Validate foreground/leaf ROI correspondences and target pixel coverage; obtain reconstruction accuracy or a reference surface."}
+        if len(local_blocks) < parameters["min_independent_blocks"] or local.get("valid_pairs", 0) < 10:
+            h2 = "INCONCLUSIVE"
+        elif fraction >= .5:
+            h2 = "SUPPORTED"
+        elif fraction <= .1:
+            h2 = "NOT_SUPPORTED"
+        else:
+            h2 = "INCONCLUSIVE"
+        hypotheses["H2"] = {"status": h2, "evidence": {"valid_local_pairs": local.get("valid_pairs", 0), "local_temporal_block_pairs": len(local_blocks), "high_covisibility_low_angle_block_fraction": fraction, "jaccard_threshold": parameters["high_covisibility"], "angle_threshold_deg": parameters["low_angle_deg"], "local_pair_angle_median_deg": local.get("angle_median"), "local_pair_jaccard_median": local.get("jaccard"), "local_baseline_depth_ratio_median": local.get("median_baseline_depth_ratio")}, "basis": "Descriptive full-scene recovered-feature evidence only. Thresholds are declared diagnostics, not universal geometry/accuracy limits. Blocks share frames/tracks; not independent population samples.", "figures": ["geometry/covisibility_heatmap.png", "geometry/triangulation_angles.png", "geometry/geometry_temporal_block_comparison.csv"], "required_followup": "Repeat within verified local target ROIs and independent acquisitions; examine within-segment and temporal-gap sensitivity."}
+        shared = int(tracks.global_local_shared.sum()) if len(tracks) else 0
+        mixed_blocks = blocks[blocks.group == "GLOBAL_LOCAL"]
+        useful_fraction = float((mixed_blocks.angle_median >= parameters["adequate_angle_deg"]).mean()) if len(mixed_blocks) else None
+>       local_frames = int(sum(str(segment).startswith("LOCAL") for segment in cameras.segment))
+E       AttributeError: 'NoneType' object has no attribute 'segment'
+
+MDRD/src/mdrd/reporting/hypotheses.py:26: AttributeError
+=============================== warnings summary ===============================
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_mathtext.py:45
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /fj/混合拍摄距离下的三维重建优化问题/outputs/tests/unit_results_final2.xml -
+=========================== short test summary info ============================
+FAILED MDRD/tests/unit/test_reporting.py::test_empty_evidence_does_not_support_hypotheses
+1 failed, 32 passed, 14 warnings in 1.25s

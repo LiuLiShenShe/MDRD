@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "1868d12a098d4b308498335f81230d0e",
+    "created": 1791534576,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 49, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"一盆白掌（和平百合）放置在黄色木凳上，整株植物及花盆清晰可见，背景有蓝花桌布的桌子和部分黑色包。\"},\n  {\"frame_id\": 50, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"同一盆白掌植物，俯视角度略变，整株连盆完整呈现于黄色木凳上，背景为蓝花桌布覆盖的桌子。\"},\n  {\"frame_id\": 51, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"白掌植物整体可见，放置于黄色方凳，绿叶舒展，背景为室内环境，桌布蓝底白花图案清晰。\"},\n  {\"frame_id\": 52, \"label\": \"GLOBAL\", \"confidence\": 0.91, \"description\": \"白掌整株植物完整呈现，黑色花盆置于黄色凳面白纸之上，蓝色胶带固定，背景可见部分自行车轮和蓝花桌布。\"},\n  {\"frame_id\": 53, \"label\": \"GLOBAL\", \"confidence\": 0.72, \"description\": \"画面略有运动模糊，但整盆白掌仍清晰可辨，位于黄色木凳中央，蓝花桌布背景稳定。\"},\n  {\"frame_id\": 54, \"label\": \"GLOBAL\", \"confidence\": 0.70, \"description\": \"画面存在运动模糊，白掌整体轮廓可见，连盆置于黄凳上，背景为蓝底白色花卉桌布。\"},\n  {\"frame_id\": 55, \"label\": \"GLOBAL\", \"confidence\": 0.91, \"description\": \"白掌植物完整呈现于黄色木凳，俯拍角度，叶子向四周展开，黑色花盆在白纸蓝胶带上。\"},\n  {\"frame_id\": 56, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"同一盆白掌，镜头距离稍有拉近但仍保持整株可见，背景蓝花桌布和地面清晰。\"},\n  {\"frame_id\": 57, \"label\": \"GLOBAL\", \"confidence\": 0.91, \"description\": \"白掌植物整体完整，俯视角度，叶片层次分明，黄色凳面和蓝花桌布背景稳定。\"},\n  {\"frame_id\": 58, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"白掌全株可见，镜头略微拉远但仍覆盖整盆植物，地面和凳面细节清晰。\"},\n  {\"frame_id\": 59, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"白掌完整呈现于黄色方凳上，俯拍视角，背景可见部分绿色支架结构和蓝花桌布。\"},\n  {\"frame_id\": 60, \"label\": \"GLOBAL\", \"confidence\": 0.91, \"description\": \"同一盆白掌植物，整株连盆及黄凳均在画面中，背景有绿色金属架和蓝花桌布，画面稳定。\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "The user wants me to analyze a series of frames from a video (video_007) showing a plant. I need to return a JSON array with frame_id, label, confidence, and description for each frame. Let me analyze each frame:\n\nThe frames show a potted plant (appears to be a peace lily or similar houseplant) on a yellow wooden stool/table. Let me look at each frame:\n\nFrame 49 (t=24.0183s): Shows the plant from a slightly angled view, can see the whole plant in pot on yellow stool. Background has table with blue floral cloth. This is GLOBAL - whole plant visible.\n\nFrame 50 (t=24.5183s): Similar view, whole plant visible on yellow stool. GLOBAL.\n\nFrame 51 (t=25.0183s): Whole plant visible. GLOBAL.\n\n\nFrames 52-54 continue showing the same setup from consistent angles, maintaining GLOBAL visibility throughout. Frame 55 appears to shift perspective slightly, but still captures the complete plant on its yellow stool.\n\nFrom frames 56 onward, the camera begins moving closer to the plant, with frame 57 marking the start of this gradual approach. By frame 58, the camera has moved noticeably nearer, and frames 59-60 show continued proximity with the yellow stool and plant remaining the central focus.\n\nLooking at the sequence as a whole, the camera maintains a relatively stable position through frame 55 before progressively advancing toward the plant, creating an increasingly intimate view of the foliage and pot. Let me reconsider the progression more carefully—there's a distinct shift around frames 56-58 where the camera gets noticeably closer, but then frames 59-60 seem to pull back slightly before settling into a closer view again. I should map out the exact trajectory: starting with a full shot of the plant and stool, then gradually approaching through the middle frames, with some variation in the final frames. Looking at the remaining frames, I see the camera continues to approach the plant steadily through frame 58, then pulls back slightly in frames 59-60, ending at a close-up that's still capturing the whole plant. The sequence shows a clear pattern of gradual approach with minor adjustments at the end. I'm seeing the progression now—frames 49-55 maintain a consistent distance, then there's a gradual zoom-in starting around frame 56, reaching its closest point by frame 58, before pulling back slightly in the final two frames. The key is that most of the plant stays visible throughout, so I should label this as APPROACH during the zoom sequence rather than LOCAL. I'm trying to pin down the exact framing for each frame to determine whether this is GLOBAL, APPROACH, or something else. Let me map out the progression: frames 49-55 appear to be at a consistent distance showing the whole plant, then frames 56-58 get progressively closer with just the upper portions visible, and finally frames 59-60 pull back slightly but remain closer than the opening shots. I'll assign labels based on how much of the plant and context each frame captures. Looking at the rest of the frames, 57-58 continue getting progressively closer to the plant while still maintaining full visibility of it and the stool. Then frames 59-60 pull back slightly but remain in that same close range, showing the complete plant without any significant gaps in what's visible. Looking at the frames more carefully, I'm noticing some motion blur in frames 53-54 that suggests the camera or plant might be moving, though it's hard to distinguish between camera shake and actual motion. Given this uncertainty, I should mark those frames as UNKNOWN for the label rather than trying to definitively classify them. 继续看帧57-60，这些帧都清晰地显示了完整的植物和凳子，虽然镜头逐渐靠近。帧59和60看起来稍微后退了一些，但仍然保持全局视图。让我重新检查这些图像：帧57显示的是从更高的角度俯视植物，而帧58似乎稍微退后了一点，然后帧59和60更接近垂直的角度。实际上，所有帧49-60都显示了完整的植物和凳子，所以全局视图似乎是正确的。\n\n现在重新考虑——我注意到帧53和54确实有些模糊，但其他帧都很清晰。关键是所有帧都清楚地显示了整盆植物，所以我应该坚持全局分类。\n\n让我按照视频的时间顺序来思考这个序列：开始时是稳定的全局视图（帧49-52），然后可能是相机移动或植物轻微移动，接着继续观察。从帧53到56仍然显示全局，但从帧57开始似乎有一个更近的视角，尽管植物的完整性保持不变。\n\n重新审视后，我意识到我可能过度分析了。让我简化这个序列：帧49-56保持相似的距离，然后帧57-60明显更近，尽管都是完整植物视图。所以应该是帧49-56标记为全局，帧57-60标记为接近。现在我要用合理的置信度写出具体的描述。 Looking at the remaining frames, I'm seeing a gradual zoom-in sequence where the plant stays fully visible throughout—frames 54 through 56 maintain that close-up view before the camera pulls back slightly in frame 57, then returns to a tighter shot by frame 58. So the pattern is clear: a steady approach that peaks around frame 58 before settling back to a stable close-up position. I'm realizing I need to be more careful about over-analyzing these frames. The user explicitly said not to assume a shooting sequence, so I should just label what's actually visible in each frame without trying to reconstruct a narrative. Most frames show the whole plant and stool, so GLOBAL seems like the right label, but I'm second-guessing myself on a few that appear slightly closer—let me settle on GLOBAL for all of them since they all clearly display the complete plant and its container. I'm working through the motion analysis for each frame—frames 49-52 are stable GLOBAL shots, then 53-54 show some motion blur suggesting the camera is shifting or zooming in, and I need to assess whether 55-60 continue that approach or stabilize.\n\nLooking at the actual visual data across all frames, they consistently show the complete plant on the stool with the tablecloth visible, so I'm labeling everything as GLOBAL regardless of minor distance variations, with most frames at high confidence except 53-54 where the blur makes me slightly less certain.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 2103,
+      "prompt_tokens": 1706,
+      "total_tokens": 3809,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1399,
+        "text_tokens": 704
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:29:38.377997+00:00",
+  "frame_ids": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "model": "agnes-2.5-flash"
+}

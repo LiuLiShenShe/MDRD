@@ -1,0 +1,205 @@
+{
+  "video_id": "video_008",
+  "hypotheses": {
+    "H1": {
+      "status": "INCONCLUSIVE",
+      "evidence": {
+        "target_pixel_coverage": null,
+        "local_pair_angle_median_deg": 2.105060563378477,
+        "global_pair_angle_median_deg": 12.891838758029186,
+        "local_only_reconstructed_points": 1,
+        "shared_global_local_points": 149
+      },
+      "basis": "No verified plant mask or correspondence-defined leaf ROI: increased target pixel coverage cannot be established. Ray angles are not reconstruction-accuracy measurements.",
+      "figures": [
+        "geometry/triangulation_angles.png",
+        "geometry/point_track_geometry.csv"
+      ],
+      "required_followup": "Validate foreground/leaf ROI correspondences and target pixel coverage; obtain reconstruction accuracy or a reference surface."
+    },
+    "H2": {
+      "status": "INCONCLUSIVE",
+      "evidence": {
+        "valid_local_pairs": 1,
+        "local_temporal_block_pairs": 1,
+        "high_covisibility_low_angle_block_fraction": 1.0,
+        "jaccard_threshold": 0.25,
+        "angle_threshold_deg": 3.0,
+        "local_pair_angle_median_deg": 2.105060563378477,
+        "local_pair_jaccard_median": 0.32666666666666666,
+        "local_baseline_depth_ratio_median": 0.05887060603347164,
+        "within_same_local_segment_gap_le_3s_valid_pairs": 1,
+        "within_segment_short_gap_blocks": 1,
+        "within_segment_short_gap_high_jaccard_low_angle_fraction": 1.0
+      },
+      "basis": "Descriptive full-scene recovered-feature evidence only. Thresholds are declared diagnostics, not universal geometry/accuracy limits. Blocks share frames/tracks; not independent population samples. Primary H2 decision uses same-local-segment pairs at <=3 s lag. COLMAP min triangulation angle and successful-registration selection censor unreconstructed/weak observations; NOT_SUPPORTED applies only to recovered-feature evidence.",
+      "figures": [
+        "geometry/covisibility_heatmap.png",
+        "geometry/triangulation_angles.png",
+        "geometry/geometry_temporal_block_comparison.csv"
+      ],
+      "required_followup": "Repeat within verified local target ROIs and independent acquisitions; examine within-segment and temporal-gap sensitivity."
+    },
+    "H3": {
+      "status": "INCONCLUSIVE",
+      "evidence": {
+        "local_frames": 2,
+        "registered_local_frames": 2,
+        "shared_global_local_points": 149,
+        "global_local_valid_pairs": 7,
+        "global_local_angle_median_deg": 9.81499416329312,
+        "global_local_temporal_blocks": 3,
+        "blocks_with_angle_at_least_5deg_fraction": 1.0,
+        "local_only_points": 1,
+        "shared_points_with_local_direction_over_5deg_from_nearest_global": 136
+      },
+      "basis": "A mixed reconstructed track with non-collinear rays is an actual geometric correspondence, not merely potential overlap. Fewer than four independently observed local images is insufficient for a supported H3 judgment. Target-specific gain and final surface accuracy remain untested.",
+      "figures": [
+        "figures/global_local_matching_success.png",
+        "geometry/point_track_geometry.csv",
+        "geometry/baseline_depth_ratio.png"
+      ],
+      "required_followup": "Separate plant/background tracks and compare global-only versus global+local target geometry under aligned gauges."
+    },
+    "H4": {
+      "status": "INCONCLUSIVE",
+      "evidence": {
+        "matching_groups": {
+          "APPROACH_LOCAL": {
+            "tested_pairs_in_database": 14,
+            "geometry_verified_pairs_15": 8,
+            "verification_rate": 0.5714285714285714,
+            "raw_matches_median": 26.0,
+            "verified_matches_median": 15.0,
+            "local_global_scale_ratio_median": null
+          },
+          "GLOBAL_APPROACH": {
+            "tested_pairs_in_database": 567,
+            "geometry_verified_pairs_15": 172,
+            "verification_rate": 0.30335097001763667,
+            "raw_matches_median": 22.0,
+            "verified_matches_median": 0.0,
+            "local_global_scale_ratio_median": null
+          },
+          "GLOBAL_GLOBAL": {
+            "tested_pairs_in_database": 3240,
+            "geometry_verified_pairs_15": 491,
+            "verification_rate": 0.1515432098765432,
+            "raw_matches_median": 19.0,
+            "verified_matches_median": 0.0,
+            "local_global_scale_ratio_median": null
+          },
+          "GLOBAL_LOCAL": {
+            "tested_pairs_in_database": 162,
+            "geometry_verified_pairs_15": 35,
+            "verification_rate": 0.21604938271604937,
+            "raw_matches_median": 19.0,
+            "verified_matches_median": 0.0,
+            "local_global_scale_ratio_median": 1.2808302640914917
+          },
+          "LOCAL_LOCAL": {
+            "tested_pairs_in_database": 1,
+            "geometry_verified_pairs_15": 1,
+            "verification_rate": 1.0,
+            "raw_matches_median": 339.0,
+            "verified_matches_median": 310.0,
+            "local_global_scale_ratio_median": null
+          },
+          "OTHER": {
+            "tested_pairs_in_database": 202,
+            "geometry_verified_pairs_15": 55,
+            "verification_rate": 0.2722772277227723,
+            "raw_matches_median": 15.0,
+            "verified_matches_median": 0.0,
+            "local_global_scale_ratio_median": null
+          }
+        },
+        "registration_by_broad_stage": {
+          "GLOBAL": {
+            "frames": 81,
+            "registered": 71,
+            "registration_rate": 0.8765432098765432
+          },
+          "LOCAL": {
+            "frames": 2,
+            "registered": 2,
+            "registration_rate": 1.0
+          },
+          "APPROACH": {
+            "frames": 7,
+            "registered": 6,
+            "registration_rate": 0.8571428571428571
+          },
+          "TRANSITION": {
+            "frames": 2,
+            "registered": 2,
+            "registration_rate": 1.0
+          },
+          "UNKNOWN": {
+            "frames": 0,
+            "registered": 0,
+            "registration_rate": null
+          }
+        }
+      },
+      "basis": "Cross-scale verified SIFT size ratios and match/registration rates are observed, but real overlap, motion blur, texture repetition and non-rigidity are not controlled. Failure alone cannot identify a scale mechanism. Verified-pair scale ratios are survivor-biased.",
+      "figures": [
+        "geometry/matching_group_comparison.csv",
+        "geometry/blur_registration_comparison.csv",
+        "figures/global_local_unregistered_pair.png"
+      ],
+      "required_followup": "Audit actual overlap in failed pairs; compare fixed overlap with scale-normalized matching, sharpness-matched pairs and transition-frame ablations."
+    }
+  },
+  "registration_by_broad_stage": {
+    "GLOBAL": {
+      "frames": 81,
+      "registered": 71,
+      "registration_rate": 0.8765432098765432
+    },
+    "LOCAL": {
+      "frames": 2,
+      "registered": 2,
+      "registration_rate": 1.0
+    },
+    "APPROACH": {
+      "frames": 7,
+      "registered": 6,
+      "registration_rate": 0.8571428571428571
+    },
+    "TRANSITION": {
+      "frames": 2,
+      "registered": 2,
+      "registration_rate": 1.0
+    },
+    "UNKNOWN": {
+      "frames": 0,
+      "registered": 0,
+      "registration_rate": null
+    }
+  },
+  "foreground_scope": "FULL_SCENE_SPARSE_FEATURES_NO_VERIFIED_PLANT_MASK",
+  "population_inference": "No independent-pair p-values; purposive pilot selection is not a population sample.",
+  "filter_rejections": {
+    "nonfinite_or_high_point_error": 0,
+    "short_track": 934,
+    "invalid_association": 0,
+    "nonpositive_depth": 0,
+    "high_observation_error": 68,
+    "short_after_filter": 19
+  },
+  "raw_3d_points": 5519,
+  "valid_3d_points": 4566,
+  "registered_images": 81,
+  "total_images": 92,
+  "trajectory_max_rotation_deg": 104.94013984851264,
+  "trajectory_step_p99_over_median": 5.099446019145513,
+  "model_strategy": "GLOBAL_FIRST_REGISTRATION_AND_INCREMENTAL_CONTINUATION",
+  "limitations": [
+    "No plant foreground masks; all geometric conclusions concern recovered full-scene features.",
+    "No metric scale or known gravity; absolute baselines cannot be pooled across videos.",
+    "Segment labels are proxy evidence, with unregistered temporal inference explicitly marked.",
+    "Pair and time-block statistics remain correlated; no independent-pair significance test or causal blur claim.",
+    "8-bit sharpness/exposure diagnostics of HDR source are not calibrated radiometry."
+  ]
+}

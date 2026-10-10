@@ -1,0 +1,213 @@
+{
+  "video_id": "synthetic_known_scene",
+  "total_images": 8,
+  "global_candidates": 8,
+  "matching_strategy": "EXHAUSTIVE_ALL_PAIRS",
+  "strategy": "GLOBAL_FIRST_REGISTRATION_AND_INCREMENTAL_CONTINUATION",
+  "global_models": [
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/global/0",
+      "registered_images": 6,
+      "registered_filenames": [
+        "frame_000003.png",
+        "frame_000004.png",
+        "frame_000005.png",
+        "frame_000008.png",
+        "frame_000007.png",
+        "frame_000006.png"
+      ],
+      "num_3d_points": 3840,
+      "mean_reprojection_error": 0.1719410489231861,
+      "median_reprojection_error": 0.17697832235756267,
+      "track_length_distribution": {
+        "2": 290,
+        "3": 1333,
+        "4": 147,
+        "5": 786,
+        "6": 1284
+      },
+      "cameras": [
+        {
+          "camera_id": 1,
+          "model": "SIMPLE_RADIAL",
+          "width": 640,
+          "height": 480,
+          "params": [
+            15.132846741821298,
+            320.0,
+            240.0,
+            7.963032517791489e-06
+          ],
+          "focal_to_max_dimension": 0.023645073034095777,
+          "bogus_parameters": true
+        }
+      ]
+    }
+  ],
+  "other_models": [
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/continued",
+      "registered_images": 6,
+      "registered_filenames": [
+        "frame_000003.png",
+        "frame_000004.png",
+        "frame_000005.png",
+        "frame_000008.png",
+        "frame_000007.png",
+        "frame_000006.png"
+      ],
+      "num_3d_points": 3840,
+      "mean_reprojection_error": 0.17194104892318396,
+      "median_reprojection_error": 0.17697832235756097,
+      "track_length_distribution": {
+        "2": 290,
+        "3": 1333,
+        "4": 147,
+        "5": 786,
+        "6": 1284
+      },
+      "cameras": [
+        {
+          "camera_id": 1,
+          "model": "SIMPLE_RADIAL",
+          "width": 640,
+          "height": 480,
+          "params": [
+            15.132846741821298,
+            320.0,
+            240.0,
+            7.963032517791489e-06
+          ],
+          "focal_to_max_dimension": 0.023645073034095777,
+          "bogus_parameters": true
+        }
+      ]
+    },
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/registered",
+      "registered_images": 6,
+      "registered_filenames": [
+        "frame_000003.png",
+        "frame_000004.png",
+        "frame_000005.png",
+        "frame_000008.png",
+        "frame_000007.png",
+        "frame_000006.png"
+      ],
+      "num_3d_points": 3840,
+      "mean_reprojection_error": 0.1719410489231861,
+      "median_reprojection_error": 0.17697832235756267,
+      "track_length_distribution": {
+        "2": 290,
+        "3": 1333,
+        "4": 147,
+        "5": 786,
+        "6": 1284
+      },
+      "cameras": [
+        {
+          "camera_id": 1,
+          "model": "SIMPLE_RADIAL",
+          "width": 640,
+          "height": 480,
+          "params": [
+            15.132846741821298,
+            320.0,
+            240.0,
+            7.963032517791489e-06
+          ],
+          "focal_to_max_dimension": 0.023645073034095777,
+          "bogus_parameters": true
+        }
+      ]
+    },
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/joint/0",
+      "registered_images": 6,
+      "registered_filenames": [
+        "frame_000003.png",
+        "frame_000004.png",
+        "frame_000005.png",
+        "frame_000008.png",
+        "frame_000007.png",
+        "frame_000006.png"
+      ],
+      "num_3d_points": 3840,
+      "mean_reprojection_error": 0.1719410489231861,
+      "median_reprojection_error": 0.17697832235756267,
+      "track_length_distribution": {
+        "2": 290,
+        "3": 1333,
+        "4": 147,
+        "5": 786,
+        "6": 1284
+      },
+      "cameras": [
+        {
+          "camera_id": 1,
+          "model": "SIMPLE_RADIAL",
+          "width": 640,
+          "height": 480,
+          "params": [
+            15.132846741821298,
+            320.0,
+            240.0,
+            7.963032517791489e-06
+          ],
+          "focal_to_max_dimension": 0.023645073034095777,
+          "bogus_parameters": true
+        }
+      ]
+    }
+  ],
+  "global_seed_filenames": [
+    "frame_000003.png",
+    "frame_000004.png",
+    "frame_000005.png",
+    "frame_000008.png",
+    "frame_000007.png",
+    "frame_000006.png"
+  ],
+  "pnp_inliers_note": "PnP inlier counts unavailable as structured CLI output; kept missing, not inferred from match counts.",
+  "foreground_note": "No verified foreground masks: reconstructed points may primarily constrain background.",
+  "final_model": {
+    "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/final",
+    "registered_images": 6,
+    "registered_filenames": [
+      "frame_000006.png",
+      "frame_000007.png",
+      "frame_000008.png",
+      "frame_000005.png",
+      "frame_000004.png",
+      "frame_000003.png"
+    ],
+    "num_3d_points": 3840,
+    "mean_reprojection_error": 0.17194104892318396,
+    "median_reprojection_error": 0.17697832235756097,
+    "track_length_distribution": {
+      "2": 290,
+      "3": 1333,
+      "4": 147,
+      "5": 786,
+      "6": 1284
+    },
+    "cameras": [
+      {
+        "camera_id": 1,
+        "model": "SIMPLE_RADIAL",
+        "width": 640,
+        "height": 480,
+        "params": [
+          5.9270933306151985,
+          320.0,
+          240.0,
+          1.2215088125475757e-06
+        ],
+        "focal_to_max_dimension": 0.009261083329086248,
+        "bogus_parameters": true
+      }
+    ]
+  },
+  "model_path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/final",
+  "status": "RECONSTRUCTED_REQUIRES_GEOMETRIC_AUDIT"
+}

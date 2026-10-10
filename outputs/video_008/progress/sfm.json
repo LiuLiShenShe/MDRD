@@ -1,0 +1,20 @@
+{
+  "stage": "sfm",
+  "started_at": "2026-10-09T14:45:58.436241+00:00",
+  "signature": "55e45c1295955f5526aad9ea4b5a9e7552bf4affb13adfa23f8cd9aa6f9e7893",
+  "configuration": {
+    "executable": "colmap",
+    "camera_model": "SIMPLE_RADIAL",
+    "max_image_size": 2400,
+    "max_num_features": 6000,
+    "threads": 8,
+    "use_gpu": false,
+    "exhaustive_limit": 130,
+    "sequential_overlap": 10,
+    "joint_fallback": true,
+    "extra_options": {}
+  },
+  "status": "completed",
+  "finished_at": "2026-10-09T14:50:23.184682+00:00",
+  "elapsed_sec": 264.7484619319439
+}

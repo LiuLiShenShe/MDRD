@@ -1,0 +1,6 @@
+segment,total,registered,registration_rate
+APPROACH,8,7,0.875
+GLOBAL,76,66,0.868421052631579
+LOCAL_01,3,3,1.0
+LOCAL_02,3,3,1.0
+TRANSITION,2,2,1.0

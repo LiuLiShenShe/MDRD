@@ -1,0 +1,7 @@
+group,tested_pairs_in_database,geometry_verified_pairs_15,verification_rate,raw_matches_median,verified_matches_median,local_global_scale_ratio_median
+APPROACH_LOCAL,8,7,0.875,233.5,186.5,
+GLOBAL_APPROACH,244,131,0.5368852459016393,65.5,15.5,
+GLOBAL_GLOBAL,1830,1018,0.5562841530054645,67.0,16.0,
+GLOBAL_LOCAL,122,57,0.4672131147540984,64.5,0.0,1.33380126953125
+LOCAL_LOCAL,1,1,1.0,387.0,314.0,
+OTHER,6,6,1.0,1140.5,1062.5,

@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "3e25a3c78ef24fb8b846270d2bd69dd6",
+    "created": 1791535213,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\n    \"frame_id\": 49,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; background includes bicycle wheels.\"\n  },\n  {\n    \"frame_id\": 50,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; bicycle wheels visible in background.\"\n  },\n  {\n    \"frame_id\": 51,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; bicycle wheels visible in background.\"\n  },\n  {\n    \"frame_id\": 52,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; bicycle wheels visible in background.\"\n  },\n  {\n    \"frame_id\": 53,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; bicycle wheels visible in background.\"\n  },\n  {\n    \"frame_id\": 54,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; bicycle wheels visible in background.\"\n  },\n  {\n    \"frame_id\": 55,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; other potted plants visible in background.\"\n  },\n  {\n    \"frame_id\": 56,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; other potted plants visible in background.\"\n  },\n  {\n    \"frame_id\": 57,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; other potted plants visible in background.\"\n  },\n  {\n    \"frame_id\": 58,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; other potted plants visible in background.\"\n  },\n  {\n    \"frame_id\": 59,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"High-angle view of the entire potted plant on a yellow board; patterned surface visible in background.\"\n  },\n  {\n    \"frame_id\": 60,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.95,\n    \"description\": \"Camera transitions from a high-angle to a lower, more direct view, though the whole potted plant and surrounding context remain visible.\"\n  }\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "I need to analyze a video segment (frames 49-60 from video_008) showing a potted plant and classify each frame according to specific rules.\n\nFirst, I examine the visual content of the frames. They show a potted plant with round leaves on a yellow wooden board. The background includes elements like bicycle wheels and other plants.\n\nNext, I apply the classification rules:\n- **GLOBAL**: Intact pot/plant and overall background are visible.\n- **LOCAL**: Only partial leaves/crown, missing overall reference.\n- **APPROACH**: Explicit progressive approach in consecutive frames.\n- **TRANSITION**: Obvious switch/intermediate state.\n- **UNKNOWN**: Cannot confirm or confidence < 0.65.\n\nFor frames 49 through 59, the plant is viewed from a relatively high angle. The entire pot and plant are clearly visible, along with the yellow board it rests on. While the background shows bicycle parts, the framing remains consistent with a high-angle shot of the whole subject. I do not see evidence of a continuous camera approach; rather, the camera seems to be rotating around the plant. Because the \"whole pot\" reference is present in these frames, they qualify as GLOBAL, not LOCAL. Although frame 60 appears to transition from the high-angle view to a lower perspective showing the patterned background, I label it as GLOBAL due to the retained visibility of the whole plant, with a note in the description to capture this nuance. Consequently, no APPROACH or TRANSITION labels are warranted based on the strict definitions provided.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1088,
+      "prompt_tokens": 1706,
+      "total_tokens": 2794,
+      "completion_tokens_details": {
+        "reasoning_tokens": 332,
+        "text_tokens": 756
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:40:14.125349+00:00",
+  "frame_ids": [
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60
+  ],
+  "model": "agnes-2.5-flash"
+}

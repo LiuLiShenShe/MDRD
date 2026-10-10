@@ -1,0 +1,13 @@
+{
+  "stage": "quality",
+  "started_at": "2026-10-09T07:59:16.408495+00:00",
+  "signature": "a7d94cfe19d0dfd2b1da24b8228e2271116ad10e406258be19f7f045223516e0",
+  "configuration": {
+    "max_dimension": 960,
+    "features": 1600,
+    "relative_window": 9
+  },
+  "status": "completed",
+  "finished_at": "2026-10-09T08:00:14.836581+00:00",
+  "elapsed_sec": 58.428114441689104
+}

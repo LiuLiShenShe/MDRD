@@ -1,0 +1,14 @@
+COMMAND ["colmap", "exhaustive_matcher", "--database_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_008/sfm/database.db", "--SiftMatching.use_gpu", "0", "--SiftMatching.num_threads", "8"]
+I20261009 22:47:56.185690 139917 misc.cc:198] 
+==============================================================================
+Exhaustive feature matching
+==============================================================================
+I20261009 22:47:56.189682 139917 feature_matching.cc:231] Matching block [1/2, 1/2]
+I20261009 22:48:19.924702 139917 feature_matching.cc:46]  in 23.735s
+I20261009 22:48:19.928485 139917 feature_matching.cc:231] Matching block [1/2, 2/2]
+I20261009 22:48:42.987427 139917 feature_matching.cc:46]  in 23.059s
+I20261009 22:48:42.988216 139917 feature_matching.cc:231] Matching block [2/2, 1/2]
+I20261009 22:49:15.511523 139917 feature_matching.cc:46]  in 32.523s
+I20261009 22:49:15.513422 139917 feature_matching.cc:231] Matching block [2/2, 2/2]
+I20261009 22:49:45.022660 139917 feature_matching.cc:46]  in 29.509s
+I20261009 22:49:45.026171 139917 timer.cc:91] Elapsed time: 1.814 [minutes]

@@ -1,0 +1,20 @@
+{
+  "status": "PASSED",
+  "unit": {
+    "tests": 33,
+    "failures": 0,
+    "skipped": 0
+  },
+  "integration": {
+    "tests": 2,
+    "failures": 0,
+    "skipped": 0
+  },
+  "total_tests": 35,
+  "failed": 0,
+  "artifacts": [
+    "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/unit_results_verified.xml",
+    "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/integration_results_verified.xml"
+  ],
+  "summarized_at": "2026-10-09T16:13:30.033496+00:00"
+}

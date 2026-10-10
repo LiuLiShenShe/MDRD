@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "2b8d51f7d9e84e5a90d699e45f11257a",
+    "created": 1791534592,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 97, \"label\": \"GLOBAL\", \"confidence\": 0.85, \"description\": \"俯视角度，整盆植物清晰可见，包括叶子和花盆边缘，背景有黄色台面和KUROMI字样。\"},\n  {\"frame_id\": 98, \"label\": \"GLOBAL\", \"confidence\": 0.85, \"description\": \"俯视角度，整盆植物占据画面，叶子密集，花盆部分可见。\"},\n  {\"frame_id\": 99, \"label\": \"GLOBAL\", \"confidence\": 0.85, \"description\": \"俯视角度，整盆植物可见，包括叶子和部分花盆，背景为木质台面。\"},\n  {\"frame_id\": 100, \"label\": \"LOCAL\", \"confidence\": 0.80, \"description\": \"近距离俯视，主要显示叶冠层，叶子细节清晰，整株/盆的整体参照明显缺失。\"},\n  {\"frame_id\": 101, \"label\": \"LOCAL\", \"confidence\": 0.80, \"description\": \"近距离俯视，叶子占据大部分画面，看不到完整花盆或整体植株轮廓。\"},\n  {\"frame_id\": 102, \"label\": \"LOCAL\", \"confidence\": 0.80, \"description\": \"近距离俯视，叶子特写，叶脉和光泽可见，整盆参照缺失。\"},\n  {\"frame_id\": 103, \"label\": \"LOCAL\", \"confidence\": 0.75, \"description\": \"近距离俯视，主要显示叶子，可见少量白色花朵结构，无整体植株参照。\"},\n  {\"frame_id\": 104, \"label\": \"LOCAL\", \"confidence\": 0.75, \"description\": \"近距离俯视，叶子细节清晰，叶冠层特写，整盆植物不可见。\"},\n  {\"frame_id\": 105, \"label\": \"TRANSITION\", \"confidence\": 0.70, \"description\": \"镜头开始拉远，叶子仍占主要画面但可见更多背景，处于从LOCAL向GLOBAL过渡状态。\"},\n  {\"frame_id\": 106, \"label\": \"GLOBAL\", \"confidence\": 0.85, \"description\": \"俯视角度，整盆植物完整可见，包括花盆、叶子和背景中的鞋子，整体参照清晰。\"},\n  {\"frame_id\": 107, \"label\": \"GLOBAL\", \"confidence\": 0.85, \"description\": \"俯视角度，整盆植物和花盆完整呈现，背景为浅色地板。\"},\n  {\"frame_id\": 108, \"label\": \"GLOBAL\", \"confidence\": 0.85, \"description\": \"俯视角度，整盆植物清晰可见，叶子茂密，花盆和背景完整。\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "我需要客观读取这个植物视频的逐帧接触表。用户要求返回JSON数组，每张图一行，包含frame_id、label、confidence、description字段。\n\n让我逐一分析每个帧：\n\n帧97 (48.0217s): 俯视角度，可以看到整盆植物的大部分，包括叶子和花盆边缘，背景有黄色台面。这是GLOBAL视角。\n\n帧98 (48.5217s): 同样是俯视，能看到整盆植物，叶子占据大部分画面。GLOBAL视角。\n\n帧99 (49.0217s): 俯视，整盆植物可见，包括叶子和部分花盆。GLOBAL视角。\n\n帧100 (49.5217s): 更近的俯视角度，主要显示叶冠层，整株植物的参照明显缺失。LOCAL视角。\n\n帧101 (50.0217s): 近距离俯视，主要显示叶子，看不到整盆植物。LOCAL视角。\n\n帧102 (50.5217s): 近距离俯视，叶子占据画面，没有整盆参照。LOCAL视角。\n\n帧103 (51.0217s): 近距离俯视，主要显示叶子和可能的白色花朵。LOCAL视角。\n\n帧104 (51.5217s): 近距离俯视，叶子细节可见。LOCAL视角。\n\n帧105 (52.0217s): 开始有点变化，能看到部分叶子但还是有更多背景。可能是TRANSITION。\n\n帧106 (52.5217s): 能看到整盆植物了，包括花盆和鞋子，背景完整。GLOBAL视角。\n\n帧107 (53.0217s): 俯视，能看到整盆植物和花盆。GLOBAL视角。\n\n帧108 (53.5217s): 俯视，整盆植物可见。GLOBAL视角。\n\n现在我需要按照用户的要求设置置信度。高于0.65置信度用具体标签，低于0.65用UNKNOWN。\n\n帧97: GLOBAL, 0.85 - 俯视整盆植物清晰可见\n帧98: GLOBAL, 0.85 - 俯视整盆植物\n帧99: GLOBAL, 0.85 - 俯视整盆植物\n帧100: LOCAL, 0.80 - 近距离俯视，主要显示叶冠层\n帧101: LOCAL, 0.80 - 近距离俯视，叶子特写\n帧102: LOCAL, 0.80 - 近距离俯视，叶子细节\n帧103: LOCAL, 0.75 - 近距离俯视，有白色花朵\n帧104: LOCAL, 0.75 - 近距离俯视，叶子\n帧105: TRANSITION, 0.70 - 开始有变化，介于LOCAL和GLOBAL之间\n帧106: GLOBAL, 0.85 - 整盆植物可见，包括花盆和背景\n帧107: GLOBAL, 0.85 - 俯视整盆植物\n帧108: GLOBAL, 0.85 - 俯视整盆植物\n\n现在构建JSON数组。\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1308,
+      "prompt_tokens": 1727,
+      "total_tokens": 3035,
+      "completion_tokens_details": {
+        "reasoning_tokens": 697,
+        "text_tokens": 611
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:29:52.306533+00:00",
+  "frame_ids": [
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108
+  ],
+  "model": "agnes-2.5-flash"
+}

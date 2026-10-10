@@ -1,0 +1,36 @@
+{
+  "id": "92c0027ad3454c24b3d039af3971a6bc",
+  "created": 1791532220,
+  "model": "agnes-2.5-flash",
+  "object": "chat.completion",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "content": "\n\n```json\n{\n  \"sample_id\": \"video_008\",\n  \"frame_analysis\": [\n    {\n      \"timestamp\": \"t=0.00s\",\n      \"stage\": \"GLOBAL\",\n      \"confidence\": 0.92,\n      \"description\": \"整盆植物中景，可见花盆、桌面及背景环境（自行车轮、家居）\"\n    },\n    {\n      \"timestamp\": \"t=5.07s\",\n      \"stage\": \"GLOBAL\",\n      \"confidence\": 0.85,\n      \"description\": \"整盆植物，有喷壶入画，视角略近，背景仍清晰可见\"\n    },\n    {\n      \"timestamp\": \"t=10.14s\",\n      \"stage\": \"GLOBAL\",\n      \"confidence\": 0.90,\n      \"description\": \"整盆植物中景，坐姿视角，背景为家居环境\"\n    },\n    {\n      \"timestamp\": \"t=15.21s\",\n      \"stage\": \"GLOBAL\",\n      \"confidence\": 0.90,\n      \"description\": \"整盆植物，略高角度，桌面与背景完整可见\"\n    },\n    {\n      \"timestamp\": \"t=20.28s\",\n      \"stage\": \"GLOBAL\",\n      \"confidence\": 0.88,\n      \"description\": \"较高俯视角度的整盆植物，桌面与背景清晰\"\n    },\n    {\n      \"timestamp\": \"t=25.34s\",\n      \"stage\": \"APPROACH\",\n      \"confidence\": 0.72,\n      \"description\": \"植物占据更大画面，背景开始模糊，接近全局与局部过渡区域\"\n    },\n    {\n      \"timestamp\": \"t=30.41s\",\n      \"stage\": \"LOCAL\",\n      \"confidence\": 0.82,\n      \"description\": \"近距离拍摄，主要呈现叶片细节，背景显著弱化\"\n    },\n    {\n      \"timestamp\": \"t=35.48s\",\n      \"stage\": \"LOCAL\",\n      \"confidence\": 0.90,\n      \"description\": \"近距离俯拍，几乎完全由叶片和顶部构成\"\n    },\n    {\n      \"timestamp\": \"t=40.55s\",\n      \"stage\": \"LOCAL\",\n      \"confidence\": 0.93,\n      \"description\": \"极近距离俯视，叶片填满画面，背景仅少量可见\"\n    },\n    {\n      \"timestamp\": \"t=45.62s\",\n      \"stage\": \"GLOBAL\",\n      \"confidence\": 0.88,\n      \"description\": \"中远景，整盆植物完整可见，桌面与背景恢复\"\n    }\n  ],\n  \"global_and_local_present\": true,\n  \"sfm_diagnostic_suitability\": {\n    \"suitable\": false,\n    \"reasons\": [\n      \"距离变化虽有但缺乏连续性过渡——从GLOBAL直接跳至LOCAL，缺少稳定的APPROACH/RETREAT序列，不利于重建连续相机轨迹\",\n      \"多帧场景视角相似（t=0~20s均为相似GLOBAL角度），特征点覆盖重复度高，视差增量不足\",\n      \"LOCAL帧（t=30~40s）与GLOBAL帧（t=45s）之间存在明显的景别断层，可能导致特征匹配跨距离失败\",\n      \"背景干扰元素较多（自行车、家具、地板花纹），可能引入非植物区域的稳定特征，干扰 SfM 对主体结构的重建\",\n      \"样本帧数仅10帧，时间跨度45s，采样密度过低，无法保证关键帧覆盖完整的运动变化\"\n    ]\n  }\n}\n```",
+        "role": "assistant",
+        "reasoning_content": "用户要求详细客观阅读视频帧接触表，并输出JSON格式分析。需要：\n1. 按时间戳列出每帧的阶段（GLOBAL/APPROACH/LOCAL/TRANSITION/UNKNOWN）和置信度\n2. 判断是否同时存在全局和局部\n3. 给出适合作为混合距离SfM诊断样本的理由或不适合原因\n\n让我逐帧分析：\n\nt=0.00s - 整盆植物，中远景，能看到花盆、桌面、背景（自行车轮等）。这是GLOBAL阶段。置信度高。\nt=5.07s - 植物稍近，仍有背景，看起来是APPROACH或GLOBAL。有喷壶出现。置信度较高。\nt=10.14s - 中景，整盆可见，背景清晰。GLOBAL。\nt=15.21s - 类似，整盆可见。GLOBAL。\nt=20.28s - 俯视角度的整盆。GLOBAL。\nt=25.34s - 较近的整盆，可以看到更多细节。可能是APPROACH或LOCAL边界。\nt=30.41s - 更近的视角，主要是叶片。LOCAL。\nt=35.48s - 近距离俯拍，主要是叶片顶部。LOCAL。\nt=40.55s - 近距离俯视，叶片占满画面。LOCAL。\nt=45.62s - 中远景，整盆可见。GLOBAL。\n\n关于是否同时存在全局和局部：从帧序列来看，视频似乎在不同距离间切换，有GLOBAL也有LOCAL帧。\n\n关于SfM诊断样本：需要考虑视距变化、特征点分布等因素。\n"
+      },
+      "provider_specific_fields": {
+        "matched_stop": 248046
+      }
+    }
+  ],
+  "usage": {
+    "completion_tokens": 1217,
+    "prompt_tokens": 1232,
+    "total_tokens": 2449,
+    "completion_tokens_details": {
+      "reasoning_tokens": 368,
+      "text_tokens": 849
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "image_tokens": 825
+    }
+  },
+  "metadata": {
+    "weight_version": "default"
+  }
+}

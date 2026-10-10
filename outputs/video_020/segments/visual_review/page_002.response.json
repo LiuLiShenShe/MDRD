@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "6f1bd7a813cf44a59c5fe16f08ee15c5",
+    "created": 1791535318,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 25, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"俯视角度，整盆植物及黄色凳子和背景花布均可见\"},\n  {\"frame_id\": 26, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"俯视角度，整盆植物及凳子和背景花布均可见\"},\n  {\"frame_id\": 27, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"俯视角度，整盆植物及凳子和背景花布均可见\"},\n  {\"frame_id\": 28, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度，整盆植物及凳子和背景花布均可见\"},\n  {\"frame_id\": 29, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度，整盆植物及凳子和背景花布均可见\"},\n  {\"frame_id\": 30, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度，整盆植物及凳子和背景花布均可见\"},\n  {\"frame_id\": 31, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度，整盆植物及凳子和背景花布均可见\"},\n  {\"frame_id\": 32, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度，整盆植物及凳子和背景花布均可见\"},\n  {\"frame_id\": 33, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度，整盆植物及凳子和背景花布均可见\"},\n  {\"frame_id\": 34, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度，整盆植物及凳子和背景花布均可见\"},\n  {\"frame_id\": 35, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度，整盆植物及凳子和背景均可见\"},\n  {\"frame_id\": 36, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度，整盆植物及凳子和背景均可见\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "用户要求我分析这张植物视频逐帧接触表，并返回JSON数组。让我仔细看看这些图片。\n\n从图片中可以看到：\n- 这是一张包含12帧的图像拼贴\n- 每帧显示一盆植物（看起来是竹芋类植物，有斑纹的叶子）\n- 植物放在一个黄色的小凳子上\n- 背景有蓝色花朵图案的布料\n\n让我逐一分析每帧：\n\nframe 25: 俯视角度，能看到整盆植物和凳子，背景可见。GLOBAL\nframe 26: 俯视角度，整盆植物可见，凳子部分可见。GLOBAL\nframe 27: 俯视角度，整盆植物可见，凳子可见。GLOBAL\nframe 28: 俯视角度，整盆植物可见，凳子可见。GLOBAL\nframe 29: 俯视角度，整盆植物可见，凳子可见。GLOBAL\nframe 30: 俯视角度，整盆植物可见，凳子可见。GLOBAL\nframe 31: 俯视角度，整盆植物可见，凳子可见。GLOBAL\nframe 32: 俯视角度，整盆植物可见，凳子可见。GLOBAL\nframe 33: 俯视角度，整盆植物可见，凳子可见。GLOBAL\nframe 34: 俯视角度，整盆植物可见，凳子可见。GLOBAL\n\n\nframe 35: 俯视角度，整盆植物可见，凳子可见。GLOBAL\nframe 36: 俯视角度，整盆植物可见，凳子可见。GLOBAL\n\n所有帧都是俯视角度，整盆植物都可见，凳子也可见，所以都是GLOBAL标签。这些帧之间没有明显的视角变化或接近动作，看起来是从固定机位拍摄的延时序列。\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 901,
+      "prompt_tokens": 1718,
+      "total_tokens": 2619,
+      "completion_tokens_details": {
+        "reasoning_tokens": 366,
+        "text_tokens": 535
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:42:01.579988+00:00",
+  "frame_ids": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "model": "agnes-2.5-flash"
+}

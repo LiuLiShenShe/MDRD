@@ -1,0 +1,26 @@
+{
+  "http_status": 429,
+  "response": {
+    "error": {
+      "code": "",
+      "message": "You’ve reached the API rate limit for free users. Upgrade to a Token Plan to unlock higher limits and continue using the API without interruption. (request id: 20261009083008889947529nwrB9vnG)",
+      "type": "AgnesAI_error"
+    }
+  },
+  "created_at": "2026-10-09T08:30:09.133906+00:00",
+  "frame_ids": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "model": "agnes-2.5-flash"
+}

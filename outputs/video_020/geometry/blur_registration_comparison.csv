@@ -1,0 +1,6 @@
+segment,quality_label,frames,registered,registration_rate,sift_features_median,verified_matches_median,relative_laplacian_median
+APPROACH,CLEAR,4,4,1.0,7404.0,2801.0,1.0060849581304914
+GLOBAL,CLEAR,57,57,1.0,7213.0,700.0,1.0
+GLOBAL,MILD_BLUR,4,4,1.0,3306.5,341.0,0.4732757150228621
+LOCAL_01,CLEAR,1,1,1.0,7397.0,2543.0,1.266172881671268
+LOCAL_01,MILD_BLUR,1,1,1.0,4189.0,324.0,0.5626389675044772

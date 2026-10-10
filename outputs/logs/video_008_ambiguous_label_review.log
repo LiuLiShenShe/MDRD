@@ -1,0 +1,17 @@
+HTTP 200
+
+
+```json
+[
+  {"frame_id": 6, "label": "GLOBAL", "confidence": 0.95, "whole_plant_or_pot_visible": true, "evidence": "完整可见整株植物与棕色花盆，背景有黄色自行车、桌子等参照物，画面包含全局构图。", "uncertainty": "无"},
+  {"frame_id": 7, "label": "GLOBAL", "confidence": 0.95, "whole_plant_or_pot_visible": true, "evidence": "与frame=6视角一致，整株植物和花盆均完整可见，背景参照明确。", "uncertainty": "无"},
+  {"frame_id": 8, "label": "GLOBAL", "confidence": 0.93, "whole_plant_or_pot_visible": true, "evidence": "整株植物及花盆完整可见，黄色自行车部分进入画面，整体参照清晰。", "uncertainty": "轻微构图偏移"},
+  {"frame_id": 9, "label": "GLOBAL", "confidence": 0.93, "whole_plant_or_pot_visible": true, "evidence": "与前序帧构图一致，整株植物和花盆均在画面中，背景参照完整。", "uncertainty": "无"},
+  {"frame_id": 10, "label": "GLOBAL", "confidence": 0.93, "whole_plant_or_pot_visible": true, "evidence": "整株植物和棕色花盆完整可见，背景黄色自行车仍作为参照。", "uncertainty": "无"},
+  {"frame_id": 84, "label": "GLOBAL", "confidence": 0.90, "whole_plant_or_pot_visible": true, "evidence": "俯视角度可见整株植物冠层完整形态，黑色花盆上缘可见，黄色方形底座完整呈现。", "uncertainty": "俯视角略影响侧面参照，但整株+容器均可见"},
+  {"frame_id": 85, "label": "GLOBAL", "confidence": 0.88, "whole_plant_or_pot_visible": true, "evidence": "与frame=84视角相近，整株植物和花盆上沿及黄色底座均可辨识。", "uncertainty": "植物位置略有移动，整体参照仍完整"},
+  {"frame_id": 86, "label": "GLOBAL", "confidence": 0.75, "whole_plant_or_pot_visible": true, "evidence": "视角更近但仍可辨识整株植物冠层轮廓及部分花盆边缘，黄色底座可见。", "uncertainty": "接近边界，画面放大但整株形态仍可辨识"},
+  {"frame_id": 87, "label": "LOCAL", "confidence": 0.85, "whole_plant_or_pot_visible": false, "evidence": "极度特写，主要可见右侧叶片群，花盆几乎不可见，黄色底座仅露一角，缺失整株/整盆整体参照。", "uncertainty": "仍有少量叶片在画外边缘，但主体为局部冠层"},
+  {"frame_id": 88, "label": "LOCAL", "confidence": 0.87, "whole_plant_or_pot_visible": false, "evidence": "与frame=87类似，特写叶片，花盆不可见，黄色底座仅部分可见，整株参照缺失。", "uncertainty": "局部叶片为主，无明显整体参照"}
+]
+```

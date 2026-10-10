@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "9d374fb8aa4c483ba65c74c79a85981e",
+    "created": 1791534570,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 37, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant visible on a small wooden stool; the entire plant, pot, and surrounding room context (desk, chair, background) are clearly present.\"},\n  {\"frame_id\": 38, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Same full-plant shot as frame 37; slight camera repositioning but the whole plant and pot remain in view on the wooden stool.\"},\n  {\"frame_id\": 39, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Continues the full-plant view; minor angle shift but the entire plant, pot, and stool are visible with background room elements.\"},\n  {\"frame_id\": 40, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full plant and pot still clearly shown on the wooden stool; camera has shifted slightly but no loss of overall context.\"},\n  {\"frame_id\": 41, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Same scene with the full potted plant on the stool; slight movement in camera position but the entire plant remains visible.\"},\n  {\"frame_id\": 42, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full-plant view maintained; the plant, pot, and wooden stool are all visible with background details like shelves and a monitor.\"},\n  {\"frame_id\": 43, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Complete plant in pot on the wooden stool; camera angle has changed slightly but the full plant and surrounding context remain visible.\"},\n  {\"frame_id\": 44, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the wooden stool; minor perspective shift but the whole plant and background (bed, bag, shelf) are still in frame.\"},\n  {\"frame_id\": 45, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Full plant visible on the stool; the camera appears to be moving closer or angling down slightly but the entire plant and pot remain within view.\"},\n  {\"frame_id\": 46, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"The full plant and pot are still visible on the wooden stool; camera has moved slightly closer/angled downward but no major framing change.\"},\n  {\"frame_id\": 47, \"label\": \"GLOBAL\", \"confidence\": 0.88, \"description\": \"Full plant in pot remains visible on the wooden stool; camera angle is more top-down compared to earlier frames but the whole plant is still in frame.\"},\n  {\"frame_id\": 48, \"label\": \"GLOBAL\", \"confidence\": 0.88, \"description\": \"The entire plant and pot are still visible from a slightly elevated angle; no transition to a close-up has occurred.\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "The user wants me to analyze a video of a plant and return a JSON array with frame_id, label, confidence, and description for each frame. Let me carefully examine each frame.\n\nLooking at the frames:\n\nFrame 37 (t=18.018s): Full plant visible in pot on a small wooden table/stool. Background shows room interior. GLOBAL view - entire plant and pot are visible.\n\nFrame 38 (t=18.518s): Similar to frame 37, full plant visible. GLOBAL.\n\nFrame 39 (t=19.018s): Similar view, full plant. GLOBAL.\n\nFrame 40 (t=19.518s): The camera angle seems to shift slightly - still showing the full plant. GLOBAL.\n\n\nFrame 41 (t=20.018s): The perspective shifts slightly as the camera repositions, maintaining the full plant view. GLOBAL.\n\nFrame 42 (t=20.518s): Another slight angle change but still captures the complete plant. GLOBAL.\n\nFrame 43 (t=21.018s): The camera continues its gradual repositioning while keeping the whole plant in frame. GLOBAL.\n\nFrame 44 (t=21.518s): Maintaining the full-plant perspective with minor camera movement. GLOBAL.\n\nFrame 45 (t=22.018s): The camera angle is shifting more noticeably now, though the plant remains fully visible.\n\nFrame 46 (t=22.518s): The framing tightens slightly but still shows the entire plant. GLOBAL.\n\nFrame 47 (t=23.018s): Similar close-up perspective with the full plant in view. GLOBAL.\n\nFrame 48 (t=23.518s): Maintains the close-up framing of the complete plant. GLOBAL.\n\nAll frames consistently show the entire plant from various angles as the camera gradually moves around it, so I'm classifying everything as GLOBAL since there's no evidence of significant zooming or transitions between different subjects.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1158,
+      "prompt_tokens": 1718,
+      "total_tokens": 2876,
+      "completion_tokens_details": {
+        "reasoning_tokens": 463,
+        "text_tokens": 695
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:29:31.630153+00:00",
+  "frame_ids": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "model": "agnes-2.5-flash"
+}

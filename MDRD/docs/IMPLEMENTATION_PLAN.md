@@ -1,0 +1,10 @@
+# Phase 01 execution map
+
+1. **P0/P1 media provenance** (`video`, `common`): inventory all source MOV/MP4 files, persist stream/packet metadata, choose three samples using real preview quality/motion/duration, then decode uniformly sampled frames with original PTS. Verify rotation, unique timestamps, frame hashes and source identity. Estimated 15–30 minutes including media decoding.
+2. **P2/P3 image evidence** (`quality`, `segmentation`): relative sharpness, exposure, SIFT/LK observations, conservative change-point segments with UNKNOWN and immutable manual versions. Verify synthetic edge cases and inspect real contact sheets. Estimated 20–40 minutes.
+3. **P4/P5 SfM** (`sfm`): detect actual CLI flags, build a global seed, match/continue/register local images, triangulate and BA; preserve disconnected models and failure logs. Verify with a known-geometry integration fixture and real reconstruction statistics. Estimated 30–90 minutes, dependent on CPU matching.
+4. **P6–P9 geometry** (`geometry`, `visualization`): use world-to-camera pose correctly, filter individual observations, refine conservative labels, compute baseline/depth ratios, ray angles and sparse covisibility. Verify exact synthetic values and scale invariance. Estimated 20–40 minutes.
+5. **P10 evidence report** (`reporting`, `tests`): segment/block-aware summaries, non-causal blur/matching comparisons, H1–H4 conclusions with missing evidence, aggregate three videos without mixing independent-model scales. Run all tests and validate artifacts before assigning PASS/PARTIAL/BLOCKED/FAIL. Estimated 15–30 minutes.
+
+## Risks and rules
+Sparse background features, uncertain foreground attribution, rolling shutter/stabilization, weak cross-scale correspondence, non-rigid leaves and disconnected reconstructions may prevent target-specific inference. No foreground or top-view semantics will be invented. Synthetic tests and real experiments have separate directories. No physical units or unaligned absolute baselines are aggregated. Raw videos remain read-only. Any incomplete requirement is recorded in the final report.

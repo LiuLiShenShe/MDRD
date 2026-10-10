@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="30" time="1.201" timestamp="2026-10-09T16:10:07.808844+08:00" hostname="test"><testcase classname="tests.unit.test_geometry" name="test_camera_center_rotated_translation" time="0.027" /><testcase classname="tests.unit.test_geometry" name="test_invalid_rotation_rejected" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_coordinate_round_trip" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_projection_and_backprojection" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_nonpositive_depth_filters" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_exact_right_angle_rays" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_baseline_depth_ratio_known" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_scale_invariance[0.01]" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_scale_invariance[7.5]" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_scale_invariance[1000]" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_empty_points_and_missing_angles" time="0.000" /><testcase classname="tests.unit.test_geometry" name="test_ray_from_camera_center_is_invalid" time="0.000" /><testcase classname="tests.unit.test_geometry" name="test_covisibility_intersection" time="0.001" /><testcase classname="tests.unit.test_geometry" name="test_empty_and_unregistered_covisibility" time="0.000" /><testcase classname="tests.unit.test_geometry" name="test_disjoint_nonempty_covisibility_is_zero" time="0.000" /><testcase classname="tests.unit.test_geometry" name="test_pair_group_symmetric_and_local_instances" time="0.000" /><testcase classname="tests.unit.test_geometry" name="test_unregistered_camera_is_preserved" time="0.009" /><testcase classname="tests.unit.test_geometry" name="test_unregistered_pair_remains_missing" time="0.002" /><testcase classname="tests.unit.test_media_segmentation" name="test_vfr_nearest_timestamps_not_index_over_fps" time="0.001" /><testcase classname="tests.unit.test_media_segmentation" name="test_timestamp_empty_duplicate_targets_and_invalid_order" time="0.000" /><testcase classname="tests.unit.test_media_segmentation" name="test_showinfo_actual_pts_and_dimensions" time="0.001" /><testcase classname="tests.unit.test_media_segmentation" name="test_segment_empty_single_and_boundaries" time="0.000" /><testcase classname="tests.unit.test_media_segmentation" name="test_approach_not_smoothed_away" time="0.000" /><testcase classname="tests.unit.test_media_segmentation" name="test_manual_override_retains_original_and_audit" time="0.009" /><testcase classname="tests.unit.test_media_segmentation" name="test_quality_relative_not_global_fixed_threshold" time="0.004" /><testcase classname="tests.unit.test_media_segmentation" name="test_image_quality_empty_rejected" time="0.000" /><testcase classname="tests.unit.test_media_segmentation" name="test_stage_resume_and_changed_input" time="0.002" /><testcase classname="tests.unit.test_media_segmentation" name="test_stage_failure_does_not_cache_success" time="0.001" /><testcase classname="tests.unit.test_reporting" name="test_missing_metrics_are_na_not_fabricated_zero" time="0.001" /><testcase classname="tests.unit.test_reporting" name="test_empty_evidence_does_not_support_hypotheses" time="0.003"><failure message="AttributeError: 'DataFrame' object has no attribute 'registered'">def test_empty_evidence_does_not_support_hypotheses():
+        groups = pd.DataFrame([{"group": label, "valid_pairs": 0} for label in ["GLOBAL_GLOBAL", "LOCAL_LOCAL", "GLOBAL_LOCAL"]])
+        blocks = pd.DataFrame(columns=["group", "jaccard", "angle_median"])
+        tracks = pd.DataFrame(columns=["local_without_global", "global_local_shared"])
+        matching = pd.DataFrame()
+        audit = pd.DataFrame(columns=["segment", "registered"])
+        parameters = {"high_covisibility": .25, "low_angle_deg": 3, "adequate_angle_deg": 5, "min_independent_blocks": 4}
+&gt;       result = diagnose("test", None, groups, blocks, tracks, matching, audit, parameters)
+
+MDRD/tests/unit/test_reporting.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+MDRD/src/mdrd/reporting/hypotheses.py:35: in diagnose
+    registration[label] = {"frames": len(subset), "registered": int(subset.registered.sum()), "registration_rate": float(subset.registered.mean()) if len(subset) else None}
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Empty DataFrame
+Columns: []
+Index: [], name = 'registered'
+
+    @final
+    def __getattr__(self, name: str):
+        """
+        After regular attribute access, try looking up the name
+        This allows simpler access to columns for interactive use.
+        """
+        # Note: obj.x will always call obj.__getattribute__('x') prior to
+        # calling obj.__getattr__('x').
+        if (
+            name not in self._internal_names_set
+            and name not in self._metadata
+            and name not in self._accessors
+            and self._info_axis._can_hold_identifiers_and_holds_name(name)
+        ):
+            return self[name]
+&gt;       return object.__getattribute__(self, name)
+E       AttributeError: 'DataFrame' object has no attribute 'registered'
+
+/home/test/biosoft/enter/lib/python3.13/site-packages/pandas/core/generic.py:6194: AttributeError</failure></testcase></testsuite></testsuites>

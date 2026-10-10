@@ -1,0 +1,2 @@
+group,temporal_block_i,temporal_block_j,pairs_in_block,median_baseline_depth_ratio,angle_median,common_3d_points,jaccard,coverage_i_j,coverage_j_i,reprojection_error
+LOCAL_LOCAL,9,9,1,0.11022812625673979,4.915207556329605,236.0,0.09376241557409615,0.5605700712589073,0.10120068610634649,1.63509914032793

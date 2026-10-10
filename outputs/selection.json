@@ -1,0 +1,53 @@
+{
+  "selected_video_ids": [
+    "video_007",
+    "video_008",
+    "video_020"
+  ],
+  "selection_variables": [
+    "duration",
+    "full-scene sharpness proxy",
+    "motion proxy",
+    "10-frame contact-sheet descriptions"
+  ],
+  "selection_reasons": {
+    "video_007": "最长视频（57.99 s），相对清晰度波动较大，检验长环绕/过渡和近景序列。",
+    "video_008": "全场景预览清晰度中位数在20段中最低（仅为纹理/质量代理，不等同真模糊），特征数量更少；保留为代表性困难样本，而非事先筛掉失败。",
+    "video_020": "全场景预览清晰度中位数最高、运动代理较低，33.22 s短序列；与低清晰度及长序列形成对照。"
+  },
+  "preview_statistics": {
+    "video_007": {
+      "duration_sec": 57.988333,
+      "laplacian_median": 168.64786962943677,
+      "laplacian_p10": 99.20998226698262,
+      "sharpness_variation": 0.5948609787342246,
+      "feature_median": 700.0,
+      "motion_median_px": 112.15901947021484,
+      "motion_variation": 0.2219880009484465,
+      "sampling": "10 approximate seek preview times; not analysis frame manifest"
+    },
+    "video_008": {
+      "duration_sec": 45.77,
+      "laplacian_median": 74.74260165161796,
+      "laplacian_p10": 53.9868959355213,
+      "sharpness_variation": 0.5088561667754665,
+      "feature_median": 534.0,
+      "motion_median_px": 128.88352966308594,
+      "motion_variation": 0.2585584993632776,
+      "sampling": "10 approximate seek preview times; not analysis frame manifest"
+    },
+    "video_020": {
+      "duration_sec": 33.22,
+      "laplacian_median": 417.7881751546914,
+      "laplacian_p10": 314.4364541500703,
+      "sharpness_variation": 0.2552593411827712,
+      "feature_median": 700.0,
+      "motion_median_px": 66.78765106201172,
+      "motion_variation": 0.3267218187646669,
+      "sampling": "10 approximate seek preview times; not analysis frame manifest"
+    }
+  },
+  "semantic_review_source": "Agnes API; single-video contact sheets only, no plant class inference; sparse preview does not prove continuous orbit or all transitions.",
+  "incomplete_review_note": "Initial 20-sheet API response described only 4 sheets; not treated as a complete 20-video audit. Three final candidates were re-reviewed separately.",
+  "stage": "first_round_three_only"
+}

@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/cli.py", line 115, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/cli.py", line 52, in main
+    write_json(output / "last_run_configuration.json", configuration)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/common.py", line 46, in write_json
+    temporary.replace(path)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/test/biosoft/enter/lib/python3.13/pathlib/_local.py", line 780, in replace
+    os.replace(self, target)
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/fj/混合拍摄距离下的三维重建优化问题/outputs/last_run_configuration.json.tmp' -> '/fj/混合拍摄距离下的三维重建优化问题/outputs/last_run_configuration.json'

@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "7d3e48ff9e9c49e9a768828759942a00",
+    "created": 1791535229,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[{\"frame_id\": 61, \"label\": \"GLOBAL\", \"confidence\": 0.85, \"description\": \"High-angle view of potted plant with full pot and surrounding background visible on yellow board.\"}, {\"frame_id\": 62, \"label\": \"GLOBAL\", \"confidence\": 0.82, \"description\": \"Similar high-angle framing showing complete plant and pot with background elements including floor pattern.\"}, {\"frame_id\": 63, \"label\": \"GLOBAL\", \"confidence\": 0.8, \"description\": \"Consistent overhead shot with full plant visible, slight angle variation showing pot and surrounding area.\"}, {\"frame_id\": 64, \"label\": \"GLOBAL\", \"confidence\": 0.78, \"description\": \"Plant remains in full view with yellow board and white paper visible, camera position stable.\"}, {\"frame_id\": 65, \"label\": \"GLOBAL\", \"confidence\": 0.76, \"description\": \"Continued overhead perspective showing complete plant specimen with background context intact.\"}, {\"frame_id\": 66, \"label\": \"GLOBAL\", \"confidence\": 0.75, \"description\": \"Stable framing maintains full plant visibility with surrounding environment reference points present.\"}, {\"frame_id\": 67, \"label\": \"GLOBAL\", \"confidence\": 0.73, \"description\": \"High-angle view continues with entire plant and pot in frame, minimal camera movement detected.\"}, {\"frame_id\": 68, \"label\": \"GLOBAL\", \"confidence\": 0.72, \"description\": \"Consistent shot preserving full plant context with yellow board surface and white paper marker visible.\"}, {\"frame_id\": 69, \"label\": \"GLOBAL\", \"confidence\": 0.7, \"description\": \"Overhead perspective maintained showing complete specimen with surrounding reference objects in frame.\"}, {\"frame_id\": 70, \"label\": \"GLOBAL\", \"confidence\": 0.68, \"description\": \"View remains stable with full plant visibility and background elements including footwear in distance.\"}, {\"frame_id\": 71, \"label\": \"GLOBAL\", \"confidence\": 0.66, \"description\": \"Sustained high-angle framing captures entire plant with environmental context still apparent.\"}, {\"frame_id\": 72, \"label\": \"GLOBAL\", \"confidence\": 0.65, \"description\": \"Final frame in sequence maintains global perspective with complete plant and pot visible in overhead shot.\"}]\n```",
+          "role": "assistant",
+          "reasoning_content": "The user wants me to analyze a video sequence and classify each frame based on camera proximity to a plant. I need to examine the 12 frames provided, from frame 61 to 72, and determine if each shows a GLOBAL view (full plant/pot visible with context), LOCAL view (close-up of leaves/crown), APPROACH (continuous frames showing gradual movement toward the subject), TRANSITION (intermediate state between clear shots), or UNKNOWN. I should be careful not to infer camera movement from static images unless it's clearly sequential. Looking at the frames, they all show the same potted plant on a yellow board, but the framing changes slightly. Frames 61-63 show a high-angle view with the full pot and some background. Frames 64-66 continue with similar framing. Frames 67-69 maintain this perspective. Frames 70-72 also show the same scene. None of these appear to be close-ups or LOCAL views - they all maintain a consistent distance showing the whole plant in its pot. Since this is a continuous sequence from the same video, and the framing is stable without significant movement toward the plant, I should classify most as GLOBAL rather than APPROACH, since there's no clear progressive approach visible. Let me create the JSON array with appropriate classifications for each frame.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 809,
+      "prompt_tokens": 1694,
+      "total_tokens": 2503,
+      "completion_tokens_details": {
+        "reasoning_tokens": 276,
+        "text_tokens": 533
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:40:30.173013+00:00",
+  "frame_ids": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72
+  ],
+  "model": "agnes-2.5-flash"
+}

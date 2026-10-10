@@ -1,0 +1,35 @@
+video_007 page_001.jpg reviewed 12
+video_007 page_000.jpg reviewed 12
+video_007 page_002.jpg reviewed 12
+video_007 page_003.jpg reviewed 12
+video_007 page_005.jpg reviewed 12
+video_007 page_004.jpg reviewed 12
+video_007 page_008.jpg reviewed 12
+video_007 page_006.jpg reviewed 12
+video_007 page_007.jpg reviewed 12
+video_008 page_001.jpg reviewed 12
+video_007 page_009.jpg reviewed 8
+video_008 page_000.jpg reviewed 12
+Traceback (most recent call last):
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/scripts/review_segments.py", line 92, in <module>
+    main()
+    ~~~~^^
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/scripts/review_segments.py", line 84, in main
+    for sample, records in pool.map(process, tasks):
+                           ~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/test/biosoft/enter/lib/python3.13/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/test/biosoft/enter/lib/python3.13/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/home/test/biosoft/enter/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/home/test/biosoft/enter/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/test/biosoft/enter/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/scripts/review_segments.py", line 58, in process
+    raise RuntimeError(f"Vision API HTTP {response.status_code}; {response_path}")
+RuntimeError: Vision API HTTP 429; outputs/video_008/segments/visual_review/page_002.response.json

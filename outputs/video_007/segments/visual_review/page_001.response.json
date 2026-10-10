@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "85f44a32a2a34441bcc57bfbd985c3ea",
+    "created": 1791534552,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[{\"frame_id\": 13, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant (peace lily) on a yellow wooden table, white paper underneath, background includes hanging clothes and a yellow bicycle frame. Entire plant and pot visible with clear environmental context.\"}, {\"frame_id\": 14, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant on yellow wooden table, same composition as frame 13 with minor framing variation. Entire plant and pot clearly visible with background context intact.\"}, {\"frame_id\": 15, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant on yellow wooden table, slightly different angle than previous frames. Entire plant and pot visible, background with bicycle and room elements clearly shown.\"}, {\"frame_id\": 16, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant on yellow wooden table, similar composition to earlier frames. Complete plant and pot in view with background details visible.\"}, {\"frame_id\": 17, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant on yellow wooden table. Slight framing change but entire plant and pot remain clearly visible with background context.\"}, {\"frame_id\": 18, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant on yellow wooden table, consistent with previous frames. Entire plant and pot visible with environmental surroundings shown.\"}, {\"frame_id\": 19, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Full potted plant on wooden table with white paper. Camera angle shifted; more of the room background visible including other potted plants on the floor and shelving. Complete subject still clearly visible.\"}, {\"frame_id\": 20, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Full potted plant on wooden table. Background reveals more of the indoor plant space with additional potted plants on the floor. Entire subject remains visible.\"}, {\"frame_id\": 21, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Full potted plant on wooden table with white paper. Wider room context visible including other plants and background shelving. Complete plant and pot in view.\"}, {\"frame_id\": 22, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Full potted plant on wooden table. Camera has shifted perspective showing more of the room interior with other potted plants in the background. Entire subject clearly visible.\"}, {\"frame_id\": 23, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Full potted plant on wooden table. Background shows more of the room with white curtains and additional plants. Complete plant and pot visible with environmental context.\"}, {\"frame_id\": 24, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Full potted plant on wooden table with white paper. Room background with other plants and white curtains clearly visible. Entire subject and pot in view.\"}]\n```",
+          "role": "assistant",
+          "reasoning_content": "Let me analyze each frame carefully based on the images provided.\n\nLooking at all 12 frames:\n\nFrames 13-18: These show a potted plant (looks like a peace lily/Spathiphyllum) on a wooden table with a white paper underneath. The pot is fully visible, the plant is fully visible, and the background (yellow bike, room) is visible. This is a GLOBAL shot - the entire pot and most of the plant are visible with environmental context.\n\nFrames 19-24: These frames show a slightly different perspective. The plant is still fully visible on the table, but the background now shows more of a room with other plants, shelves, etc. \n\nThe camera appears to shift slightly between these frames, but the fundamental shot composition remains consistent - I'm still seeing the complete plant and pot in a global view. Now I need to identify which frames show the main subject plant versus background elements. Frames 13-18 clearly show the primary peace lily in full detail, while frames 19-24 maintain that same subject but with the environment becoming more prominent in the background. The perspective shift is subtle but noticeable as the camera angle changes slightly.\n\nFor confidence levels, I'm settling on 0.95 across all frames since the classification is straightforward and unambiguous. The GLOBAL label consistently applies because the entire potted plant remains the central focus throughout the sequence, even as surrounding plants become more visible in the later frames. Since the frames appear to be from a static video with minimal movement, I'll skip the APPROACH designation and stick with GLOBAL for consistency.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1048,
+      "prompt_tokens": 1718,
+      "total_tokens": 2766,
+      "completion_tokens_details": {
+        "reasoning_tokens": 337,
+        "text_tokens": 711
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:29:13.136953+00:00",
+  "frame_ids": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "model": "agnes-2.5-flash"
+}

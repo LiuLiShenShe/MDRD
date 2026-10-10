@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "6c9f2f9bf1dc4920bad7cffcfec95792",
+    "created": 1791535336,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[{\"frame_id\": 37, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"俯视角度的整株植物，置于黄色木板上，背景可见木地板和其他植物\"}, {\"frame_id\": 38, \"label\": \"GLOBAL\", \"confidence\": 0.91, \"description\": \"俯视整株植物，背景有其他盆栽和黑色花盆\"}, {\"frame_id\": 39, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"俯视整株植物，黄色木板和浅色木地板背景清晰可见\"}, {\"frame_id\": 40, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视整株植物，黄色木板平台完整呈现\"}, {\"frame_id\": 41, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视整株植物，背景可见蓝色图案垫子和木地板\"}, {\"frame_id\": 42, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视整株植物，黄色木板和背景垫子完整可见\"}, {\"frame_id\": 43, \"label\": \"GLOBAL\", \"confidence\": 0.94, \"description\": \"俯视整株植物，背景有黑白棋盘格图案的垫子\"}, {\"frame_id\": 44, \"label\": \"GLOBAL\", \"confidence\": 0.94, \"description\": \"俯视整株植物，黄色木板和棋盘格垫子背景清晰\"}, {\"frame_id\": 45, \"label\": \"GLOBAL\", \"confidence\": 0.94, \"description\": \"俯视整株植物，中心可见条纹状的新叶伸出\"}, {\"frame_id\": 46, \"label\": \"GLOBAL\", \"confidence\": 0.94, \"description\": \"俯视整株植物，黄色木板完整可见，背景有棋盘格垫子\"}, {\"frame_id\": 47, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视整株植物，黄色木板和浅色木地板背景\"}, {\"frame_id\": 48, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"俯视整株植物，黄色木板完整呈现\"}]\n```",
+          "role": "assistant",
+          "reasoning_content": "用户要求我分析一张包含12帧植物视频的图片，并返回JSON数组。我需要：\n\n1. 逐帧查看每个frame_id的图像\n2. 确定label：GLOBAL（整盆/大部分植物及整体背景参照可见）或LOCAL（只见部分叶片/冠层近景）\n3. 确定confidence：0到1之间的值\n4. 写description：简短描述\n5. 遵循规则：\n   - 俯视不自动算LOCAL，整盆俯视仍GLOBAL\n   - 不能凭静态图推断真实相机平移、尺度、完整360度环绕等\n   - 低于0.65置信度用UNKNOWN\n\n让我逐帧分析：\n\n帧37：俯视角度，一盆植物在黄色木板上，整株植物可见，背景有木地板和其他植物。这是GLOBAL视角。\n\n帧38：同上，稍微不同的角度，但仍然是整株植物可见。GLOBAL。\n\n帧39：同上。GLOBAL。\n\n帧40：俯视角度，整株植物在黄色木板上。GLOBAL。\n\n帧41：同上。GLOBAL。\n\n帧42：同上。GLOBAL。\n\n帧43：俯视角度，整株植物在黄色木板上，背景有棋盘格图案的垫子。GLOBAL。\n\n帧44：同上。GLOBAL。\n\n帧45：同上。GLOBAL。\n\n帧46：同上，可以看到一个条纹的叶子从中心伸出。GLOBAL。\n\n帧47：俯视角度，整株植物在黄色木板上。GLOBAL。\n\n帧48：同上，稍微不同的角度。GLOBAL。\n\n所有帧都显示了整株植物，虽然角度略有变化，但都是俯视角度，整盆植物和背景参照物都可见。没有帧显示只有部分叶片的局部特写。\n\n置信度：由于所有帧都清楚显示整株植物，我可以给高置信度（0.90-0.95）。\n\n让我构建JSON输出。\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 912,
+      "prompt_tokens": 1718,
+      "total_tokens": 2630,
+      "completion_tokens_details": {
+        "reasoning_tokens": 415,
+        "text_tokens": 497
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:42:16.551713+00:00",
+  "frame_ids": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "model": "agnes-2.5-flash"
+}

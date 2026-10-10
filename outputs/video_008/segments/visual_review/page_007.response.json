@@ -1,0 +1,51 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "f578efc3a8b141ab80c8b5f2f6fbef99",
+    "created": 1791535269,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[{\"frame_id\":85,\"label\":\"LOCAL\",\"confidence\":0.92,\"description\":\"Close-up view of the potted plant leaves, pot rim partially visible, yellow board corner only; full plant and pot not framed entirely.\"},{\"frame_id\":86,\"label\":\"LOCAL\",\"confidence\":0.90,\"description\":\"Similar close-up on the plant foliage from a slightly different angle; pot and full plant still mostly out of frame.\"},{\"frame_id\":87,\"label\":\"LOCAL\",\"confidence\":0.88,\"description\":\"Close-up shot of the plant leaves; camera appears slightly further but still a near framing, pot base largely outside the frame.\"},{\"frame_id\":88,\"label\":\"APPROACH\",\"confidence\":0.78,\"description\":\"Continuous frame from 87 with noticeably more of the yellow board visible; camera is starting to pull back progressively from the earlier close-up.\"},{\"frame_id\":89,\"label\":\"APPROACH\",\"confidence\":0.82,\"description\":\"Camera has moved further away; the full potted plant and yellow board are now clearly visible in frame, transition toward a wider GLOBAL view.\"},{\"frame_id\":90,\"label\":\"GLOBAL\",\"confidence\":0.93,\"description\":\"Full overhead view of the potted plant on the yellow board; the entire plant and pot are within the frame with surrounding board visible.\"},{\"frame_id\":91,\"label\":\"GLOBAL\",\"confidence\":0.94,\"description\":\"Wider overhead shot; plant on yellow board fully visible, floor and shoes now appear at the top edge indicating continued camera retreat.\"},{\"frame_id\":92,\"label\":\"GLOBAL\",\"confidence\":0.94,\"description\":\"Highest and furthest overhead frame; the potted plant and yellow board are fully contained, larger area of the floor and shoes visible at the top.\"}]\n```",
+          "role": "assistant",
+          "reasoning_content": "The user wants me to read a video frame contact sheet and return a JSON array with frame_id, label, confidence, and description for each frame. Let me analyze the images carefully.\n\nLooking at the 8 frames:\n\nFrame 85 (t=42.02s): Close-up of a potted plant (looks like a peperomia or similar leafy plant) on a yellow board. The plant fills most of the frame. This is a LOCAL view - only parts of leaves visible, no full pot reference. Actually, wait - I can see the pot rim and some leaves. But the overall plant+pot isn't fully visible. This seems like LOCAL since we're seeing close-up leaves.\n\n\nFrames 86-88 show the camera pulling back progressively - frame 86 is still tight on the plant with partial pot visibility, frame 87 reveals more of the yellow board while staying relatively close, and frame 88 captures a clearer transition showing the full pot centered on the board with more of the surroundings visible.\n\nFrom frame 89 onward, the camera has pulled back significantly - frame 89 shows the entire plant on the yellow board from an angled overhead perspective, frames 90-92 continue this backward movement with frame 91 showing more of the floor and shoes appearing, and frame 92 is the most distant view with the plant appearing quite small in the frame.\n\nLooking at the sequence again, frames 85-87 are all tight close-ups of the plant from different angles, so they're consistently LOCAL shots throughout that section.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 719,
+      "prompt_tokens": 1624,
+      "total_tokens": 2343,
+      "completion_tokens_details": {
+        "reasoning_tokens": 331,
+        "text_tokens": 388
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:41:10.041344+00:00",
+  "frame_ids": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92
+  ],
+  "model": "agnes-2.5-flash"
+}

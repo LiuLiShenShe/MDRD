@@ -1,0 +1,72 @@
+{
+  "created_at": "2026-10-09T07:40:13.790498+00:00",
+  "os": "Linux-6.17.0-40-generic-x86_64-with-glibc2.39",
+  "python": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:13:31) [GCC 14.3.0]",
+  "python_executable": "/fj/混合拍摄距离下的三维重建优化问题/.venv/bin/python",
+  "packages": {
+    "cv2": {
+      "version": "4.13.0",
+      "path": "/home/test/biosoft/enter/lib/python3.13/site-packages/cv2/__init__.py"
+    },
+    "numpy": {
+      "version": "2.4.6",
+      "path": "/home/test/biosoft/enter/lib/python3.13/site-packages/numpy/__init__.py"
+    },
+    "pandas": {
+      "version": "3.0.5",
+      "path": "/home/test/biosoft/enter/lib/python3.13/site-packages/pandas/__init__.py"
+    },
+    "scipy": {
+      "version": "1.18.0",
+      "path": "/home/test/biosoft/enter/lib/python3.13/site-packages/scipy/__init__.py"
+    },
+    "matplotlib": {
+      "version": "3.10.5",
+      "path": "/home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/__init__.py"
+    },
+    "plotly": {
+      "version": "6.6.0",
+      "path": "/home/test/biosoft/enter/lib/python3.13/site-packages/plotly/__init__.py"
+    },
+    "pycolmap": {
+      "version": "4.2.0",
+      "path": "/home/test/biosoft/enter/lib/python3.13/site-packages/pycolmap/__init__.py"
+    },
+    "yaml": {
+      "version": "6.0.3",
+      "path": "/home/test/biosoft/enter/lib/python3.13/site-packages/yaml/__init__.py"
+    },
+    "pytest": {
+      "version": "8.3.4",
+      "path": "/home/test/biosoft/enter/lib/python3.13/site-packages/pytest/__init__.py"
+    }
+  },
+  "tools": {
+    "ffmpeg": {
+      "returncode": 0,
+      "text": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers\nbuilt with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\nconfiguration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\nlibavutil      58. 29.100 / 58. 29.100\nlibavcodec     60. 31.102 / 60. 31.102\nlibavformat    60. 16.100 / 60. 16.100\nlibavdevice    60.  3.100 / 60.  3.100\nlibavfilter     9. 12.100 /  9. 12.100\nlibswscale      7.  5.100 /  7.  5.100\nlibswresample   4. 12.100 /  4. 12.100\nlibpostproc    57.  3.100 / 57.  3.100"
+    },
+    "ffprobe": {
+      "returncode": 0,
+      "text": "ffprobe version 6.1.1-3ubuntu5 Copyright (c) 2007-2023 the FFmpeg developers\nbuilt with gcc 13 (Ubuntu 13.2.0-23ubuntu3)\nconfiguration: --prefix=/usr --extra-version=3ubuntu5 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --disable-omx --enable-gnutls --enable-libaom --enable-libass --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libglslang --enable-libgme --enable-libgsm --enable-libharfbuzz --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-openal --enable-opencl --enable-opengl --disable-sndio --enable-libvpl --disable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-ladspa --enable-libbluray --enable-libjack --enable-libpulse --enable-librabbitmq --enable-librist --enable-libsrt --enable-libssh --enable-libsvtav1 --enable-libx264 --enable-libzmq --enable-libzvbi --enable-lv2 --enable-sdl2 --enable-libplacebo --enable-librav1e --enable-pocketsphinx --enable-librsvg --enable-libjxl --enable-shared\nlibavutil      58. 29.100 / 58. 29.100\nlibavcodec     60. 31.102 / 60. 31.102\nlibavformat    60. 16.100 / 60. 16.100\nlibavdevice    60.  3.100 / 60.  3.100\nlibavfilter     9. 12.100 /  9. 12.100\nlibswscale      7.  5.100 /  7.  5.100\nlibswresample   4. 12.100 /  4. 12.100\nlibpostproc    57.  3.100 / 57.  3.100"
+    },
+    "colmap": {
+      "returncode": 0,
+      "text": "COLMAP 3.9.1 -- Structure-from-Motion and Multi-View Stereo\n(Commit Unknown on Unknown without CUDA)\n\nUsage:\n  colmap [command] [options]\n\nDocumentation:\n  https://colmap.github.io/\n\nExample usage:\n  colmap help [ -h, --help ]\n  colmap gui\n  colmap gui -h [ --help ]\n  colmap automatic_reconstructor -h [ --help ]\n  colmap automatic_reconstructor --image_path IMAGES --workspace_path WORKSPACE\n  colmap feature_extractor --image_path IMAGES --database_path DATABASE\n  colmap exhaustive_matcher --database_path DATABASE\n  colmap mapper --image_path IMAGES --database_path DATABASE --output_path MODEL\n  ...\n\nAvailable commands:\n  help\n  gui\n  automatic_reconstructor\n  bundle_adjuster\n  color_extractor\n  database_cleaner\n  database_creator\n  database_merger\n  delaunay_mesher\n  exhaustive_matcher\n  feature_extractor\n  feature_importer\n  hierarchical_mapper\n  image_deleter\n  image_filterer\n  image_rectifier\n  image_registrator\n  image_undistorter\n  image_undistorter_standalone\n  mapper\n  matches_importer\n  model_aligner\n  model_analyzer\n  model_comparer\n  model_converter\n  model_cropper\n  model_merger\n  model_orientation_aligner\n  model_splitter\n  model_transformer\n  patch_match_stereo\n  point_filtering\n  point_triangulator\n  poisson_mesher\n  project_generator\n  rig_bundle_adjuster\n  sequential_matcher\n  spatial_matcher\n  stereo_fusion\n  transitive_matcher\n  vocab_tree_builder\n  vocab_tree_matcher\n  vocab_tree_retriever"
+    }
+  },
+  "gpu": {
+    "returncode": 0,
+    "text": "Fri Oct  9 15:40:13 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA RTX A6000               Off |   00000000:18:00.0 Off |                  Off |\n| 40%   67C    P2             86W /  300W |    1753MiB /  49140MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n|   1  NVIDIA RTX A6000               Off |   00000000:D8:00.0 Off |                  Off |\n| 30%   52C    P8             29W /  300W |      14MiB /  49140MiB |      0%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A           68916      G   /usr/lib/xorg/Xorg                      160MiB |\n|    0   N/A  N/A           69248      G   /usr/bin/gnome-shell                    133MiB |\n|    0   N/A  N/A           69825      G   ...exec/xdg-desktop-portal-gnome         28MiB |\n|    0   N/A  N/A          361274      G   /usr/bin/nautilus                        18MiB |\n|    0   N/A  N/A         1548022      G   .../8995/usr/lib/firefox/firefox        411MiB |\n|    0   N/A  N/A         1793766      C   venv/bin/python                         896MiB |\n|    0   N/A  N/A         1971336      G   /usr/bin/gnome-system-monitor            28MiB |\n|    1   N/A  N/A           68916      G   /usr/lib/xorg/Xorg                        4MiB |\n+-----------------------------------------------------------------------------------------+"
+  },
+  "cuda": {
+    "returncode": 0,
+    "text": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2024 NVIDIA Corporation\nBuilt on Tue_Oct_29_23:50:19_PDT_2024\nCuda compilation tools, release 12.6, V12.6.85\nBuild cuda_12.6.r12.6/compiler.35059454_0"
+  },
+  "disk_bytes": {
+    "total": 2013991550976,
+    "used": 1322991755264,
+    "free": 588619091968
+  },
+  "pycolmap_has_cuda": false
+}

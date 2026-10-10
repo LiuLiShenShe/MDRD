@@ -1,0 +1,110 @@
+{
+  "timestamps": [
+    5.26667,
+    5.76667,
+    6.26667,
+    6.76667,
+    7.26667,
+    7.7666699999999995,
+    8.26667,
+    8.7675,
+    9.768315000000001,
+    37.77,
+    43.77,
+    44.27085
+  ],
+  "candidates": [
+    {
+      "timestamp_sec": 44.27085,
+      "reasons": [
+        "SEGMENT_BOUNDARY",
+        "REGISTRATION_GAP",
+        "LOW_ADJACENT_HOMOGRAPHY_SUPPORT"
+      ],
+      "priority": 4
+    },
+    {
+      "timestamp_sec": 9.768315000000001,
+      "reasons": [
+        "REGISTRATION_GAP",
+        "LOW_ADJACENT_HOMOGRAPHY_SUPPORT"
+      ],
+      "priority": 3
+    },
+    {
+      "timestamp_sec": 37.77,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION",
+        "SEGMENT_BOUNDARY",
+        "LOW_ADJACENT_HOMOGRAPHY_SUPPORT"
+      ],
+      "priority": 3
+    },
+    {
+      "timestamp_sec": 43.77,
+      "reasons": [
+        "SEGMENT_BOUNDARY",
+        "REGISTRATION_GAP"
+      ],
+      "priority": 3
+    },
+    {
+      "timestamp_sec": 5.26667,
+      "reasons": [
+        "REGISTRATION_GAP"
+      ],
+      "priority": 2
+    },
+    {
+      "timestamp_sec": 5.76667,
+      "reasons": [
+        "REGISTRATION_GAP"
+      ],
+      "priority": 2
+    },
+    {
+      "timestamp_sec": 6.26667,
+      "reasons": [
+        "REGISTRATION_GAP"
+      ],
+      "priority": 2
+    },
+    {
+      "timestamp_sec": 6.76667,
+      "reasons": [
+        "REGISTRATION_GAP"
+      ],
+      "priority": 2
+    },
+    {
+      "timestamp_sec": 7.26667,
+      "reasons": [
+        "REGISTRATION_GAP"
+      ],
+      "priority": 2
+    },
+    {
+      "timestamp_sec": 7.7666699999999995,
+      "reasons": [
+        "REGISTRATION_GAP"
+      ],
+      "priority": 2
+    },
+    {
+      "timestamp_sec": 8.26667,
+      "reasons": [
+        "REGISTRATION_GAP"
+      ],
+      "priority": 2
+    },
+    {
+      "timestamp_sec": 8.7675,
+      "reasons": [
+        "REGISTRATION_GAP"
+      ],
+      "priority": 2
+    }
+  ],
+  "maximum_additional_frames": 12,
+  "policy": "Preserve existing selected decoded frame indices; add nearest actual source PTS. Proposal is not a claim that new frames will register."
+}

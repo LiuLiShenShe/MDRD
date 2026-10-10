@@ -1,0 +1,10 @@
+{
+  "frames": 116,
+  "quality_counts": {
+    "CLEAR": 107,
+    "MILD_BLUR": 9
+  },
+  "laplacian_median": 130.41298771668642,
+  "feature_count_median": 1064.5,
+  "limitation": "Full-scene relative temporal sharpness proxy. Texture/distance/content changes can confound labels; no verified foreground mask. Mild/severe candidates are retained, not deleted."
+}

@@ -1,0 +1,9 @@
+COMMAND ["ffmpeg", "-hide_banner", "-loglevel", "warning", "-y", "-threads", "2", "-ss", "15.034444333333333", "-i", "/fj/混合拍摄距离下的三维重建优化问题/原始视频/2026-02-11 143046.mov", "-frames:v", "1", "-vf", "scale=720:-2", "-threads", "1", "/fj/混合拍摄距离下的三维重建优化问题/outputs/previews/video_003/preview_03.jpg"]
+[hevc @ 0x59689e799340] Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[hevc @ 0x59689e82d180] Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[hevc @ 0x59689e799340] Multiple Dolby Vision RPUs found in one AU. Skipping previous.
+[swscaler @ 0x59689e82d900] deprecated pixel format used, make sure you did set range correctly
+[swscaler @ 0x59689e8556c0] deprecated pixel format used, make sure you did set range correctly
+    Last message repeated 2 times
+[image2 @ 0x59689e81de00] The specified filename '/fj/混合拍摄距离下的三维重建优化问题/outputs/previews/video_003/preview_03.jpg' does not contain an image sequence pattern or a pattern is invalid.
+[image2 @ 0x59689e81de00] Use a pattern such as %03d for an image sequence or use the -update option (with -frames:v 1 if needed) to write a single image.

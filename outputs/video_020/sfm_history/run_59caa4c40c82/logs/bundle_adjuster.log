@@ -1,0 +1,18 @@
+COMMAND ["colmap", "bundle_adjuster", "--input_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_020/sfm/triangulated", "--output_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_020/sfm/final"]
+I20261009 16:19:38.076223 2024711 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+I20261009 16:19:39.879169 2024711 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261009 16:19:39.879248 2024711 bundle_adjustment.cc:942] 
+    Residuals : 150210
+   Parameters : 52939
+   Iterations : 10
+         Time : 1.67657 [s]
+ Initial cost : 0.816613 [px]
+   Final cost : 0.796507 [px]
+  Termination : Convergence
+
+I20261009 16:19:39.879256 2024711 timer.cc:91] Elapsed time: 0.030 [minutes]

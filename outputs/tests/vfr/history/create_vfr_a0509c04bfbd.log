@@ -1,0 +1,38 @@
+COMMAND ["ffmpeg", "-hide_banner", "-y", "-f", "lavfi", "-i", "testsrc2=duration=3:size=320x240:rate=4", "-vf", "settb=expr=1/1000,setpts=N*250+if(gte(N\\,4)\\,130\\,0)", "-fps_mode", "passthrough", "-enc_time_base", "1:1000", "-c:v", "libx264", "-video_track_timescale", "1000", "-threads", "2", "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/vfr/SYNTHETIC_TEST_ONLY.mp4"]
+Input #0, lavfi, from 'testsrc2=duration=3:size=320x240:rate=4':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 320x240 [SAR 1:1 DAR 4:3], 4 fps, 4 tbr, 4 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x5fc466bd0dc0] using SAR=1/1
+[libx264 @ 0x5fc466bd0dc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
+[libx264 @ 0x5fc466bd0dc0] profile High, level 1.2, 4:2:0, 8-bit
+[libx264 @ 0x5fc466bd0dc0] 264 - core 164 r3108 31e19f9 - H.264/MPEG-4 AVC codec - Copyleft 2003-2023 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=2 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=4 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to '/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/vfr/SYNTHETIC_TEST_ONLY.mp4':
+  Metadata:
+    encoder         : Lavf60.16.100
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 320x240 [SAR 1:1 DAR 4:3], q=2-31, 4 fps, 1k tbn
+    Metadata:
+      encoder         : Lavc60.31.102 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    [out#0/mp4 @ 0x5fc466bcf540] video:37kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 2.583770%
+frame=   12 fps=0.0 q=-1.0 Lsize=      38kB time=00:00:02.38 bitrate= 131.7kbits/s speed=41.6x    
+[libx264 @ 0x5fc466bd0dc0] frame I:1     Avg QP:19.52  size:  5349
+[libx264 @ 0x5fc466bd0dc0] frame P:9     Avg QP:23.01  size:  3053
+[libx264 @ 0x5fc466bd0dc0] frame B:2     Avg QP:25.62  size:  2343
+[libx264 @ 0x5fc466bd0dc0] consecutive B-frames: 66.7% 33.3%  0.0%  0.0%
+[libx264 @ 0x5fc466bd0dc0] mb I  I16..4: 30.7% 42.7% 26.7%
+[libx264 @ 0x5fc466bd0dc0] mb P  I16..4:  3.2%  6.9%  3.8%  P16..4: 13.7%  9.9%  6.2%  0.0%  0.0%    skip:56.2%
+[libx264 @ 0x5fc466bd0dc0] mb B  I16..4:  0.2%  0.7%  2.3%  B16..8: 26.3%  9.0%  4.6%  direct: 2.5%  skip:54.3%  L0:53.1% L1:38.0% BI: 9.0%
+[libx264 @ 0x5fc466bd0dc0] 8x8 transform intra:45.9% inter:18.8%
+[libx264 @ 0x5fc466bd0dc0] coded y,uvDC,uvAC intra: 16.3% 34.5% 32.1% inter: 9.4% 21.5% 19.2%
+[libx264 @ 0x5fc466bd0dc0] i16 v,h,dc,p: 76% 18%  6%  0%
+[libx264 @ 0x5fc466bd0dc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 12% 20% 67%  0%  0%  0%  0%  0%  0%
+[libx264 @ 0x5fc466bd0dc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 45% 20% 29%  1%  0%  1%  2%  1%  1%
+[libx264 @ 0x5fc466bd0dc0] i8c dc,h,v,p: 59% 12% 27%  2%
+[libx264 @ 0x5fc466bd0dc0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5fc466bd0dc0] ref P L0: 58.1%  7.3% 25.0%  9.6%
+[libx264 @ 0x5fc466bd0dc0] ref B L0: 73.1% 26.9%
+[libx264 @ 0x5fc466bd0dc0] kb/s:95.88

@@ -1,0 +1,92 @@
+{
+  "samples": {
+    "video_007": {
+      "frame_manifest.csv": true,
+      "quality/frame_quality.csv": true,
+      "quality/quality_summary.json": true,
+      "segments/coarse_segments.json": true,
+      "segments/refined_segments.json": true,
+      "sfm/sfm_summary.json": true,
+      "sfm/registration_audit.csv": true,
+      "geometry/cameras.csv": true,
+      "geometry/pairwise_geometry.csv": true,
+      "geometry/covisibility.npy": true,
+      "geometry/common_counts.npy": true,
+      "geometry/directional_coverage.npy": true,
+      "figures/camera_trajectory_3d.html": true,
+      "geometry/covisibility_heatmap.png": true,
+      "geometry/triangulation_angles.png": true,
+      "geometry/baseline_depth_ratio.png": true,
+      "report/diagnosis.md": true
+    },
+    "video_008": {
+      "frame_manifest.csv": true,
+      "quality/frame_quality.csv": true,
+      "quality/quality_summary.json": true,
+      "segments/coarse_segments.json": true,
+      "segments/refined_segments.json": true,
+      "sfm/sfm_summary.json": true,
+      "sfm/registration_audit.csv": true,
+      "geometry/cameras.csv": true,
+      "geometry/pairwise_geometry.csv": true,
+      "geometry/covisibility.npy": true,
+      "geometry/common_counts.npy": true,
+      "geometry/directional_coverage.npy": true,
+      "figures/camera_trajectory_3d.html": true,
+      "geometry/covisibility_heatmap.png": true,
+      "geometry/triangulation_angles.png": true,
+      "geometry/baseline_depth_ratio.png": true,
+      "report/diagnosis.md": true
+    },
+    "video_020": {
+      "frame_manifest.csv": true,
+      "quality/frame_quality.csv": true,
+      "quality/quality_summary.json": true,
+      "segments/coarse_segments.json": true,
+      "segments/refined_segments.json": true,
+      "sfm/sfm_summary.json": true,
+      "sfm/registration_audit.csv": true,
+      "geometry/cameras.csv": true,
+      "geometry/pairwise_geometry.csv": true,
+      "geometry/covisibility.npy": true,
+      "geometry/common_counts.npy": true,
+      "geometry/directional_coverage.npy": true,
+      "figures/camera_trajectory_3d.html": true,
+      "geometry/covisibility_heatmap.png": true,
+      "geometry/triangulation_angles.png": true,
+      "geometry/baseline_depth_ratio.png": true,
+      "report/diagnosis.md": true
+    }
+  },
+  "source_integrity": {
+    "video_007": true,
+    "video_008": true,
+    "video_020": true
+  },
+  "tested_at": "2026-10-09T16:27:59.046736+00:00",
+  "acceptance": "PARTIAL",
+  "complete_samples": 3,
+  "output_complete": true,
+  "effective_reconstructions": true,
+  "local_evidence_available_all_three": false,
+  "tests": {
+    "status": "PASSED",
+    "unit": {
+      "tests": 33,
+      "failures": 0,
+      "skipped": 0
+    },
+    "integration": {
+      "tests": 2,
+      "failures": 0,
+      "skipped": 0
+    },
+    "total_tests": 35,
+    "failed": 0,
+    "artifacts": [
+      "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/unit_results_verified.xml",
+      "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/integration_results_verified.xml"
+    ],
+    "summarized_at": "2026-10-09T16:13:30.033496+00:00"
+  }
+}

@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/cli.py", line 99, in main
+    run_sfm(directory, configuration, force)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/sfm/pipeline.py", line 110, in run_sfm
+    command("exhaustive_matcher", match_args)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/sfm/pipeline.py", line 92, in command
+    return run_command([executable, name] + flags, logs / (log_name or f"{name}.log"), allow_failure)
+  File "/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/common.py", line 101, in run_command
+    raise RuntimeError(f"Command returned {returncode}: see {log_path}")
+RuntimeError: Command returned -6: see /fj/混合拍摄距离下的三维重建优化问题/outputs/video_020/sfm/logs/exhaustive_matcher.log
+

@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "30c3f50887ac4ddea95fa687122919d8",
+    "created": 1791535172,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 25, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant on a small yellow wooden stool/table, complete plant and pot visible with room interior background including chairs and bed area.\"},\n  {\"frame_id\": 26, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant on the yellow stool/table, complete subject visible with slight camera repositioning; chairs and background objects in view.\"},\n  {\"frame_id\": 27, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant with complete foliage and pot shown on the yellow table, stable GLOBAL framing with office chairs visible in background.\"},\n  {\"frame_id\": 28, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the yellow stool, complete plant visible; camera angle shifted slightly with different background elements (chair, bag) coming into view.\"},\n  {\"frame_id\": 29, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the yellow table, entire subject and pot in frame; background shows office chair and cluttered room setting.\"},\n  {\"frame_id\": 30, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the yellow stool/table, complete view of plant and pot with surrounding room visible in background.\"},\n  {\"frame_id\": 31, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the yellow table, complete subject visible; camera perspective shifted with chairs and window area in background.\"},\n  {\"frame_id\": 32, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the yellow stool, complete plant and pot shown; background includes office chair and desk area.\"},\n  {\"frame_id\": 33, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the yellow table, entire subject in frame with surrounding room environment visible.\"},\n  {\"frame_id\": 34, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the yellow stool, complete view; camera has rotated showing different background elements including storage/shelving area.\"},\n  {\"frame_id\": 35, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the yellow table, complete plant and pot visible; background shows a bed with floral blanket and a black backpack.\"},\n  {\"frame_id\": 36, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Full potted plant on the yellow stool, entire subject in frame; background includes bed area with floral cover and backpack.\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "Let me carefully analyze each frame in the image.\n\nLooking at the video frames, I can see a potted plant sitting on a small wooden stool/table. Let me examine each frame:\n\nFrame 25 (t=12.0183s): Shows the whole potted plant on a small yellow wooden table/stool. Background shows chairs, a bed, and room interior. This is GLOBAL - the whole plant and pot are visible with full context.\n\nFrame 26 (t=12.5183s): Similar view - whole plant on the table, GLOBAL.\n\nFrame 27 (t=13.0183s): Same scene, GLOBAL.\n\nFrame 28 (t=13.5183s): The camera angle seems slightly different but still shows the whole plant. GLOBAL.\n\n\nFrame 29 (t=14.0183s): Continuing the same pattern, the full plant remains in view with the background context intact. GLOBAL.\n\nFrames 30 through 33 maintain this consistent framing - each shows the complete potted plant on the yellow table with the surrounding room visible behind it. The camera stays at roughly the same distance and angle throughout, capturing the entire subject without any significant zooming or perspective shifts.\n\nNow I'm noticing the camera movement more clearly. There's been a subtle backward motion between frames 25-27, but from frame 28 onward, the camera appears to have stabilized and stayed relatively still. The background details have shifted noticeably though - the chair placement and visible room features are changing as the camera repositions slightly. By frame 34, the perspective has rotated enough that we're seeing a different section of the background, with what looks like a desk or shelf coming into view.\n\nThrough frame 36, the camera continues this gradual rotation and slight backward movement, revealing more of the room - a bed with a floral blanket, a backpack, and other furniture pieces. The plant itself remains consistently framed throughout, always showing the full pot and all the leaves, never zooming in on details. This suggests the entire sequence is maintaining a GLOBAL perspective while the camera slowly orbits or pans around the subject.\n\nLet me verify the timestamps match what was provided in the input data.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1149,
+      "prompt_tokens": 1718,
+      "total_tokens": 2867,
+      "completion_tokens_details": {
+        "reasoning_tokens": 478,
+        "text_tokens": 671
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:39:32.376001+00:00",
+  "frame_ids": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "model": "agnes-2.5-flash"
+}

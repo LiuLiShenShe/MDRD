@@ -1,0 +1,50 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "c870c2524d6c428f87c5ceada8ca5350",
+    "created": 1791535396,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\n    \"frame_id\": 61,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.82,\n    \"description\": \"俯视角度，植物整体冠层可见，大部分叶片和植株结构完整呈现，整盆植物清晰可见\"\n  },\n  {\n    \"frame_id\": 62,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.80,\n    \"description\": \"俯视角度，植物顶部冠层可见，叶片细节明显，植株整体在画面中较为完整\"\n  },\n  {\n    \"frame_id\": 63,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.78,\n    \"description\": \"俯视角度，叶片近景为主，但仍可见部分冠层结构，整体植物参照仍可辨识\"\n  },\n  {\n    \"frame_id\": 64,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.82,\n    \"description\": \"俯视角度，植物冠层从上方拍摄，大部分叶片和植株整体轮廓可见，黄色台面部分露出\"\n  },\n  {\n    \"frame_id\": 65,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.85,\n    \"description\": \"俯视角度，植物位于黄色台面上，整体植株清晰可见，台面作为参照物帮助判断整盆尺度\"\n  },\n  {\n    \"frame_id\": 66,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.85,\n    \"description\": \"俯视角度，植物完整位于黄色台面上，整体冠层清晰可见，周围环境（花卉桌布）也有显示\"\n  },\n  {\n    \"frame_id\": 67,\n    \"label\": \"GLOBAL\",\n    \"confidence\": 0.88,\n    \"description\": \"俯视角度，整盆植物完整呈现于黄色台面上，植物冠层全貌清晰，台面占据画面主体，背景参照可见\"\n  }\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "用户要求我分析一张包含7帧植物视频的图片，每帧都有frame_id和timestamp信息。我需要为每帧返回一个JSON对象，包含frame_id、label、confidence和description字段。\n\n让我仔细分析每一帧：\n\n帧61 (t=30.02s): 这是一张俯视照片，展示了整个植物的冠层，可以看到大部分叶片。整株植物在画面中比较完整。这应该标记为GLOBAL，因为可以看到整盆植物的顶部视图。\n\n帧62 (t=30.52s): 同样是俯视角度，展示了植物的上部叶片。可以看到整个植株的顶部，虽然有些叶片特写，但整体参照仍然可见。这应该是GLOBAL。\n\n帧63 (t=31.02s): 这张图更近一些，主要展示叶片，但可以看到植物的一部分整体结构。看起来是稍微拉近了一点，但仍有整体参照。可能是GLOBAL或APPROACH。\n\n帧64 (t=31.52s): 这张图更近了，但仍然可以看到大部分植物。这是从俯视角度拍摄，可以看到植物的整体轮廓。应该是GLOBAL。\n\n帧65 (t=32.02s): 这张图的视角稍远，可以看到植物和它所在的黄色台面的一部分。有整体参照，应该是GLOBAL。\n\n\n帧66 (t=32.52s): 视角更远，显示了更多环境背景。植物仍在画面中心，但周围空间更开阔。这仍然是GLOBAL标签。\n\n帧67 (t=33.02s): 最后一帧展示了完整的俯视角度，植物和黄色台面都清晰可见。这是GLOBAL标签的典型代表。\n\n现在我需要按照用户的指南整理这些标签，确保描述准确且一致。\n\n对于帧61到67，我会标注每帧的置信度和具体描述。\n\n这些帧都展示了同一株植物的俯视角度，从局部到整体，逐渐展现出完整的植物形态。\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 871,
+      "prompt_tokens": 1599,
+      "total_tokens": 2470,
+      "completion_tokens_details": {
+        "reasoning_tokens": 407,
+        "text_tokens": 464
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:43:16.743118+00:00",
+  "frame_ids": [
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67
+  ],
+  "model": "agnes-2.5-flash"
+}

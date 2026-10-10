@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "ad849e560e014f3abf801486c22127ad",
+    "created": 1791535189,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[{\"frame_id\": 37, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"俯视角度的整盆植物，放置于黄色小木凳上，背景可见黑色背包和花卉桌布，整株植物及整体环境参照清晰可见\"}, {\"frame_id\": 38, \"label\": \"GLOBAL\", \"confidence\": 0.94, \"description\": \"俯视角度的整盆植物，位置略向右移动，黄色木凳和花卉桌布背景清晰，整株完整可见\"}, {\"frame_id\": 39, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角度的整盆植物，视角略有变化但整株及花盆仍完整包含于画面中，背景花卉桌布清晰\"}, {\"frame_id\": 40, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"俯视角度的整盆植物，画面略微拉近，地面背景可见白色拖鞋，整株植物完整可见\"}, {\"frame_id\": 41, \"label\": \"GLOBAL\", \"confidence\": 0.91, \"description\": \"俯视角度，整盆植物清晰可见，画面继续接近，白色拖鞋背景更明显，整株在画面中占比略有增大\"}, {\"frame_id\": 42, \"label\": \"GLOBAL\", \"confidence\": 0.9, \"description\": \"俯视角度拍摄，整株植物仍在完整画面内，与上一帧无明显场景切换，为逐步接近的连续帧\"}, {\"frame_id\": 43, \"label\": \"APPROACH\", \"confidence\": 0.85, \"description\": \"俯视角度，整盆植物仍可见但画面明显更近，植物在画面中占比显著增大，为连续接近的渐进帧\"}, {\"frame_id\": 44, \"label\": \"APPROACH\", \"confidence\": 0.84, \"description\": \"俯视角度，比前一帧继续接近植物，整株仍完整可见，叶片细节更清晰，无场景切换\"}, {\"frame_id\": 45, \"label\": \"APPROACH\", \"confidence\": 0.83, \"description\": \"俯视角度，镜头持续靠近，植物在画面中占据更大比例，整株仍完整可见，属于连续接近序列\"}, {\"frame_id\": 46, \"label\": \"APPROACH\", \"confidence\": 0.82, \"description\": \"俯视角度，接近程度进一步提升，整株植物可见但画面已较近，无切换迹象，为渐进帧\"}, {\"frame_id\": 47, \"label\": \"APPROACH\", \"confidence\": 0.81, \"description\": \"俯视角度，画面明显更近，植物在画面中占比大，整株仍完整，与前一帧属于连续接近序列\"}, {\"frame_id\": 48, \"label\": \"APPROACH\", \"confidence\": 0.8, \"description\": \"俯视角度，为当前帧序列中最接近的一帧，整株植物仍完整可见，叶片细节清晰，无场景切换\"}]\n```",
+          "role": "assistant",
+          "reasoning_content": "The user wants me to analyze a video frame sequence and return a JSON array with specific fields. Let me look at the frames:\n\n1. Frame 37 (t=18.018s): Shows a plant pot on a small wooden stool/table, with a background showing a black bag and floral tablecloth. The full plant and pot are visible. This is GLOBAL.\n\n2. Frame 38 (t=18.518s): Similar view, plant on stool, background with floral tablecloth. Full plant visible. GLOBAL.\n\n3. Frame 39 (t=19.018s): Similar view, plant on stool. The camera seems to be slightly closer or zoomed in a bit. Still shows the whole plant. GLOBAL.\n\n\n4. Frame 40 (t=19.518s): Now I'm seeing shoes in the background near the stool, and the plant appears slightly closer than before. GLOBAL still since the entire plant is visible.\n\n5. Frame 41 (t=20.018s): The camera angle has shifted, showing more of the background with shoes visible on the left side. The plant remains fully in frame. GLOBAL.\n\n6. Frame 42 (t=20.518s): Continuing with the same framing - the plant is still fully visible with the background consistent. GLOBAL.\n\n7. Frame 43 (t=21.018s): The camera appears to be getting closer to the plant now. The framing is tighter around the pot. GLOBAL.\n\n8. Frame 44 (t=21.518s): Moving closer still - I can see the top of the plant more clearly now. Still GLOBAL.\n\n9. Frame 45 (t=22.018s): Getting even nearer to the plant. The framing is tighter but the entire plant is still visible. GLOBAL.\n\n10. Frame 46 (t=22.518s): The camera continues to approach the plant, maintaining a full view of it. GLOBAL.\n\n11. Frame 47 (t=23.018s): The plant remains fully in frame as the camera gets closer. GLOBAL.\n\n12. Frame 48 (t=23.518s): Still showing the complete plant with the background elements visible. GLOBAL.\n\nNow looking back at the earlier frames more carefully - frame 37 through 39 are clearly GLOBAL shots showing the entire plant on the stool with the background intact. From frame 40 onward, the camera is progressively moving closer to the plant, but it's still capturing the full subject throughout this sequence.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1245,
+      "prompt_tokens": 1718,
+      "total_tokens": 2963,
+      "completion_tokens_details": {
+        "reasoning_tokens": 577,
+        "text_tokens": 668
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:39:49.413226+00:00",
+  "frame_ids": [
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ],
+  "model": "agnes-2.5-flash"
+}

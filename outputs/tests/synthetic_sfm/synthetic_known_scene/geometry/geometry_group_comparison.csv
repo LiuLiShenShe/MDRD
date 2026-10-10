@@ -1,0 +1,7 @@
+group,all_pairs,registered_pairs,valid_pairs,temporal_block_pairs,median_baseline_depth_ratio,block_median_median_baseline_depth_ratio,angle_median,block_median_angle_median,common_3d_points,block_median_common_3d_points,jaccard,block_median_jaccard,coverage_i_j,block_median_coverage_i_j,coverage_j_i,block_median_coverage_j_i,reprojection_error,block_median_reprojection_error
+GLOBAL_GLOBAL,28,15,15,3,0.4846325001919064,0.3643663322455641,19.75357386771471,13.623441990106652,2241.0,2246.0,0.6521489971346704,0.7113202748365457,0.7924331829225963,0.8125,0.7778549114890663,0.7867115872670492,0.20540604311649263,0.1996418946994486
+LOCAL_LOCAL,0,0,0,0,,,,,,,,,,,,,,
+GLOBAL_LOCAL,0,0,0,0,,,,,,,,,,,,,,
+GLOBAL_APPROACH,0,0,0,0,,,,,,,,,,,,,,
+APPROACH_LOCAL,0,0,0,0,,,,,,,,,,,,,,
+OTHER,0,0,0,0,,,,,,,,,,,,,,

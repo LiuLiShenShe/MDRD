@@ -1,0 +1,39 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "02c2cff64ab448a2ae6cb04c33e2f857",
+    "created": 1791549279,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 6, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"whole_plant_or_pot_visible\": true, \"evidence\": \"完整可见整株植物与棕色花盆，背景有黄色自行车、桌子等参照物，画面包含全局构图。\", \"uncertainty\": \"无\"},\n  {\"frame_id\": 7, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"whole_plant_or_pot_visible\": true, \"evidence\": \"与frame=6视角一致，整株植物和花盆均完整可见，背景参照明确。\", \"uncertainty\": \"无\"},\n  {\"frame_id\": 8, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"whole_plant_or_pot_visible\": true, \"evidence\": \"整株植物及花盆完整可见，黄色自行车部分进入画面，整体参照清晰。\", \"uncertainty\": \"轻微构图偏移\"},\n  {\"frame_id\": 9, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"whole_plant_or_pot_visible\": true, \"evidence\": \"与前序帧构图一致，整株植物和花盆均在画面中，背景参照完整。\", \"uncertainty\": \"无\"},\n  {\"frame_id\": 10, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"whole_plant_or_pot_visible\": true, \"evidence\": \"整株植物和棕色花盆完整可见，背景黄色自行车仍作为参照。\", \"uncertainty\": \"无\"},\n  {\"frame_id\": 84, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"whole_plant_or_pot_visible\": true, \"evidence\": \"俯视角度可见整株植物冠层完整形态，黑色花盆上缘可见，黄色方形底座完整呈现。\", \"uncertainty\": \"俯视角略影响侧面参照，但整株+容器均可见\"},\n  {\"frame_id\": 85, \"label\": \"GLOBAL\", \"confidence\": 0.88, \"whole_plant_or_pot_visible\": true, \"evidence\": \"与frame=84视角相近，整株植物和花盆上沿及黄色底座均可辨识。\", \"uncertainty\": \"植物位置略有移动，整体参照仍完整\"},\n  {\"frame_id\": 86, \"label\": \"GLOBAL\", \"confidence\": 0.75, \"whole_plant_or_pot_visible\": true, \"evidence\": \"视角更近但仍可辨识整株植物冠层轮廓及部分花盆边缘，黄色底座可见。\", \"uncertainty\": \"接近边界，画面放大但整株形态仍可辨识\"},\n  {\"frame_id\": 87, \"label\": \"LOCAL\", \"confidence\": 0.85, \"whole_plant_or_pot_visible\": false, \"evidence\": \"极度特写，主要可见右侧叶片群，花盆几乎不可见，黄色底座仅露一角，缺失整株/整盆整体参照。\", \"uncertainty\": \"仍有少量叶片在画外边缘，但主体为局部冠层\"},\n  {\"frame_id\": 88, \"label\": \"LOCAL\", \"confidence\": 0.87, \"whole_plant_or_pot_visible\": false, \"evidence\": \"与frame=87类似，特写叶片，花盆不可见，黄色底座仅部分可见，整株参照缺失。\", \"uncertainty\": \"局部叶片为主，无明显整体参照\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "用户要求我根据图片独立诊断视频的两组相邻帧：6-10及84-88。\n\n让我仔细分析每一帧：\n\n**帧6-10：**\n- frame=6: 可以看到整株植物和棕色花盆，背景有黄色自行车。植物在黄色桌子上。这是整体参照，应该是GLOBAL。\n- frame=7: 同样可以看到整株植物和花盆，背景有自行车。整体参照，GLOBAL。\n- frame=8: 同样的视角，整株植物和花盆可见，背景有自行车。GLOBAL。\n- frame=9: 同样是整株植物和花盆，背景有自行车。GLOBAL。\n- frame=10: 同样是整株植物和花盆，背景有自行车。GLOBAL。\n\n这些帧都是同一场景，视角基本一致，没有明显距离变化。\n\n**帧84-88：**\n- frame=84: 从上方俯拍，可以看到整株植物和一部分花盆，以及黄色方形底座。虽然主要是俯视，但能看见整株植物和容器。这是GLOBAL。\n- frame=85: 类似视角，能看到整株植物和一部分花盆，以及黄色底座。GLOBAL。\n- frame=86: 视角略有变化，但仍然能看到整株植物和花盆的一部分，以及黄色底座。虽然更近了，但仍然可以看到整株植物的轮廓和花盆的一部分。需要仔细判断...\n\n\n- frame=87: 非常接近的视角，几乎只能看到叶片。这是LOCAL。\n- frame=88: 同样非常接近，主要看到叶片。这是LOCAL。\n\n等等，让我重新考虑一下。\n\n根据用户的定义：\n- GLOBAL: 能看到整盆/整株的整体参照\n- LOCAL: 只见局部叶片/冠层且缺失整株/盆整体参照\n\n让我再仔细看84-88：\n\nframe=84: 俯视角度，可以看到完整的植物冠层（整株）和花盆的上边缘，以及黄色的方形底座。有整株参照。→ GLOBAL\n\nframe=85: 同样是俯视，可以看到完整的植物冠层和花盆上边缘，以及黄色底座。→ GLOBAL\n\nframe=86: 视角更接近，但仍然可以看到大部分叶片和部分花盆边缘。有整株参照吗？看起来还是能看到整株植物的冠层。→ GLOBAL（或者可能是boundary case）\n\n实际上，让我再仔细看...\n\nframe=86: 可以看到植物的冠层（整株），花盆的边缘也在画面中，还有黄色底板。这是GLOBAL。\n\nframe=87: 非常近，主要看到的是叶片，花盆几乎不可见，黄色底板只露出一小部分。这是LOCAL。\n\nframe=88: 同样非常近，主要看到的是叶片，花盆不可见，黄色底板只露出一小部分。这是LOCAL。\n\n现在我需要为每个帧创建JSON输出，包括frame_id、label、confidence、whole_plant_or_pot_visible、evidence和uncertainty字段。\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1372,
+      "prompt_tokens": 1429,
+      "total_tokens": 2801,
+      "completion_tokens_details": {
+        "reasoning_tokens": 617,
+        "text_tokens": 755
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 999
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  }
+}

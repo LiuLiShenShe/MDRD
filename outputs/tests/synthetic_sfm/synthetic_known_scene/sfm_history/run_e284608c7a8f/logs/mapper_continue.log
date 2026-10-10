@@ -1,0 +1,69 @@
+COMMAND ["colmap", "mapper", "--database_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/database.db", "--image_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm_images", "--Mapper.num_threads", "4", "--input_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/registered", "--output_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/continued", "--Mapper.fix_existing_images", "1"]
+I20261009 18:19:23.754243 2758088 misc.cc:198] 
+==============================================================================
+Loading database
+==============================================================================
+I20261009 18:19:23.756299 2758088 database_cache.cc:54] Loading cameras...
+I20261009 18:19:23.756363 2758088 database_cache.cc:64]  1 in 0.000s
+I20261009 18:19:23.756384 2758088 database_cache.cc:72] Loading matches...
+I20261009 18:19:23.758349 2758088 database_cache.cc:78]  28 in 0.002s
+I20261009 18:19:23.758386 2758088 database_cache.cc:94] Loading images...
+I20261009 18:19:23.761456 2758088 database_cache.cc:143]  8 in 0.003s (connected 8)
+I20261009 18:19:23.761497 2758088 database_cache.cc:154] Building correspondence graph...
+I20261009 18:19:23.775513 2758088 database_cache.cc:190]  in 0.014s (ignored 0)
+I20261009 18:19:23.775547 2758088 timer.cc:91] Elapsed time: 0.000 [minutes]
+I20261009 18:19:23.781992 2758088 misc.cc:198] 
+==============================================================================
+Registering image #2 (7)
+==============================================================================
+I20261009 18:19:23.782011 2758088 incremental_mapper.cc:495] => Image sees 2342 / 3349 points
+I20261009 18:19:23.782567 2758088 incremental_mapper.cc:535] => Could not register, trying another image.
+I20261009 18:19:23.782573 2758088 misc.cc:198] 
+==============================================================================
+Registering image #1 (7)
+==============================================================================
+I20261009 18:19:23.782578 2758088 incremental_mapper.cc:495] => Image sees 1887 / 2796 points
+I20261009 18:19:23.783025 2758088 incremental_mapper.cc:535] => Could not register, trying another image.
+I20261009 18:19:23.783033 2758088 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261009 18:19:23.785123 2758088 incremental_mapper.cc:175] => Completed observations: 0
+I20261009 18:19:23.787035 2758088 incremental_mapper.cc:178] => Merged observations: 0
+I20261009 18:19:23.787047 2758088 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261009 18:19:23.787055 2758088 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  4.591035e+02    0.00e+00    1.20e-02   0.00e+00   0.00e+00  1.00e+04        0    1.04e-02    2.28e-02
+I20261009 18:19:23.823002 2758088 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261009 18:19:23.823047 2758088 bundle_adjustment.cc:942] 
+    Residuals : 33602
+   Parameters : 11522
+   Iterations : 1
+         Time : 0.0234618 [s]
+ Initial cost : 0.116889 [px]
+   Final cost : 0.116889 [px]
+  Termination : Convergence
+
+I20261009 18:19:23.829128 2758088 incremental_mapper.cc:175] => Completed observations: 0
+I20261009 18:19:23.830736 2758088 incremental_mapper.cc:178] => Merged observations: 0
+I20261009 18:19:23.832090 2758088 incremental_mapper.cc:160] => Filtered observations: 0
+I20261009 18:19:23.832103 2758088 incremental_mapper.cc:119] => Changed observations: 0.000000
+I20261009 18:19:23.832109 2758088 incremental_mapper.cc:167] => Filtered images: 0
+I20261009 18:19:23.832126 2758088 misc.cc:198] 
+==============================================================================
+Registering image #2 (7)
+==============================================================================
+I20261009 18:19:23.832130 2758088 incremental_mapper.cc:495] => Image sees 2342 / 3349 points
+I20261009 18:19:23.832579 2758088 incremental_mapper.cc:535] => Could not register, trying another image.
+I20261009 18:19:23.832585 2758088 misc.cc:198] 
+==============================================================================
+Registering image #1 (7)
+==============================================================================
+I20261009 18:19:23.832589 2758088 incremental_mapper.cc:495] => Image sees 1887 / 2796 points
+I20261009 18:19:23.832952 2758088 incremental_mapper.cc:535] => Could not register, trying another image.
+I20261009 18:19:23.833027 2758088 timer.cc:91] Elapsed time: 0.001 [minutes]

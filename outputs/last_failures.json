@@ -1,0 +1,5 @@
+{
+  "current_run_failures": [],
+  "archived_history": "outputs/logs/initial_last_failures.json",
+  "note": "No failures in the final corrected run. Historical first-pass failures remain archived and described in docs/REPAIR_LOG.md."
+}

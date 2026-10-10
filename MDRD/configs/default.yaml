@@ -1,0 +1,37 @@
+project_root: ../..
+video_root: null
+output_root: outputs
+sampling:
+  fps: 2.0
+  interval: null
+  target_count: null
+  max_images: 180
+  format: png
+  max_dimension: null
+quality:
+  max_dimension: 960
+  features: 1600
+  relative_window: 9
+segmentation:
+  min_run: 4
+  scale_change_threshold: 0.045
+sfm:
+  executable: colmap
+  camera_model: SIMPLE_RADIAL
+  max_image_size: 2400
+  max_num_features: 6000
+  threads: 8
+  use_gpu: false
+  exhaustive_limit: 130
+  sequential_overlap: 10
+  joint_fallback: true
+  extra_options: {}
+geometry:
+  max_reprojection_error: 4.0
+  min_track_length: 3
+  min_common_points: 20
+  temporal_block_sec: 3.0
+  min_independent_blocks: 4
+  high_covisibility: 0.25
+  low_angle_deg: 3.0
+  adequate_angle_deg: 5.0

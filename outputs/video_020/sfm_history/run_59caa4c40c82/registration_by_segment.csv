@@ -1,0 +1,6 @@
+segment,total,registered,registration_rate
+APPROACH,1,1,1.0
+GLOBAL,45,45,1.0
+LOCAL_01,4,4,1.0
+TRANSITION,4,4,1.0
+UNKNOWN,13,13,1.0

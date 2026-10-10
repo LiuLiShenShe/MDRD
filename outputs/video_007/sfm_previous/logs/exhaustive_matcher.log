@@ -1,0 +1,57 @@
+COMMAND ["colmap", "exhaustive_matcher", "--database_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_007/sfm/database.db", "--SiftMatching.use_gpu", "0", "--SiftMatching.num_threads", "8"]
+I20261009 16:08:07.845350 1959020 misc.cc:198] 
+==============================================================================
+Exhaustive feature matching
+==============================================================================
+E20261009 16:08:07.845871 1959022 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:08:07.845944 1959022 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:08:07.846057 1959023 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:08:07.846295 1959023 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:08:07.846289 1959024 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:08:07.846295 1959023 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846343 1959024 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:08:07.846493 1959025 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:08:07.846295 1959023 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846343 1959024 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846560 1959025 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:08:07.846660 1959026 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:08:07.846295 1959023 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846343 1959024 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846560 1959025 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846719 1959026 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:08:07.846905 1959027 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:08:07.846295 1959023 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846343 1959024 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846560 1959025 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846719 1959026 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846968 1959027 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:08:07.847314 1959028 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:08:07.846295 1959023 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846343 1959024 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846560 1959025 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846719 1959026 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846968 1959027 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.847375 1959028 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:08:07.847635 1959029 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:08:07.846295 1959023 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846343 1959024 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846560 1959025 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846719 1959026 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.846968 1959027 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.847375 1959028 sift.cc:1007] Check failed: options_.Check() F20261009 16:08:07.847687 1959029 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+    @     0x77b86aef6031  google::LogMessage::Fail()
+    @     0x77b86aef6031  google::LogMessage::Fail()
+    @     0x77b86aef6031  google::LogMessage::Fail()
+    @     0x77b86aefd463  google::LogMessage::SendToLog()
+    @     0x77b86aef6031  google::LogMessage::Fail()
+    @     0x77b86aef6031  google::LogMessage::Fail()
+    @     0x77b86aef6031  google::LogMessage::Fail()
+    @     0x77b86aef6031  google::LogMessage::Fail()
+    @     0x77b86aef6031  google::LogMessage::Fail()
+    @     0x77b86aef5b78  google::LogMessage::Flush()
+    @     0x77b86aefd463  google::LogMessage::SendToLog()
+    @     0x77b86aefd463  google::LogMessage::SendToLog()
+    @     0x77b86aefd463  google::LogMessage::SendToLog()
+    @     0x77b86af0266d  google::LogMessageFatal::~LogMessageFatal()
+    @     0x576724e3efae  (unknown)
+    @     0x77b86aefd463  google::LogMessage::SendToLog()
+    @     0x576724ea4b45  (unknown)
+    @     0x77b86aefd463  google::LogMessage::SendToLog()
+    @     0x77b86aefd463  google::LogMessage::SendToLog()
+    @     0x77b86aefd463  google::LogMessage::SendToLog()
+    @     0x77b868eecdb4  (unknown)
+    @     0x77b86aef5b78  google::LogMessage::Flush()
+    @     0x77b868a9cb84  (unknown)
+    @     0x77b86aef5b78  google::LogMessage::Flush()
+    @     0x77b86aef5b78  google::LogMessage::Flush()
+    @     0x77b86aef5b78  google::LogMessage::Flush()
+    @     0x77b86aef5b78  google::LogMessage::Flush()
+    @     0x77b868b29ecc  (unknown)

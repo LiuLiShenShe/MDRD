@@ -1,0 +1,26 @@
+COMMAND ["colmap", "image_registrator", "--database_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/database.db", "--input_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/global/0", "--output_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/synthetic_sfm/synthetic_known_scene/sfm/registered", "--Mapper.num_threads", "4"]
+I20261010 00:34:21.907806 747317 misc.cc:198] 
+==============================================================================
+Loading database
+==============================================================================
+I20261010 00:34:21.909054 747317 database_cache.cc:54] Loading cameras...
+I20261010 00:34:21.909106 747317 database_cache.cc:64]  1 in 0.000s
+I20261010 00:34:21.909118 747317 database_cache.cc:72] Loading matches...
+I20261010 00:34:21.910465 747317 database_cache.cc:78]  28 in 0.001s
+I20261010 00:34:21.910492 747317 database_cache.cc:94] Loading images...
+I20261010 00:34:21.912266 747317 database_cache.cc:143]  8 in 0.002s (connected 8)
+I20261010 00:34:21.912287 747317 database_cache.cc:154] Building correspondence graph...
+I20261010 00:34:21.919260 747317 database_cache.cc:190]  in 0.007s (ignored 0)
+I20261010 00:34:21.919385 747317 timer.cc:91] Elapsed time: 0.000 [minutes]
+I20261010 00:34:21.928067 747317 misc.cc:198] 
+==============================================================================
+Registering image #1 (7)
+==============================================================================
+I20261010 00:34:21.928085 747317 image.cc:290] 
+=> Image sees 1890 / 2787 points
+I20261010 00:34:21.928449 747317 misc.cc:198] 
+==============================================================================
+Registering image #2 (7)
+==============================================================================
+I20261010 00:34:21.928454 747317 image.cc:290] 
+=> Image sees 2342 / 3342 points

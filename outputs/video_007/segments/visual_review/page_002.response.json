@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "98b688e9a1014b80ab8ce086de782b2f",
+    "created": 1791534556,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 25, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 26, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 27, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 28, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 29, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 30, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 31, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 32, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 33, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 34, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 35, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"},\n  {\"frame_id\": 36, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"完整盆栽植物置于木桌上，背景可见白色帐篷结构，整体环境清晰，植物全株可见。\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "用户要求我客观读取视频逐帧接触表，返回JSON数组。\n\n让我逐一分析每个帧：\n\nframe 25 (12.0183s): 整盆植物在木桌上，背景可见白色帐篷结构，整体环境清晰。→ GLOBAL, confidence 0.95\nframe 26 (12.5183s): 同上，轻微变化，整体视角。→ GLOBAL, confidence 0.95\nframe 27 (13.0183s): 同上，整体视角。→ GLOBAL, confidence 0.95\nframe 28 (13.5183s): 同上，整体视角。→ GLOBAL, confidence 0.95\nframe 29 (14.0183s): 同上，整体视角。→ GLOBAL, confidence 0.95\nframe 30 (14.5183s): 同上，整体视角。→ GLOBAL, confidence 0.95\nframe 31 (15.0183s): 同上，整体视角。→ GLOBAL, confidence 0.95\nframe 32 (15.5183s): 同上，整体视角。→ GLOBAL, confidence 0.95\nframe 33 (16.0183s): 同上，整体视角。→ GLOBAL, confidence 0.95\nframe 34 (16.5183s): 同上，整体视角。→ GLOBAL, confidence 0.95\nframe 35 (17.0183s): 同上，整体视角。→ GLOBAL, confidence 0.95\n\n\nframe 36 (17.5183s): 最后帧，整体视角保持。→ GLOBAL, confidence 0.95\n\n所有这些帧都是GLOBAL视角，因为每张图片都显示完整的盆栽植物、桌子和背景帐篷结构，没有明显的推拉或平移运动。\n\n这些画面展示了连续拍摄的一盆白鹤芋（Spathiphyllum）在木桌上的稳定场景，周围有白色网纱搭建的帐篷。整个序列保持了固定机位，植物始终完整呈现。\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1108,
+      "prompt_tokens": 1718,
+      "total_tokens": 2826,
+      "completion_tokens_details": {
+        "reasoning_tokens": 474,
+        "text_tokens": 634
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:29:16.818597+00:00",
+  "frame_ids": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "model": "agnes-2.5-flash"
+}

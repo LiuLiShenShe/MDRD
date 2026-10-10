@@ -1,0 +1,17 @@
+{
+  "stage": "extract",
+  "started_at": "2026-10-09T16:34:04.924491+00:00",
+  "signature": "c7e3dd1c9a861e363a188c09bc8190940c1ce5be81e7f0c675ee5b085560ecb4",
+  "configuration": {
+    "fps": 2,
+    "interval": null,
+    "target_count": 5,
+    "max_images": 20,
+    "format": "png",
+    "max_dimension": null,
+    "supplemental_times": null
+  },
+  "status": "completed",
+  "finished_at": "2026-10-09T16:34:05.100300+00:00",
+  "elapsed_sec": 0.17583408812060952
+}

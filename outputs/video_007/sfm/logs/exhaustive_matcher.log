@@ -1,0 +1,24 @@
+COMMAND ["colmap", "exhaustive_matcher", "--database_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_007/sfm/database.db", "--SiftMatching.use_gpu", "0", "--SiftMatching.num_threads", "8"]
+I20261009 18:00:13.805230 2631464 misc.cc:198] 
+==============================================================================
+Exhaustive feature matching
+==============================================================================
+I20261009 18:00:13.809458 2631464 feature_matching.cc:231] Matching block [1/3, 1/3]
+I20261009 18:00:56.902359 2631464 feature_matching.cc:46]  in 43.093s
+I20261009 18:00:56.906013 2631464 feature_matching.cc:231] Matching block [1/3, 2/3]
+I20261009 18:01:47.855927 2631464 feature_matching.cc:46]  in 50.950s
+I20261009 18:01:47.857600 2631464 feature_matching.cc:231] Matching block [1/3, 3/3]
+I20261009 18:01:55.507529 2631464 feature_matching.cc:46]  in 7.650s
+I20261009 18:01:55.508050 2631464 feature_matching.cc:231] Matching block [2/3, 1/3]
+I20261009 18:02:46.788722 2631464 feature_matching.cc:46]  in 51.281s
+I20261009 18:02:46.790674 2631464 feature_matching.cc:231] Matching block [2/3, 2/3]
+I20261009 18:03:47.207482 2631464 feature_matching.cc:46]  in 60.417s
+I20261009 18:03:47.220377 2631464 feature_matching.cc:231] Matching block [2/3, 3/3]
+I20261009 18:03:55.728964 2631464 feature_matching.cc:46]  in 8.509s
+I20261009 18:03:55.729497 2631464 feature_matching.cc:231] Matching block [3/3, 1/3]
+I20261009 18:04:32.163355 2631464 feature_matching.cc:46]  in 36.434s
+I20261009 18:04:32.164644 2631464 feature_matching.cc:231] Matching block [3/3, 2/3]
+I20261009 18:05:13.434949 2631464 feature_matching.cc:46]  in 41.270s
+I20261009 18:05:13.435801 2631464 feature_matching.cc:231] Matching block [3/3, 3/3]
+I20261009 18:05:24.207878 2631464 feature_matching.cc:46]  in 10.772s
+I20261009 18:05:24.209638 2631464 timer.cc:91] Elapsed time: 5.173 [minutes]

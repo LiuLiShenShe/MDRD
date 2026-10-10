@@ -1,0 +1,2 @@
+segment,quality_label,frames,registered,registration_rate,sift_features_median,verified_matches_median,relative_laplacian_median
+GLOBAL,CLEAR,8,6,0.75,4377.0,2795.5,0.988710197520249

@@ -1,0 +1,9 @@
+image_id,name,camera_id,sift_features
+1,frame_000001.png,1,3768
+2,frame_000002.png,1,4384
+3,frame_000003.png,1,4427
+4,frame_000004.png,1,4594
+5,frame_000005.png,1,4590
+6,frame_000008.png,1,3752
+7,frame_000007.png,1,4326
+8,frame_000006.png,1,4370

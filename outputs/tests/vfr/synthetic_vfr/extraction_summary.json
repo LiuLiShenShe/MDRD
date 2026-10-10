@@ -1,0 +1,27 @@
+{
+  "decoded_frame_count": 12,
+  "extracted_frames": 5,
+  "source": {
+    "video_id": "synthetic_vfr",
+    "source_path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/vfr/SYNTHETIC_TEST_ONLY.mp4",
+    "duration_sec": 3.13,
+    "file_sha256": "10dc70b9e050ea889a90b0e2c00da673b6534ae0e11beee30059793606e88033",
+    "time_base": "1/1000"
+  },
+  "sampling": {
+    "fps": 2,
+    "interval": null,
+    "target_count": 5,
+    "max_images": 20,
+    "format": "png",
+    "max_dimension": null
+  },
+  "actual_pts_delta": [
+    0.75,
+    0.6299999999999999,
+    0.75,
+    0.75
+  ],
+  "image_orientation": "FFmpeg autorotate; dimensions after filtering",
+  "color_note": "8-bit OpenCV analysis; no HDR radiometric calibration or tone-map claim"
+}

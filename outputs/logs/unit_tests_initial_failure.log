@@ -1,0 +1,78 @@
+/home/test/biosoft/enter/lib/python3.13/site-packages/pytest_asyncio/plugin.py:207: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+.............................F                                           [100%]
+=================================== FAILURES ===================================
+_______________ test_empty_evidence_does_not_support_hypotheses ________________
+
+    def test_empty_evidence_does_not_support_hypotheses():
+        groups = pd.DataFrame([{"group": label, "valid_pairs": 0} for label in ["GLOBAL_GLOBAL", "LOCAL_LOCAL", "GLOBAL_LOCAL"]])
+        blocks = pd.DataFrame(columns=["group", "jaccard", "angle_median"])
+        tracks = pd.DataFrame(columns=["local_without_global", "global_local_shared"])
+        matching = pd.DataFrame()
+        audit = pd.DataFrame(columns=["segment", "registered"])
+        parameters = {"high_covisibility": .25, "low_angle_deg": 3, "adequate_angle_deg": 5, "min_independent_blocks": 4}
+>       result = diagnose("test", None, groups, blocks, tracks, matching, audit, parameters)
+
+MDRD/tests/unit/test_reporting.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+MDRD/src/mdrd/reporting/hypotheses.py:35: in diagnose
+    registration[label] = {"frames": len(subset), "registered": int(subset.registered.sum()), "registration_rate": float(subset.registered.mean()) if len(subset) else None}
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Empty DataFrame
+Columns: []
+Index: [], name = 'registered'
+
+    @final
+    def __getattr__(self, name: str):
+        """
+        After regular attribute access, try looking up the name
+        This allows simpler access to columns for interactive use.
+        """
+        # Note: obj.x will always call obj.__getattribute__('x') prior to
+        # calling obj.__getattr__('x').
+        if (
+            name not in self._internal_names_set
+            and name not in self._metadata
+            and name not in self._accessors
+            and self._info_axis._can_hold_identifiers_and_holds_name(name)
+        ):
+            return self[name]
+>       return object.__getattribute__(self, name)
+E       AttributeError: 'DataFrame' object has no attribute 'registered'
+
+/home/test/biosoft/enter/lib/python3.13/site-packages/pandas/core/generic.py:6194: AttributeError
+=============================== warnings summary ===============================
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_mathtext.py:45
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+--- generated xml file: /fj/混合拍摄距离下的三维重建优化问题/outputs/tests/unit_results.xml ----
+=========================== short test summary info ============================
+FAILED MDRD/tests/unit/test_reporting.py::test_empty_evidence_does_not_support_hypotheses
+1 failed, 29 passed, 14 warnings in 1.20s

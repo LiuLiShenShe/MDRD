@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "c4ab58fe2824492eafe86bec85f3c2a0",
+    "created": 1791534594,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 85, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant visible from an angled overhead view, sitting on a yellow table with surrounding floor and background elements in frame\"},\n  {\"frame_id\": 86, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant on yellow table, similar angled overhead composition with background details visible\"},\n  {\"frame_id\": 87, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant on yellow table, angled overhead view with background and floor visible\"},\n  {\"frame_id\": 88, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Top-down view of full potted plant on yellow table, complete plant and pot visible with background elements\"},\n  {\"frame_id\": 89, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Top-down view of full potted plant on yellow table, complete plant and surrounding area clearly visible\"},\n  {\"frame_id\": 90, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Top-down view of full potted plant on yellow table, complete plant and pot with blue marker visible\"},\n  {\"frame_id\": 91, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Top-down view of full potted plant on yellow table, complete plant structure and surrounding context visible\"},\n  {\"frame_id\": 92, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Top-down view of full potted plant on yellow table, plant fills most of frame but complete form and table remain visible\"},\n  {\"frame_id\": 93, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Top-down view of full potted plant on yellow table, complete plant and table edge visible in frame\"},\n  {\"frame_id\": 94, \"label\": \"GLOBAL\", \"confidence\": 0.85, \"description\": \"Closer overhead view of potted plant on yellow table, most of the plant still visible though framing is tighter than earlier frames\"},\n  {\"frame_id\": 95, \"label\": \"LOCAL\", \"confidence\": 0.88, \"description\": \"Close-up on plant leaves, dominant leaf fills most of the frame; yellow table edge partially visible at bottom but pot and full plant context largely absent\"},\n  {\"frame_id\": 96, \"label\": \"LOCAL\", \"confidence\": 0.9, \"description\": \"Very close-up view of plant leaves, individual leaf surfaces and veins prominent; yellow table edge barely visible at bottom with minimal overall plant context\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "The user wants me to analyze a sequence of video frames from \"video_007\" and classify them according to specific rules.\n\nLet me look at each frame:\n\nFrame 85 (t=42.020s): Shows a full plant in a pot on a yellow table, viewed from above/slightly angled. The entire plant and pot are visible. This is GLOBAL.\n\nFrame 86 (t=42.520s): Similar to frame 85 - full plant visible on the yellow table. GLOBAL.\n\nFrame 87 (t=43.020s): Full plant visible, slightly different angle but still showing the whole plant on the table. GLOBAL.\n\nFrame 88 (t=43.520s): Full plant on the yellow table, top-down view. GLOBAL.\n\nFrame 89 (t=44.020s): Full plant on the yellow table. GLOBAL.\n\nFrame 90 (t=44.522s): Full plant on the yellow table. GLOBAL.\n\nFrame 91 (t=45.022s): Full plant on the yellow table. GLOBAL.\n\nFrame 92 (t=45.522s): Full plant on the yellow table. GLOBAL.\n\nFrame 93 (t=46.022s): Full plant on the yellow table. GLOBAL.\n\nFrame 94 (t=46.522s): The camera is getting closer - showing more of the plant leaves, but still can see the table edge. The plant fills more of the frame but it's still showing a significant portion. This looks like it could be APPROACH or still GLOBAL. Actually, looking more carefully, the plant still appears fairly complete and the yellow table is visible. Still GLOBAL.\n\nFrame 95 (t=47.022s): The camera is much closer now. We see individual large leaves prominently, and the yellow table edge is barely visible. This looks like LOCAL - we're seeing partial leaves/crown close-up, the overall pot reference is becoming less visible.\n\nFrame 96 (t=47.522s): Very close-up view of leaves. The yellow table edge is barely visible at the bottom. This is LOCAL.\n\nWait, let me reconsider. Looking at frames 85-93, the camera seems to be positioned above and slightly angled, showing the full plant. These are all GLOBAL.\n\nFrame 94: The camera is closer, but still shows a good portion of the plant. I'd say this is still GLOBAL or possibly the start of an approach. The plant still fills a good portion of the frame but the overall structure is visible.\n\nFrame 95: Much closer, showing individual leaves in detail. The pot/table reference is much less visible. LOCAL.\n\nFrame 96: Very close, mostly leaves filling the frame. LOCAL.\n\nActually, let me reconsider frame 94. Looking at it again, the plant still looks fairly complete and the yellow table is visible underneath. I'll keep it as GLOBAL with slightly lower confidence, or maybe it's transitioning. Let me think about this more carefully.\n\nLooking at the progression:\n- Frames 85-87: Higher angle, full plant visible - GLOBAL\n- Frames 88-93: Top-down view, full plant visible - GLOBAL  \n- Frame 94: Getting closer, but still showing most of the plant - GLOBAL\n- Frame 95: Much closer, individual leaves prominent - LOCAL\n- Frame 96: Very close-up - LOCAL\n\nFor frame 94, the plant is still mostly visible with the yellow table clearly seen. I'll call it GLOBAL but maybe approaching the threshold. Confidence around 0.8.\n\nFor frame 95, the camera has clearly moved closer. Individual large leaves dominate the frame. The pot and most of the yellow table are not clearly visible. LOCAL, confidence ~0.85.\n\nFor frame 96, very close-up on leaves. LOCAL, confidence ~0.9.\n\nLet me reconsider whether any frames might be APPROACH. The instructions say APPROACH should only be used when there's clear step-by-step approach in consecutive frames. Looking at frames 85-96, the camera does seem to be gradually getting closer from frame 85 onwards. But the frames 85-93 are quite similar in composition - they all show the full plant. The real change happens at frame 95-96. So I wouldn't label the gradual change as APPROACH - the labels should describe what's visible, not the motion.\n\nActually wait - looking more carefully at frames 85-87, these seem to be at a slightly different distance/angle compared to 88-93. Frames 88-93 have a more direct top-down view while 85-87 are more angled. But they all show the full plant.\n\nLet me also consider if there are any TRANSITION frames. A TRANSITION would be a明显切换的中间状态. I don't see any obvious abrupt cuts or transitional states - the frames seem continuous.\n\nLet me finalize my labels:\n\nFrame 85: GLOBAL - full plant on table, high confidence\nFrame 86: GLOBAL - full plant on table, high confidence\nFrame 87: GLOBAL - full plant on table, high confidence\nFrame 88: GLOBAL - top-down full plant view, high confidence\nFrame 89: GLOBAL - top-down full plant view, high confidence\nFrame 90: GLOBAL - top-down full plant view, high confidence\nFrame 91: GLOBAL - top-down full plant view, high confidence\nFrame 92: GLOBAL - top-down full plant view, high confidence\nFrame 93: GLOBAL - top-down full plant view, high confidence\nFrame 94: GLOBAL - still showing most of the plant with table visible, high confidence\nFrame 95: LOCAL - close-up of leaves, pot/table largely out of frame, moderate-high confidence\nFrame 96: LOCAL - very close-up on leaves, low confidence on plant structure\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1941,
+      "prompt_tokens": 1708,
+      "total_tokens": 3649,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1313,
+        "text_tokens": 628
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:29:54.542521+00:00",
+  "frame_ids": [
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96
+  ],
+  "model": "agnes-2.5-flash"
+}

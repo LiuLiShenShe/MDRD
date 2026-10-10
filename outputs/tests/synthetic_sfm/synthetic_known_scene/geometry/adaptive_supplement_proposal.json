@@ -1,0 +1,25 @@
+{
+  "timestamps": [
+    0.25,
+    0.75
+  ],
+  "candidates": [
+    {
+      "timestamp_sec": 0.75,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION",
+        "REGISTRATION_GAP"
+      ],
+      "priority": 3
+    },
+    {
+      "timestamp_sec": 0.25,
+      "reasons": [
+        "REGISTRATION_GAP"
+      ],
+      "priority": 2
+    }
+  ],
+  "maximum_additional_frames": 12,
+  "policy": "Preserve existing selected decoded frame indices; add nearest actual source PTS. Proposal is not a claim that new frames will register."
+}

@@ -1,0 +1,677 @@
+{
+  "segments": [
+    {
+      "frame_id": 1,
+      "start_timestamp_sec": -2e-05,
+      "end_timestamp_sec": 2e-05,
+      "label": "GLOBAL",
+      "confidence": 0.98,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "一盆完整的箭羽竹芋盆栽置于黄色木桌中央，背景可见蓝色印花窗帘和周边植物环境，整株及容器参照清晰。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 2,
+      "start_timestamp_sec": 0.49998,
+      "end_timestamp_sec": 0.50002,
+      "label": "GLOBAL",
+      "confidence": 0.97,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "同盆栽位置略有变化，整株叶片与深绿色花盆完整入镜，桌上蓝色立方体和木质纹理背景参照清晰。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 3,
+      "start_timestamp_sec": 0.99998,
+      "end_timestamp_sec": 1.00002,
+      "label": "GLOBAL",
+      "confidence": 0.97,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "整盆植物呈稳定拍摄状态，可见完整冠层和花盆标识带，桌面与背景窗帘作为参照完整呈现。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 4,
+      "start_timestamp_sec": 1.49998,
+      "end_timestamp_sec": 1.50002,
+      "label": "GLOBAL",
+      "confidence": 0.96,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "镜头角度轻微偏移，仍展示整株箭羽竹芋与花盆，背景切换为带有花卉图案的窗帘，整体参照清晰。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 5,
+      "start_timestamp_sec": 1.99998,
+      "end_timestamp_sec": 2.00002,
+      "label": "GLOBAL",
+      "confidence": 0.97,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "植物整体处于画面中心，叶片纹理与色彩层次完整，桌上蓝色立方体和木质纹理背景保持全局参照。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 6,
+      "start_timestamp_sec": 2.49998,
+      "end_timestamp_sec": 2.50002,
+      "label": "GLOBAL",
+      "confidence": 0.97,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "盆栽稳定展示，整株形态完整，深绿色花盆及底部标签清晰可见，背景窗帘与室内环境参照明确。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 7,
+      "start_timestamp_sec": 2.99998,
+      "end_timestamp_sec": 3.00002,
+      "label": "GLOBAL",
+      "confidence": 0.95,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "视角略微变化但仍为整体呈现，箭羽竹芋冠层完全展开，桌上蓝色立方体与花盆标识带均在画面中。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 8,
+      "start_timestamp_sec": 3.49998,
+      "end_timestamp_sec": 3.50002,
+      "label": "GLOBAL",
+      "confidence": 0.96,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "盆栽从稍远角度展示，整株植物与花盆均完整可见，木质桌面与背景窗帘构成明确空间参照。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 9,
+      "start_timestamp_sec": 4.01665,
+      "end_timestamp_sec": 4.0166900000000005,
+      "label": "GLOBAL",
+      "confidence": 0.96,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "整体视角下箭羽竹芋姿态完整，叶片特征清晰，桌上蓝色立方体和花盆位置关系稳定，背景参照明确。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 10,
+      "start_timestamp_sec": 4.51665,
+      "end_timestamp_sec": 4.5166900000000005,
+      "label": "GLOBAL",
+      "confidence": 0.95,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "镜头位置略有改变，整盆植物仍为画面主体，可见完整冠层和深绿色花盆，室内背景环境参照清晰。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 11,
+      "start_timestamp_sec": 5.01665,
+      "end_timestamp_sec": 5.0166900000000005,
+      "label": "GLOBAL",
+      "confidence": 0.96,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "盆栽整体呈现，箭羽竹芋叶片纹理完整，桌上蓝色立方体与花盆标识带均在，背景为室内门框与环境。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 12,
+      "start_timestamp_sec": 5.51665,
+      "end_timestamp_sec": 5.5166900000000005,
+      "label": "GLOBAL",
+      "confidence": 0.96,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "最后一帧仍展示整盆植物完整姿态，叶片色彩与形态清晰，木质桌面与背景空间参照明确，无局部裁剪。",
+      "response_path": "outputs/video_020/segments/visual_review/page_000.response.json"
+    },
+    {
+      "frame_id": 13,
+      "start_timestamp_sec": 6.01665,
+      "end_timestamp_sec": 6.0166900000000005,
+      "label": "GLOBAL",
+      "confidence": 0.92,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant (Calathea) fully visible on a yellow wooden table, entire pot and plant canopy in frame with background context visible.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 14,
+      "start_timestamp_sec": 6.51665,
+      "end_timestamp_sec": 6.5166900000000005,
+      "label": "GLOBAL",
+      "confidence": 0.92,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, similar framing to frame 13 with slight camera position change.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 15,
+      "start_timestamp_sec": 7.01665,
+      "end_timestamp_sec": 7.0166900000000005,
+      "label": "GLOBAL",
+      "confidence": 0.92,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, consistent global framing with mild camera movement from previous frame.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 16,
+      "start_timestamp_sec": 7.51665,
+      "end_timestamp_sec": 7.5166900000000005,
+      "label": "GLOBAL",
+      "confidence": 0.92,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, pot and whole canopy in frame with room background visible.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 17,
+      "start_timestamp_sec": 8.01665,
+      "end_timestamp_sec": 8.016689999999999,
+      "label": "GLOBAL",
+      "confidence": 0.9,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, slight camera repositioning but entire plant and pot remain in frame.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 18,
+      "start_timestamp_sec": 8.51665,
+      "end_timestamp_sec": 8.516689999999999,
+      "label": "GLOBAL",
+      "confidence": 0.9,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, continued global shot with slight angle change.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 19,
+      "start_timestamp_sec": 9.018310000000001,
+      "end_timestamp_sec": 9.01835,
+      "label": "GLOBAL",
+      "confidence": 0.9,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, camera appears to have shifted position but plant remains complete in frame.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 20,
+      "start_timestamp_sec": 9.518310000000001,
+      "end_timestamp_sec": 9.51835,
+      "label": "GLOBAL",
+      "confidence": 0.9,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, consistent global framing with minor camera adjustment.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 21,
+      "start_timestamp_sec": 10.01828,
+      "end_timestamp_sec": 10.01832,
+      "label": "GLOBAL",
+      "confidence": 0.9,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, entire pot and canopy in view with background details.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 22,
+      "start_timestamp_sec": 10.51828,
+      "end_timestamp_sec": 10.51832,
+      "label": "GLOBAL",
+      "confidence": 0.9,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, global shot maintained with slight positional change.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 23,
+      "start_timestamp_sec": 11.01828,
+      "end_timestamp_sec": 11.01832,
+      "label": "GLOBAL",
+      "confidence": 0.9,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, continuous global framing with minor camera movement.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 24,
+      "start_timestamp_sec": 11.51828,
+      "end_timestamp_sec": 11.51832,
+      "label": "GLOBAL",
+      "confidence": 0.88,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "Potted prayer plant fully visible on yellow table, global shot with slight change in camera angle but no transition to close-up.",
+      "response_path": "outputs/video_020/segments/visual_review/page_001.response.json"
+    },
+    {
+      "frame_id": 25,
+      "start_timestamp_sec": 12.01828,
+      "end_timestamp_sec": 12.01832,
+      "label": "GLOBAL",
+      "confidence": 0.95,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及黄色凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 26,
+      "start_timestamp_sec": 12.51828,
+      "end_timestamp_sec": 12.51832,
+      "label": "GLOBAL",
+      "confidence": 0.92,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 27,
+      "start_timestamp_sec": 13.01828,
+      "end_timestamp_sec": 13.01832,
+      "label": "GLOBAL",
+      "confidence": 0.92,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 28,
+      "start_timestamp_sec": 13.51828,
+      "end_timestamp_sec": 13.51832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 29,
+      "start_timestamp_sec": 14.01828,
+      "end_timestamp_sec": 14.01832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 30,
+      "start_timestamp_sec": 14.51828,
+      "end_timestamp_sec": 14.51832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 31,
+      "start_timestamp_sec": 15.01828,
+      "end_timestamp_sec": 15.01832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 32,
+      "start_timestamp_sec": 15.51828,
+      "end_timestamp_sec": 15.51832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 33,
+      "start_timestamp_sec": 16.01828,
+      "end_timestamp_sec": 16.01832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 34,
+      "start_timestamp_sec": 16.51828,
+      "end_timestamp_sec": 16.51832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景花布均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 35,
+      "start_timestamp_sec": 17.01828,
+      "end_timestamp_sec": 17.01832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 36,
+      "start_timestamp_sec": 17.51828,
+      "end_timestamp_sec": 17.51832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物及凳子和背景均可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_002.response.json"
+    },
+    {
+      "frame_id": 37,
+      "start_timestamp_sec": 18.01828,
+      "end_timestamp_sec": 18.01832,
+      "label": "GLOBAL",
+      "confidence": 0.92,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度的整株植物，置于黄色木板上，背景可见木地板和其他植物",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 38,
+      "start_timestamp_sec": 18.51828,
+      "end_timestamp_sec": 18.51832,
+      "label": "GLOBAL",
+      "confidence": 0.91,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，背景有其他盆栽和黑色花盆",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 39,
+      "start_timestamp_sec": 19.01828,
+      "end_timestamp_sec": 19.01832,
+      "label": "GLOBAL",
+      "confidence": 0.92,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，黄色木板和浅色木地板背景清晰可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 40,
+      "start_timestamp_sec": 19.51828,
+      "end_timestamp_sec": 19.51832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，黄色木板平台完整呈现",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 41,
+      "start_timestamp_sec": 20.01828,
+      "end_timestamp_sec": 20.01832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，背景可见蓝色图案垫子和木地板",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 42,
+      "start_timestamp_sec": 20.51828,
+      "end_timestamp_sec": 20.51832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，黄色木板和背景垫子完整可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 43,
+      "start_timestamp_sec": 21.01828,
+      "end_timestamp_sec": 21.01832,
+      "label": "GLOBAL",
+      "confidence": 0.94,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，背景有黑白棋盘格图案的垫子",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 44,
+      "start_timestamp_sec": 21.51828,
+      "end_timestamp_sec": 21.51832,
+      "label": "GLOBAL",
+      "confidence": 0.94,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，黄色木板和棋盘格垫子背景清晰",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 45,
+      "start_timestamp_sec": 22.01828,
+      "end_timestamp_sec": 22.01832,
+      "label": "GLOBAL",
+      "confidence": 0.94,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，中心可见条纹状的新叶伸出",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 46,
+      "start_timestamp_sec": 22.51828,
+      "end_timestamp_sec": 22.51832,
+      "label": "GLOBAL",
+      "confidence": 0.94,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，黄色木板完整可见，背景有棋盘格垫子",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 47,
+      "start_timestamp_sec": 23.01828,
+      "end_timestamp_sec": 23.01832,
+      "label": "GLOBAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，黄色木板和浅色木地板背景",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 48,
+      "start_timestamp_sec": 23.51828,
+      "end_timestamp_sec": 23.51832,
+      "label": "GLOBAL",
+      "confidence": 0.92,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视整株植物，黄色木板完整呈现",
+      "response_path": "outputs/video_020/segments/visual_review/page_003.response.json"
+    },
+    {
+      "frame_id": 49,
+      "start_timestamp_sec": 24.01828,
+      "end_timestamp_sec": 24.01832,
+      "label": "GLOBAL",
+      "confidence": 0.95,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "完整盆栽俯视，整株植物及黄色小凳、木地板背景均清晰可见，视角稳定。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 50,
+      "start_timestamp_sec": 24.51828,
+      "end_timestamp_sec": 24.51832,
+      "label": "GLOBAL",
+      "confidence": 0.95,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "与帧49相似，整株植物完整呈现于黄色凳面上，全局参照明确。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 51,
+      "start_timestamp_sec": 25.01828,
+      "end_timestamp_sec": 25.01832,
+      "label": "GLOBAL",
+      "confidence": 0.95,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "完整盆栽俯视，整株植物连同凳子和地面背景均清晰可见。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 52,
+      "start_timestamp_sec": 25.51828,
+      "end_timestamp_sec": 25.51832,
+      "label": "GLOBAL",
+      "confidence": 0.95,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "整株植物完整展示在黄色小凳上，背景参照稳定。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 53,
+      "start_timestamp_sec": 26.01828,
+      "end_timestamp_sec": 26.01832,
+      "label": "GLOBAL",
+      "confidence": 0.95,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "完整盆栽俯视视角，植物全貌及凳子地面背景均清晰可见。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 54,
+      "start_timestamp_sec": 26.51828,
+      "end_timestamp_sec": 26.51832,
+      "label": "GLOBAL",
+      "confidence": 0.95,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "整株植物完整呈现，全局构图稳定，背景参照明确。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 55,
+      "start_timestamp_sec": 27.01998,
+      "end_timestamp_sec": 27.02002,
+      "label": "APPROACH",
+      "confidence": 0.88,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "相机明显向植物靠近，植株在画面中占比增大，仍可见整株及凳子边缘。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 56,
+      "start_timestamp_sec": 27.51998,
+      "end_timestamp_sec": 27.52002,
+      "label": "APPROACH",
+      "confidence": 0.82,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "持续靠近中，植物充满大部分画面，整株仍可见但凳子参照减少。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 57,
+      "start_timestamp_sec": 28.01998,
+      "end_timestamp_sec": 28.02002,
+      "label": "APPROACH",
+      "confidence": 0.75,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "距离进一步拉近，叶片细节清晰，整株尚在画面内但局部边缘开始贴近画框。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 58,
+      "start_timestamp_sec": 28.51998,
+      "end_timestamp_sec": 28.52002,
+      "label": "APPROACH",
+      "confidence": 0.7,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "接近完成阶段，植物几乎占满画面，凳子基本不可见，整体参照明显弱化。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 59,
+      "start_timestamp_sec": 29.01998,
+      "end_timestamp_sec": 29.02002,
+      "label": "LOCAL",
+      "confidence": 0.9,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "近景特写，只见叶片冠层细节，整株及盆凳参照已缺失。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 60,
+      "start_timestamp_sec": 29.51998,
+      "end_timestamp_sec": 29.52002,
+      "label": "LOCAL",
+      "confidence": 0.93,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "极近景，叶片占据全部画面，无任何全局参照物。",
+      "response_path": "outputs/video_020/segments/visual_review/page_004.response.json"
+    },
+    {
+      "frame_id": 61,
+      "start_timestamp_sec": 30.01998,
+      "end_timestamp_sec": 30.02002,
+      "label": "GLOBAL",
+      "confidence": 0.82,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，植物整体冠层可见，大部分叶片和植株结构完整呈现，整盆植物清晰可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_005.response.json"
+    },
+    {
+      "frame_id": 62,
+      "start_timestamp_sec": 30.51998,
+      "end_timestamp_sec": 30.52002,
+      "label": "GLOBAL",
+      "confidence": 0.8,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，植物顶部冠层可见，叶片细节明显，植株整体在画面中较为完整",
+      "response_path": "outputs/video_020/segments/visual_review/page_005.response.json"
+    },
+    {
+      "frame_id": 63,
+      "start_timestamp_sec": 31.01998,
+      "end_timestamp_sec": 31.02002,
+      "label": "GLOBAL",
+      "confidence": 0.78,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，叶片近景为主，但仍可见部分冠层结构，整体植物参照仍可辨识",
+      "response_path": "outputs/video_020/segments/visual_review/page_005.response.json"
+    },
+    {
+      "frame_id": 64,
+      "start_timestamp_sec": 31.51998,
+      "end_timestamp_sec": 31.52002,
+      "label": "GLOBAL",
+      "confidence": 0.82,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，植物冠层从上方拍摄，大部分叶片和植株整体轮廓可见，黄色台面部分露出",
+      "response_path": "outputs/video_020/segments/visual_review/page_005.response.json"
+    },
+    {
+      "frame_id": 65,
+      "start_timestamp_sec": 32.019980000000004,
+      "end_timestamp_sec": 32.02002,
+      "label": "GLOBAL",
+      "confidence": 0.85,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，植物位于黄色台面上，整体植株清晰可见，台面作为参照物帮助判断整盆尺度",
+      "response_path": "outputs/video_020/segments/visual_review/page_005.response.json"
+    },
+    {
+      "frame_id": 66,
+      "start_timestamp_sec": 32.519980000000004,
+      "end_timestamp_sec": 32.52002,
+      "label": "GLOBAL",
+      "confidence": 0.85,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，植物完整位于黄色台面上，整体冠层清晰可见，周围环境（花卉桌布）也有显示",
+      "response_path": "outputs/video_020/segments/visual_review/page_005.response.json"
+    },
+    {
+      "frame_id": 67,
+      "start_timestamp_sec": 33.019980000000004,
+      "end_timestamp_sec": 33.02002,
+      "label": "GLOBAL",
+      "confidence": 0.88,
+      "source": "AGNES_API_FRAME_REVIEW_NOT_HUMAN_GROUND_TRUTH",
+      "description": "俯视角度，整盆植物完整呈现于黄色台面上，植物冠层全貌清晰，台面占据画面主体，背景参照可见",
+      "response_path": "outputs/video_020/segments/visual_review/page_005.response.json"
+    }
+  ],
+  "review_model": "agnes-2.5-flash",
+  "created_at": "2026-10-09T08:43:16.757699+00:00",
+  "limitation": "Image-content interpretation only; automated API review, not human annotations or measured physical distance."
+}

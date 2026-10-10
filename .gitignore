@@ -1,0 +1,62 @@
+# ---- Media (excluded by design: huge, regenerable) ----
+*.png
+*.jpg
+*.jpeg
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.gif
+*.bmp
+*.tiff
+*.webp
+*.heic
+
+# ---- Binary / large artifacts ----
+# COLMAP sparse models are binary; the .txt counterparts are tracked.
+*.bin
+*.db
+*.db-wal
+*.db-shm
+*.npy
+*.npz
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.ply
+*.obj
+*.exr
+*.exe
+*.dll
+*.so
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# ---- Python caches / envs ----
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.ipynb_checkpoints/
+.pyre/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# ---- Secrets ----
+.env
+.env.*
+!.env.example

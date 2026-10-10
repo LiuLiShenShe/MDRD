@@ -1,0 +1,354 @@
+COMMAND ["colmap", "feature_extractor", "--database_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_007/sfm/database.db", "--image_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_007/frames", "--image_list_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_007/sfm/all_images.txt", "--ImageReader.camera_model", "SIMPLE_RADIAL", "--ImageReader.single_camera", "1", "--SiftExtraction.use_gpu", "0", "--SiftExtraction.num_threads", "8", "--SiftExtraction.max_image_size", "2400", "--SiftExtraction.max_num_features", "6000"]
+I20261009 16:07:34.021409 1955817 misc.cc:198] 
+==============================================================================
+Feature extraction
+==============================================================================
+I20261009 16:07:34.334959 1955870 feature_extraction.cc:254] Processed file [1/116]
+I20261009 16:07:34.335027 1955870 feature_extraction.cc:257]   Name:            frame_000001.png
+E20261009 16:07:34.335041 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:34.627893 1955870 feature_extraction.cc:254] Processed file [2/116]
+I20261009 16:07:34.627960 1955870 feature_extraction.cc:257]   Name:            frame_000002.png
+E20261009 16:07:34.627976 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:34.900676 1955870 feature_extraction.cc:254] Processed file [3/116]
+I20261009 16:07:34.900743 1955870 feature_extraction.cc:257]   Name:            frame_000003.png
+E20261009 16:07:34.900756 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:35.201489 1955870 feature_extraction.cc:254] Processed file [4/116]
+I20261009 16:07:35.201574 1955870 feature_extraction.cc:257]   Name:            frame_000004.png
+E20261009 16:07:35.201589 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:35.487747 1955870 feature_extraction.cc:254] Processed file [5/116]
+I20261009 16:07:35.487836 1955870 feature_extraction.cc:257]   Name:            frame_000005.png
+E20261009 16:07:35.487854 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:35.778445 1955870 feature_extraction.cc:254] Processed file [6/116]
+I20261009 16:07:35.778517 1955870 feature_extraction.cc:257]   Name:            frame_000006.png
+E20261009 16:07:35.778532 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:36.068013 1955870 feature_extraction.cc:254] Processed file [7/116]
+I20261009 16:07:36.068084 1955870 feature_extraction.cc:257]   Name:            frame_000007.png
+E20261009 16:07:36.068100 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:36.358857 1955870 feature_extraction.cc:254] Processed file [8/116]
+I20261009 16:07:36.358930 1955870 feature_extraction.cc:257]   Name:            frame_000008.png
+E20261009 16:07:36.358946 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:36.649355 1955870 feature_extraction.cc:254] Processed file [9/116]
+I20261009 16:07:36.649430 1955870 feature_extraction.cc:257]   Name:            frame_000009.png
+E20261009 16:07:36.649446 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:36.938642 1955870 feature_extraction.cc:254] Processed file [10/116]
+I20261009 16:07:36.938714 1955870 feature_extraction.cc:257]   Name:            frame_000010.png
+E20261009 16:07:36.938730 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:37.228368 1955870 feature_extraction.cc:254] Processed file [11/116]
+I20261009 16:07:37.228439 1955870 feature_extraction.cc:257]   Name:            frame_000011.png
+E20261009 16:07:37.228456 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:37.520376 1955870 feature_extraction.cc:254] Processed file [12/116]
+I20261009 16:07:37.520444 1955870 feature_extraction.cc:257]   Name:            frame_000012.png
+E20261009 16:07:37.520459 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:37.812886 1955870 feature_extraction.cc:254] Processed file [13/116]
+I20261009 16:07:37.812956 1955870 feature_extraction.cc:257]   Name:            frame_000013.png
+E20261009 16:07:37.812973 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:38.102578 1955870 feature_extraction.cc:254] Processed file [14/116]
+I20261009 16:07:38.102648 1955870 feature_extraction.cc:257]   Name:            frame_000014.png
+E20261009 16:07:38.102663 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:38.393952 1955870 feature_extraction.cc:254] Processed file [15/116]
+I20261009 16:07:38.394017 1955870 feature_extraction.cc:257]   Name:            frame_000015.png
+E20261009 16:07:38.394032 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:38.683616 1955870 feature_extraction.cc:254] Processed file [16/116]
+I20261009 16:07:38.683666 1955870 feature_extraction.cc:257]   Name:            frame_000016.png
+E20261009 16:07:38.683673 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:39.020903 1955870 feature_extraction.cc:254] Processed file [17/116]
+I20261009 16:07:39.020980 1955870 feature_extraction.cc:257]   Name:            frame_000017.png
+E20261009 16:07:39.020996 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:39.307583 1955870 feature_extraction.cc:254] Processed file [18/116]
+I20261009 16:07:39.307657 1955870 feature_extraction.cc:257]   Name:            frame_000018.png
+E20261009 16:07:39.307672 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:39.605640 1955870 feature_extraction.cc:254] Processed file [19/116]
+I20261009 16:07:39.605708 1955870 feature_extraction.cc:257]   Name:            frame_000019.png
+E20261009 16:07:39.605723 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:39.895426 1955870 feature_extraction.cc:254] Processed file [20/116]
+I20261009 16:07:39.895505 1955870 feature_extraction.cc:257]   Name:            frame_000020.png
+E20261009 16:07:39.895521 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:40.213706 1955870 feature_extraction.cc:254] Processed file [21/116]
+I20261009 16:07:40.213845 1955870 feature_extraction.cc:257]   Name:            frame_000021.png
+E20261009 16:07:40.213866 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:40.504735 1955870 feature_extraction.cc:254] Processed file [22/116]
+I20261009 16:07:40.504818 1955870 feature_extraction.cc:257]   Name:            frame_000022.png
+E20261009 16:07:40.504835 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:40.797648 1955870 feature_extraction.cc:254] Processed file [23/116]
+I20261009 16:07:40.797724 1955870 feature_extraction.cc:257]   Name:            frame_000023.png
+E20261009 16:07:40.797739 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:41.087726 1955870 feature_extraction.cc:254] Processed file [24/116]
+I20261009 16:07:41.087807 1955870 feature_extraction.cc:257]   Name:            frame_000024.png
+E20261009 16:07:41.087824 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:41.378448 1955870 feature_extraction.cc:254] Processed file [25/116]
+I20261009 16:07:41.378543 1955870 feature_extraction.cc:257]   Name:            frame_000025.png
+E20261009 16:07:41.378569 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:41.682467 1955870 feature_extraction.cc:254] Processed file [26/116]
+I20261009 16:07:41.682564 1955870 feature_extraction.cc:257]   Name:            frame_000026.png
+E20261009 16:07:41.682590 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:41.937759 1955870 feature_extraction.cc:254] Processed file [27/116]
+I20261009 16:07:41.937844 1955870 feature_extraction.cc:257]   Name:            frame_000027.png
+E20261009 16:07:41.937877 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:42.222648 1955870 feature_extraction.cc:254] Processed file [28/116]
+I20261009 16:07:42.222720 1955870 feature_extraction.cc:257]   Name:            frame_000028.png
+E20261009 16:07:42.222736 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:42.472883 1955870 feature_extraction.cc:254] Processed file [29/116]
+I20261009 16:07:42.472954 1955870 feature_extraction.cc:257]   Name:            frame_000029.png
+E20261009 16:07:42.472971 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:42.759356 1955870 feature_extraction.cc:254] Processed file [30/116]
+I20261009 16:07:42.759425 1955870 feature_extraction.cc:257]   Name:            frame_000030.png
+E20261009 16:07:42.759440 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:43.027920 1955870 feature_extraction.cc:254] Processed file [31/116]
+I20261009 16:07:43.027990 1955870 feature_extraction.cc:257]   Name:            frame_000031.png
+E20261009 16:07:43.028005 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:43.317770 1955870 feature_extraction.cc:254] Processed file [32/116]
+I20261009 16:07:43.317857 1955870 feature_extraction.cc:257]   Name:            frame_000032.png
+E20261009 16:07:43.317871 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:43.596796 1955870 feature_extraction.cc:254] Processed file [33/116]
+I20261009 16:07:43.596835 1955870 feature_extraction.cc:257]   Name:            frame_000033.png
+E20261009 16:07:43.596844 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:43.888238 1955870 feature_extraction.cc:254] Processed file [34/116]
+I20261009 16:07:43.888310 1955870 feature_extraction.cc:257]   Name:            frame_000034.png
+E20261009 16:07:43.888324 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:44.168128 1955870 feature_extraction.cc:254] Processed file [35/116]
+I20261009 16:07:44.168200 1955870 feature_extraction.cc:257]   Name:            frame_000035.png
+E20261009 16:07:44.168215 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:44.456496 1955870 feature_extraction.cc:254] Processed file [36/116]
+I20261009 16:07:44.456547 1955870 feature_extraction.cc:257]   Name:            frame_000036.png
+E20261009 16:07:44.456553 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:44.741451 1955870 feature_extraction.cc:254] Processed file [37/116]
+I20261009 16:07:44.741528 1955870 feature_extraction.cc:257]   Name:            frame_000037.png
+E20261009 16:07:44.741545 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:45.025945 1955870 feature_extraction.cc:254] Processed file [38/116]
+I20261009 16:07:45.026014 1955870 feature_extraction.cc:257]   Name:            frame_000038.png
+E20261009 16:07:45.026036 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:45.310597 1955870 feature_extraction.cc:254] Processed file [39/116]
+I20261009 16:07:45.310674 1955870 feature_extraction.cc:257]   Name:            frame_000039.png
+E20261009 16:07:45.310691 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:45.599323 1955870 feature_extraction.cc:254] Processed file [40/116]
+I20261009 16:07:45.599395 1955870 feature_extraction.cc:257]   Name:            frame_000040.png
+E20261009 16:07:45.599411 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:45.884605 1955870 feature_extraction.cc:254] Processed file [41/116]
+I20261009 16:07:45.884680 1955870 feature_extraction.cc:257]   Name:            frame_000041.png
+E20261009 16:07:45.884694 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:46.161430 1955870 feature_extraction.cc:254] Processed file [42/116]
+I20261009 16:07:46.161505 1955870 feature_extraction.cc:257]   Name:            frame_000042.png
+E20261009 16:07:46.161538 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:46.446645 1955870 feature_extraction.cc:254] Processed file [43/116]
+I20261009 16:07:46.446714 1955870 feature_extraction.cc:257]   Name:            frame_000043.png
+E20261009 16:07:46.446729 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:46.733155 1955870 feature_extraction.cc:254] Processed file [44/116]
+I20261009 16:07:46.733228 1955870 feature_extraction.cc:257]   Name:            frame_000044.png
+E20261009 16:07:46.733245 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:47.026098 1955870 feature_extraction.cc:254] Processed file [45/116]
+I20261009 16:07:47.026170 1955870 feature_extraction.cc:257]   Name:            frame_000045.png
+E20261009 16:07:47.026186 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:47.310745 1955870 feature_extraction.cc:254] Processed file [46/116]
+I20261009 16:07:47.310847 1955870 feature_extraction.cc:257]   Name:            frame_000046.png
+E20261009 16:07:47.310865 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:47.600449 1955870 feature_extraction.cc:254] Processed file [47/116]
+I20261009 16:07:47.600518 1955870 feature_extraction.cc:257]   Name:            frame_000047.png
+E20261009 16:07:47.600534 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:47.885123 1955870 feature_extraction.cc:254] Processed file [48/116]
+I20261009 16:07:47.885190 1955870 feature_extraction.cc:257]   Name:            frame_000048.png
+E20261009 16:07:47.885205 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:48.181442 1955870 feature_extraction.cc:254] Processed file [49/116]
+I20261009 16:07:48.181507 1955870 feature_extraction.cc:257]   Name:            frame_000049.png
+E20261009 16:07:48.181522 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:48.483528 1955870 feature_extraction.cc:254] Processed file [50/116]
+I20261009 16:07:48.483606 1955870 feature_extraction.cc:257]   Name:            frame_000050.png
+E20261009 16:07:48.483623 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:48.778831 1955870 feature_extraction.cc:254] Processed file [51/116]
+I20261009 16:07:48.778898 1955870 feature_extraction.cc:257]   Name:            frame_000051.png
+E20261009 16:07:48.778913 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:49.080937 1955870 feature_extraction.cc:254] Processed file [52/116]
+I20261009 16:07:49.081014 1955870 feature_extraction.cc:257]   Name:            frame_000052.png
+E20261009 16:07:49.081032 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:49.374655 1955870 feature_extraction.cc:254] Processed file [53/116]
+I20261009 16:07:49.374728 1955870 feature_extraction.cc:257]   Name:            frame_000053.png
+E20261009 16:07:49.374743 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:49.673403 1955870 feature_extraction.cc:254] Processed file [54/116]
+I20261009 16:07:49.673491 1955870 feature_extraction.cc:257]   Name:            frame_000054.png
+E20261009 16:07:49.673516 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:49.946048 1955870 feature_extraction.cc:254] Processed file [55/116]
+I20261009 16:07:49.946117 1955870 feature_extraction.cc:257]   Name:            frame_000055.png
+E20261009 16:07:49.946132 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:50.239338 1955870 feature_extraction.cc:254] Processed file [56/116]
+I20261009 16:07:50.239418 1955870 feature_extraction.cc:257]   Name:            frame_000056.png
+E20261009 16:07:50.239434 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:50.532440 1955870 feature_extraction.cc:254] Processed file [57/116]
+I20261009 16:07:50.532526 1955870 feature_extraction.cc:257]   Name:            frame_000057.png
+E20261009 16:07:50.532543 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:50.825676 1955870 feature_extraction.cc:254] Processed file [58/116]
+I20261009 16:07:50.825754 1955870 feature_extraction.cc:257]   Name:            frame_000058.png
+E20261009 16:07:50.825771 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:51.109715 1955870 feature_extraction.cc:254] Processed file [59/116]
+I20261009 16:07:51.109802 1955870 feature_extraction.cc:257]   Name:            frame_000059.png
+E20261009 16:07:51.109820 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:51.400624 1955870 feature_extraction.cc:254] Processed file [60/116]
+I20261009 16:07:51.400693 1955870 feature_extraction.cc:257]   Name:            frame_000060.png
+E20261009 16:07:51.400707 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:51.683794 1955870 feature_extraction.cc:254] Processed file [61/116]
+I20261009 16:07:51.683871 1955870 feature_extraction.cc:257]   Name:            frame_000061.png
+E20261009 16:07:51.683892 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:51.976408 1955870 feature_extraction.cc:254] Processed file [62/116]
+I20261009 16:07:51.976483 1955870 feature_extraction.cc:257]   Name:            frame_000062.png
+E20261009 16:07:51.976500 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:52.258986 1955870 feature_extraction.cc:254] Processed file [63/116]
+I20261009 16:07:52.259056 1955870 feature_extraction.cc:257]   Name:            frame_000063.png
+E20261009 16:07:52.259073 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:52.550434 1955870 feature_extraction.cc:254] Processed file [64/116]
+I20261009 16:07:52.550503 1955870 feature_extraction.cc:257]   Name:            frame_000064.png
+E20261009 16:07:52.550519 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:52.838253 1955870 feature_extraction.cc:254] Processed file [65/116]
+I20261009 16:07:52.838330 1955870 feature_extraction.cc:257]   Name:            frame_000065.png
+E20261009 16:07:52.838347 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:53.130169 1955870 feature_extraction.cc:254] Processed file [66/116]
+I20261009 16:07:53.130239 1955870 feature_extraction.cc:257]   Name:            frame_000066.png
+E20261009 16:07:53.130252 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:53.422582 1955870 feature_extraction.cc:254] Processed file [67/116]
+I20261009 16:07:53.422632 1955870 feature_extraction.cc:257]   Name:            frame_000067.png
+E20261009 16:07:53.422638 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:53.714178 1955870 feature_extraction.cc:254] Processed file [68/116]
+I20261009 16:07:53.714232 1955870 feature_extraction.cc:257]   Name:            frame_000068.png
+E20261009 16:07:53.714241 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:54.004491 1955870 feature_extraction.cc:254] Processed file [69/116]
+I20261009 16:07:54.004562 1955870 feature_extraction.cc:257]   Name:            frame_000069.png
+E20261009 16:07:54.004580 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:54.284953 1955870 feature_extraction.cc:254] Processed file [70/116]
+I20261009 16:07:54.285020 1955870 feature_extraction.cc:257]   Name:            frame_000070.png
+E20261009 16:07:54.285034 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:54.573541 1955870 feature_extraction.cc:254] Processed file [71/116]
+I20261009 16:07:54.573616 1955870 feature_extraction.cc:257]   Name:            frame_000071.png
+E20261009 16:07:54.573633 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:54.845709 1955870 feature_extraction.cc:254] Processed file [72/116]
+I20261009 16:07:54.845765 1955870 feature_extraction.cc:257]   Name:            frame_000072.png
+E20261009 16:07:54.845796 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:55.145466 1955870 feature_extraction.cc:254] Processed file [73/116]
+I20261009 16:07:55.145527 1955870 feature_extraction.cc:257]   Name:            frame_000073.png
+E20261009 16:07:55.145538 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:55.476013 1955870 feature_extraction.cc:254] Processed file [74/116]
+I20261009 16:07:55.476081 1955870 feature_extraction.cc:257]   Name:            frame_000074.png
+E20261009 16:07:55.476096 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:55.863174 1955870 feature_extraction.cc:254] Processed file [75/116]
+I20261009 16:07:55.863247 1955870 feature_extraction.cc:257]   Name:            frame_000075.png
+E20261009 16:07:55.863261 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:56.140990 1955870 feature_extraction.cc:254] Processed file [76/116]
+I20261009 16:07:56.141078 1955870 feature_extraction.cc:257]   Name:            frame_000076.png
+E20261009 16:07:56.141099 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:56.427333 1955870 feature_extraction.cc:254] Processed file [77/116]
+I20261009 16:07:56.427397 1955870 feature_extraction.cc:257]   Name:            frame_000077.png
+E20261009 16:07:56.427412 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:56.701619 1955870 feature_extraction.cc:254] Processed file [78/116]
+I20261009 16:07:56.701687 1955870 feature_extraction.cc:257]   Name:            frame_000078.png
+E20261009 16:07:56.701704 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:56.993418 1955870 feature_extraction.cc:254] Processed file [79/116]
+I20261009 16:07:56.993492 1955870 feature_extraction.cc:257]   Name:            frame_000079.png
+E20261009 16:07:56.993506 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:57.265391 1955870 feature_extraction.cc:254] Processed file [80/116]
+I20261009 16:07:57.265467 1955870 feature_extraction.cc:257]   Name:            frame_000080.png
+E20261009 16:07:57.265483 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:57.559314 1955870 feature_extraction.cc:254] Processed file [81/116]
+I20261009 16:07:57.559351 1955870 feature_extraction.cc:257]   Name:            frame_000081.png
+E20261009 16:07:57.559360 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:57.846024 1955870 feature_extraction.cc:254] Processed file [82/116]
+I20261009 16:07:57.846094 1955870 feature_extraction.cc:257]   Name:            frame_000082.png
+E20261009 16:07:57.846109 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:58.114790 1955870 feature_extraction.cc:254] Processed file [83/116]
+I20261009 16:07:58.114861 1955870 feature_extraction.cc:257]   Name:            frame_000083.png
+E20261009 16:07:58.114876 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:58.393054 1955870 feature_extraction.cc:254] Processed file [84/116]
+I20261009 16:07:58.393138 1955870 feature_extraction.cc:257]   Name:            frame_000084.png
+E20261009 16:07:58.393152 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:58.678867 1955870 feature_extraction.cc:254] Processed file [85/116]
+I20261009 16:07:58.678943 1955870 feature_extraction.cc:257]   Name:            frame_000085.png
+E20261009 16:07:58.678958 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:58.972643 1955870 feature_extraction.cc:254] Processed file [86/116]
+I20261009 16:07:58.972718 1955870 feature_extraction.cc:257]   Name:            frame_000086.png
+E20261009 16:07:58.972733 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:59.253389 1955870 feature_extraction.cc:254] Processed file [87/116]
+I20261009 16:07:59.253468 1955870 feature_extraction.cc:257]   Name:            frame_000087.png
+E20261009 16:07:59.253484 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:59.547736 1955870 feature_extraction.cc:254] Processed file [88/116]
+I20261009 16:07:59.547799 1955870 feature_extraction.cc:257]   Name:            frame_000088.png
+E20261009 16:07:59.547806 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:07:59.828961 1955870 feature_extraction.cc:254] Processed file [89/116]
+I20261009 16:07:59.829028 1955870 feature_extraction.cc:257]   Name:            frame_000089.png
+E20261009 16:07:59.829035 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:00.123153 1955870 feature_extraction.cc:254] Processed file [90/116]
+I20261009 16:08:00.123232 1955870 feature_extraction.cc:257]   Name:            frame_000090.png
+E20261009 16:08:00.123247 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:00.417906 1955870 feature_extraction.cc:254] Processed file [91/116]
+I20261009 16:08:00.417984 1955870 feature_extraction.cc:257]   Name:            frame_000091.png
+E20261009 16:08:00.417999 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:00.711297 1955870 feature_extraction.cc:254] Processed file [92/116]
+I20261009 16:08:00.711370 1955870 feature_extraction.cc:257]   Name:            frame_000092.png
+E20261009 16:08:00.711386 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:01.006188 1955870 feature_extraction.cc:254] Processed file [93/116]
+I20261009 16:08:01.006261 1955870 feature_extraction.cc:257]   Name:            frame_000093.png
+E20261009 16:08:01.006278 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:01.302985 1955870 feature_extraction.cc:254] Processed file [94/116]
+I20261009 16:08:01.303059 1955870 feature_extraction.cc:257]   Name:            frame_000094.png
+E20261009 16:08:01.303076 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:01.596988 1955870 feature_extraction.cc:254] Processed file [95/116]
+I20261009 16:08:01.597064 1955870 feature_extraction.cc:257]   Name:            frame_000095.png
+E20261009 16:08:01.597082 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:01.897922 1955870 feature_extraction.cc:254] Processed file [96/116]
+I20261009 16:08:01.897994 1955870 feature_extraction.cc:257]   Name:            frame_000096.png
+E20261009 16:08:01.898010 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:02.190454 1955870 feature_extraction.cc:254] Processed file [97/116]
+I20261009 16:08:02.190531 1955870 feature_extraction.cc:257]   Name:            frame_000097.png
+E20261009 16:08:02.190546 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:02.505280 1955870 feature_extraction.cc:254] Processed file [98/116]
+I20261009 16:08:02.505352 1955870 feature_extraction.cc:257]   Name:            frame_000098.png
+E20261009 16:08:02.505366 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:02.799077 1955870 feature_extraction.cc:254] Processed file [99/116]
+I20261009 16:08:02.799170 1955870 feature_extraction.cc:257]   Name:            frame_000099.png
+E20261009 16:08:02.799193 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:03.095350 1955870 feature_extraction.cc:254] Processed file [100/116]
+I20261009 16:08:03.095424 1955870 feature_extraction.cc:257]   Name:            frame_000100.png
+E20261009 16:08:03.095439 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:03.391459 1955870 feature_extraction.cc:254] Processed file [101/116]
+I20261009 16:08:03.391530 1955870 feature_extraction.cc:257]   Name:            frame_000101.png
+E20261009 16:08:03.391561 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:03.686313 1955870 feature_extraction.cc:254] Processed file [102/116]
+I20261009 16:08:03.686389 1955870 feature_extraction.cc:257]   Name:            frame_000102.png
+E20261009 16:08:03.686404 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:03.980800 1955870 feature_extraction.cc:254] Processed file [103/116]
+I20261009 16:08:03.980873 1955870 feature_extraction.cc:257]   Name:            frame_000103.png
+E20261009 16:08:03.980890 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:04.275419 1955870 feature_extraction.cc:254] Processed file [104/116]
+I20261009 16:08:04.275499 1955870 feature_extraction.cc:257]   Name:            frame_000104.png
+E20261009 16:08:04.275516 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:04.569440 1955870 feature_extraction.cc:254] Processed file [105/116]
+I20261009 16:08:04.569505 1955870 feature_extraction.cc:257]   Name:            frame_000105.png
+E20261009 16:08:04.569521 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:04.864689 1955870 feature_extraction.cc:254] Processed file [106/116]
+I20261009 16:08:04.864758 1955870 feature_extraction.cc:257]   Name:            frame_000106.png
+E20261009 16:08:04.864773 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:05.161024 1955870 feature_extraction.cc:254] Processed file [107/116]
+I20261009 16:08:05.161108 1955870 feature_extraction.cc:257]   Name:            frame_000107.png
+E20261009 16:08:05.161134 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:05.456838 1955870 feature_extraction.cc:254] Processed file [108/116]
+I20261009 16:08:05.456907 1955870 feature_extraction.cc:257]   Name:            frame_000108.png
+E20261009 16:08:05.456921 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:05.755412 1955870 feature_extraction.cc:254] Processed file [109/116]
+I20261009 16:08:05.755486 1955870 feature_extraction.cc:257]   Name:            frame_000109.png
+E20261009 16:08:05.755505 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:06.043383 1955870 feature_extraction.cc:254] Processed file [110/116]
+I20261009 16:08:06.043434 1955870 feature_extraction.cc:257]   Name:            frame_000110.png
+E20261009 16:08:06.043443 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:06.327119 1955870 feature_extraction.cc:254] Processed file [111/116]
+I20261009 16:08:06.327191 1955870 feature_extraction.cc:257]   Name:            frame_000111.png
+E20261009 16:08:06.327208 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:06.625614 1955870 feature_extraction.cc:254] Processed file [112/116]
+I20261009 16:08:06.625690 1955870 feature_extraction.cc:257]   Name:            frame_000112.png
+E20261009 16:08:06.625707 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:06.909550 1955870 feature_extraction.cc:254] Processed file [113/116]
+I20261009 16:08:06.909619 1955870 feature_extraction.cc:257]   Name:            frame_000113.png
+E20261009 16:08:06.909637 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:07.204417 1955870 feature_extraction.cc:254] Processed file [114/116]
+I20261009 16:08:07.204491 1955870 feature_extraction.cc:257]   Name:            frame_000114.png
+E20261009 16:08:07.204509 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:07.489540 1955870 feature_extraction.cc:254] Processed file [115/116]
+I20261009 16:08:07.489607 1955870 feature_extraction.cc:257]   Name:            frame_000115.png
+E20261009 16:08:07.489625 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:07.783769 1955870 feature_extraction.cc:254] Processed file [116/116]
+I20261009 16:08:07.783869 1955870 feature_extraction.cc:257]   Name:            frame_000116.png
+E20261009 16:08:07.783893 1955870 feature_extraction.cc:263] Failed to read image file format.
+I20261009 16:08:07.784374 1955817 timer.cc:91] Elapsed time: 0.563 [minutes]

@@ -1,0 +1,19 @@
+WARNING: Ignoring invalid distribution ~glang-kernel (/home/test/biosoft/enter/lib/python3.13/site-packages)
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Obtaining file:///fj/%E6%B7%B7%E5%90%88%E6%8B%8D%E6%91%84%E8%B7%9D%E7%A6%BB%E4%B8%8B%E7%9A%84%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98/MDRD
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+  WARNING: Ignoring invalid distribution ~glang-kernel (/home/test/biosoft/enter/lib/python3.13/site-packages)
+Building wheels for collected packages: mdrd
+  Building editable for mdrd (pyproject.toml): started
+  Building editable for mdrd (pyproject.toml): finished with status 'done'
+  Created wheel for mdrd: filename=mdrd-0.1.0-0.editable-py3-none-any.whl size=1514 sha256=88cfaf8a4a5134abebee97f542a427a5070b0397de387fb7e4f846f45e3e69b4
+  Stored in directory: /tmp/pip-ephem-wheel-cache-csxpw2it/wheels/48/cd/ae/233d0b8d5605ea30a55f5f574be78027da82bce5742ec6a90c
+Successfully built mdrd
+Installing collected packages: mdrd
+Successfully installed mdrd-0.1.0
+
+[notice] A new release of pip is available: 25.3 -> 26.2.1
+[notice] To update, run: /fj/混合拍摄距离下的三维重建优化问题/.venv/bin/python -m pip install --upgrade pip

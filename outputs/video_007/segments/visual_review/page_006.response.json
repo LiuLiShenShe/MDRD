@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "539345ac6f38428f9ff2b8e784290a42",
+    "created": 1791534593,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 73, \"label\": \"GLOBAL\", \"confidence\": 0.97, \"description\": \"俯视角完整盆栽植物，整株及花盆清晰可见，背景参照充足\"},\n  {\"frame_id\": 74, \"label\": \"GLOBAL\", \"confidence\": 0.96, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，相机位置略有变化\"},\n  {\"frame_id\": 75, \"label\": \"GLOBAL\", \"confidence\": 0.96, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，整体构图稳定\"},\n  {\"frame_id\": 76, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，无明显裁切\"},\n  {\"frame_id\": 77, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，背景参照完整\"},\n  {\"frame_id\": 78, \"label\": \"GLOBAL\", \"confidence\": 0.94, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，相机略微靠近\"},\n  {\"frame_id\": 79, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，视角略有变化\"},\n  {\"frame_id\": 80, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，构图中植物占比略增\"},\n  {\"frame_id\": 81, \"label\": \"GLOBAL\", \"confidence\": 0.91, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，整体参照仍充分\"},\n  {\"frame_id\": 82, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，无明显局部裁切\"},\n  {\"frame_id\": 83, \"label\": \"GLOBAL\", \"confidence\": 0.89, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，相机进一步靠近但整体仍完整\"},\n  {\"frame_id\": 84, \"label\": \"GLOBAL\", \"confidence\": 0.88, \"description\": \"俯视角完整盆栽植物，整株及花盆可见，虽更近但仍保持全局参照\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "The user wants a JSON array describing 12 frames of a plant video. I need to look at each frame and determine the label (GLOBAL, LOCAL, APPROACH, TRANSITION, UNKNOWN) and description based on the rules provided.\n\nLet me analyze each frame:\n\nFrame 73 (t=36.02s): Shows a full potted plant from a high angle. The entire plant and pot are visible. This is GLOBAL.\n\nFrame 74 (t=36.52s): Shows the full potted plant, similar to frame 73 but slightly different angle. GLOBAL.\n\nFrame 75 (t=37.02s): Shows the full potted plant from a slightly different angle. GLOBAL.\n\nFrame 76 (t=37.52s): Shows the full potted plant, camera seems to be getting slightly closer or at least still showing the whole plant. GLOBAL.\n\nFrame 77 (t=38.02s): Shows the full potted plant. GLOBAL.\n\nFrame 78 (t=38.52s): Shows the full potted plant, camera appears to be moving closer. GLOBAL.\n\nFrame 79 (t=39.02s): Shows the full potted plant, camera closer now. GLOBAL.\n\nFrame 80 (t=39.52s): Shows the full potted plant, camera closer. GLOBAL.\n\nFrame 81 (t=40.02s): Shows the full potted plant, camera closer still. GLOBAL.\n\nFrame 82 (t=40.52s): Shows the full potted plant from a slightly higher angle, still mostly global but the camera seems to be getting closer. GLOBAL.\n\nFrame 83 (t=41.02s): Shows the full potted plant, camera quite close now but still showing most of the plant. GLOBAL.\n\nFrame 84 (t=41.52s): Shows the full potted plant, camera close. GLOBAL.\n\nLooking at the sequence more carefully, this appears to be a continuous approach toward the plant. The frames show a gradual zoom-in or camera movement toward the plant. Let me reconsider - the plant is consistently shown in full with the pot visible across all frames, so they should all be GLOBAL.\n\nActually, let me look more carefully. The plant is being approached gradually. In the earlier frames (73-78), we see the full plant with some distance. As we progress (79-84), the camera gets closer but still shows the full plant and pot. \n\nI should also check for APPROACH - the rule says APPROACH is only for consecutive frames showing clear gradual approach. Since these are all static frames from a video, and the camera appears to be approaching the plant across the frames, I could label some as APPROACH. But the frames are individual snapshots, not a sequence showing motion. I think GLOBAL is appropriate for all since each frame independently shows the full plant.\n\nActually, re-reading the rules: \"APPROACH只有连续帧可见明确逐步接近才用\" - APPROACH is only used when consecutive frames show clear gradual approach. Since I'm analyzing individual frames, and they do show a progression of getting closer, some could be APPROACH. But the question is whether individual frames should be labeled APPROACH or whether it's about identifying a segment.\n\nI think the safest approach is to label based on what each individual frame shows. All frames show the complete plant with pot visible, so they're all GLOBAL. There's no frame that shows only partial leaves (LOCAL) or a transition state (TRANSITION).\n\nLet me reconsider more carefully by looking at each frame:\n\n73: Full plant visible, pot visible - GLOBAL\n74: Full plant visible, pot visible - GLOBAL  \n75: Full plant visible, pot visible - GLOBAL\n76: Full plant visible, pot visible - GLOBAL\n77: Full plant visible, pot visible - GLOBAL\n78: Full plant visible, pot visible - GLOBAL\n79: Full plant visible, pot visible - GLOBAL\n80: Full plant visible, pot visible - GLOBAL\n81: Full plant visible, pot visible - GLOBAL\n82: Full plant visible, pot visible - GLOBAL\n83: Full plant visible, pot visible - GLOBAL\n84: Full plant visible, pot visible - GLOBAL\n\nAll frames consistently show the complete potted plant from a high angle, so they should all be GLOBAL.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1520,
+      "prompt_tokens": 1694,
+      "total_tokens": 3214,
+      "completion_tokens_details": {
+        "reasoning_tokens": 955,
+        "text_tokens": 565
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:29:54.371703+00:00",
+  "frame_ids": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ],
+  "model": "agnes-2.5-flash"
+}

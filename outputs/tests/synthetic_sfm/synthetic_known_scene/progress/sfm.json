@@ -1,0 +1,24 @@
+{
+  "stage": "sfm",
+  "started_at": "2026-10-09T16:34:07.307167+00:00",
+  "signature": "a886042b9f72460d287a27116db210126571b1a8a530ca69fbf3c37762514e6e",
+  "configuration": {
+    "executable": "colmap",
+    "camera_model": "SIMPLE_RADIAL",
+    "max_image_size": 640,
+    "max_num_features": 2400,
+    "threads": 4,
+    "use_gpu": false,
+    "exhaustive_limit": 130,
+    "sequential_overlap": 10,
+    "joint_fallback": true,
+    "extra_options": {
+      "feature_extractor": {
+        "--ImageReader.camera_params": "580,320,240,0"
+      }
+    }
+  },
+  "status": "completed",
+  "finished_at": "2026-10-09T16:34:37.114955+00:00",
+  "elapsed_sec": 29.807803906034678
+}

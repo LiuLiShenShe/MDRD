@@ -1,0 +1,4 @@
+video_id,duration_sec,extracted_frames,registered_images,global_total,global_registered,local_total,local_registered,raw_3d_points,valid_3d_points,mean_reprojection_error,median_reprojection_error,quality_counts
+video_007,57.988333,116,115,105,105,7,7,8620,7227,1.4238118533443924,1.3971668599654983,"{'CLEAR': 107, 'MILD_BLUR': 9}"
+video_008,45.77,92,81,81,71,2,2,5519,4566,1.4916963846161824,1.4754774991552937,"{'CLEAR': 88, 'MILD_BLUR': 4}"
+video_020,33.22,67,67,61,61,2,2,17486,14991,1.2967752559545382,1.2419352658565934,"{'CLEAR': 62, 'MILD_BLUR': 5}"

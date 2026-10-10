@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "f4f58bdd6e92410bbf1819ac7f80324f",
+    "created": 1791535299,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 13, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Potted prayer plant (Calathea) fully visible on a yellow wooden table, entire pot and plant canopy in frame with background context visible.\"},\n  {\"frame_id\": 14, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Potted prayer plant fully visible on yellow table, similar framing to frame 13 with slight camera position change.\"},\n  {\"frame_id\": 15, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Potted prayer plant fully visible on yellow table, consistent global framing with mild camera movement from previous frame.\"},\n  {\"frame_id\": 16, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Potted prayer plant fully visible on yellow table, pot and whole canopy in frame with room background visible.\"},\n  {\"frame_id\": 17, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Potted prayer plant fully visible on yellow table, slight camera repositioning but entire plant and pot remain in frame.\"},\n  {\"frame_id\": 18, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Potted prayer plant fully visible on yellow table, continued global shot with slight angle change.\"},\n  {\"frame_id\": 19, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Potted prayer plant fully visible on yellow table, camera appears to have shifted position but plant remains complete in frame.\"},\n  {\"frame_id\": 20, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Potted prayer plant fully visible on yellow table, consistent global framing with minor camera adjustment.\"},\n  {\"frame_id\": 21, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Potted prayer plant fully visible on yellow table, entire pot and canopy in view with background details.\"},\n  {\"frame_id\": 22, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Potted prayer plant fully visible on yellow table, global shot maintained with slight positional change.\"},\n  {\"frame_id\": 23, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Potted prayer plant fully visible on yellow table, continuous global framing with minor camera movement.\"},\n  {\"frame_id\": 24, \"label\": \"GLOBAL\", \"confidence\": 0.88, \"description\": \"Potted prayer plant fully visible on yellow table, global shot with slight change in camera angle but no transition to close-up.\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "Let me analyze each frame carefully:\n\nFrame 13: Full pot visible, GLOBAL\nFrame 14: Full pot visible, GLOBAL\nFrame 15: Full pot visible, GLOBAL\nFrame 16: Full pot visible, GLOBAL\nFrame 17: Full pot visible, GLOBAL\nFrame 18: Full pot visible, GLOBAL\nFrame 19: Full pot visible, GLOBAL\nFrame 20: Full pot visible, GLOBAL\nFrame 21: Full pot visible, GLOBAL\nFrame 22: Full pot visible, GLOBAL\n\n\nFrame 23: Full pot visible, GLOBAL\nFrame 24: Full pot visible, GLOBAL\n\nAll frames maintain a consistent global perspective of the complete plant and pot without any transitions or close-ups.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 790,
+      "prompt_tokens": 1718,
+      "total_tokens": 2508,
+      "completion_tokens_details": {
+        "reasoning_tokens": 162,
+        "text_tokens": 628
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:41:39.430133+00:00",
+  "frame_ids": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "model": "agnes-2.5-flash"
+}

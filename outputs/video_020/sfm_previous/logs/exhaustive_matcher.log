@@ -1,0 +1,66 @@
+COMMAND ["colmap", "exhaustive_matcher", "--database_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_020/sfm/database.db", "--SiftMatching.use_gpu", "0", "--SiftMatching.num_threads", "8"]
+I20261009 16:07:54.172209 1957806 misc.cc:198] 
+==============================================================================
+Exhaustive feature matching
+==============================================================================
+E20261009 16:07:54.172935 1957807 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:07:54.173010 1957807 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:07:54.173020 1957808 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+E20261009 16:07:54.173853 1957812 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+E20261009 16:07:54.173436 1957810 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+E20261009 16:07:54.173626 1957811 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:07:54.173892 1957808 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173894 1957812 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173916 1957810 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+F20261009 16:07:54.173892 1957808 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173894 1957812 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173916 1957810 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173938 1957811 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:07:54.173278 1957809 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:07:54.173892 1957808 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173894 1957812 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173916 1957810 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173938 1957811 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.174041 1957809 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+F20261009 16:07:54.173892 1957808 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173894 1957812 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173916 1957810 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173938 1957811 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.174041 1957809 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+F20261009 16:07:54.173892 1957808 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173894 1957812 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173916 1957810 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173938 1957811 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.174041 1957809 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:07:54.174090 1957813 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:07:54.173892 1957808 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173894 1957812 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173916 1957810 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173938 1957811 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.174041 1957809 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.174141 1957813 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+E20261009 16:07:54.174602 1957814 logging.h:92] [sift.cc:84] Check failed: max_num_matches > 0 (0 vs. 0)
+F20261009 16:07:54.173892 1957808 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173894 1957812 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173916 1957810 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.173938 1957811 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.174041 1957809 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.174141 1957813 sift.cc:1007] Check failed: options_.Check() F20261009 16:07:54.174649 1957814 sift.cc:1007] Check failed: options_.Check() 
+*** Check failure stack trace: ***
+    @     0x77f0ff3d4031  google::LogMessage::Fail()
+    @     0x77f0ff3d4031  google::LogMessage::Fail()
+    @     0x77f0ff3d4031  google::LogMessage::Fail()
+    @     0x77f0ff3d4031  google::LogMessage::Fail()
+    @     0x77f0ff3d4031  google::LogMessage::Fail()
+    @     0x77f0ff3d4031  google::LogMessage::Fail()
+    @     0x77f0ff3d4031  google::LogMessage::Fail()
+    @     0x77f0ff3d4031  google::LogMessage::Fail()
+    @     0x77f0ff3db463  google::LogMessage::SendToLog()
+    @     0x77f0ff3db463  google::LogMessage::SendToLog()
+    @     0x77f0ff3db463  google::LogMessage::SendToLog()
+    @     0x77f0ff3db463  google::LogMessage::SendToLog()
+    @     0x77f0ff3d3b78  google::LogMessage::Flush()
+    @     0x77f0ff3db463  google::LogMessage::SendToLog()
+    @     0x77f0ff3db463  google::LogMessage::SendToLog()
+    @     0x77f0ff3db463  google::LogMessage::SendToLog()
+    @     0x77f0ff3db463  google::LogMessage::SendToLog()
+    @     0x77f0ff3e066d  google::LogMessageFatal::~LogMessageFatal()
+    @     0x5ffc28596fae  (unknown)
+    @     0x5ffc285fcb45  (unknown)
+    @     0x77f0ff3d3b78  google::LogMessage::Flush()
+    @     0x77f0ff3d3b78  google::LogMessage::Flush()
+    @     0x77f0ff3d3b78  google::LogMessage::Flush()
+    @     0x77f0ff3d3b78  google::LogMessage::Flush()
+    @     0x77f0fd4ecdb4  (unknown)
+    @     0x77f0ff3d3b78  google::LogMessage::Flush()
+    @     0x77f0ff3d3b78  google::LogMessage::Flush()
+    @     0x77f0ff3d3b78  google::LogMessage::Flush()
+    @     0x77f0fd09cb84  (unknown)
+    @     0x77f0ff3e066d  google::LogMessageFatal::~LogMessageFatal()
+    @     0x5ffc28596fae  (unknown)
+    @     0x5ffc285fcb45  (unknown)
+    @     0x77f0ff3e066d  google::LogMessageFatal::~LogMessageFatal()
+    @     0x77f0ff3e066d  google::LogMessageFatal::~LogMessageFatal()
+    @     0x5ffc28596fae  (unknown)
+    @     0x77f0fd129ecc  (unknown)
+    @     0x5ffc28596fae  (unknown)

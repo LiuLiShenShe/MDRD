@@ -1,0 +1,9 @@
+video_id,frame_id,filename,timestamp_sec,label,confidence,label_source
+synthetic_known_scene,1,frame_000001.png,0.0,GLOBAL,1.0,KNOWN_SYNTHETIC_FIXTURE
+synthetic_known_scene,2,frame_000002.png,0.5,GLOBAL,1.0,KNOWN_SYNTHETIC_FIXTURE
+synthetic_known_scene,3,frame_000003.png,1.0,GLOBAL,1.0,KNOWN_SYNTHETIC_FIXTURE
+synthetic_known_scene,4,frame_000004.png,1.5,GLOBAL,1.0,KNOWN_SYNTHETIC_FIXTURE
+synthetic_known_scene,5,frame_000005.png,2.0,GLOBAL,1.0,KNOWN_SYNTHETIC_FIXTURE
+synthetic_known_scene,6,frame_000006.png,2.5,GLOBAL,1.0,KNOWN_SYNTHETIC_FIXTURE
+synthetic_known_scene,7,frame_000007.png,3.0,GLOBAL,1.0,KNOWN_SYNTHETIC_FIXTURE
+synthetic_known_scene,8,frame_000008.png,3.5,GLOBAL,1.0,KNOWN_SYNTHETIC_FIXTURE

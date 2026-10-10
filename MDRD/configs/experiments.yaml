@@ -1,0 +1,7 @@
+phase: 01
+maximum_full_sfm_videos: 3
+selection: duration_quality_motion_diversity
+unknown_species: true
+metric_scale: relative_only
+foreground_masks: unavailable
+hypothesis_decisions: conservative_descriptive_with_block_units

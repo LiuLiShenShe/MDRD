@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "3dbb6db541f44bf2ad55aaf2253d498d",
+    "created": 1791534618,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 1, \"label\": \"GLOBAL\", \"confidence\": 0.95, \"description\": \"Full potted plant centered on wooden table with white paper, blue cube marker, bicycle wheels and patterned background fully visible.\"},\n  {\"frame_id\": 2, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Same scene as frame 1 with full plant and pot visible, slight camera repositioning, bicycle and background unchanged.\"},\n  {\"frame_id\": 3, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Same scene as frames 1-2 with full plant and pot visible, minor framing adjustment.\"},\n  {\"frame_id\": 4, \"label\": \"GLOBAL\", \"confidence\": 0.72, \"description\": \"Full plant still visible but camera slightly closer; more of the green bicycle frame appears on the left side of the shot.\"},\n  {\"frame_id\": 5, \"label\": \"GLOBAL\", \"confidence\": 0.75, \"description\": \"Full plant and pot remain visible; green bicycle frame more prominent in background; slight forward camera movement suggested.\"},\n  {\"frame_id\": 6, \"label\": \"GLOBAL\", \"confidence\": 0.72, \"description\": \"Full plant still in frame; camera appears slightly closer than frame 5; more bicycle detail visible.\"},\n  {\"frame_id\": 7, \"label\": \"LOCAL\", \"confidence\": 0.88, \"description\": \"Tighter framing on the potted plant; plant fills more of the frame; bicycle wheel partially visible in background.\"},\n  {\"frame_id\": 8, \"label\": \"LOCAL\", \"confidence\": 0.85, \"description\": \"Close-up of the plant; green bicycle frame visible in background; pot and plant dominate the composition.\"},\n  {\"frame_id\": 9, \"label\": \"LOCAL\", \"confidence\": 0.82, \"description\": \"Close-up of the plant; more of the green bicycle frame visible; plant fills the majority of the frame.\"},\n  {\"frame_id\": 10, \"label\": \"GLOBAL\", \"confidence\": 0.80, \"description\": \"Camera pulls back to show full plant again; wider shot includes more table surface and bicycle in background.\"},\n  {\"frame_id\": 11, \"label\": \"GLOBAL\", \"confidence\": 0.85, \"description\": \"Full potted plant visible on table; bicycle and patterned background clearly shown; similar framing to earlier frames.\"},\n  {\"frame_id\": 12, \"label\": \"GLOBAL\", \"confidence\": 0.88, \"description\": \"Full plant and pot on table with white paper and blue cube; green bicycle and background fully visible.\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "The user wants me to analyze a video frame contact sheet and return a JSON array describing each frame. Let me look at the image carefully.\n\nThe image shows 12 frames from video_008, each showing a potted plant on a wooden table with a bicycle in the background.\n\nLet me analyze each frame:\n\nFrame 1 (t=0.000s): Shows the full potted plant on a table, with bicycle wheels visible in background. This is a GLOBAL shot - whole plant and pot are visible with surrounding context.\n\nFrame 2 (t=0.500s): Similar to frame 1, full plant visible, GLOBAL.\n\nFrame 3 (t=1.000s): Similar, GLOBAL.\n\nFrame 4 (t=1.500s): The camera seems to have moved slightly - we can see more of the bicycle frame now. \n\nThe framing has shifted to reveal more of the green bike frame, suggesting either camera movement or a zoom out. Frame 5 maintains this broader perspective while Frame 6 appears to push in slightly, bringing the plant closer to fill more of the frame. By Frame 7, I'm getting a tighter composition on the plant itself.\n\nFrames 8 and 9 continue this gradual progression toward closer shots—the bicycle becomes less prominent as the plant fills more of the view, though it's not quite an extreme close-up yet. I'm noticing a pattern where the camera is systematically moving closer to the subject across these frames.\n\nLooking back at the original instruction about APPROACH, it seems the criteria require continuous frames showing clear, deliberate approach movements. Since this is a static contact sheet without actual motion data, I can't confirm whether there's genuine camera movement or if these are just different still frames. I'll need to apply UNKNOWN confidence to the approach classification since I can't verify the continuous nature of the movement from a single image. I'm realizing the key distinction is whether the camera is actively approaching versus just showing closer shots—if I can't confirm continuous approach motion from static frames, I should default to GLOBAL for these wider views since the entire plant and its surroundings remain visible. Now looking at frames 9 and 10, they're pulling back slightly, with frame 9 being more centered on the plant and frame 10 capturing more of the surrounding context. I'm realizing I need to reconsider my approach here. Looking at the frames more carefully, I can see there's actual movement—the camera seems to be shifting position rather than just zooming. Frames 1-3 show a high angle with the plant relatively small, then it moves to a slightly lower perspective in frames 4-6 before pulling back. But without seeing the motion directly, I should stick with what I can objectively confirm from the static images.\n\nNow examining the visual characteristics of each frame to determine labels. The first few frames show the complete plant in its pot with the bicycle visible in the background and the full table surface—all contextually complete shots that would be GLOBAL. But as I look further, frames 7 and beyond start showing tighter crops where the plant fills more of the frame, suggesting the camera is getting closer. I need to be consistent about whether these count as APPROACH (if I can detect motion) or just LOCAL close-ups. Looking at frames 10-12, the camera has pulled back significantly from the tight framing of frames 7-9, showing more of the surrounding environment including the bicycle and table. This suggests frames 1-6 were an approach sequence getting progressively closer to the plant, frames 7-9 represent the closest point before transitioning back to a wider view in frames 10-12. So I'm categorizing frames 1-6 as GLOBAL with approach confidence, frames 7-9 as LOCAL due to the tight framing, and frames 10-12 as GLOBAL again with the camera pulling away. I need to reconsider the APPROACH label—the instructions specify it should only apply when consecutive frames show clear, progressive approach motion, but these are static images so I can't definitively confirm continuous movement. For the GLOBAL vs LOCAL classification, I'm distinguishing between shots showing the complete plant with full context versus tighter frames where the plant dominates the composition and background elements are cropped out. I'm working through how to classify each frame based on what's visible—whether the full plant and context are present (GLOBAL) or if it's a tighter shot of just the plant and pot (LOCAL)—and noting the confidence levels where I'm less certain about the camera's exact movement or intent. I'm noticing frames 10-12 pull back to show the whole plant again, so I'll mark those as GLOBAL with moderate confidence. For frames 7-9, I need to decide between APPROACH or LOCAL — the frames are progressively tighter on the plant, which could indicate movement toward it, but I'm not entirely certain the camera is actually getting closer rather than just cropping tighter. I think LOCAL is more defensible here given the static images and uncertainty about actual motion.\n\nNow I'm labeling each frame with its confidence level and description. The first three frames are clearly GLOBAL shots of the whole plant on the table with a bicycle in the background. Frames 4-6 show a slight shift to reveal more of the green bicycle frame while keeping the full plant in view, though I'm less certain about whether there's actual approach movement versus just repositioning. Frame 7 marks a transition to a tighter, more focused shot on the plant itself.\n\nContinuing through the sequence, frames 8-9 maintain that closer framing with the plant filling more of the composition, though frame 9 captures more of the bicycle frame in the background. Then frames 10-12 pull back out to show the entire plant again, similar to the opening shots but from slightly different angles.\n\nActually, I'm second-guessing myself on frames 4-6. Looking more carefully at the visual progression, the framing does seem to be getting gradually closer—the plant occupies more of the frame from frame 4 onward. But without seeing the actual motion, I can't be certain this is a true APPROACH rather than just a series of static compositions. I'll stick with GLOBAL for frames 4-6 since the whole plant remains visible, though I'm marking them with slightly lower confidence.\n\nReconsidering once more: the distinction should hinge on whether the full plant and pot are visible. Frames 1-6 all show the complete plant in context, so they're all GLOBAL. Frames 7-9 tighten the framing around the plant alone, making them LOCAL. Frames 10-12 return to showing the full scene, so they're GLOBAL again. I'm settling on this interpretation and will assign appropriate confidence levels.\n\nNow I'm writing the JSON response...\n\nGenerating JSON output...\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 2037,
+      "prompt_tokens": 1677,
+      "total_tokens": 3714,
+      "completion_tokens_details": {
+        "reasoning_tokens": 1416,
+        "text_tokens": 621
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:30:18.718268+00:00",
+  "frame_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "model": "agnes-2.5-flash"
+}

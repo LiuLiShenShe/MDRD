@@ -1,0 +1,8 @@
+[
+  {
+    "video_id": "video_007",
+    "stage": "sfm",
+    "error": "RuntimeError('Command returned -6: see /fj/混合拍摄距离下的三维重建优化问题/outputs/video_007/sfm/logs/exhaustive_matcher.log')",
+    "traceback": "Traceback (most recent call last):\n  File \"/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/cli.py\", line 99, in main\n    run_sfm(directory, configuration, force)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/sfm/pipeline.py\", line 110, in run_sfm\n    command(\"exhaustive_matcher\", match_args)\n    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/sfm/pipeline.py\", line 92, in command\n    return run_command([executable, name] + flags, logs / (log_name or f\"{name}.log\"), allow_failure)\n  File \"/fj/混合拍摄距离下的三维重建优化问题/MDRD/src/mdrd/common.py\", line 101, in run_command\n    raise RuntimeError(f\"Command returned {returncode}: see {log_path}\")\nRuntimeError: Command returned -6: see /fj/混合拍摄距离下的三维重建优化问题/outputs/video_007/sfm/logs/exhaustive_matcher.log\n"
+  }
+]

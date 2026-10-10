@@ -1,0 +1,55 @@
+{
+  "http_status": 200,
+  "response": {
+    "id": "86f85fb00ccf4df2934e26b41195d84e",
+    "created": 1791535254,
+    "model": "agnes-2.5-flash",
+    "object": "chat.completion",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "\n\n```json\n[\n  {\"frame_id\": 73, \"label\": \"GLOBAL\", \"confidence\": 0.92, \"description\": \"Side-angled view of a potted plant on a yellow board; whole plant, pot, and surrounding background visible.\"},\n  {\"frame_id\": 74, \"label\": \"GLOBAL\", \"confidence\": 0.91, \"description\": \"Slight camera shift from frame 73; full potted plant and yellow board still clearly visible.\"},\n  {\"frame_id\": 75, \"label\": \"GLOBAL\", \"confidence\": 0.91, \"description\": \"Camera angle slightly elevated compared to frame 74; whole plant and pot remain in view on the yellow board.\"},\n  {\"frame_id\": 76, \"label\": \"GLOBAL\", \"confidence\": 0.88, \"description\": \"Similar side-angled perspective as frame 73; the entire potted plant and base surface are visible.\"},\n  {\"frame_id\": 77, \"label\": \"TRANSITION\", \"confidence\": 0.78, \"description\": \"Camera angle shifting toward a more top-down view; plant and pot still visible but framing begins to change.\"},\n  {\"frame_id\": 78, \"label\": \"TRANSITION\", \"confidence\": 0.75, \"description\": \"Higher elevated angle approaching a top-down view; whole plant and yellow board still fully visible.\"},\n  {\"frame_id\": 79, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Top-down view of the potted plant on a yellow board with white paper underneath; whole plant and pot clearly in frame.\"},\n  {\"frame_id\": 80, \"label\": \"GLOBAL\", \"confidence\": 0.93, \"description\": \"Continued top-down view; plant and pot remain fully visible on the yellow board.\"},\n  {\"frame_id\": 81, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Slightly rotated top-down angle; the entire potted plant and board are still in view.\"},\n  {\"frame_id\": 82, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Angled top-down view; full plant and pot visible on the yellow board.\"},\n  {\"frame_id\": 83, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Angled view from above; whole potted plant and yellow board clearly visible.\"},\n  {\"frame_id\": 84, \"label\": \"GLOBAL\", \"confidence\": 0.90, \"description\": \"Angled top-down view similar to frame 83; full plant, pot, and yellow board in frame.\"}\n]\n```",
+          "role": "assistant",
+          "reasoning_content": "The user wants me to analyze a video frame-by-frame based on the provided image.\nLet me look at the frames:\n- Frame 73 (36.02s): Shows a potted plant from a side/angled view, pot and plant visible on a yellow board\n- Frame 74 (36.52s): Similar side view, camera slightly moved\n- Frame 75 (37.02s): Similar view\n- Frame 76 (37.52s): Side view, similar to frame 73\n- Frame 77 (38.02s): Higher angle, showing more of the plant top\n- Frame 78 (38.52s): Even higher angle, more top-down view\n- Frame 79 (39.02s): Top-down view, plant and pot clearly visible on yellow board\n- Frame 80 (39.52s): Top-down view, similar to 79\n- Frame 81 (40.02s): Top-down view, slightly different angle\n- Frame 82 (40.52s): Angled top-down view\n- Frame 83 (41.02s): Angled view\n- Frame 84 (41.52s): Angled view, similar to 83\n\nThis appears to be a continuous shot where the camera is gradually moving from a side angle to a more top-down view. The plant (looks like a peperomia) stays in frame throughout. \n\nClassification:\n- Frames 73-76: GLOBAL - the whole plant and pot are visible, along with the yellow board and background\n- Frames 77-78: This could be a TRANSITION as the camera angle shifts significantly from side to top-down\n- Frames 79-84: GLOBAL - the whole plant remains visible in the frame\n\nWait, let me reconsider. The guidelines say APPROACH is only for consecutive frames showing clear gradual approach. This seems more like a camera angle change rather than approaching. \n\nLooking more carefully at the sequence, the camera starts at a side view and progressively moves upward and inward, creating a smooth transition from a lateral perspective to a top-down angle. The movement feels continuous and deliberate rather than a series of separate shots, suggesting the camera is physically repositioning around the plant.\n"
+        },
+        "provider_specific_fields": {
+          "matched_stop": 248046
+        }
+      }
+    ],
+    "usage": {
+      "completion_tokens": 1124,
+      "prompt_tokens": 1694,
+      "total_tokens": 2818,
+      "completion_tokens_details": {
+        "reasoning_tokens": 507,
+        "text_tokens": 617
+      },
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "image_tokens": 987
+      }
+    },
+    "metadata": {
+      "weight_version": "default"
+    }
+  },
+  "created_at": "2026-10-09T08:40:55.812618+00:00",
+  "frame_ids": [
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84
+  ],
+  "model": "agnes-2.5-flash"
+}

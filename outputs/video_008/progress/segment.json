@@ -1,0 +1,12 @@
+{
+  "stage": "segment",
+  "started_at": "2026-10-09T14:45:57.075094+00:00",
+  "signature": "d79dd4b8b2fff921437ec10013a39a59c8f436763c48ef42a14ef895cfbb3b46",
+  "configuration": {
+    "min_run": 4,
+    "scale_change_threshold": 0.045
+  },
+  "status": "completed",
+  "finished_at": "2026-10-09T14:45:57.694191+00:00",
+  "elapsed_sec": 0.6191134490072727
+}

@@ -1,0 +1,408 @@
+COMMAND ["colmap", "feature_extractor", "--database_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_020/sfm/database.db", "--image_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_020/sfm_images", "--image_list_path", "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_020/sfm/all_images.txt", "--ImageReader.camera_model", "SIMPLE_RADIAL", "--ImageReader.single_camera", "1", "--SiftExtraction.use_gpu", "0", "--SiftExtraction.num_threads", "8", "--SiftExtraction.max_image_size", "2400", "--SiftExtraction.max_num_features", "6000"]
+I20261009 18:12:02.827502 2705435 misc.cc:198] 
+==============================================================================
+Feature extraction
+==============================================================================
+I20261009 18:12:08.105263 2705452 feature_extraction.cc:254] Processed file [1/67]
+I20261009 18:12:08.105350 2705452 feature_extraction.cc:257]   Name:            frame_000002.png
+I20261009 18:12:08.105365 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:08.105377 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:08.105398 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:08.105417 2705452 feature_extraction.cc:302]   Features:        6890
+I20261009 18:12:08.859952 2705452 feature_extraction.cc:254] Processed file [2/67]
+I20261009 18:12:08.860036 2705452 feature_extraction.cc:257]   Name:            frame_000003.png
+I20261009 18:12:08.860052 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:08.860064 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:08.860077 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:08.860096 2705452 feature_extraction.cc:302]   Features:        7806
+I20261009 18:12:09.222685 2705452 feature_extraction.cc:254] Processed file [3/67]
+I20261009 18:12:09.222745 2705452 feature_extraction.cc:257]   Name:            frame_000004.png
+I20261009 18:12:09.222760 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:09.222772 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:09.222805 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:09.222826 2705452 feature_extraction.cc:302]   Features:        8777
+I20261009 18:12:09.397976 2705452 feature_extraction.cc:254] Processed file [4/67]
+I20261009 18:12:09.398046 2705452 feature_extraction.cc:257]   Name:            frame_000001.png
+I20261009 18:12:09.398067 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:09.398079 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:09.398092 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:09.398121 2705452 feature_extraction.cc:302]   Features:        7981
+I20261009 18:12:09.578390 2705452 feature_extraction.cc:254] Processed file [5/67]
+I20261009 18:12:09.578455 2705452 feature_extraction.cc:257]   Name:            frame_000005.png
+I20261009 18:12:09.578469 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:09.578481 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:09.578495 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:09.578516 2705452 feature_extraction.cc:302]   Features:        7581
+I20261009 18:12:09.748167 2705452 feature_extraction.cc:254] Processed file [6/67]
+I20261009 18:12:09.748229 2705452 feature_extraction.cc:257]   Name:            frame_000006.png
+I20261009 18:12:09.748242 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:09.748255 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:09.748268 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:09.748288 2705452 feature_extraction.cc:302]   Features:        8361
+I20261009 18:12:09.916524 2705452 feature_extraction.cc:254] Processed file [7/67]
+I20261009 18:12:09.916584 2705452 feature_extraction.cc:257]   Name:            frame_000007.png
+I20261009 18:12:09.916597 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:09.916610 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:09.916622 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:09.916641 2705452 feature_extraction.cc:302]   Features:        7147
+I20261009 18:12:10.086229 2705452 feature_extraction.cc:254] Processed file [8/67]
+I20261009 18:12:10.086285 2705452 feature_extraction.cc:257]   Name:            frame_000008.png
+I20261009 18:12:10.086299 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:10.086311 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:10.086324 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:10.086342 2705452 feature_extraction.cc:302]   Features:        7954
+I20261009 18:12:12.693791 2705452 feature_extraction.cc:254] Processed file [9/67]
+I20261009 18:12:12.693881 2705452 feature_extraction.cc:257]   Name:            frame_000009.png
+I20261009 18:12:12.693898 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:12.693912 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:12.693928 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:12.693948 2705452 feature_extraction.cc:302]   Features:        6429
+I20261009 18:12:13.820595 2705452 feature_extraction.cc:254] Processed file [10/67]
+I20261009 18:12:13.820675 2705452 feature_extraction.cc:257]   Name:            frame_000011.png
+I20261009 18:12:13.820696 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:13.820710 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:13.820726 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:13.820745 2705452 feature_extraction.cc:302]   Features:        7579
+I20261009 18:12:14.201159 2705452 feature_extraction.cc:254] Processed file [11/67]
+I20261009 18:12:14.201206 2705452 feature_extraction.cc:257]   Name:            frame_000013.png
+I20261009 18:12:14.201215 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:14.201220 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:14.201227 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:14.201241 2705452 feature_extraction.cc:302]   Features:        4525
+I20261009 18:12:14.262578 2705452 feature_extraction.cc:254] Processed file [12/67]
+I20261009 18:12:14.262643 2705452 feature_extraction.cc:257]   Name:            frame_000012.png
+I20261009 18:12:14.262650 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:14.262656 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:14.262665 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:14.262676 2705452 feature_extraction.cc:302]   Features:        7578
+I20261009 18:12:14.652211 2705452 feature_extraction.cc:254] Processed file [13/67]
+I20261009 18:12:14.652259 2705452 feature_extraction.cc:257]   Name:            frame_000010.png
+I20261009 18:12:14.652266 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:14.652273 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:14.652279 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:14.652292 2705452 feature_extraction.cc:302]   Features:        7617
+I20261009 18:12:14.703327 2705452 feature_extraction.cc:254] Processed file [14/67]
+I20261009 18:12:14.703394 2705452 feature_extraction.cc:257]   Name:            frame_000015.png
+I20261009 18:12:14.703403 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:14.703426 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:14.703434 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:14.703447 2705452 feature_extraction.cc:302]   Features:        7385
+I20261009 18:12:14.931473 2705452 feature_extraction.cc:254] Processed file [15/67]
+I20261009 18:12:14.931532 2705452 feature_extraction.cc:257]   Name:            frame_000016.png
+I20261009 18:12:14.931540 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:14.931546 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:14.931552 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:14.931565 2705452 feature_extraction.cc:302]   Features:        6942
+I20261009 18:12:15.312829 2705452 feature_extraction.cc:254] Processed file [16/67]
+I20261009 18:12:15.312873 2705452 feature_extraction.cc:257]   Name:            frame_000014.png
+I20261009 18:12:15.312879 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:15.312885 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:15.312891 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:15.312903 2705452 feature_extraction.cc:302]   Features:        9141
+I20261009 18:12:17.315022 2705452 feature_extraction.cc:254] Processed file [17/67]
+I20261009 18:12:17.315088 2705452 feature_extraction.cc:257]   Name:            frame_000017.png
+I20261009 18:12:17.315096 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:17.315102 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:17.315109 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:17.315122 2705452 feature_extraction.cc:302]   Features:        5426
+I20261009 18:12:18.687723 2705452 feature_extraction.cc:254] Processed file [18/67]
+I20261009 18:12:18.687844 2705452 feature_extraction.cc:257]   Name:            frame_000018.png
+I20261009 18:12:18.687862 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:18.687876 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:18.687898 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:18.687923 2705452 feature_extraction.cc:302]   Features:        7186
+I20261009 18:12:18.943490 2705452 feature_extraction.cc:254] Processed file [19/67]
+I20261009 18:12:18.943573 2705452 feature_extraction.cc:257]   Name:            frame_000019.png
+I20261009 18:12:18.943590 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:18.943605 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:18.943620 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:18.943643 2705452 feature_extraction.cc:302]   Features:        8765
+I20261009 18:12:19.314486 2705452 feature_extraction.cc:254] Processed file [20/67]
+I20261009 18:12:19.314563 2705452 feature_extraction.cc:257]   Name:            frame_000020.png
+I20261009 18:12:19.314591 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:19.314615 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:19.314639 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:19.314673 2705452 feature_extraction.cc:302]   Features:        6154
+I20261009 18:12:19.526566 2705452 feature_extraction.cc:254] Processed file [21/67]
+I20261009 18:12:19.526612 2705452 feature_extraction.cc:257]   Name:            frame_000021.png
+I20261009 18:12:19.526621 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:19.526628 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:19.526636 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:19.526650 2705452 feature_extraction.cc:302]   Features:        4298
+I20261009 18:12:19.539917 2705452 feature_extraction.cc:254] Processed file [22/67]
+I20261009 18:12:19.539954 2705452 feature_extraction.cc:257]   Name:            frame_000023.png
+I20261009 18:12:19.539959 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:19.539969 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:19.539973 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:19.539983 2705452 feature_extraction.cc:302]   Features:        4354
+I20261009 18:12:19.876001 2705452 feature_extraction.cc:254] Processed file [23/67]
+I20261009 18:12:19.876076 2705452 feature_extraction.cc:257]   Name:            frame_000024.png
+I20261009 18:12:19.876099 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:19.876119 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:19.876139 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:19.876170 2705452 feature_extraction.cc:302]   Features:        3401
+I20261009 18:12:20.044529 2705452 feature_extraction.cc:254] Processed file [24/67]
+I20261009 18:12:20.044593 2705452 feature_extraction.cc:257]   Name:            frame_000022.png
+I20261009 18:12:20.044605 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:20.044615 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:20.044625 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:20.044642 2705452 feature_extraction.cc:302]   Features:        6935
+I20261009 18:12:21.687203 2705452 feature_extraction.cc:254] Processed file [25/67]
+I20261009 18:12:21.687259 2705452 feature_extraction.cc:257]   Name:            frame_000025.png
+I20261009 18:12:21.687266 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:21.687273 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:21.687280 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:21.687292 2705452 feature_extraction.cc:302]   Features:        3444
+I20261009 18:12:22.775485 2705452 feature_extraction.cc:254] Processed file [26/67]
+I20261009 18:12:22.775585 2705452 feature_extraction.cc:257]   Name:            frame_000026.png
+I20261009 18:12:22.775610 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:22.775622 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:22.775635 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:22.775653 2705452 feature_extraction.cc:302]   Features:        1802
+I20261009 18:12:23.250463 2705452 feature_extraction.cc:254] Processed file [27/67]
+I20261009 18:12:23.250540 2705452 feature_extraction.cc:257]   Name:            frame_000027.png
+I20261009 18:12:23.250554 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:23.250566 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:23.250579 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:23.250605 2705452 feature_extraction.cc:302]   Features:        3204
+I20261009 18:12:23.596239 2705452 feature_extraction.cc:254] Processed file [28/67]
+I20261009 18:12:23.596300 2705452 feature_extraction.cc:257]   Name:            frame_000028.png
+I20261009 18:12:23.596314 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:23.596326 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:23.596338 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:23.596357 2705452 feature_extraction.cc:302]   Features:        4097
+I20261009 18:12:24.535972 2705452 feature_extraction.cc:254] Processed file [29/67]
+I20261009 18:12:24.536051 2705452 feature_extraction.cc:257]   Name:            frame_000031.png
+I20261009 18:12:24.536067 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:24.536109 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:24.536127 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:24.536149 2705452 feature_extraction.cc:302]   Features:        8069
+I20261009 18:12:24.885298 2705452 feature_extraction.cc:254] Processed file [30/67]
+I20261009 18:12:24.885360 2705452 feature_extraction.cc:257]   Name:            frame_000030.png
+I20261009 18:12:24.885375 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:24.885386 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:24.885399 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:24.885418 2705452 feature_extraction.cc:302]   Features:        7213
+I20261009 18:12:25.223742 2705452 feature_extraction.cc:254] Processed file [31/67]
+I20261009 18:12:25.223834 2705452 feature_extraction.cc:257]   Name:            frame_000029.png
+I20261009 18:12:25.223850 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:25.223862 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:25.223874 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:25.223898 2705452 feature_extraction.cc:302]   Features:        8547
+I20261009 18:12:26.316869 2705452 feature_extraction.cc:254] Processed file [32/67]
+I20261009 18:12:26.316928 2705452 feature_extraction.cc:257]   Name:            frame_000032.png
+I20261009 18:12:26.316937 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:26.316946 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:26.316952 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:26.316963 2705452 feature_extraction.cc:302]   Features:        7965
+I20261009 18:12:27.261222 2705452 feature_extraction.cc:254] Processed file [33/67]
+I20261009 18:12:27.261310 2705452 feature_extraction.cc:257]   Name:            frame_000033.png
+I20261009 18:12:27.261325 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:27.261338 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:27.261358 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:27.261379 2705452 feature_extraction.cc:302]   Features:        8973
+I20261009 18:12:28.261982 2705452 feature_extraction.cc:254] Processed file [34/67]
+I20261009 18:12:28.262038 2705452 feature_extraction.cc:257]   Name:            frame_000034.png
+I20261009 18:12:28.262044 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:28.262049 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:28.262055 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:28.262065 2705452 feature_extraction.cc:302]   Features:        9022
+I20261009 18:12:28.618942 2705452 feature_extraction.cc:254] Processed file [35/67]
+I20261009 18:12:28.619019 2705452 feature_extraction.cc:257]   Name:            frame_000035.png
+I20261009 18:12:28.619041 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:28.619064 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:28.619087 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:28.619120 2705452 feature_extraction.cc:302]   Features:        6906
+I20261009 18:12:28.790926 2705452 feature_extraction.cc:254] Processed file [36/67]
+I20261009 18:12:28.791002 2705452 feature_extraction.cc:257]   Name:            frame_000036.png
+I20261009 18:12:28.791028 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:28.791049 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:28.791074 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:28.791105 2705452 feature_extraction.cc:302]   Features:        6887
+I20261009 18:12:29.605098 2705452 feature_extraction.cc:254] Processed file [37/67]
+I20261009 18:12:29.605183 2705452 feature_extraction.cc:257]   Name:            frame_000037.png
+I20261009 18:12:29.605199 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:29.605212 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:29.605225 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:29.605245 2705452 feature_extraction.cc:302]   Features:        7105
+I20261009 18:12:30.847551 2705452 feature_extraction.cc:254] Processed file [38/67]
+I20261009 18:12:30.847635 2705452 feature_extraction.cc:257]   Name:            frame_000038.png
+I20261009 18:12:30.847651 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:30.847663 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:30.847676 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:30.847695 2705452 feature_extraction.cc:302]   Features:        7850
+I20261009 18:12:31.220800 2705452 feature_extraction.cc:254] Processed file [39/67]
+I20261009 18:12:31.220863 2705452 feature_extraction.cc:257]   Name:            frame_000039.png
+I20261009 18:12:31.220877 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:31.220889 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:31.220902 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:31.220921 2705452 feature_extraction.cc:302]   Features:        7022
+I20261009 18:12:31.971082 2705452 feature_extraction.cc:254] Processed file [40/67]
+I20261009 18:12:31.971160 2705452 feature_extraction.cc:257]   Name:            frame_000040.png
+I20261009 18:12:31.971174 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:31.971186 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:31.971199 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:31.971218 2705452 feature_extraction.cc:302]   Features:        8101
+I20261009 18:12:32.381441 2705452 feature_extraction.cc:254] Processed file [41/67]
+I20261009 18:12:32.381490 2705452 feature_extraction.cc:257]   Name:            frame_000041.png
+I20261009 18:12:32.381500 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:32.381507 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:32.381515 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:32.381529 2705452 feature_extraction.cc:302]   Features:        6254
+I20261009 18:12:33.323446 2705452 feature_extraction.cc:254] Processed file [42/67]
+I20261009 18:12:33.323530 2705452 feature_extraction.cc:257]   Name:            frame_000043.png
+I20261009 18:12:33.323545 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:33.323557 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:33.323571 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:33.323591 2705452 feature_extraction.cc:302]   Features:        8303
+I20261009 18:12:33.706121 2705452 feature_extraction.cc:254] Processed file [43/67]
+I20261009 18:12:33.706205 2705452 feature_extraction.cc:257]   Name:            frame_000042.png
+I20261009 18:12:33.706220 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:33.706233 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:33.706245 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:33.706265 2705452 feature_extraction.cc:302]   Features:        7590
+I20261009 18:12:34.060622 2705452 feature_extraction.cc:254] Processed file [44/67]
+I20261009 18:12:34.060680 2705452 feature_extraction.cc:257]   Name:            frame_000044.png
+I20261009 18:12:34.060694 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:34.060724 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:34.060736 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:34.060756 2705452 feature_extraction.cc:302]   Features:        8310
+I20261009 18:12:34.200402 2705452 feature_extraction.cc:254] Processed file [45/67]
+I20261009 18:12:34.200477 2705452 feature_extraction.cc:257]   Name:            frame_000045.png
+I20261009 18:12:34.200493 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:34.200506 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:34.200519 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:34.200539 2705452 feature_extraction.cc:302]   Features:        4459
+I20261009 18:12:35.597150 2705452 feature_extraction.cc:254] Processed file [46/67]
+I20261009 18:12:35.597242 2705452 feature_extraction.cc:257]   Name:            frame_000047.png
+I20261009 18:12:35.597265 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:35.597285 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:35.597311 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:35.597337 2705452 feature_extraction.cc:302]   Features:        6984
+I20261009 18:12:35.948786 2705452 feature_extraction.cc:254] Processed file [47/67]
+I20261009 18:12:35.948851 2705452 feature_extraction.cc:257]   Name:            frame_000046.png
+I20261009 18:12:35.948865 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:35.948877 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:35.948889 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:35.948909 2705452 feature_extraction.cc:302]   Features:        7461
+I20261009 18:12:36.660418 2705452 feature_extraction.cc:254] Processed file [48/67]
+I20261009 18:12:36.660507 2705452 feature_extraction.cc:257]   Name:            frame_000048.png
+I20261009 18:12:36.660531 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:36.660552 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:36.660573 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:36.660598 2705452 feature_extraction.cc:302]   Features:        7590
+I20261009 18:12:37.230798 2705452 feature_extraction.cc:254] Processed file [49/67]
+I20261009 18:12:37.230881 2705452 feature_extraction.cc:257]   Name:            frame_000049.png
+I20261009 18:12:37.230895 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:37.230907 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:37.230921 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:37.230940 2705452 feature_extraction.cc:302]   Features:        8274
+I20261009 18:12:37.804622 2705452 feature_extraction.cc:254] Processed file [50/67]
+I20261009 18:12:37.804703 2705452 feature_extraction.cc:257]   Name:            frame_000050.png
+I20261009 18:12:37.804718 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:37.804730 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:37.804744 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:37.804761 2705452 feature_extraction.cc:302]   Features:        5944
+I20261009 18:12:37.923599 2705452 feature_extraction.cc:254] Processed file [51/67]
+I20261009 18:12:37.923676 2705452 feature_extraction.cc:257]   Name:            frame_000051.png
+I20261009 18:12:37.923697 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:37.923717 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:37.923734 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:37.923750 2705452 feature_extraction.cc:302]   Features:        3590
+I20261009 18:12:38.060287 2705452 feature_extraction.cc:254] Processed file [52/67]
+I20261009 18:12:38.060357 2705452 feature_extraction.cc:257]   Name:            frame_000052.png
+I20261009 18:12:38.060371 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:38.060384 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:38.060396 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:38.060413 2705452 feature_extraction.cc:302]   Features:        3986
+I20261009 18:12:38.662441 2705452 feature_extraction.cc:254] Processed file [53/67]
+I20261009 18:12:38.662518 2705452 feature_extraction.cc:257]   Name:            frame_000053.png
+I20261009 18:12:38.662533 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:38.662545 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:38.662559 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:38.662575 2705452 feature_extraction.cc:302]   Features:        4295
+I20261009 18:12:39.603099 2705452 feature_extraction.cc:254] Processed file [54/67]
+I20261009 18:12:39.603183 2705452 feature_extraction.cc:257]   Name:            frame_000055.png
+I20261009 18:12:39.603200 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:39.603212 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:39.603224 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:39.603243 2705452 feature_extraction.cc:302]   Features:        2677
+I20261009 18:12:40.584528 2705452 feature_extraction.cc:254] Processed file [55/67]
+I20261009 18:12:40.584604 2705452 feature_extraction.cc:257]   Name:            frame_000054.png
+I20261009 18:12:40.584618 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:40.584630 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:40.584642 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:40.584661 2705452 feature_extraction.cc:302]   Features:        7775
+I20261009 18:12:41.751431 2705452 feature_extraction.cc:254] Processed file [56/67]
+I20261009 18:12:41.751513 2705452 feature_extraction.cc:257]   Name:            frame_000056.png
+I20261009 18:12:41.751531 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:41.751543 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:41.751556 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:41.751574 2705452 feature_extraction.cc:302]   Features:        8322
+I20261009 18:12:42.286329 2705452 feature_extraction.cc:254] Processed file [57/67]
+I20261009 18:12:42.286419 2705452 feature_extraction.cc:257]   Name:            frame_000059.png
+I20261009 18:12:42.286441 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:42.286461 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:42.286481 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:42.286509 2705452 feature_extraction.cc:302]   Features:        4189
+I20261009 18:12:42.312937 2705452 feature_extraction.cc:254] Processed file [58/67]
+I20261009 18:12:42.312994 2705452 feature_extraction.cc:257]   Name:            frame_000057.png
+I20261009 18:12:42.313001 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:42.313007 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:42.313015 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:42.313025 2705452 feature_extraction.cc:302]   Features:        8056
+I20261009 18:12:42.674930 2705452 feature_extraction.cc:254] Processed file [59/67]
+I20261009 18:12:42.675014 2705452 feature_extraction.cc:257]   Name:            frame_000058.png
+I20261009 18:12:42.675028 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:42.675058 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:42.675071 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:42.675091 2705452 feature_extraction.cc:302]   Features:        6752
+I20261009 18:12:43.429271 2705452 feature_extraction.cc:254] Processed file [60/67]
+I20261009 18:12:43.429347 2705452 feature_extraction.cc:257]   Name:            frame_000060.png
+I20261009 18:12:43.429360 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:43.429371 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:43.429382 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:43.429399 2705452 feature_extraction.cc:302]   Features:        7397
+I20261009 18:12:44.353091 2705452 feature_extraction.cc:254] Processed file [61/67]
+I20261009 18:12:44.353143 2705452 feature_extraction.cc:257]   Name:            frame_000062.png
+I20261009 18:12:44.353148 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:44.353152 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:44.353158 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:44.353165 2705452 feature_extraction.cc:302]   Features:        6740
+I20261009 18:12:44.964190 2705452 feature_extraction.cc:254] Processed file [62/67]
+I20261009 18:12:44.964262 2705452 feature_extraction.cc:257]   Name:            frame_000061.png
+I20261009 18:12:44.964282 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:44.964298 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:44.964313 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:44.964329 2705452 feature_extraction.cc:302]   Features:        8776
+I20261009 18:12:45.365437 2705452 feature_extraction.cc:254] Processed file [63/67]
+I20261009 18:12:45.365532 2705452 feature_extraction.cc:257]   Name:            frame_000063.png
+I20261009 18:12:45.365547 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:45.365559 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:45.365573 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:45.365589 2705452 feature_extraction.cc:302]   Features:        4860
+I20261009 18:12:46.244307 2705452 feature_extraction.cc:254] Processed file [64/67]
+I20261009 18:12:46.244395 2705452 feature_extraction.cc:257]   Name:            frame_000066.png
+I20261009 18:12:46.244411 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:46.244423 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:46.244436 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:46.244455 2705452 feature_extraction.cc:302]   Features:        2088
+I20261009 18:12:47.198768 2705452 feature_extraction.cc:254] Processed file [65/67]
+I20261009 18:12:47.198896 2705452 feature_extraction.cc:257]   Name:            frame_000067.png
+I20261009 18:12:47.198920 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:47.198940 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:47.198961 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:47.198988 2705452 feature_extraction.cc:302]   Features:        6159
+I20261009 18:12:47.213099 2705452 feature_extraction.cc:254] Processed file [66/67]
+I20261009 18:12:47.213168 2705452 feature_extraction.cc:257]   Name:            frame_000064.png
+I20261009 18:12:47.213184 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:47.213197 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:47.213210 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:47.213229 2705452 feature_extraction.cc:302]   Features:        7189
+I20261009 18:12:47.550135 2705452 feature_extraction.cc:254] Processed file [67/67]
+I20261009 18:12:47.550220 2705452 feature_extraction.cc:257]   Name:            frame_000065.png
+I20261009 18:12:47.550235 2705452 feature_extraction.cc:283]   Dimensions:      2160 x 3840
+I20261009 18:12:47.550246 2705452 feature_extraction.cc:286]   Camera:          #1 - SIMPLE_RADIAL
+I20261009 18:12:47.550259 2705452 feature_extraction.cc:289]   Focal Length:    4608.00px
+I20261009 18:12:47.550277 2705452 feature_extraction.cc:302]   Features:        9243
+I20261009 18:12:47.599903 2705435 timer.cc:91] Elapsed time: 0.746 [minutes]

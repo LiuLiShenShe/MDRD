@@ -1,0 +1,39 @@
+/home/test/biosoft/enter/lib/python3.13/site-packages/pytest_asyncio/plugin.py:207: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+..                                                                       [100%]
+=============================== warnings summary ===============================
+MDRD/tests/integration/test_external_pipeline.py:27
+  /fj/混合拍摄距离下的三维重建优化问题/MDRD/tests/integration/test_external_pipeline.py:27: SyntaxWarning: invalid escape sequence '\,'
+    run_command(["ffmpeg", "-hide_banner", "-y", "-f", "lavfi", "-i", "testsrc2=duration=3:size=320x240:rate=4", "-vf", "settb=expr=1/1000,setpts=N*250+if(gte(N\,4)\,130\,0)", "-fps_mode", "passthrough", "-enc_time_base", "1:1000", "-c:v", "libx264", "-video_track_timescale", "1000", "-threads", "2", str(video)], output / "create_vfr.log")
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_mathtext.py:45
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /fj/混合拍摄距离下的三维重建优化问题/outputs/tests/integration_results_final.xml -
+2 passed, 15 warnings in 37.33s

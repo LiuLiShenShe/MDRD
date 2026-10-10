@@ -1,0 +1,13 @@
+{
+  "image_id_i": 60,
+  "image_id_j": 62,
+  "filename_i": "frame_000060.png",
+  "filename_j": "frame_000061.png",
+  "match_count": 2618,
+  "verified_match_count": 2543,
+  "segment_i": "LOCAL_01",
+  "segment_j": "GLOBAL",
+  "group": "GLOBAL_LOCAL",
+  "geometry_verified_15": true,
+  "local_global_scale_ratio": 0.9211547374725342
+}

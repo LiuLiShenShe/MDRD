@@ -1,0 +1,104 @@
+{
+  "timestamps": [
+    2.75,
+    5.26667,
+    6.26667,
+    7.7666699999999995,
+    8.7675,
+    10.2683,
+    11.2683,
+    11.7683,
+    12.2683,
+    26.76915,
+    27.27,
+    27.77
+  ],
+  "candidates": [
+    {
+      "timestamp_sec": 2.75,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 5.26667,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 6.26667,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 7.7666699999999995,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 8.7675,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 10.2683,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 11.2683,
+      "reasons": [
+        "LOW_ADJACENT_HOMOGRAPHY_SUPPORT"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 11.7683,
+      "reasons": [
+        "LOW_ADJACENT_HOMOGRAPHY_SUPPORT"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 12.2683,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 26.76915,
+      "reasons": [
+        "SEGMENT_BOUNDARY"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 27.27,
+      "reasons": [
+        "LOW_ADJACENT_HOMOGRAPHY_SUPPORT"
+      ],
+      "priority": 1
+    },
+    {
+      "timestamp_sec": 27.77,
+      "reasons": [
+        "HIGH_2D_MOTION_NOT_METRIC_TRANSLATION"
+      ],
+      "priority": 1
+    }
+  ],
+  "maximum_additional_frames": 12,
+  "policy": "Preserve existing selected decoded frame indices; add nearest actual source PTS. Proposal is not a claim that new frames will register."
+}
