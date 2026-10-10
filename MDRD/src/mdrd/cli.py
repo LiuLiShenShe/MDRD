@@ -12,7 +12,7 @@ from mdrd.common import load_config, read_json, write_json
 def parser():
     argument_parser = argparse.ArgumentParser(description="Traceable Mixed-Distance Reconstruction Diagnostics")
     subparsers = argument_parser.add_subparsers(dest="command", required=True)
-    for command in ["inspect", "extract", "quality", "segment", "sfm", "analyze", "report", "run-all"]:
+    for command in ["inspect", "extract", "quality", "segment", "sfm", "analyze", "report", "run-all", "review-segments", "foreground", "supplement", "ablate-registration", "evidence", "phase1b-report"]:
         subparser = subparsers.add_parser(command)
         subparser.add_argument("--config")
         subparser.add_argument("--input", type=Path)
@@ -32,6 +32,8 @@ def parser():
         subparser.add_argument("--preview", action="store_true")
         subparser.add_argument("--override", type=Path)
         subparser.add_argument("--supplemental-times", type=Path)
+        subparser.add_argument("--checkpoint", type=Path)
+        subparser.add_argument("--densities", nargs="+", type=float)
     return argument_parser
 
 
@@ -49,7 +51,22 @@ def main(argv=None):
     configuration = load_config(args.config, overrides)
     output = Path(configuration["output_root"])
     output.mkdir(parents=True, exist_ok=True)
-    write_json(output / "last_run_configuration.json", configuration)
+    phase1b_commands = {"review-segments", "foreground", "supplement", "ablate-registration", "evidence", "phase1b-report"}
+    if args.command not in phase1b_commands:
+        write_json(output / "last_run_configuration.json", configuration)
+    if args.command in phase1b_commands:
+        selected = args.samples
+        if not selected and (output / "selection.json").exists():
+            selected = read_json(output / "selection.json")["selected_video_ids"]
+        if not selected:
+            raise SystemExit("Use --samples for Phase 1B")
+        if args.command == "review-segments":
+            from mdrd.phase1b.review import review_selected
+            review_selected(output, selected)
+        else:
+            from mdrd.phase1b.workflow import run_phase1b
+            run_phase1b(args.command, output, selected, args)
+        return 0
     from mdrd.video import discover, extract, inspect, preview_inventory
 
     video_root = args.video or args.input or configuration.get("video_root")

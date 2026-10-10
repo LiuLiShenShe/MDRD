@@ -1,0 +1,54 @@
+{
+  "phase": "M1",
+  "status": "EXECUTED",
+  "input_count": 27,
+  "fixed_global_count": 25,
+  "fixed_local_registered": 2,
+  "fixed_local_total": 2,
+  "registered": 26,
+  "raw_tracks": 5007,
+  "model_path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_020/M1/sfm/final",
+  "matching_strategy": "EXHAUSTIVE_ALL_PAIRS",
+  "alignment_to_M0": {
+    "status": "ALIGNED_COMMON_CAMERAS_ONLY",
+    "common_images": 26,
+    "scale": 0.6748372526812662,
+    "rms_residual": 0.12100524445478293,
+    "normalized_rms_residual": 0.040973049589036345,
+    "max_residual": 0.5297637616707789,
+    "caution": "Camera alignment does not imply 3D points are corresponding or have ground-truth accuracy"
+  },
+  "full_scene_evidence": {
+    "video_id": "M1",
+    "model": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_020/M1/sfm/final",
+    "scope": "FULL_SCENE_FILTERED_SAME_RECONSTRUCTION_POINTS; NOT_PLANT_GEOMETRY",
+    "same_points_global_and_local": 1881,
+    "median_new_local_direction_deg": 2.1412010871923215,
+    "local_directions_over_5deg": 239,
+    "candidate_pairs": 351,
+    "pairs_with_raw_matches": 351,
+    "pairs_with_verified_matches": 208,
+    "pairs_with_common_tracks": 258,
+    "raw_matches_total": 50565,
+    "verified_matches_total": 31867,
+    "filter_rejections": {
+      "nonfinite_or_high_point_error": 0,
+      "short_track": 552,
+      "invalid_association": 0,
+      "nonpositive_depth": 0,
+      "high_observation_error": 25,
+      "short_after_filter": 7
+    },
+    "plant_pair_match_funnel": null,
+    "limitations": [
+      "Raw and verified 2D match counts do not correspond one-to-one to 3D tracks",
+      "Only successfully reconstructed tracks have direction gain",
+      "No cross-model point IDs are equated without independently verified correspondences"
+    ]
+  },
+  "candidate_models": 5,
+  "elapsed_sec": 96.84348961990327,
+  "foreground_verified": false,
+  "foreground_tracks": null,
+  "note": "Input subset is not comparable to full Phase 01 M0 as a causal matching ablation"
+}

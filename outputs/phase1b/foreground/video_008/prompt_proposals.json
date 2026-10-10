@@ -1,0 +1,175 @@
+{
+  "created_at": "2026-10-10T08:32:16.075976+00:00",
+  "video_id": "video_008",
+  "status": "PROVISIONAL_AUTO_NOT_HUMAN",
+  "prompts": [
+    {
+      "frame_id": 40,
+      "filename": "frame_000040.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "frame_id": 42,
+      "filename": "frame_000042.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    },
+    {
+      "frame_id": 46,
+      "filename": "frame_000046.png",
+      "image_path": "outputs/video_008/sfm_images/frame_000046.png",
+      "image_sha256": "dfb95cb0770784a6fe970cb7d4bcdd445dfaab8dfb0ec63f58d1fdc8ae8c8452",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.18,
+        0.19,
+        0.79,
+        0.58
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "Leaves are fully visible; pot excluded per instructions."
+    },
+    {
+      "frame_id": 47,
+      "filename": "frame_000047.png",
+      "image_path": "outputs/video_008/sfm_images/frame_000047.png",
+      "image_sha256": "5fd3376a9d7c93c7207bbfbeb0d359cebcc2098e4c9feb00992a63c52aa65b52",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.12,
+        0.2,
+        0.86,
+        0.53
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "0.07"
+    },
+    {
+      "frame_id": 76,
+      "filename": "frame_000076.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 49 (char 50)"
+    },
+    {
+      "frame_id": 77,
+      "filename": "frame_000077.png",
+      "image_path": "outputs/video_008/sfm_images/frame_000077.png",
+      "image_sha256": "c1c5a3fe69c5dc6dcd6f0ea52baaaba0ef1524989e6be719f1bdc18a14680deb",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.05,
+        0.15,
+        0.65,
+        0.75
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 78,
+      "filename": "frame_000078.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "frame_id": 84,
+      "filename": "frame_000084.png",
+      "image_path": "outputs/video_008/sfm_images/frame_000084.png",
+      "image_sha256": "1a05ef00769bd4f7d2aa1a96a46697b9c69d7dfeb7031e472114e14fae49d711",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.21,
+        0.14,
+        0.86,
+        0.72
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 85,
+      "filename": "frame_000085.png",
+      "image_path": "outputs/video_008/sfm_images/frame_000085.png",
+      "image_sha256": "4af5e46d3623076d1fd99d45815ba5350c004b9e63c94cc36fb6dc9ac5ff32f4",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.19,
+        0.13,
+        0.83,
+        0.81
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 86,
+      "filename": "frame_000086.png",
+      "image_path": "outputs/video_008/sfm_images/frame_000086.png",
+      "image_sha256": "44362e60b00642bd7c1f1dbc4bde90ccea0c5c865a9f1e330807d7e37c1ae42c",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.55,
+        0.11,
+        1.0,
+        0.88
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 87,
+      "filename": "frame_000087.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "frame_id": 88,
+      "filename": "frame_000088.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Unterminated string starting at: line 3 column 3 (char 55)"
+    },
+    {
+      "frame_id": 89,
+      "filename": "frame_000089.png",
+      "image_path": "outputs/video_008/sfm_images/frame_000089.png",
+      "image_sha256": "4b24edc2839247e19737fc71db10f03c1b15709eb0868d9ae967214594a1c45b",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.12,
+        0.21,
+        0.98,
+        0.82
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "Medium. The plant is clearly visible as a green leafy specimen, but the image suffers from motion blur and is taken at a steep angle. The box encompasses the foliage while trying to exclude the yellow pot surface beneath it."
+    },
+    {
+      "frame_id": 90,
+      "filename": "frame_000090.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    }
+  ]
+}

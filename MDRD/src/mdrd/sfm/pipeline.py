@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 import pycolmap
 
-from mdrd.common import capture, read_json, run_command, sha256, stage, write_json
+from mdrd.common import capture, manifest_image_inputs, read_json, run_command, sha256, stage, write_json
 
 
 PAIR_ID_FACTOR = 2147483647
@@ -69,7 +69,14 @@ def run_sfm(directory, configuration, force=False):
     manifest_path = directory / "frame_manifest.csv"
     labels_path = directory / "segments" / "coarse_frame_labels.csv"
     quality_path = directory / "quality" / "frame_quality.csv"
-    with stage(directory, "sfm", parameters, [manifest_path, labels_path, quality_path], force) as execute:
+    def required_outputs():
+        required = [output / "sfm_summary.json", output / "database.db", output / "database_images.csv", output / "database_pairs.csv", output / "sfm_image_manifest.csv"]
+        if (output / "sfm_summary.json").exists():
+            previous_model = read_json(output / "sfm_summary.json").get("model_path")
+            if previous_model:
+                required += [Path(previous_model) / f"{name}.bin" for name in ("cameras", "images", "points3D")]
+        return required
+    with stage(directory, "sfm", parameters, [manifest_path, labels_path, quality_path, *manifest_image_inputs(manifest_path)], force, required_outputs=required_outputs) as execute:
         if not execute:
             return read_json(output / "sfm_summary.json")
         if output.exists():
@@ -92,7 +99,7 @@ def run_sfm(directory, configuration, force=False):
             for item in flags:
                 if str(item).startswith("--") and str(item)[2:] not in help_text[name]:
                     raise ValueError(f"Installed {name} does not support {item}")
-            return run_command([executable, name] + flags, logs / (log_name or f"{name}.log"), allow_failure)
+            return run_command([executable, name] + flags, logs / (log_name or f"{name}.log"), allow_failure, timeout=parameters.get("command_timeout_sec"))
 
         manifest = pd.read_csv(manifest_path)
         sfm_images = directory / "sfm_images"

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import csv
 import hashlib
 import importlib
 import json
@@ -57,6 +58,22 @@ def sha256(path):
         for chunk in iter(lambda: stream.read(4 * 1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def manifest_image_inputs(manifest_path):
+    manifest_path = Path(manifest_path)
+    if not manifest_path.is_file():
+        return []
+    with manifest_path.open(newline="", encoding="utf-8") as stream:
+        rows = csv.DictReader(stream)
+        paths = []
+        for row in rows:
+            value = row.get("image_path")
+            if not value:
+                continue
+            path = Path(value)
+            paths.append(path if path.is_absolute() else manifest_path.parent / path)
+    return paths
 
 
 def merge(target, source):
@@ -140,20 +157,37 @@ def environment_report(output, executable="colmap"):
 
 
 @contextmanager
-def stage(directory, name, parameters, inputs=(), force=False):
+def stage(directory, name, parameters, inputs=(), force=False, required_outputs=()):
     directory = Path(directory)
     progress = directory / "progress"
     progress.mkdir(parents=True, exist_ok=True)
-    module_directories = {"extract": ["video"], "quality": ["quality", "visualization"], "segment": ["segmentation", "visualization"], "sfm": ["sfm"], "analyze": ["geometry", "segmentation", "visualization", "sfm", "reporting"], "report": ["reporting"]}
+    module_directories = {"extract": ["video"], "quality": ["quality", "visualization"], "segment": ["segmentation", "visualization"], "sfm": ["sfm"], "analyze": ["geometry", "segmentation", "visualization", "sfm"], "foreground": ["geometry"], "report": ["reporting"]}
     source_root = Path(__file__).parent
     sources = [source_root / "common.py"]
+    if name == "foreground":
+        sources.append(source_root / "phase1b" / "foreground.py")
     for module_name in module_directories.get(name, []):
         sources.extend((source_root / module_name).rglob("*.py"))
-    signature_data = {"parameters": parameters, "inputs": {str(path): sha256(path) if Path(path).is_file() else None for path in inputs}, "code": {str(path.relative_to(source_root)): sha256(path) for path in sorted(sources)}}
+    input_signatures = {}
+    for input_path in inputs:
+        path = Path(input_path)
+        if path.is_file():
+            input_signatures[str(path)] = sha256(path)
+        elif path.is_dir():
+            input_signatures[str(path)] = {str(item.relative_to(path)): sha256(item) for item in sorted(path.rglob("*")) if item.is_file()}
+        else:
+            input_signatures[str(path)] = "MISSING"
+    signature_data = {"parameters": parameters, "inputs": input_signatures, "code": {str(path.relative_to(source_root)): sha256(path) for path in sorted(sources)}}
     signature = hashlib.sha256(json.dumps(serializable(signature_data), sort_keys=True).encode()).hexdigest()
     status_path = progress / f"{name}.json"
     existing = read_json(status_path) if status_path.exists() else {}
-    if not force and existing.get("signature") == signature and existing.get("status") == "completed":
+    paths = required_outputs() if callable(required_outputs) else required_outputs
+    current_outputs = {str(Path(path)): sha256(path) if Path(path).is_file() else None for path in paths}
+    recorded_outputs = existing.get("output_hashes", {})
+    outputs_valid = all(current_outputs.get(path) is not None and recorded_outputs.get(path) == current_outputs[path] for path in current_outputs)
+    if not current_outputs:
+        outputs_valid = True
+    if not force and existing.get("signature") == signature and existing.get("status") == "completed" and outputs_valid:
         yield False
         return
     started = time.perf_counter()
@@ -166,6 +200,8 @@ def stage(directory, name, parameters, inputs=(), force=False):
         raise
     else:
         record["status"] = "completed"
+        paths = required_outputs() if callable(required_outputs) else required_outputs
+        record["output_hashes"] = {str(Path(path)): sha256(path) if Path(path).is_file() else None for path in paths}
     finally:
         record.update(finished_at=now(), elapsed_sec=time.perf_counter() - started)
         write_json(status_path, record)

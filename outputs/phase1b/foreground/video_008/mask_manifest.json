@@ -1,0 +1,135 @@
+{
+  "video_id": "video_008",
+  "source": "PROVISIONAL_AUTO_NOT_HUMAN",
+  "checkpoint_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+  "masks": [
+    {
+      "mask_path": "outputs/phase1b/foreground/video_008/masks/frame_000046.png.png",
+      "mask_sha256": "14b8c26b005b7236b9c9c0e5e60788f7edd7acf1c587d666fe040dc5ec6ef9dd",
+      "image_path": "outputs/video_008/sfm_images/frame_000046.png",
+      "image_sha256": "dfb95cb0770784a6fe970cb7d4bcdd445dfaab8dfb0ec63f58d1fdc8ae8c8452",
+      "source": "PROVISIONAL_AUTO_AGNES_BOX_SAM_VIT_B",
+      "human_confirmed": false,
+      "sam_score_not_ground_truth_iou": 0.9726441502571106,
+      "plant_fraction": 0.14929012345679013,
+      "background_fraction": 0.0,
+      "note": "Outside candidate and boundaries remain UNCERTAIN; pot and background are not inferred by color or assumed from the box"
+    },
+    {
+      "mask_path": "outputs/phase1b/foreground/video_008/masks/frame_000047.png.png",
+      "mask_sha256": "928ddb42e2d55f24a44a262f8de38551c755974dda8b124fcf10efc637ea3f8d",
+      "image_path": "outputs/video_008/sfm_images/frame_000047.png",
+      "image_sha256": "5fd3376a9d7c93c7207bbfbeb0d359cebcc2098e4c9feb00992a63c52aa65b52",
+      "source": "PROVISIONAL_AUTO_AGNES_BOX_SAM_VIT_B",
+      "human_confirmed": false,
+      "sam_score_not_ground_truth_iou": 1.0033504962921143,
+      "plant_fraction": 0.15337577160493826,
+      "background_fraction": 0.0,
+      "note": "Outside candidate and boundaries remain UNCERTAIN; pot and background are not inferred by color or assumed from the box"
+    },
+    {
+      "mask_path": "outputs/phase1b/foreground/video_008/masks/frame_000077.png.png",
+      "mask_sha256": "8f45b166f640dc75f471ef46ebc2bf5313eb09ad1527f44ea07834ac2fd2e944",
+      "image_path": "outputs/video_008/sfm_images/frame_000077.png",
+      "image_sha256": "c1c5a3fe69c5dc6dcd6f0ea52baaaba0ef1524989e6be719f1bdc18a14680deb",
+      "source": "PROVISIONAL_AUTO_AGNES_BOX_SAM_VIT_B",
+      "human_confirmed": false,
+      "sam_score_not_ground_truth_iou": 0.9714241623878479,
+      "plant_fraction": 0.19194444444444445,
+      "background_fraction": 0.0,
+      "note": "Outside candidate and boundaries remain UNCERTAIN; pot and background are not inferred by color or assumed from the box"
+    },
+    {
+      "mask_path": "outputs/phase1b/foreground/video_008/masks/frame_000084.png.png",
+      "mask_sha256": "b2e9fab3d96c24a82c1ffd58201c870a0514232ad43b70081b0e8594d2633b7d",
+      "image_path": "outputs/video_008/sfm_images/frame_000084.png",
+      "image_sha256": "1a05ef00769bd4f7d2aa1a96a46697b9c69d7dfeb7031e472114e14fae49d711",
+      "source": "PROVISIONAL_AUTO_AGNES_BOX_SAM_VIT_B",
+      "human_confirmed": false,
+      "sam_score_not_ground_truth_iou": 0.9747077226638794,
+      "plant_fraction": 0.2143576388888889,
+      "background_fraction": 0.0,
+      "note": "Outside candidate and boundaries remain UNCERTAIN; pot and background are not inferred by color or assumed from the box"
+    },
+    {
+      "mask_path": "outputs/phase1b/foreground/video_008/masks/frame_000085.png.png",
+      "mask_sha256": "fecc3f28c4dac00416117c93758100cf45275e510997d6da0826877cede1838d",
+      "image_path": "outputs/video_008/sfm_images/frame_000085.png",
+      "image_sha256": "4af5e46d3623076d1fd99d45815ba5350c004b9e63c94cc36fb6dc9ac5ff32f4",
+      "source": "PROVISIONAL_AUTO_AGNES_BOX_SAM_VIT_B",
+      "human_confirmed": false,
+      "sam_score_not_ground_truth_iou": 0.8387588858604431,
+      "plant_fraction": 0.28926118827160496,
+      "background_fraction": 0.0,
+      "note": "Outside candidate and boundaries remain UNCERTAIN; pot and background are not inferred by color or assumed from the box"
+    },
+    {
+      "mask_path": "outputs/phase1b/foreground/video_008/masks/frame_000086.png.png",
+      "mask_sha256": "640d507c7f20f02cfff34d1e693b7dea88ab139069143620523cd1dcc73f0eac",
+      "image_path": "outputs/video_008/sfm_images/frame_000086.png",
+      "image_sha256": "44362e60b00642bd7c1f1dbc4bde90ccea0c5c865a9f1e330807d7e37c1ae42c",
+      "source": "PROVISIONAL_AUTO_AGNES_BOX_SAM_VIT_B",
+      "human_confirmed": false,
+      "sam_score_not_ground_truth_iou": 0.9408220052719116,
+      "plant_fraction": 0.16329282407407408,
+      "background_fraction": 0.0,
+      "note": "Outside candidate and boundaries remain UNCERTAIN; pot and background are not inferred by color or assumed from the box"
+    },
+    {
+      "mask_path": "outputs/phase1b/foreground/video_008/masks/frame_000089.png.png",
+      "mask_sha256": "f049fc0de95f6e328ad17bae0a88530f49d3ea1f55d8b2d8b47a10bdf31bf9e3",
+      "image_path": "outputs/video_008/sfm_images/frame_000089.png",
+      "image_sha256": "4b24edc2839247e19737fc71db10f03c1b15709eb0868d9ae967214594a1c45b",
+      "source": "PROVISIONAL_AUTO_AGNES_BOX_SAM_VIT_B",
+      "human_confirmed": false,
+      "sam_score_not_ground_truth_iou": 0.9118093252182007,
+      "plant_fraction": 0.15358024691358024,
+      "background_fraction": 0.0,
+      "note": "Outside candidate and boundaries remain UNCERTAIN; pot and background are not inferred by color or assumed from the box"
+    }
+  ],
+  "failures": [
+    {
+      "frame_id": 40,
+      "filename": "frame_000040.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "frame_id": 42,
+      "filename": "frame_000042.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)"
+    },
+    {
+      "frame_id": 76,
+      "filename": "frame_000076.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 49 (char 50)"
+    },
+    {
+      "frame_id": 78,
+      "filename": "frame_000078.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "frame_id": 87,
+      "filename": "frame_000087.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "frame_id": 88,
+      "filename": "frame_000088.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Unterminated string starting at: line 3 column 3 (char 55)"
+    },
+    {
+      "frame_id": 90,
+      "filename": "frame_000090.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    }
+  ]
+}

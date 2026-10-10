@@ -1,0 +1,106 @@
+{
+  "created_at": "2026-10-10T10:40:31.128351+00:00",
+  "engineering_status": "PARTIAL",
+  "research_evidence_status": "INSUFFICIENT",
+  "tests": {
+    "tests": 65,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "hypotheses": {
+    "H1": {
+      "status": "INCONCLUSIVE",
+      "FULL_SCENE_EVIDENCE": {
+        "video_007": "INCONCLUSIVE",
+        "video_008": "INCONCLUSIVE",
+        "video_020": "INCONCLUSIVE"
+      },
+      "PLANT_FOREGROUND_EVIDENCE": "PROVISIONAL_AUTO_ONLY_OR_MISSING",
+      "VERIFIED_LOCAL_ROI_EVIDENCE": null,
+      "COUNTEREVIDENCE": "Phase 01 already registers most images, including all tagged local images in video_007/video_020 and registered tagged local images in video_008; no absolute 3D ground truth",
+      "REMAINING_UNCERTAINTY": "Human time intervals, plant/pot masks and matched same-leaf overlap not independently verified"
+    },
+    "H2": {
+      "status": "INCONCLUSIVE",
+      "FULL_SCENE_EVIDENCE": {
+        "video_007": "INCONCLUSIVE",
+        "video_008": "INCONCLUSIVE",
+        "video_020": "INCONCLUSIVE"
+      },
+      "PLANT_FOREGROUND_EVIDENCE": "PROVISIONAL_AUTO_ONLY_OR_MISSING",
+      "VERIFIED_LOCAL_ROI_EVIDENCE": null,
+      "COUNTEREVIDENCE": "Phase 01 already registers most images, including all tagged local images in video_007/video_020 and registered tagged local images in video_008; no absolute 3D ground truth",
+      "REMAINING_UNCERTAINTY": "Human time intervals, plant/pot masks and matched same-leaf overlap not independently verified"
+    },
+    "H3": {
+      "status": "INCONCLUSIVE",
+      "FULL_SCENE_EVIDENCE": {
+        "video_007": "SUPPORTED",
+        "video_008": "INCONCLUSIVE",
+        "video_020": "INCONCLUSIVE"
+      },
+      "PLANT_FOREGROUND_EVIDENCE": "PROVISIONAL_AUTO_ONLY_OR_MISSING",
+      "VERIFIED_LOCAL_ROI_EVIDENCE": null,
+      "COUNTEREVIDENCE": "Phase 01 already registers most images, including all tagged local images in video_007/video_020 and registered tagged local images in video_008; no absolute 3D ground truth",
+      "REMAINING_UNCERTAINTY": "Human time intervals, plant/pot masks and matched same-leaf overlap not independently verified"
+    },
+    "H4": {
+      "status": "INCONCLUSIVE",
+      "FULL_SCENE_EVIDENCE": {
+        "video_007": "INCONCLUSIVE",
+        "video_008": "INCONCLUSIVE",
+        "video_020": "INCONCLUSIVE"
+      },
+      "PLANT_FOREGROUND_EVIDENCE": "PROVISIONAL_AUTO_ONLY_OR_MISSING",
+      "VERIFIED_LOCAL_ROI_EVIDENCE": null,
+      "COUNTEREVIDENCE": "Phase 01 already registers most images, including all tagged local images in video_007/video_020 and registered tagged local images in video_008; no absolute 3D ground truth",
+      "REMAINING_UNCERTAINTY": "Human time intervals, plant/pot masks and matched same-leaf overlap not independently verified"
+    }
+  },
+  "samples": {
+    "video_007": {
+      "source_integrity": true,
+      "phase01_artifacts_intact": true,
+      "review_human_confirmed": false,
+      "foreground_verified": false,
+      "ablations_executed": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    },
+    "video_008": {
+      "source_integrity": true,
+      "phase01_artifacts_intact": true,
+      "review_human_confirmed": false,
+      "foreground_verified": false,
+      "ablations_executed": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    },
+    "video_020": {
+      "source_integrity": true,
+      "phase01_artifacts_intact": true,
+      "review_human_confirmed": false,
+      "foreground_verified": false,
+      "ablations_executed": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    }
+  },
+  "single_research_direction": "NO_RESEARCH_DIRECTION_CONFIRMED",
+  "unmet": [
+    "Human review for LOCAL and ROI overlap",
+    "Validated multi-view plant masks",
+    "M4 controlled cross-scale experiment",
+    "Uniform-density SfM comparison not run",
+    "Full-GLOBAL bridge sensitivity check timed out",
+    "Independent 3D ground truth"
+  ],
+  "phase01_untouched": true
+}

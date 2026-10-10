@@ -1,0 +1,273 @@
+{
+  "video_id": "M3",
+  "total_images": 43,
+  "global_candidates": 26,
+  "matching_strategy": "EXHAUSTIVE_ALL_PAIRS",
+  "strategy": "JOINT_FALLBACK_DIFFERENT_GAUGE_NO_ABSOLUTE_BASELINE_COMPARISON",
+  "global_models": [
+    {
+      "path": "outputs/phase1b/ablations/video_008/M3/sfm/global/0",
+      "registered_images": 2,
+      "registered_filenames": [
+        "frame_000005.png",
+        "frame_000001.png"
+      ],
+      "num_3d_points": 6,
+      "mean_reprojection_error": 1.775279602252035,
+      "median_reprojection_error": 2.3089622934506053,
+      "track_length_distribution": {
+        "2": 6
+      },
+      "cameras": [
+        {
+          "camera_id": 1,
+          "model": "SIMPLE_RADIAL",
+          "width": 2160,
+          "height": 3840,
+          "params": [
+            380068.7571325632,
+            1080.0,
+            1920.0,
+            -5819.7473183001275
+          ],
+          "focal_to_max_dimension": 98.976238836605,
+          "bogus_parameters": true
+        }
+      ]
+    }
+  ],
+  "other_models": [
+    {
+      "path": "outputs/phase1b/ablations/video_008/M3/sfm/continued",
+      "registered_images": 2,
+      "registered_filenames": [
+        "frame_000005.png",
+        "frame_000001.png"
+      ],
+      "num_3d_points": 6,
+      "mean_reprojection_error": 1.775279602252035,
+      "median_reprojection_error": 2.3089622934506053,
+      "track_length_distribution": {
+        "2": 6
+      },
+      "cameras": [
+        {
+          "camera_id": 1,
+          "model": "SIMPLE_RADIAL",
+          "width": 2160,
+          "height": 3840,
+          "params": [
+            380068.7571325632,
+            1080.0,
+            1920.0,
+            -5819.7473183001275
+          ],
+          "focal_to_max_dimension": 98.976238836605,
+          "bogus_parameters": true
+        }
+      ]
+    },
+    {
+      "path": "outputs/phase1b/ablations/video_008/M3/sfm/registered",
+      "registered_images": 2,
+      "registered_filenames": [
+        "frame_000005.png",
+        "frame_000001.png"
+      ],
+      "num_3d_points": 6,
+      "mean_reprojection_error": 1.7752796022520343,
+      "median_reprojection_error": 2.3089622934506053,
+      "track_length_distribution": {
+        "2": 6
+      },
+      "cameras": [
+        {
+          "camera_id": 1,
+          "model": "SIMPLE_RADIAL",
+          "width": 2160,
+          "height": 3840,
+          "params": [
+            380068.7571325632,
+            1080.0,
+            1920.0,
+            -5819.7473183001275
+          ],
+          "focal_to_max_dimension": 98.976238836605,
+          "bogus_parameters": true
+        }
+      ]
+    },
+    {
+      "path": "outputs/phase1b/ablations/video_008/M3/sfm/joint/0",
+      "registered_images": 37,
+      "registered_filenames": [
+        "extra_001253.jpg",
+        "frame_000091.png",
+        "extra_001396.jpg",
+        "frame_000092.png",
+        "extra_002259.jpg",
+        "extra_002574.jpg",
+        "extra_002619.jpg",
+        "extra_001306.jpg",
+        "frame_000005.png",
+        "frame_000001.png",
+        "frame_000038.png",
+        "frame_000043.png",
+        "frame_000045.png",
+        "frame_000044.png",
+        "frame_000046.png",
+        "frame_000047.png",
+        "frame_000049.png",
+        "frame_000058.png",
+        "frame_000054.png",
+        "frame_000048.png",
+        "frame_000063.png",
+        "frame_000068.png",
+        "frame_000072.png",
+        "frame_000077.png",
+        "frame_000078.png",
+        "frame_000079.png",
+        "frame_000081.png",
+        "frame_000080.png",
+        "frame_000082.png",
+        "frame_000083.png",
+        "frame_000084.png",
+        "frame_000086.png",
+        "frame_000085.png",
+        "frame_000087.png",
+        "frame_000089.png",
+        "frame_000088.png",
+        "frame_000090.png"
+      ],
+      "num_3d_points": 2637,
+      "mean_reprojection_error": 1.28972551381895,
+      "median_reprojection_error": 1.2892375878298985,
+      "track_length_distribution": {
+        "2": 397,
+        "3": 877,
+        "4": 518,
+        "5": 270,
+        "6": 177,
+        "7": 114,
+        "8": 75,
+        "9": 46,
+        "10": 44,
+        "11": 28,
+        "12": 26,
+        "13": 31,
+        "14": 15,
+        "15": 10,
+        "16": 5,
+        "17": 1,
+        "18": 2,
+        "19": 1
+      },
+      "cameras": [
+        {
+          "camera_id": 1,
+          "model": "SIMPLE_RADIAL",
+          "width": 2160,
+          "height": 3840,
+          "params": [
+            3278.4011077903183,
+            1080.0,
+            1920.0,
+            0.020352604935197686
+          ],
+          "focal_to_max_dimension": 0.853750288487062,
+          "bogus_parameters": false
+        }
+      ]
+    }
+  ],
+  "global_seed_filenames": [
+    "frame_000005.png",
+    "frame_000001.png"
+  ],
+  "pnp_inliers_note": "PnP inlier counts unavailable as structured CLI output; kept missing, not inferred from match counts.",
+  "foreground_note": "No verified foreground masks: reconstructed points may primarily constrain background.",
+  "final_model": {
+    "path": "outputs/phase1b/ablations/video_008/M3/sfm/final",
+    "registered_images": 37,
+    "registered_filenames": [
+      "frame_000078.png",
+      "frame_000077.png",
+      "frame_000072.png",
+      "frame_000068.png",
+      "frame_000063.png",
+      "frame_000048.png",
+      "frame_000054.png",
+      "frame_000058.png",
+      "extra_001306.jpg",
+      "frame_000084.png",
+      "frame_000005.png",
+      "frame_000086.png",
+      "frame_000001.png",
+      "frame_000085.png",
+      "frame_000083.png",
+      "extra_002619.jpg",
+      "frame_000087.png",
+      "frame_000089.png",
+      "extra_002259.jpg",
+      "frame_000080.png",
+      "frame_000088.png",
+      "extra_002574.jpg",
+      "frame_000082.png",
+      "frame_000090.png",
+      "extra_001396.jpg",
+      "frame_000081.png",
+      "frame_000092.png",
+      "extra_001253.jpg",
+      "frame_000079.png",
+      "frame_000091.png",
+      "frame_000045.png",
+      "frame_000038.png",
+      "frame_000043.png",
+      "frame_000044.png",
+      "frame_000046.png",
+      "frame_000047.png",
+      "frame_000049.png"
+    ],
+    "num_3d_points": 2647,
+    "mean_reprojection_error": 1.4011225826748002,
+    "median_reprojection_error": 1.3659486930833138,
+    "track_length_distribution": {
+      "2": 285,
+      "3": 949,
+      "4": 576,
+      "5": 289,
+      "6": 176,
+      "7": 116,
+      "8": 75,
+      "9": 41,
+      "10": 39,
+      "11": 31,
+      "12": 25,
+      "13": 18,
+      "14": 15,
+      "15": 7,
+      "16": 1,
+      "17": 2,
+      "18": 1,
+      "19": 1
+    },
+    "cameras": [
+      {
+        "camera_id": 1,
+        "model": "SIMPLE_RADIAL",
+        "width": 2160,
+        "height": 3840,
+        "params": [
+          3279.789060852896,
+          1080.0,
+          1920.0,
+          0.022676904331317034
+        ],
+        "focal_to_max_dimension": 0.8541117345971083,
+        "bogus_parameters": false
+      }
+    ]
+  },
+  "model_path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/final",
+  "status": "RECONSTRUCTED_REQUIRES_GEOMETRIC_AUDIT"
+}

@@ -1,0 +1,25 @@
+{
+  "video_id": "video_020",
+  "model_path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_020/sfm/final",
+  "mask_images": 0,
+  "mask_frames_by_stage": {},
+  "human_verified_mask_images": 0,
+  "candidate_foreground_points": 0,
+  "candidate_track_length_median": null,
+  "candidate_point_reprojection_error_median": null,
+  "candidate_global_local_pair_angle_median_deg": null,
+  "candidate_local_local_pair_angle_median_deg": null,
+  "human_verified_foreground_points": 0,
+  "candidate_global_local_shared": 0,
+  "candidate_local_only": 0,
+  "candidate_background_points": 0,
+  "candidate_uncertain_points": 14991,
+  "verified_plant_geometry_available": false,
+  "status": "PROVISIONAL_AUTO_NOT_TARGET_GROUND_TRUTH",
+  "limitations": [
+    "Masks are 3-valued and must match COLMAP image dimensions and FFmpeg autorotation",
+    "Automatic proposals do not prove plant/pot separation",
+    "Votes are on the same filtered 3D point across multiple images",
+    "No validated same-leaf ROI identity or independent 3D truth"
+  ]
+}

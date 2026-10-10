@@ -1,0 +1,63 @@
+COMMAND ["colmap", "point_triangulator", "--database_path", "outputs/phase1b/ablations/video_008/M1/sfm/database.db", "--image_path", "outputs/phase1b/ablations/video_008/M1/sfm_images", "--input_path", "outputs/phase1b/ablations/video_008/M1/sfm/continued", "--output_path", "outputs/phase1b/ablations/video_008/M1/sfm/triangulated", "--Mapper.num_threads", "8"]
+I20261010 16:52:07.671212 2112340 misc.cc:198] 
+==============================================================================
+Loading model
+==============================================================================
+I20261010 16:52:07.741014 2112340 misc.cc:198] 
+==============================================================================
+Loading database
+==============================================================================
+I20261010 16:52:07.766641 2112340 database_cache.cc:54] Loading cameras...
+I20261010 16:52:07.766754 2112340 database_cache.cc:64]  1 in 0.000s
+I20261010 16:52:07.766806 2112340 database_cache.cc:72] Loading matches...
+I20261010 16:52:07.949868 2112340 database_cache.cc:78]  91 in 0.183s
+I20261010 16:52:07.949945 2112340 database_cache.cc:94] Loading images...
+I20261010 16:52:08.688927 2112340 database_cache.cc:143]  28 in 0.739s (connected 23)
+I20261010 16:52:08.689016 2112340 database_cache.cc:154] Building correspondence graph...
+I20261010 16:52:08.693953 2112340 database_cache.cc:190]  in 0.005s (ignored 0)
+I20261010 16:52:08.694240 2112340 timer.cc:91] Elapsed time: 0.016 [minutes]
+I20261010 16:52:08.695899 2112340 misc.cc:198] 
+==============================================================================
+Triangulating image #3 (0)
+==============================================================================
+I20261010 16:52:08.695938 2112340 sfm.cc:473] => Image sees 0 / 120 points
+I20261010 16:52:08.735610 2112340 sfm.cc:478] => Triangulated 14 points
+I20261010 16:52:08.735669 2112340 misc.cc:198] 
+==============================================================================
+Triangulating image #6 (1)
+==============================================================================
+I20261010 16:52:08.735684 2112340 sfm.cc:473] => Image sees 14 / 177 points
+I20261010 16:52:08.736182 2112340 sfm.cc:478] => Triangulated 0 points
+I20261010 16:52:08.736200 2112340 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:52:08.736225 2112340 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:52:08.736244 2112340 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:52:08.736311 2112340 misc.cc:198] 
+==============================================================================
+Bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.909572e+01    0.00e+00    5.84e+01   0.00e+00   0.00e+00  1.00e+04        0    9.80e-05    3.37e-04
+   1  1.897822e+01    1.18e-01    1.21e-02   0.00e+00   1.00e+00  3.00e+04        0    1.15e-04    5.14e-04
+I20261010 16:52:08.737170 2112340 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:52:08.737244 2112340 bundle_adjustment.cc:942] 
+    Residuals : 56
+   Parameters : 42
+   Iterations : 2
+         Time : 0.000545025 [s]
+ Initial cost : 0.583948 [px]
+   Final cost : 0.582148 [px]
+  Termination : Convergence
+
+I20261010 16:52:08.737291 2112340 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:52:08.737320 2112340 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:52:08.737351 2112340 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 16:52:08.737363 2112340 sfm.cc:521] => Changed observations: 0.000000
+I20261010 16:52:08.737412 2112340 misc.cc:198] 
+==============================================================================
+Extracting colors
+==============================================================================

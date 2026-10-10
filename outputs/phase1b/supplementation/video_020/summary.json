@@ -1,0 +1,49 @@
+{
+  "video_id": "video_020",
+  "source_sha256": "19ddbd2d8a7b3c87e81d409b871edc8c6b1a9fb5bd0fde434a630c25cfd3c81c",
+  "original_2fps_frames": 67,
+  "densities": {
+    "4.0": {
+      "source_frame_indices": [
+        1606,
+        1636,
+        1666,
+        1696,
+        1726,
+        1756,
+        1786
+      ],
+      "extra_frames": 7
+    },
+    "8.0": {
+      "source_frame_indices": [
+        1598,
+        1606,
+        1613,
+        1628,
+        1636,
+        1643,
+        1658,
+        1666,
+        1673,
+        1688,
+        1696,
+        1703,
+        1718,
+        1726,
+        1733,
+        1748,
+        1756,
+        1763,
+        1778,
+        1786,
+        1793
+      ],
+      "extra_frames": 21
+    }
+  },
+  "unique_extra_frames": 21,
+  "human_reviewed": false,
+  "status": "PROVISIONAL_AUTO_SUPPLEMENT_CANDIDATES",
+  "note": "Candidates are real decoded source frames, not confirmed independent target views or plant correspondences"
+}

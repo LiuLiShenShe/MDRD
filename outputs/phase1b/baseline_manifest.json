@@ -1,0 +1,482 @@
+{
+  "phase": "MDRD Phase 1B pre-change baseline",
+  "captured_at_local": "2026-10-10T10:16:05.117669+08:00",
+  "repository": {
+    "root": "/fj/混合拍摄距离下的三维重建优化问题",
+    "branch": "main",
+    "head": "7451831706ff2da771edee4669159b0254d0503d",
+    "head_subject": "Initial commit: MDRD mixed-distance reconstruction diagnostics",
+    "reference_commit": "7451831706ff2da771edee4669159b0254d0503d",
+    "head_matches_reference": true,
+    "status_porcelain": "",
+    "remote": "https://github.com/LiuLiShenShe/MDRD.git",
+    "status_at_initial_check": "clean (verified before baseline artifacts and pre-change test run)"
+  },
+  "data_discovery": {
+    "inventory_path": "outputs/video_inventory.csv",
+    "discovered_videos": 20,
+    "selected_ids": [
+      "video_007",
+      "video_008",
+      "video_020"
+    ],
+    "all_original_inputs_present": true
+  },
+  "configuration": {
+    "default_path": "MDRD/configs/default.yaml",
+    "default_sha256": "a87cd9428d8088f71eb95dc17b112cd2f6fbcd21cc72e58d60f9d86b604b564f",
+    "default_text": "project_root: ../..\nvideo_root: null\noutput_root: outputs\nsampling:\n  fps: 2.0\n  interval: null\n  target_count: null\n  max_images: 180\n  format: png\n  max_dimension: null\nquality:\n  max_dimension: 960\n  features: 1600\n  relative_window: 9\nsegmentation:\n  min_run: 4\n  scale_change_threshold: 0.045\nsfm:\n  executable: colmap\n  camera_model: SIMPLE_RADIAL\n  max_image_size: 2400\n  max_num_features: 6000\n  threads: 8\n  use_gpu: false\n  exhaustive_limit: 130\n  sequential_overlap: 10\n  joint_fallback: true\n  extra_options: {}\ngeometry:\n  max_reprojection_error: 4.0\n  min_track_length: 3\n  min_common_points: 20\n  temporal_block_sec: 3.0\n  min_independent_blocks: 4\n  high_covisibility: 0.25\n  low_angle_deg: 3.0\n  adequate_angle_deg: 5.0\n",
+    "last_run_path": "outputs/last_run_configuration.json",
+    "last_run_sha256": "be13e1a80619b2495addab9ccdcd4335c51d10b8991a01d63adb734aeab1d42d",
+    "last_run_json": {
+      "project_root": "/fj/混合拍摄距离下的三维重建优化问题",
+      "video_root": null,
+      "output_root": "/fj/混合拍摄距离下的三维重建优化问题/outputs",
+      "sampling": {
+        "fps": 2.0,
+        "interval": null,
+        "target_count": null,
+        "max_images": 180,
+        "format": "png",
+        "max_dimension": null
+      },
+      "quality": {
+        "max_dimension": 960,
+        "features": 1600,
+        "relative_window": 9
+      },
+      "segmentation": {
+        "min_run": 4,
+        "scale_change_threshold": 0.045
+      },
+      "sfm": {
+        "executable": "colmap",
+        "camera_model": "SIMPLE_RADIAL",
+        "max_image_size": 2400,
+        "max_num_features": 6000,
+        "threads": 8,
+        "use_gpu": false,
+        "exhaustive_limit": 130,
+        "sequential_overlap": 10,
+        "joint_fallback": true,
+        "extra_options": {}
+      },
+      "geometry": {
+        "max_reprojection_error": 4.0,
+        "min_track_length": 3,
+        "min_common_points": 20,
+        "temporal_block_sec": 3.0,
+        "min_independent_blocks": 4,
+        "high_covisibility": 0.25,
+        "low_angle_deg": 3.0,
+        "adequate_angle_deg": 5.0
+      }
+    }
+  },
+  "phase01_samples": {
+    "video_007": {
+      "source": {
+        "path": "原始视频/2026-02-11 151247.mov",
+        "filename": "2026-02-11 151247.mov",
+        "sha256_expected_inventory": "ca889fb3f50652d80ee4109850c78e43a3662b563df3cabab05cc8d67d52af21",
+        "sha256_actual": "ca889fb3f50652d80ee4109850c78e43a3662b563df3cabab05cc8d67d52af21",
+        "size_bytes": 754990402,
+        "duration_sec": 57.988333
+      },
+      "phase01_registered_images": 115,
+      "phase01_total_images": 116,
+      "phase01_valid_3d_points": 7227,
+      "phase01_raw_3d_points": 8620,
+      "phase01_registration_by_broad_stage": {
+        "GLOBAL": {
+          "frames": 105,
+          "registered": 105,
+          "registration_rate": 1.0
+        },
+        "LOCAL": {
+          "frames": 7,
+          "registered": 7,
+          "registration_rate": 1.0
+        },
+        "APPROACH": {
+          "frames": 3,
+          "registered": 3,
+          "registration_rate": 1.0
+        },
+        "TRANSITION": {
+          "frames": 1,
+          "registered": 0,
+          "registration_rate": 0.0
+        },
+        "UNKNOWN": {
+          "frames": 0,
+          "registered": 0,
+          "registration_rate": null
+        }
+      },
+      "phase01_label_counts": {
+        "GLOBAL": 105,
+        "APPROACH": 3,
+        "LOCAL_01": 2,
+        "LOCAL_02": 5,
+        "TRANSITION": 1
+      },
+      "phase01_selected_model_path": "outputs/video_007/sfm/final",
+      "phase01_selected_model_artifacts": [
+        {
+          "path": "outputs/video_007/sfm/final/cameras.bin",
+          "exists": true,
+          "size_bytes": 64,
+          "sha256": "2deeddfd815bf51972f6763bd3c17d6c673605142959f339e1b315a46a64ebe8"
+        },
+        {
+          "path": "outputs/video_007/sfm/final/images.bin",
+          "exists": true,
+          "size_bytes": 10653643,
+          "sha256": "c0f606ffed98ec7fa6f125835f8e49f9a5333f0420b838e67d69531f67f47e03"
+        },
+        {
+          "path": "outputs/video_007/sfm/final/points3D.bin",
+          "exists": true,
+          "size_bytes": 697268,
+          "sha256": "d165bca46cf7a31b85cde10620478cc78a738920c2282fd9df1bac55bb292c58"
+        }
+      ],
+      "phase01_preserved_artifacts": [
+        {
+          "path": "outputs/video_007/frame_manifest.csv",
+          "exists": true,
+          "size_bytes": 35873,
+          "sha256": "79b196bb0c1ff750ab5df0658dca9585346f90477040a9fc34d30e6c23ef8f94"
+        },
+        {
+          "path": "outputs/video_007/quality/frame_quality.csv",
+          "exists": true,
+          "size_bytes": 83547,
+          "sha256": "9c999c0b4f3718eea3cfb87662d70006d2b480b6cbf20f88fa256e1625ce1a61"
+        },
+        {
+          "path": "outputs/video_007/segments/coarse_frame_labels.csv",
+          "exists": true,
+          "size_bytes": 13497,
+          "sha256": "271186501a28b4f4ce38e61bf5bc8be6035eafe365950f58bf7e57184feee12f"
+        },
+        {
+          "path": "outputs/video_007/segments/refined_segments.json",
+          "exists": true,
+          "size_bytes": 119083,
+          "sha256": "29a672a1316c4c9c3c3aafc4be0a0491036e351268f2a236da843dbe5d60bb8b"
+        },
+        {
+          "path": "outputs/video_007/sfm/sfm_summary.json",
+          "exists": true,
+          "size_bytes": 18878,
+          "sha256": "d889f6d09d0cfa06ab8620b1ca1ba682d852ff2a9e945ed8708af75faab80603"
+        },
+        {
+          "path": "outputs/video_007/geometry/diagnosis.json",
+          "exists": true,
+          "size_bytes": 8498,
+          "sha256": "7c78d0e1891442e198037bbb0247fd487881a932acb7b1f5d22c997f6c7c2cfd"
+        },
+        {
+          "path": "outputs/video_007/geometry/cameras.csv",
+          "exists": true,
+          "size_bytes": 67378,
+          "sha256": "61ea23602057042b9b0689130b9af6b4cc0a2ca7a9734afeb228e4f6c95d6381"
+        },
+        {
+          "path": "outputs/video_007/geometry/pairwise_geometry.csv",
+          "exists": true,
+          "size_bytes": 1169004,
+          "sha256": "dee0dcb40db0a3b972ee9797311f61d55fa01cd5f42235029f41b0690e903188"
+        },
+        {
+          "path": "outputs/video_007/report/diagnosis.md",
+          "exists": true,
+          "size_bytes": 9143,
+          "sha256": "065ed33e560fbdbcbbcef1d7a03a895be73a165243939e2c7deafe7acb5bc9ec"
+        }
+      ]
+    },
+    "video_008": {
+      "source": {
+        "path": "原始视频/2026-02-11 152202.mov",
+        "filename": "2026-02-11 152202.mov",
+        "sha256_expected_inventory": "58212265597224133bd51e4bbe91cd2fe51d003a287fd4f17f832adac4885f47",
+        "sha256_actual": "58212265597224133bd51e4bbe91cd2fe51d003a287fd4f17f832adac4885f47",
+        "size_bytes": 601538912,
+        "duration_sec": 45.77
+      },
+      "phase01_registered_images": 81,
+      "phase01_total_images": 92,
+      "phase01_valid_3d_points": 4566,
+      "phase01_raw_3d_points": 5519,
+      "phase01_registration_by_broad_stage": {
+        "GLOBAL": {
+          "frames": 81,
+          "registered": 71,
+          "registration_rate": 0.8765432098765432
+        },
+        "LOCAL": {
+          "frames": 2,
+          "registered": 2,
+          "registration_rate": 1.0
+        },
+        "APPROACH": {
+          "frames": 7,
+          "registered": 6,
+          "registration_rate": 0.8571428571428571
+        },
+        "TRANSITION": {
+          "frames": 2,
+          "registered": 2,
+          "registration_rate": 1.0
+        },
+        "UNKNOWN": {
+          "frames": 0,
+          "registered": 0,
+          "registration_rate": null
+        }
+      },
+      "phase01_label_counts": {
+        "GLOBAL": 81,
+        "APPROACH": 7,
+        "TRANSITION": 2,
+        "LOCAL_01": 2
+      },
+      "phase01_selected_model_path": "outputs/video_008/sfm/final",
+      "phase01_selected_model_artifacts": [
+        {
+          "path": "outputs/video_008/sfm/final/cameras.bin",
+          "exists": true,
+          "size_bytes": 64,
+          "sha256": "0ee702fd030db0165d2d4abe81cbe9810e4ffb7f9664c718fbf8c6d055fccec0"
+        },
+        {
+          "path": "outputs/video_008/sfm/final/images.bin",
+          "exists": true,
+          "size_bytes": 4292297,
+          "sha256": "3e56e8ac4c314414301d69b6596f1bb84071614b3e6b513620b487e3056604b5"
+        },
+        {
+          "path": "outputs/video_008/sfm/final/points3D.bin",
+          "exists": true,
+          "size_bytes": 455237,
+          "sha256": "2c7c007e4f52f5ccc708cdef245e4b1a2022fe903682c4757ed48edb6f009fa8"
+        }
+      ],
+      "phase01_preserved_artifacts": [
+        {
+          "path": "outputs/video_008/frame_manifest.csv",
+          "exists": true,
+          "size_bytes": 28440,
+          "sha256": "85349a38b735afa968a6f22bf3bbac56aa43aad1bf5de4fd79fe3b8d1ef371ed"
+        },
+        {
+          "path": "outputs/video_008/quality/frame_quality.csv",
+          "exists": true,
+          "size_bytes": 66165,
+          "sha256": "a1e60cf2d12c0e8eea526cbbeff2179172c354bb53deba8272aac67d65d8cb24"
+        },
+        {
+          "path": "outputs/video_008/segments/coarse_frame_labels.csv",
+          "exists": true,
+          "size_bytes": 10683,
+          "sha256": "526b5543a1f394630241291c98bfb39bf1eba3bf9fa4994fd592abd1d2c076e2"
+        },
+        {
+          "path": "outputs/video_008/segments/refined_segments.json",
+          "exists": true,
+          "size_bytes": 93059,
+          "sha256": "3fc9c607eb542c94b7ab054a845704c997b465d356249bbfc85c519d96890c58"
+        },
+        {
+          "path": "outputs/video_008/sfm/sfm_summary.json",
+          "exists": true,
+          "size_bytes": 15603,
+          "sha256": "cfb385b50d99f2d28b13bb09a2fc60f6f34479def1afd3a04f442031057c16d5"
+        },
+        {
+          "path": "outputs/video_008/geometry/diagnosis.json",
+          "exists": true,
+          "size_bytes": 8549,
+          "sha256": "2de9eeb58538d899809095b350ef02751e1f5d6f69fb918e96f9582f31ec42d8"
+        },
+        {
+          "path": "outputs/video_008/geometry/cameras.csv",
+          "exists": true,
+          "size_bytes": 48582,
+          "sha256": "0180651a17119c72970384d3e6ec8e301de73f754b320bf7d2a7f35465829f2a"
+        },
+        {
+          "path": "outputs/video_008/geometry/pairwise_geometry.csv",
+          "exists": true,
+          "size_bytes": 741632,
+          "sha256": "d1aada728a84e3c0b47f1e0d2a0c2c26e9a098575ebb2b91369d9c1119533706"
+        },
+        {
+          "path": "outputs/video_008/report/diagnosis.md",
+          "exists": true,
+          "size_bytes": 9122,
+          "sha256": "9db684a5c54eaa564868a0964e8b41bf039406b1523a4d912353589d6cc4f608"
+        }
+      ]
+    },
+    "video_020": {
+      "source": {
+        "path": "原始视频/2026-02-12 154506.mov",
+        "filename": "2026-02-12 154506.mov",
+        "sha256_expected_inventory": "19ddbd2d8a7b3c87e81d409b871edc8c6b1a9fb5bd0fde434a630c25cfd3c81c",
+        "sha256_actual": "19ddbd2d8a7b3c87e81d409b871edc8c6b1a9fb5bd0fde434a630c25cfd3c81c",
+        "size_bytes": 376186382,
+        "duration_sec": 33.22
+      },
+      "phase01_registered_images": 67,
+      "phase01_total_images": 67,
+      "phase01_valid_3d_points": 14991,
+      "phase01_raw_3d_points": 17486,
+      "phase01_registration_by_broad_stage": {
+        "GLOBAL": {
+          "frames": 61,
+          "registered": 61,
+          "registration_rate": 1.0
+        },
+        "LOCAL": {
+          "frames": 2,
+          "registered": 2,
+          "registration_rate": 1.0
+        },
+        "APPROACH": {
+          "frames": 4,
+          "registered": 4,
+          "registration_rate": 1.0
+        },
+        "TRANSITION": {
+          "frames": 0,
+          "registered": 0,
+          "registration_rate": null
+        },
+        "UNKNOWN": {
+          "frames": 0,
+          "registered": 0,
+          "registration_rate": null
+        }
+      },
+      "phase01_label_counts": {
+        "GLOBAL": 61,
+        "APPROACH": 4,
+        "LOCAL_01": 2
+      },
+      "phase01_selected_model_path": "outputs/video_020/sfm/final",
+      "phase01_selected_model_artifacts": [
+        {
+          "path": "outputs/video_020/sfm/final/cameras.bin",
+          "exists": true,
+          "size_bytes": 64,
+          "sha256": "c1e6ad7859048618a0b1fff639664dde19a81a867b3d6e893b9029da46128364"
+        },
+        {
+          "path": "outputs/video_020/sfm/final/images.bin",
+          "exists": true,
+          "size_bytes": 10702339,
+          "sha256": "ea92b4d0080698dfed625171e3c70066e01e32db270bace492192033f7055bde"
+        },
+        {
+          "path": "outputs/video_020/sfm/final/points3D.bin",
+          "exists": true,
+          "size_bytes": 1496626,
+          "sha256": "a4cd023eeb837ddc98409eafe5c102950af48dd982f3e333fad3ade2009290d3"
+        }
+      ],
+      "phase01_preserved_artifacts": [
+        {
+          "path": "outputs/video_020/frame_manifest.csv",
+          "exists": true,
+          "size_bytes": 20759,
+          "sha256": "b917a1abe1fbfd605aa9d7cc2c20c19a3e81534dc534f3b3d9b8ba6486af93d8"
+        },
+        {
+          "path": "outputs/video_020/quality/frame_quality.csv",
+          "exists": true,
+          "size_bytes": 48238,
+          "sha256": "c9cf046a6d97d664b846fd5fab5a680ef34e5588b3bdeb9354bc224e19f53442"
+        },
+        {
+          "path": "outputs/video_020/segments/coarse_frame_labels.csv",
+          "exists": true,
+          "size_bytes": 7794,
+          "sha256": "a52b238a20ad4056548238d6b55931d228674e9efbf19ccc797c2812e62fe5f2"
+        },
+        {
+          "path": "outputs/video_020/segments/refined_segments.json",
+          "exists": true,
+          "size_bytes": 68945,
+          "sha256": "66e1c4d104bf060ec62b8bfc76e8628310016f3481e97e4fdc2cf9a1e58eebe2"
+        },
+        {
+          "path": "outputs/video_020/sfm/sfm_summary.json",
+          "exists": true,
+          "size_bytes": 14343,
+          "sha256": "f68b4fd073750e353a4315fbeb9333219ca02f7e61ecffe34911951d267e4661"
+        },
+        {
+          "path": "outputs/video_020/geometry/diagnosis.json",
+          "exists": true,
+          "size_bytes": 8477,
+          "sha256": "9278c28046ccd42e2d1cff0a85448093c886ff10f300d15cb48ccea11d7adcc4"
+        },
+        {
+          "path": "outputs/video_020/geometry/cameras.csv",
+          "exists": true,
+          "size_bytes": 39583,
+          "sha256": "43f397a7f6ec40787d807a4a6a2b7dc7759300cd27a546679af108f671dc179c"
+        },
+        {
+          "path": "outputs/video_020/geometry/pairwise_geometry.csv",
+          "exists": true,
+          "size_bytes": 503077,
+          "sha256": "64f481c3b90a378ff2441af0b02fa0858e4c9de44ebf4a36277a2966d1fe8340"
+        },
+        {
+          "path": "outputs/video_020/report/diagnosis.md",
+          "exists": true,
+          "size_bytes": 9071,
+          "sha256": "f07747f9b1984c5a0e7515fb012e2867633f8f52f2d105158cfc3da183bebff4"
+        }
+      ]
+    }
+  },
+  "baseline_tests": {
+    "recorded_summary_path": "outputs/tests/test_summary.json",
+    "recorded_summary_sha256": "8de7d74bed4449b012f0907a3550e3bbc20a40b09a61b6f073dcc2fcfea4665d",
+    "recorded_summary": {
+      "status": "PASSED",
+      "unit": {
+        "tests": 33,
+        "failures": 0,
+        "skipped": 0
+      },
+      "integration": {
+        "tests": 2,
+        "failures": 0,
+        "skipped": 0
+      },
+      "total_tests": 35,
+      "failed": 0,
+      "artifacts": [
+        "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/unit_results_verified.xml",
+        "/fj/混合拍摄距离下的三维重建优化问题/outputs/tests/integration_results_verified.xml"
+      ],
+      "summarized_at": "2026-10-09T16:13:30.033496+00:00"
+    },
+    "live_before_change_run": {
+      "command": ".venv/bin/python -m pytest MDRD/tests/unit MDRD/tests/integration -q",
+      "result": "35 passed, 14 warnings, 0 failed",
+      "started_before_any_source_changes": true,
+      "warning_count": 14,
+      "test_artifacts_note": "The baseline pytest integration suite regenerated synthetic fixture outputs after the initial clean-state check; tracked fixture outputs were restored because the pre-run tree was verified clean."
+    }
+  },
+  "preservation_note": "Phase 01 output files and models are baseline-only; Phase 1B experiments use outputs/phase1b and do not overwrite them."
+}

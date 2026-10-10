@@ -1,0 +1,8 @@
+COMMAND ["colmap", "exhaustive_matcher", "--database_path", "outputs/phase1b/ablations/video_020/M3/sfm/database.db", "--SiftMatching.use_gpu", "0", "--SiftMatching.num_threads", "8"]
+I20261010 17:03:07.077239 2185299 misc.cc:198] 
+==============================================================================
+Exhaustive feature matching
+==============================================================================
+I20261010 17:03:07.080912 2185299 feature_matching.cc:231] Matching block [1/1, 1/1]
+I20261010 17:03:55.351358 2185299 feature_matching.cc:46]  in 48.271s
+I20261010 17:03:55.359447 2185299 timer.cc:91] Elapsed time: 0.805 [minutes]

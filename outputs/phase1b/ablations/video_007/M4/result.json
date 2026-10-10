@@ -1,0 +1,14 @@
+{
+  "phase": "M4",
+  "status": "BLOCKED",
+  "reason": "No human-verified same-plant surface overlap pairs; deep matching comparison cannot support causal cross-scale conclusion",
+  "target_local_frames": [
+    "frame_000095.png",
+    "frame_000096.png",
+    "frame_000100.png",
+    "frame_000101.png",
+    "frame_000102.png",
+    "frame_000103.png",
+    "frame_000104.png"
+  ]
+}

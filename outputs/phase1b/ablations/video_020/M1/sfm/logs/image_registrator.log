@@ -1,0 +1,56 @@
+COMMAND ["colmap", "image_registrator", "--database_path", "outputs/phase1b/ablations/video_020/M1/sfm/database.db", "--input_path", "outputs/phase1b/ablations/video_020/M1/sfm/global/0", "--output_path", "outputs/phase1b/ablations/video_020/M1/sfm/registered", "--Mapper.num_threads", "8"]
+I20261010 17:00:07.826731 2165440 misc.cc:198] 
+==============================================================================
+Loading database
+==============================================================================
+I20261010 17:00:07.827517 2165440 database_cache.cc:54] Loading cameras...
+I20261010 17:00:07.827550 2165440 database_cache.cc:64]  1 in 0.000s
+I20261010 17:00:07.827558 2165440 database_cache.cc:72] Loading matches...
+I20261010 17:00:07.828361 2165440 database_cache.cc:78]  208 in 0.001s
+I20261010 17:00:07.828378 2165440 database_cache.cc:94] Loading images...
+I20261010 17:00:07.834995 2165440 database_cache.cc:143]  27 in 0.007s (connected 27)
+I20261010 17:00:07.835019 2165440 database_cache.cc:154] Building correspondence graph...
+I20261010 17:00:07.843139 2165440 database_cache.cc:190]  in 0.008s (ignored 0)
+I20261010 17:00:07.843276 2165440 timer.cc:91] Elapsed time: 0.000 [minutes]
+I20261010 17:00:07.860319 2165440 misc.cc:198] 
+==============================================================================
+Registering image #4 (25)
+==============================================================================
+I20261010 17:00:07.860342 2165440 image.cc:290] 
+=> Image sees 9 / 60 points
+I20261010 17:00:07.860349 2165440 misc.cc:198] 
+==============================================================================
+Registering image #18 (25)
+==============================================================================
+I20261010 17:00:07.860352 2165440 image.cc:290] 
+=> Image sees 141 / 602 points
+I20261010 17:00:07.867642 2165440 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:07.867677 2165440 bundle_adjustment.cc:942] 
+    Residuals : 248
+   Parameters : 6
+   Iterations : 10
+         Time : 0.00173402 [s]
+ Initial cost : 0.823031 [px]
+   Final cost : 0.811502 [px]
+  Termination : Convergence
+
+I20261010 17:00:07.867789 2165440 misc.cc:198] 
+==============================================================================
+Registering image #22 (26)
+==============================================================================
+I20261010 17:00:07.867795 2165440 image.cc:290] 
+=> Image sees 594 / 3828 points
+I20261010 17:00:07.898418 2165440 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:07.898447 2165440 bundle_adjustment.cc:942] 
+    Residuals : 1164
+   Parameters : 6
+   Iterations : 17
+         Time : 0.018116 [s]
+ Initial cost : 0.750667 [px]
+   Final cost : 0.601512 [px]
+  Termination : Convergence
+

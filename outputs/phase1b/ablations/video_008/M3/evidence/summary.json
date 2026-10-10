@@ -1,0 +1,28 @@
+{
+  "video_id": "M3",
+  "model": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/final",
+  "scope": "FULL_SCENE_FILTERED_SAME_RECONSTRUCTION_POINTS; NOT_PLANT_GEOMETRY",
+  "same_points_global_and_local": 156,
+  "median_new_local_direction_deg": 14.75282511889134,
+  "local_directions_over_5deg": 134,
+  "candidate_pairs": 903,
+  "pairs_with_raw_matches": 662,
+  "pairs_with_verified_matches": 315,
+  "pairs_with_common_tracks": 582,
+  "raw_matches_total": 40530,
+  "verified_matches_total": 27124,
+  "filter_rejections": {
+    "nonfinite_or_high_point_error": 0,
+    "short_track": 285,
+    "invalid_association": 0,
+    "nonpositive_depth": 0,
+    "high_observation_error": 10,
+    "short_after_filter": 2
+  },
+  "plant_pair_match_funnel": null,
+  "limitations": [
+    "Raw and verified 2D match counts do not correspond one-to-one to 3D tracks",
+    "Only successfully reconstructed tracks have direction gain",
+    "No cross-model point IDs are equated without independently verified correspondences"
+  ]
+}

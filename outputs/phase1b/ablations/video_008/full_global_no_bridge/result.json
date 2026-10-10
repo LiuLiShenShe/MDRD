@@ -1,0 +1,4 @@
+{
+  "status": "FAILED",
+  "error": "RuntimeError: Command returned -124: see outputs/phase1b/ablations/video_008/full_global_no_bridge/sfm/logs/exhaustive_matcher.log"
+}

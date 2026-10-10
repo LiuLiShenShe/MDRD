@@ -1,0 +1,22 @@
+{
+  "stage": "sfm",
+  "started_at": "2026-10-10T09:44:55.329808+00:00",
+  "signature": "5b64fc8a457678585c21957d7a3db5b8d9fb4a2f51ac500b3c260996b6a24d8c",
+  "configuration": {
+    "executable": "colmap",
+    "camera_model": "SIMPLE_RADIAL",
+    "max_image_size": 2400,
+    "max_num_features": 6000,
+    "threads": 8,
+    "use_gpu": false,
+    "exhaustive_limit": 130,
+    "sequential_overlap": 10,
+    "joint_fallback": true,
+    "extra_options": {},
+    "command_timeout_sec": 240
+  },
+  "status": "failed",
+  "error": "RuntimeError: Command returned -124: see outputs/phase1b/ablations/video_008/full_global_no_bridge/sfm/logs/exhaustive_matcher.log",
+  "finished_at": "2026-10-10T09:51:04.517485+00:00",
+  "elapsed_sec": 369.6512274891138
+}

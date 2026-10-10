@@ -1,0 +1,182 @@
+COMMAND ["colmap", "image_registrator", "--database_path", "outputs/phase1b/ablations/video_020/M3/sfm/database.db", "--input_path", "outputs/phase1b/ablations/video_020/M3/sfm/global/0", "--output_path", "outputs/phase1b/ablations/video_020/M3/sfm/registered", "--Mapper.num_threads", "8"]
+I20261010 17:04:09.600521 2191896 misc.cc:198] 
+==============================================================================
+Loading database
+==============================================================================
+I20261010 17:04:09.601394 2191896 database_cache.cc:54] Loading cameras...
+I20261010 17:04:09.601433 2191896 database_cache.cc:64]  1 in 0.000s
+I20261010 17:04:09.601442 2191896 database_cache.cc:72] Loading matches...
+I20261010 17:04:09.603251 2191896 database_cache.cc:78]  355 in 0.002s
+I20261010 17:04:09.603271 2191896 database_cache.cc:94] Loading images...
+I20261010 17:04:09.612124 2191896 database_cache.cc:143]  34 in 0.009s (connected 34)
+I20261010 17:04:09.612155 2191896 database_cache.cc:154] Building correspondence graph...
+I20261010 17:04:09.629009 2191896 database_cache.cc:190]  in 0.017s (ignored 0)
+I20261010 17:04:09.629277 2191896 timer.cc:91] Elapsed time: 0.000 [minutes]
+I20261010 17:04:09.648077 2191896 misc.cc:198] 
+==============================================================================
+Registering image #1 (25)
+==============================================================================
+I20261010 17:04:09.648113 2191896 image.cc:290] 
+=> Image sees 989 / 2747 points
+I20261010 17:04:09.680642 2191896 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:04:09.680697 2191896 bundle_adjustment.cc:942] 
+    Residuals : 2034
+   Parameters : 6
+   Iterations : 10
+         Time : 0.017674 [s]
+ Initial cost : 0.683224 [px]
+   Final cost : 0.659684 [px]
+  Termination : Convergence
+
+I20261010 17:04:09.681831 2191896 misc.cc:198] 
+==============================================================================
+Registering image #2 (26)
+==============================================================================
+I20261010 17:04:09.681849 2191896 image.cc:290] 
+=> Image sees 417 / 5706 points
+I20261010 17:04:09.705513 2191896 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:04:09.705555 2191896 bundle_adjustment.cc:942] 
+    Residuals : 824
+   Parameters : 6
+   Iterations : 16
+         Time : 0.011862 [s]
+ Initial cost : 0.788209 [px]
+   Final cost : 0.731232 [px]
+  Termination : Convergence
+
+I20261010 17:04:09.706471 2191896 misc.cc:198] 
+==============================================================================
+Registering image #4 (27)
+==============================================================================
+I20261010 17:04:09.706488 2191896 image.cc:290] 
+=> Image sees 537 / 5668 points
+I20261010 17:04:09.725749 2191896 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:04:09.725795 2191896 bundle_adjustment.cc:942] 
+    Residuals : 1064
+   Parameters : 6
+   Iterations : 11
+         Time : 0.009835 [s]
+ Initial cost : 0.764599 [px]
+   Final cost : 0.579943 [px]
+  Termination : Convergence
+
+I20261010 17:04:09.726702 2191896 misc.cc:198] 
+==============================================================================
+Registering image #9 (28)
+==============================================================================
+I20261010 17:04:09.726714 2191896 image.cc:290] 
+=> Image sees 5 / 76 points
+I20261010 17:04:09.726723 2191896 misc.cc:198] 
+==============================================================================
+Registering image #20 (28)
+==============================================================================
+I20261010 17:04:09.726729 2191896 image.cc:290] 
+=> Image sees 215 / 483 points
+I20261010 17:04:09.738082 2191896 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:04:09.738114 2191896 bundle_adjustment.cc:942] 
+    Residuals : 412
+   Parameters : 6
+   Iterations : 22
+         Time : 0.00591898 [s]
+ Initial cost : 0.874746 [px]
+   Final cost : 0.859928 [px]
+  Termination : Convergence
+
+I20261010 17:04:09.738359 2191896 misc.cc:198] 
+==============================================================================
+Registering image #23 (29)
+==============================================================================
+I20261010 17:04:09.738376 2191896 image.cc:290] 
+=> Image sees 457 / 3976 points
+I20261010 17:04:09.759580 2191896 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:04:09.759619 2191896 bundle_adjustment.cc:942] 
+    Residuals : 914
+   Parameters : 6
+   Iterations : 14
+         Time : 0.011476 [s]
+ Initial cost : 0.717037 [px]
+   Final cost : 0.710388 [px]
+  Termination : Convergence
+
+I20261010 17:04:09.760320 2191896 misc.cc:198] 
+==============================================================================
+Registering image #24 (30)
+==============================================================================
+I20261010 17:04:09.760332 2191896 image.cc:290] 
+=> Image sees 479 / 5632 points
+I20261010 17:04:09.784132 2191896 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:04:09.784174 2191896 bundle_adjustment.cc:942] 
+    Residuals : 952
+   Parameters : 6
+   Iterations : 14
+         Time : 0.011831 [s]
+ Initial cost : 0.755143 [px]
+   Final cost : 0.725543 [px]
+  Termination : Convergence
+
+I20261010 17:04:09.784978 2191896 misc.cc:198] 
+==============================================================================
+Registering image #25 (31)
+==============================================================================
+I20261010 17:04:09.784994 2191896 image.cc:290] 
+=> Image sees 170 / 737 points
+I20261010 17:04:09.791409 2191896 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:04:09.791440 2191896 bundle_adjustment.cc:942] 
+    Residuals : 314
+   Parameters : 6
+   Iterations : 14
+         Time : 0.00374699 [s]
+ Initial cost : 0.84139 [px]
+   Final cost : 0.827425 [px]
+  Termination : Convergence
+
+I20261010 17:04:09.791656 2191896 misc.cc:198] 
+==============================================================================
+Registering image #26 (32)
+==============================================================================
+I20261010 17:04:09.791663 2191896 image.cc:290] 
+=> Image sees 516 / 4617 points
+I20261010 17:04:09.815004 2191896 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:04:09.815032 2191896 bundle_adjustment.cc:942] 
+    Residuals : 1020
+   Parameters : 6
+   Iterations : 18
+         Time : 0.0163178 [s]
+ Initial cost : 0.877941 [px]
+   Final cost : 0.733762 [px]
+  Termination : Convergence
+
+I20261010 17:04:09.815652 2191896 misc.cc:198] 
+==============================================================================
+Registering image #27 (33)
+==============================================================================
+I20261010 17:04:09.815662 2191896 image.cc:290] 
+=> Image sees 635 / 4295 points
+I20261010 17:04:09.840368 2191896 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:04:09.840394 2191896 bundle_adjustment.cc:942] 
+    Residuals : 1252
+   Parameters : 6
+   Iterations : 14
+         Time : 0.0127881 [s]
+ Initial cost : 0.711929 [px]
+   Final cost : 0.602031 [px]
+  Termination : Convergence
+

@@ -1,0 +1,20 @@
+{
+  "stage": "foreground",
+  "started_at": "2026-10-10T10:31:25.478206+00:00",
+  "signature": "a9cb174442a10b7a98ff5010b42c54f95f05d837d3631a75ab4cc21d18f88af8",
+  "configuration": {
+    "min_votes": 2,
+    "mask_policy": "three_classes_exact_size",
+    "model": "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_007/sfm/final"
+  },
+  "status": "completed",
+  "output_hashes": {
+    "outputs/phase1b/foreground/video_007/summary.json": "0f34efd04d90bab3668f00c59ac765448a5ca31b9e18de9c68d72b2fc8391fcc",
+    "outputs/phase1b/foreground/video_007/point_votes.csv": "4a8faeb97e500ff9bb8c0bdafd04c950f23c170bb2aa9063366472cd66f0e133",
+    "outputs/phase1b/foreground/video_007/per_image_foreground.csv": "7a506be460c900c71cf113c7fdf9640b2000e8a61e227e31cb7e095b6cfab4f5",
+    "outputs/phase1b/foreground/video_007/foreground_pairs.csv": "743198b2287b8d3c68358b2b78b013aecf1ff3b31376feff9a8f30acc5ea7f58",
+    "outputs/phase1b/foreground/video_007/mask_review_checklist.md": "8e9b051cdc6405e9b99adf05e9ad3501a501ca172459bbea0c466d6db6d6e96a"
+  },
+  "finished_at": "2026-10-10T10:31:30.821577+00:00",
+  "elapsed_sec": 5.34339703200385
+}

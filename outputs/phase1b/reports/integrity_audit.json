@@ -1,0 +1,114 @@
+{
+  "created_at": "2026-10-10T10:26:53.071945+00:00",
+  "input_review_experiment_checks_pass": true,
+  "samples": {
+    "video_007": {
+      "review_images": 116,
+      "preview_files_exist": true,
+      "exact_source_index_receipt": true,
+      "review_human_confirmed": false,
+      "experiments": {
+        "M1": {
+          "same_fixed_global_local": true,
+          "fixed_local_preserved": true,
+          "source_image_hashes_match": true,
+          "input_count": 33,
+          "result_sha256": "ca8e48983164040523a29779169910b6465fa5d312c9366db1f395b974c2dc92",
+          "status": "EXECUTED",
+          "candidate_audit_present": true
+        },
+        "M2": {
+          "same_fixed_global_local": true,
+          "fixed_local_preserved": true,
+          "source_image_hashes_match": true,
+          "input_count": 37,
+          "result_sha256": "a71f2fca31bd4fb99b9265445e6474a93f0e35d0541c081fc3412f38ca9b6911",
+          "status": "EXECUTED",
+          "candidate_audit_present": true
+        },
+        "M3": {
+          "same_fixed_global_local": true,
+          "fixed_local_preserved": true,
+          "source_image_hashes_match": true,
+          "input_count": 43,
+          "result_sha256": "13e5466220a06e6cdb142f2bc52bade097211a9350b2b2c471874a5231889737",
+          "status": "EXECUTED",
+          "candidate_audit_present": true
+        }
+      }
+    },
+    "video_008": {
+      "review_images": 92,
+      "preview_files_exist": true,
+      "exact_source_index_receipt": true,
+      "review_human_confirmed": false,
+      "experiments": {
+        "M1": {
+          "same_fixed_global_local": true,
+          "fixed_local_preserved": true,
+          "source_image_hashes_match": true,
+          "input_count": 28,
+          "result_sha256": "e553f38aac2e0e1f7a8f5bf43a01203e6ea864bc2f7d7272b57590db891af2d4",
+          "status": "EXECUTED",
+          "candidate_audit_present": true
+        },
+        "M2": {
+          "same_fixed_global_local": true,
+          "fixed_local_preserved": true,
+          "source_image_hashes_match": true,
+          "input_count": 37,
+          "result_sha256": "bf6643bb5f054b8eac86196a1660d35b2c61f4f716c1b120d8b9ecad9c5588dd",
+          "status": "EXECUTED",
+          "candidate_audit_present": true
+        },
+        "M3": {
+          "same_fixed_global_local": true,
+          "fixed_local_preserved": true,
+          "source_image_hashes_match": true,
+          "input_count": 43,
+          "result_sha256": "de4461ce00b3ee7b1e4afd0b2390710e0a279aaad4042efa784d4f48a22a086c",
+          "status": "EXECUTED",
+          "candidate_audit_present": true
+        }
+      }
+    },
+    "video_020": {
+      "review_images": 67,
+      "preview_files_exist": true,
+      "exact_source_index_receipt": true,
+      "review_human_confirmed": false,
+      "experiments": {
+        "M1": {
+          "same_fixed_global_local": true,
+          "fixed_local_preserved": true,
+          "source_image_hashes_match": true,
+          "input_count": 27,
+          "result_sha256": "dbd60f86c47b2e56be362e0d589d1849f28f3034bbd4b9a028b71ff9d79d80c6",
+          "status": "EXECUTED",
+          "candidate_audit_present": true
+        },
+        "M2": {
+          "same_fixed_global_local": true,
+          "fixed_local_preserved": true,
+          "source_image_hashes_match": true,
+          "input_count": 31,
+          "result_sha256": "8933a36799f920767c1507f415b14d65a2477572d69c7e12ece46ca63101aba1",
+          "status": "EXECUTED",
+          "candidate_audit_present": true
+        },
+        "M3": {
+          "same_fixed_global_local": true,
+          "fixed_local_preserved": true,
+          "source_image_hashes_match": true,
+          "input_count": 34,
+          "result_sha256": "2c5d4ae4c29aae2aa9c13d2745698d7fa2934cb69fea44b66d62dc507c7c6c9d",
+          "status": "EXECUTED",
+          "candidate_audit_present": true
+        }
+      }
+    }
+  },
+  "no_human_review_claimed": true,
+  "no_verified_plant_quality_claimed": true,
+  "scope": "Hashes validate execution inputs and provenance, not scientific correctness of automatic labels/masks"
+}

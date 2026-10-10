@@ -1,0 +1,15 @@
+COMMAND ["colmap", "mapper", "--database_path", "outputs/phase1b/ablations/video_008/M3/sfm/database.db", "--image_path", "outputs/phase1b/ablations/video_008/M3/sfm_images", "--Mapper.num_threads", "8", "--input_path", "outputs/phase1b/ablations/video_008/M3/sfm/registered", "--output_path", "outputs/phase1b/ablations/video_008/M3/sfm/continued", "--Mapper.fix_existing_images", "1"]
+I20261010 16:55:45.717229 2137651 misc.cc:198] 
+==============================================================================
+Loading database
+==============================================================================
+I20261010 16:55:45.719285 2137651 database_cache.cc:54] Loading cameras...
+I20261010 16:55:45.719348 2137651 database_cache.cc:64]  1 in 0.000s
+I20261010 16:55:45.719370 2137651 database_cache.cc:72] Loading matches...
+I20261010 16:55:45.721680 2137651 database_cache.cc:78]  315 in 0.002s
+I20261010 16:55:45.721719 2137651 database_cache.cc:94] Loading images...
+I20261010 16:55:45.728370 2137651 database_cache.cc:143]  43 in 0.007s (connected 40)
+I20261010 16:55:45.728418 2137651 database_cache.cc:154] Building correspondence graph...
+I20261010 16:55:45.739701 2137651 database_cache.cc:190]  in 0.011s (ignored 0)
+I20261010 16:55:45.739758 2137651 timer.cc:91] Elapsed time: 0.000 [minutes]
+I20261010 16:55:45.741271 2137651 timer.cc:91] Elapsed time: 0.000 [minutes]

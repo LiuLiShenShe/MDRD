@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import pycolmap
 
-from mdrd.common import read_json, stage, write_json
+from mdrd.common import manifest_image_inputs, read_json, stage, write_json
 from mdrd.geometry.core import broad_label, camera_center, covisibility, pair_group, pair_statistics
 from mdrd.segmentation import refine_segments
 from mdrd.sfm.pipeline import PAIR_ID_FACTOR
@@ -281,11 +281,13 @@ def analyze(directory, configuration, force=False):
     output.mkdir(exist_ok=True)
     summary_path = directory / "sfm" / "sfm_summary.json"
     parameters = configuration["geometry"]
+    stage_parameters = {"geometry": parameters, "segmentation": configuration["segmentation"]}
     sfm = read_json(summary_path)
-    input_paths = [summary_path, directory / "frame_manifest.csv", directory / "quality" / "frame_quality.csv", directory / "segments" / "coarse_frame_labels.csv"]
+    manifest_path = directory / "frame_manifest.csv"
+    input_paths = [summary_path, manifest_path, *manifest_image_inputs(manifest_path), directory / "quality" / "frame_quality.csv", directory / "segments" / "coarse_frame_labels.csv", directory / "sfm" / "database.db", directory / "sfm" / "database_pairs.csv", directory / "sfm" / "database_images.csv"]
     if sfm.get("model_path"):
         input_paths += list(Path(sfm["model_path"]).glob("*.bin"))
-    with stage(directory, "analyze", parameters, input_paths, force) as execute:
+    with stage(directory, "analyze", stage_parameters, input_paths, force, required_outputs=[output / "diagnosis.json", output / "cameras.csv", output / "pairwise_geometry.csv"]) as execute:
         if not execute:
             return read_json(output / "diagnosis.json")
         manifest = pd.read_csv(directory / "frame_manifest.csv")

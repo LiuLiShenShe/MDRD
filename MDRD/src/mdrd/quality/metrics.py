@@ -7,7 +7,7 @@ import cv2
 import numpy as np
 import pandas as pd
 
-from mdrd.common import stage, write_json
+from mdrd.common import manifest_image_inputs, stage, write_json
 
 
 def image_metrics(image, maximum=960, features=1600):
@@ -88,7 +88,7 @@ def analyze_quality(directory, configuration, force=False):
     manifest_path = directory / "frame_manifest.csv"
     quality_dir = directory / "quality"
     quality_dir.mkdir(exist_ok=True)
-    with stage(directory, "quality", parameters, [manifest_path], force) as execute:
+    with stage(directory, "quality", parameters, [manifest_path, *manifest_image_inputs(manifest_path)], force, required_outputs=[quality_dir / "frame_quality.csv", quality_dir / "quality_summary.json"]) as execute:
         if not execute:
             return pd.read_csv(quality_dir / "frame_quality.csv")
         manifest = pd.read_csv(manifest_path)

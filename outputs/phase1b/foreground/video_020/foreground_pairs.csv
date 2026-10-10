@@ -1,0 +1,1 @@
+filename_i,filename_j,group,common_points,jaccard,coverage_i_j,coverage_j_i,baseline,median_baseline_depth_ratio,angle_p10,angle_median,angle_p90,common_3d_points,reprojection_error,geometry_valid

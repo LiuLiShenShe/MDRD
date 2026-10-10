@@ -1,0 +1,13 @@
+{
+  "phase": "M0",
+  "status": "VALIDATED_EXISTING_PHASE01_NOT_RERUN",
+  "model_path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_008/sfm/final",
+  "registered": 81,
+  "matching_strategy": "EXHAUSTIVE_ALL_PAIRS",
+  "camera_model": "SIMPLE_RADIAL",
+  "model_sha256": {
+    "cameras": "0ee702fd030db0165d2d4abe81cbe9810e4ffb7f9664c718fbf8c6d055fccec0",
+    "images": "3e56e8ac4c314414301d69b6596f1bb84071614b3e6b513620b487e3056604b5",
+    "points3D": "2c7c007e4f52f5ccc708cdef245e4b1a2022fe903682c4757ed48edb6f009fa8"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "created_at": "2026-10-10T08:32:35.664613+00:00",
+  "video_id": "video_007",
+  "status": "PROVISIONAL_AUTO_NOT_HUMAN",
+  "prompts": [
+    {
+      "frame_id": 92,
+      "filename": "frame_000092.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000092.png",
+      "image_sha256": "b958c7b6d49d90b28fa578ccdf64fe19e93f53a1918cff20f0a817a7ca6a9330",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.02,
+        0.0,
+        1.0,
+        0.78
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "medium"
+    },
+    {
+      "frame_id": 93,
+      "filename": "frame_000093.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000093.png",
+      "image_sha256": "4a151e35c94c0f856d03005ef82d90bbe2b929362ddce9bd1d9f4a6884e561a9",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.02,
+        0.0,
+        0.99,
+        0.8
+      ],
+      "plant_visible": true,
+      "pot_visible": true,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 94,
+      "filename": "frame_000094.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000094.png",
+      "image_sha256": "fb2474b0a9993f793c718328adb14a474514f1d62aaa6bbb10c71ef295991e47",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.02,
+        0.0,
+        0.98,
+        0.85
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 95,
+      "filename": "frame_000095.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000095.png",
+      "image_sha256": "603253a3433b423e3ed8b579bff997009edd9a7a2bcf5cc5a7009c78a9027e84",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.0,
+        0.0,
+        1.0,
+        0.9
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 96,
+      "filename": "frame_000096.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000096.png",
+      "image_sha256": "e299b8cf43241c4daa13953d6a14a9a11f0bd1d063b27a5abd5a519c82ddc4f1",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.0,
+        0.0,
+        1.0,
+        0.82
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "medium"
+    },
+    {
+      "frame_id": 97,
+      "filename": "frame_000097.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting ',' delimiter: line 2 column 46 (char 47)"
+    },
+    {
+      "frame_id": 98,
+      "filename": "frame_000098.png",
+      "status": "VISION_REQUEST_FAILED",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "frame_id": 99,
+      "filename": "frame_000099.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000099.png",
+      "image_sha256": "4fe19871d1ead032947c860cbaeff45f0c505e80e4abb6c4c2bffd5e19966ce2",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.0,
+        0.0,
+        1.0,
+        0.78
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 100,
+      "filename": "frame_000100.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000100.png",
+      "image_sha256": "1f92c7e23b852be25756124f494828def572824a836478392e050b00fe31110f",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.0,
+        0.0,
+        1.0,
+        0.85
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 101,
+      "filename": "frame_000101.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000101.png",
+      "image_sha256": "2207d7ed5d634b655f5b0216ec51d93a745d1422db65a3c361f0326c92d24865",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.0,
+        0.0,
+        1.0,
+        0.8
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 102,
+      "filename": "frame_000102.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000102.png",
+      "image_sha256": "79216069d2aed58835bfa5f6a5848d355008bf91c2893945368472f4dc9ecbf6",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.0,
+        0.0,
+        1.0,
+        0.85
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "medium - plant fills most of frame, boundaries approximate"
+    },
+    {
+      "frame_id": 103,
+      "filename": "frame_000103.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000103.png",
+      "image_sha256": "63b885cd034afc191b58d9f7a0803feb71fe6772acac5daa04255cb085d98ae8",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.0,
+        0.0,
+        1.0,
+        0.95
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "medium"
+    },
+    {
+      "frame_id": 104,
+      "filename": "frame_000104.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000104.png",
+      "image_sha256": "b461603d29f36f250d25c4a449240a1f60b5fbdea08db855ea6b0a869c13347e",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "low"
+    },
+    {
+      "frame_id": 105,
+      "filename": "frame_000105.png",
+      "image_path": "outputs/video_007/sfm_images/frame_000105.png",
+      "image_sha256": "b032141487883d2d60ed8e47012171711c8b9e0d879ca672d224a7c636a491b5",
+      "status": "PROVISIONAL_AUTO",
+      "source": "AGNES_API_AUTOMATED_NOT_HUMAN",
+      "human_confirmed": false,
+      "box_xyxy_normalized": [
+        0.02,
+        0.01,
+        0.98,
+        0.91
+      ],
+      "plant_visible": true,
+      "pot_visible": false,
+      "uncertainty": "medium"
+    }
+  ]
+}

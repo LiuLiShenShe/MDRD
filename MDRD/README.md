@@ -52,6 +52,21 @@ An optional visual API reviewer is implemented in `scripts/review_segments.py`. 
 
 The extractor merges baseline selected decoded-frame indices with nearest **actual** decoded source PTS; it does not indiscriminately ingest all frames. Run downstream stages after any supplementation. For fair ablations, use separate output roots and preserve baseline results/logs.
 
+## Phase 1B: audited plant geometry and registration controls
+
+The original Phase 01 outputs remain in `outputs/video_XXX`; the frozen hashes and original test status are in `outputs/phase1b/baseline_manifest.json`. Phase 1B outputs are isolated under `outputs/phase1b/` and never turn provisional vision proposals into human ground truth. Run `video_008` first for supplementary extraction and ablation:
+
+```bash
+.venv/bin/mdrd review-segments --samples video_007 video_008 video_020
+.venv/bin/mdrd foreground --samples video_008
+.venv/bin/mdrd supplement --samples video_008 --densities 4 8
+.venv/bin/mdrd ablate-registration --samples video_008
+.venv/bin/mdrd evidence --samples video_007 video_008 video_020
+.venv/bin/mdrd phase1b-report --samples video_007 video_008 video_020
+```
+
+`review-segments` creates complete-duration low-resolution source-video previews, interactive offline timelines, and separate `reviewed_segments.json` proposals. Review `outputs/phase1b/segment_review/video_XXX/timeline.html`, then independently annotate candidate LOCAL intervals and corresponding plant surfaces. The `foreground` command accepts `--override PATH` for a manifest of externally reviewed three-class masks; `--checkpoint PATH` uses installed SAM with existing automated box proposals, **not** verified segmentations. Missing masks yield UNCERTAIN, never an all-image foreground. The original 2 fps frames are fixed across M1–M3; M2 adds 2 fps bridge frames and M3 selected source-video transition candidates. M0 is the hashed Phase 01 reference, already matched exhaustively; M4 must remain blocked until same-surface overlap is confirmed. Read `docs/PHASE_1B_FINAL_REPORT.md` for the exact status, failures, and the distinction between engineering and research acceptance. Preview images, MOVs, COLMAP databases/models, and segmentation checkpoints remain local and are excluded from Git; regenerate media from the hashed original inputs.
+
 ## Tests and scientific reading
 
 ```bash

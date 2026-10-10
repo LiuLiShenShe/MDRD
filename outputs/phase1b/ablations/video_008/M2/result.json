@@ -1,0 +1,53 @@
+{
+  "phase": "M2",
+  "status": "EXECUTED",
+  "input_count": 37,
+  "fixed_global_count": 26,
+  "fixed_local_registered": 2,
+  "fixed_local_total": 2,
+  "registered": 29,
+  "raw_tracks": 1684,
+  "model_path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M2/sfm/final",
+  "matching_strategy": "EXHAUSTIVE_ALL_PAIRS",
+  "alignment_to_M0": {
+    "status": "ALIGNED_COMMON_CAMERAS_ONLY",
+    "common_images": 28,
+    "scale": 0.40667011768341843,
+    "rms_residual": 0.01976668257950829,
+    "normalized_rms_residual": 0.010639126373962228,
+    "max_residual": 0.08399428438383964,
+    "caution": "Camera alignment does not imply 3D points are corresponding or have ground-truth accuracy"
+  },
+  "full_scene_evidence": {
+    "video_id": "M2",
+    "model": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M2/sfm/final",
+    "scope": "FULL_SCENE_FILTERED_SAME_RECONSTRUCTION_POINTS; NOT_PLANT_GEOMETRY",
+    "same_points_global_and_local": 101,
+    "median_new_local_direction_deg": 11.983473364212392,
+    "local_directions_over_5deg": 82,
+    "candidate_pairs": 666,
+    "pairs_with_raw_matches": 478,
+    "pairs_with_verified_matches": 211,
+    "pairs_with_common_tracks": 355,
+    "raw_matches_total": 23855,
+    "verified_matches_total": 14332,
+    "filter_rejections": {
+      "nonfinite_or_high_point_error": 0,
+      "short_track": 255,
+      "invalid_association": 0,
+      "nonpositive_depth": 0,
+      "high_observation_error": 11,
+      "short_after_filter": 2
+    },
+    "plant_pair_match_funnel": null,
+    "limitations": [
+      "Raw and verified 2D match counts do not correspond one-to-one to 3D tracks",
+      "Only successfully reconstructed tracks have direction gain",
+      "No cross-model point IDs are equated without independently verified correspondences"
+    ]
+  },
+  "elapsed_sec": 130.22636197367683,
+  "foreground_verified": false,
+  "foreground_tracks": null,
+  "note": "Input subset is not comparable to full Phase 01 M0 as a causal matching ablation"
+}

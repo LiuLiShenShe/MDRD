@@ -1,0 +1,18 @@
+COMMAND ["colmap", "bundle_adjuster", "--input_path", "outputs/phase1b/ablations/video_020/M1/sfm/triangulated", "--output_path", "outputs/phase1b/ablations/video_020/M1/sfm/final"]
+I20261010 17:00:12.715099 2166003 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+I20261010 17:00:13.627861 2166003 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:13.627933 2166003 bundle_adjustment.cc:942] 
+    Residuals : 35722
+   Parameters : 15172
+   Iterations : 26
+         Time : 0.879051 [s]
+ Initial cost : 0.734606 [px]
+   Final cost : 0.717823 [px]
+  Termination : Convergence
+
+I20261010 17:00:13.627941 2166003 timer.cc:91] Elapsed time: 0.015 [minutes]

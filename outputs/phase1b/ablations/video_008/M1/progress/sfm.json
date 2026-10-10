@@ -1,0 +1,27 @@
+{
+  "stage": "sfm",
+  "started_at": "2026-10-10T08:40:47.422760+00:00",
+  "signature": "9688dfc3e6928461dccdcb9be5d2906583270b9cba7561bedadd603f30a126a9",
+  "configuration": {
+    "executable": "colmap",
+    "camera_model": "SIMPLE_RADIAL",
+    "max_image_size": 2400,
+    "max_num_features": 6000,
+    "threads": 8,
+    "use_gpu": false,
+    "exhaustive_limit": 130,
+    "sequential_overlap": 10,
+    "joint_fallback": true,
+    "extra_options": {}
+  },
+  "status": "completed",
+  "output_hashes": {
+    "outputs/phase1b/ablations/video_008/M1/sfm/sfm_summary.json": "8be9731bbc8d2344bacabcfba864ebed2b0a90556d085efbda7f980f7980d4cc",
+    "outputs/phase1b/ablations/video_008/M1/sfm/database.db": "5805c3a681aa6f4ebadd57e3227cfd215404671e896f7c2d9c29361dabe20f80",
+    "outputs/phase1b/ablations/video_008/M1/sfm/database_images.csv": "7bbecfebeca4a52b2928d76643dd4fe0f79c381c6832b82e9e7a0e28e8f796ff",
+    "outputs/phase1b/ablations/video_008/M1/sfm/database_pairs.csv": "88eccd0bb16ba874f71d7521f355fb0e95d6cfe0a1742c72161b0ebf970864e5",
+    "outputs/phase1b/ablations/video_008/M1/sfm/sfm_image_manifest.csv": "e1e9e1c574b95ec172851e72e4dae774293638620914c778e64108909b5cb235"
+  },
+  "finished_at": "2026-10-10T08:52:10.580526+00:00",
+  "elapsed_sec": 683.1578227011487
+}

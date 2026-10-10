@@ -1,0 +1,45 @@
+{
+  "GLOBAL": [
+    "frame_000001.png",
+    "frame_000005.png",
+    "frame_000010.png",
+    "frame_000015.png",
+    "frame_000019.png",
+    "frame_000024.png",
+    "frame_000029.png",
+    "frame_000033.png",
+    "frame_000038.png",
+    "frame_000049.png",
+    "frame_000054.png",
+    "frame_000058.png",
+    "frame_000063.png",
+    "frame_000068.png",
+    "frame_000072.png",
+    "frame_000079.png",
+    "frame_000080.png",
+    "frame_000081.png",
+    "frame_000082.png",
+    "frame_000083.png",
+    "frame_000084.png",
+    "frame_000085.png",
+    "frame_000086.png",
+    "frame_000090.png",
+    "frame_000091.png",
+    "frame_000092.png"
+  ],
+  "LOCAL": [
+    "frame_000087.png",
+    "frame_000088.png"
+  ],
+  "APPROACH": [
+    "frame_000043.png",
+    "frame_000044.png",
+    "frame_000045.png",
+    "frame_000046.png",
+    "frame_000047.png",
+    "frame_000048.png",
+    "frame_000077.png",
+    "frame_000078.png",
+    "frame_000089.png"
+  ]
+}

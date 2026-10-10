@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 import cv2
@@ -16,7 +17,7 @@ from mdrd.sfm import run_sfm
 from mdrd.video.media import extract, probe
 
 
-TEST_ROOT = Path(__file__).resolve().parents[3] / "outputs" / "tests"
+TEST_ROOT = Path(os.environ.get("MDRD_TEST_OUTPUT_ROOT", Path(__file__).resolve().parents[3] / "outputs" / "phase1b" / "tests" / "fixtures"))
 
 
 @pytest.mark.integration
@@ -83,7 +84,12 @@ def test_colmap_known_trajectory_geometry_and_report():
     output = TEST_ROOT / "synthetic_sfm"
     directory = output / "synthetic_known_scene"
     manifest, expected, focal = render_known_scene(directory)
-    configuration = load_config(overrides={"output_root": str(output), "sfm": {"threads": 4, "max_image_size": 640, "max_num_features": 2400, "extra_options": {"feature_extractor": {"--ImageReader.camera_params": f"{focal},320,240,0"}}}})
+    known_calibration = {"--Mapper.ba_refine_focal_length": "0", "--Mapper.ba_refine_principal_point": "0", "--Mapper.ba_refine_extra_params": "0", "--random_seed": "731"}
+    extra_options = {name: known_calibration.copy() for name in ("mapper", "image_registrator", "point_triangulator")}
+    extra_options["feature_extractor"] = {"--ImageReader.camera_params": f"{focal},320,240,0"}
+    extra_options["exhaustive_matcher"] = {"--random_seed": "731"}
+    extra_options["bundle_adjuster"] = {"--BundleAdjustment.refine_focal_length": "0", "--BundleAdjustment.refine_principal_point": "0", "--BundleAdjustment.refine_extra_params": "0", "--random_seed": "731"}
+    configuration = load_config(overrides={"output_root": str(output), "sfm": {"threads": 4, "max_image_size": 640, "max_num_features": 2400, "extra_options": extra_options}})
     analyze_quality(directory, configuration, force=True)
     segment_dir = directory / "segments"
     segment_dir.mkdir(exist_ok=True)
@@ -97,6 +103,8 @@ def test_colmap_known_trajectory_geometry_and_report():
     assert summary["model_path"] is not None
     reconstruction = pycolmap.Reconstruction(summary["model_path"])
     assert reconstruction.num_reg_images() >= 6
+    for camera in reconstruction.cameras.values():
+        np.testing.assert_allclose(camera.params, [focal, 320, 240, 0], atol=1e-8)
     actual_rows, expected_rows = [], []
     for image_id in reconstruction.reg_image_ids():
         image = reconstruction.images[image_id]

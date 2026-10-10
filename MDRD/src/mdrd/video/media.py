@@ -96,7 +96,7 @@ def extract(record, configuration, force=False, supplemental_times=None):
     sampling = configuration["sampling"]
     manifest_path = output / "frame_manifest.csv"
     inputs = [record["source_path"]]
-    with stage(output, "extract", {**sampling, "supplemental_times": supplemental_times}, inputs, force) as execute:
+    with stage(output, "extract", {**sampling, "supplemental_times": supplemental_times}, inputs, force, required_outputs=[manifest_path]) as execute:
         if not execute:
             return pd.read_csv(manifest_path)
         frames = output / "frames"

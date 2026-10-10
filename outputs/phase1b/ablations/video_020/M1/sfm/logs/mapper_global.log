@@ -1,0 +1,2111 @@
+COMMAND ["colmap", "mapper", "--database_path", "outputs/phase1b/ablations/video_020/M1/sfm/database.db", "--image_path", "outputs/phase1b/ablations/video_020/M1/sfm_images", "--Mapper.num_threads", "8", "--image_list_path", "outputs/phase1b/ablations/video_020/M1/sfm/global_images.txt", "--output_path", "outputs/phase1b/ablations/video_020/M1/sfm/global"]
+I20261010 16:59:53.884826 2163894 misc.cc:198] 
+==============================================================================
+Loading database
+==============================================================================
+I20261010 16:59:53.886512 2163894 database_cache.cc:54] Loading cameras...
+I20261010 16:59:53.886579 2163894 database_cache.cc:64]  1 in 0.000s
+I20261010 16:59:53.886595 2163894 database_cache.cc:72] Loading matches...
+I20261010 16:59:53.888588 2163894 database_cache.cc:78]  208 in 0.002s
+I20261010 16:59:53.888625 2163894 database_cache.cc:94] Loading images...
+I20261010 16:59:53.900378 2163894 database_cache.cc:143]  27 in 0.012s (connected 25)
+I20261010 16:59:53.900413 2163894 database_cache.cc:154] Building correspondence graph...
+I20261010 16:59:53.911136 2163894 database_cache.cc:190]  in 0.011s (ignored 27)
+I20261010 16:59:53.911173 2163894 timer.cc:91] Elapsed time: 0.000 [minutes]
+I20261010 16:59:53.913105 2163894 misc.cc:198] 
+==============================================================================
+Finding good initial image pair
+==============================================================================
+I20261010 16:59:54.408278 2163894 misc.cc:198] 
+==============================================================================
+Initializing with image pair #14 and #9
+==============================================================================
+I20261010 16:59:54.409767 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  7.577118e+02    0.00e+00    1.19e+05   0.00e+00   0.00e+00  1.00e+04        0    6.96e-04    1.68e-03
+   1  6.754801e+02    8.22e+01    1.55e+05   0.00e+00   3.60e-01  9.78e+03        1    1.12e-03    2.82e-03
+   2  5.251686e+02    1.50e+02    8.42e+04   1.59e+02   5.75e-01  9.82e+03        1    1.00e-03    3.83e-03
+   3  3.891457e+02    1.36e+02    5.96e+04   1.33e+02   6.95e-01  1.04e+04        1    1.04e-03    4.88e-03
+   4  3.021166e+02    8.70e+01    4.65e+04   1.14e+02   7.13e-01  1.13e+04        1    1.02e-03    5.90e-03
+   5  2.428744e+02    5.92e+01    3.44e+04   9.49e+01   7.62e-01  1.32e+04        1    9.99e-04    6.91e-03
+   6  2.065561e+02    3.63e+01    2.50e+04   8.03e+01   7.80e-01  1.60e+04        1    1.00e-03    7.91e-03
+   7  1.848306e+02    2.17e+01    1.54e+04   6.54e+01   8.18e-01  2.16e+04        1    9.97e-04    8.92e-03
+   8  1.739203e+02    1.09e+01    7.24e+03   5.25e+01   8.31e-01  3.04e+04        1    9.99e-04    9.92e-03
+   9  1.692379e+02    4.68e+00    3.78e+03   3.85e+01   8.46e-01  4.55e+04        1    1.00e-03    1.09e-02
+  10  1.676353e+02    1.60e+00    2.64e+03   2.70e+01   7.82e-01  5.54e+04        1    1.00e-03    1.19e-02
+  11  1.667912e+02    8.44e-01    2.02e+03   1.78e+01   7.78e-01  6.69e+04        1    1.00e-03    1.29e-02
+  12  1.662165e+02    5.75e-01    3.18e+03   1.51e+01   6.63e-01  6.93e+04        1    1.05e-03    1.40e-02
+  13  1.655928e+02    6.24e-01    3.99e+03   1.35e+01   6.94e-01  7.36e+04        1    1.06e-03    1.51e-02
+  14  1.650145e+02    5.78e-01    4.46e+03   1.34e+01   6.54e-01  7.58e+04        1    1.03e-03    1.61e-02
+  15  1.644218e+02    5.93e-01    4.49e+03   1.32e+01   6.60e-01  7.84e+04        1    1.03e-03    1.71e-02
+  16  1.638495e+02    5.72e-01    4.48e+03   1.31e+01   6.50e-01  8.06e+04        1    1.03e-03    1.82e-02
+  17  1.632900e+02    5.60e-01    4.40e+03   1.30e+01   6.50e-01  8.28e+04        1    1.03e-03    1.92e-02
+  18  1.627513e+02    5.39e-01    4.29e+03   1.29e+01   6.48e-01  8.50e+04        1    1.03e-03    2.02e-02
+  19  1.622341e+02    5.17e-01    4.16e+03   1.27e+01   6.48e-01  8.73e+04        1    1.03e-03    2.13e-02
+  20  1.617408e+02    4.93e-01    4.02e+03   1.25e+01   6.49e-01  8.97e+04        1    1.03e-03    2.23e-02
+  21  1.612724e+02    4.68e-01    3.87e+03   1.22e+01   6.50e-01  9.22e+04        1    1.03e-03    2.34e-02
+  22  1.608296e+02    4.43e-01    3.71e+03   1.20e+01   6.52e-01  9.49e+04        1    1.01e-03    2.44e-02
+  23  1.604129e+02    4.17e-01    3.55e+03   1.18e+01   6.54e-01  9.77e+04        1    1.00e-03    2.54e-02
+  24  1.600224e+02    3.90e-01    3.39e+03   1.15e+01   6.57e-01  1.01e+05        1    1.00e-03    2.64e-02
+  25  1.596581e+02    3.64e-01    3.22e+03   1.12e+01   6.60e-01  1.04e+05        1    1.00e-03    2.74e-02
+  26  1.593196e+02    3.38e-01    3.06e+03   1.09e+01   6.63e-01  1.08e+05        1    9.97e-04    2.84e-02
+  27  1.590066e+02    3.13e-01    2.90e+03   1.07e+01   6.66e-01  1.12e+05        1    1.03e-03    2.94e-02
+  28  1.587186e+02    2.88e-01    2.74e+03   1.04e+01   6.69e-01  1.17e+05        1    1.03e-03    3.05e-02
+  29  1.584549e+02    2.64e-01    2.58e+03   1.01e+01   6.73e-01  1.22e+05        1    1.00e-03    3.15e-02
+  30  1.582149e+02    2.40e-01    2.42e+03   9.76e+00   6.77e-01  1.27e+05        1    1.03e-03    3.25e-02
+  31  1.579977e+02    2.17e-01    2.26e+03   9.44e+00   6.81e-01  1.34e+05        1    1.04e-03    3.36e-02
+  32  1.578024e+02    1.95e-01    2.11e+03   9.12e+00   6.85e-01  1.41e+05        1    1.01e-03    3.46e-02
+  33  1.576281e+02    1.74e-01    1.96e+03   8.79e+00   6.90e-01  1.49e+05        1    1.02e-03    3.56e-02
+  34  1.574738e+02    1.54e-01    1.81e+03   8.46e+00   6.95e-01  1.58e+05        1    1.03e-03    3.66e-02
+  35  1.573385e+02    1.35e-01    1.66e+03   8.11e+00   7.00e-01  1.69e+05        1    1.01e-03    3.76e-02
+  36  1.572210e+02    1.18e-01    1.52e+03   7.76e+00   7.05e-01  1.81e+05        1    1.11e-03    3.88e-02
+  37  1.571201e+02    1.01e-01    1.38e+03   7.40e+00   7.11e-01  1.96e+05        1    1.10e-03    3.99e-02
+  38  1.570347e+02    8.54e-02    1.24e+03   7.02e+00   7.18e-01  2.14e+05        1    1.03e-03    4.09e-02
+  39  1.569634e+02    7.12e-02    1.11e+03   6.64e+00   7.25e-01  2.36e+05        1    1.03e-03    4.19e-02
+  40  1.569051e+02    5.83e-02    9.80e+02   6.24e+00   7.33e-01  2.62e+05        1    1.03e-03    4.30e-02
+  41  1.568584e+02    4.67e-02    8.53e+02   5.82e+00   7.43e-01  2.96e+05        1    1.03e-03    4.40e-02
+  42  1.568220e+02    3.64e-02    7.30e+02   5.39e+00   7.53e-01  3.40e+05        1    1.04e-03    4.50e-02
+  43  1.567945e+02    2.75e-02    6.12e+02   4.93e+00   7.65e-01  4.00e+05        1    1.03e-03    4.61e-02
+  44  1.567747e+02    1.99e-02    4.99e+02   4.45e+00   7.80e-01  4.85e+05        1    1.03e-03    4.71e-02
+  45  1.567611e+02    1.36e-02    3.91e+02   3.94e+00   7.97e-01  6.14e+05        1    1.03e-03    4.81e-02
+  46  1.567525e+02    8.58e-03    2.90e+02   3.39e+00   8.20e-01  8.31e+05        1    1.03e-03    4.92e-02
+  47  1.567477e+02    4.85e-03    1.98e+02   2.80e+00   8.48e-01  1.26e+06        1    1.03e-03    5.02e-02
+  48  1.567454e+02    2.29e-03    1.17e+02   2.15e+00   8.87e-01  2.34e+06        1    1.03e-03    5.12e-02
+  49  1.567446e+02    7.92e-04    5.27e+01   1.44e+00   9.40e-01  7.03e+06        1    1.03e-03    5.23e-02
+  50  1.567445e+02    1.46e-04    1.24e+01   6.93e-01   1.00e+00  2.11e+07        1    1.03e-03    5.33e-02
+  51  1.567444e+02    7.00e-06    1.79e+00   1.44e-01   1.03e+00  6.33e+07        1    1.04e-03    5.44e-02
+  52  1.567444e+02    6.16e-08    1.30e-01   1.63e-02   1.08e+00  1.90e+08        1    1.03e-03    5.54e-02
+  53  1.567444e+02    5.84e-10    1.30e-03   1.54e-03   1.09e+00  5.69e+08        1    1.03e-03    5.64e-02
+I20261010 16:59:54.466998 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:54.467036 2163894 bundle_adjustment.cc:942] 
+    Residuals : 1452
+   Parameters : 1096
+   Iterations : 54
+         Time : 0.0564649 [s]
+ Initial cost : 0.722385 [px]
+   Final cost : 0.328559 [px]
+  Termination : Convergence
+
+I20261010 16:59:54.467401 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 16:59:54.467409 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:54.640178 2163894 misc.cc:198] 
+==============================================================================
+Registering image #12 (3)
+==============================================================================
+I20261010 16:59:54.640218 2163894 incremental_mapper.cc:495] => Image sees 258 / 2951 points
+I20261010 16:59:54.650089 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:54.650117 2163894 bundle_adjustment.cc:942] 
+    Residuals : 516
+   Parameters : 6
+   Iterations : 10
+         Time : 0.00311708 [s]
+ Initial cost : 0.654715 [px]
+   Final cost : 0.517697 [px]
+  Termination : Convergence
+
+I20261010 16:59:54.650400 2163894 incremental_mapper.cc:40] => Continued observations: 258
+I20261010 16:59:54.655524 2163894 incremental_mapper.cc:43] => Added observations: 1996
+I20261010 16:59:54.786274 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:54.786304 2163894 bundle_adjustment.cc:942] 
+    Residuals : 5960
+   Parameters : 3919
+   Iterations : 23
+         Time : 0.127856 [s]
+ Initial cost : 0.556617 [px]
+   Final cost : 0.376165 [px]
+  Termination : Convergence
+
+I20261010 16:59:54.789318 2163894 incremental_mapper.cc:78] => Merged observations: 4
+I20261010 16:59:54.789336 2163894 incremental_mapper.cc:79] => Completed observations: 24
+I20261010 16:59:54.789340 2163894 incremental_mapper.cc:81] => Filtered observations: 21
+I20261010 16:59:54.789343 2163894 incremental_mapper.cc:90] => Changed observations: 0.016443
+I20261010 16:59:54.816383 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:54.816407 2163894 bundle_adjustment.cc:942] 
+    Residuals : 5962
+   Parameters : 3922
+   Iterations : 4
+         Time : 0.0245008 [s]
+ Initial cost : 0.4406 [px]
+   Final cost : 0.423454 [px]
+  Termination : Convergence
+
+I20261010 16:59:54.819214 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 16:59:54.819231 2163894 incremental_mapper.cc:79] => Completed observations: 7
+I20261010 16:59:54.819235 2163894 incremental_mapper.cc:81] => Filtered observations: 1
+I20261010 16:59:54.819238 2163894 incremental_mapper.cc:90] => Changed observations: 0.002684
+I20261010 16:59:54.819265 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:59:54.819618 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:59:54.819890 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:54.819897 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 16:59:54.819908 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.095884e+03    0.00e+00    1.57e+03   0.00e+00   0.00e+00  1.00e+04        0    3.02e-03    6.75e-03
+   1  1.092906e+03    2.98e+00    1.32e+02   0.00e+00   1.00e+00  3.00e+04        1    4.79e-03    1.16e-02
+   2  1.092887e+03    1.98e-02    1.09e+01   5.49e-01   1.01e+00  9.00e+04        1    4.68e-03    1.62e-02
+   3  1.092884e+03    2.29e-03    5.60e+00   4.67e-01   1.00e+00  2.70e+05        1    4.82e-03    2.11e-02
+   4  1.092884e+03    2.74e-04    1.83e+00   2.20e-01   1.02e+00  8.10e+05        1    4.66e-03    2.57e-02
+   5  1.092884e+03    1.56e-05    9.15e-01   5.55e-02   1.02e+00  2.43e+06        1    4.73e-03    3.05e-02
+   6  1.092884e+03    2.31e-07    1.50e-01   6.78e-03   1.04e+00  7.29e+06        1    4.65e-03    3.51e-02
+   7  1.092884e+03    1.16e-09    1.30e-02   4.53e-04   1.04e+00  2.19e+07        1    4.66e-03    3.98e-02
+I20261010 16:59:54.861999 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:54.862025 2163894 bundle_adjustment.cc:942] 
+    Residuals : 5972
+   Parameters : 3928
+   Iterations : 8
+         Time : 0.039937 [s]
+ Initial cost : 0.428373 [px]
+   Final cost : 0.427787 [px]
+  Termination : Convergence
+
+I20261010 16:59:54.863332 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:59:54.863617 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:54.863965 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 16:59:54.863970 2163894 incremental_mapper.cc:119] => Changed observations: 0.000000
+I20261010 16:59:54.863976 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:55.032307 2163894 misc.cc:198] 
+==============================================================================
+Registering image #21 (4)
+==============================================================================
+I20261010 16:59:55.032363 2163894 incremental_mapper.cc:495] => Image sees 526 / 1944 points
+I20261010 16:59:55.068732 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:55.068776 2163894 bundle_adjustment.cc:942] 
+    Residuals : 1002
+   Parameters : 6
+   Iterations : 30
+         Time : 0.022687 [s]
+ Initial cost : 0.845826 [px]
+   Final cost : 0.759087 [px]
+  Termination : Convergence
+
+I20261010 16:59:55.069591 2163894 incremental_mapper.cc:40] => Continued observations: 501
+I20261010 16:59:55.071745 2163894 incremental_mapper.cc:43] => Added observations: 699
+I20261010 16:59:55.295719 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:55.295764 2163894 bundle_adjustment.cc:942] 
+    Residuals : 8372
+   Parameters : 4915
+   Iterations : 26
+         Time : 0.220081 [s]
+ Initial cost : 0.632813 [px]
+   Final cost : 0.522139 [px]
+  Termination : No convergence
+
+I20261010 16:59:55.299434 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 16:59:55.299454 2163894 incremental_mapper.cc:79] => Completed observations: 15
+I20261010 16:59:55.299458 2163894 incremental_mapper.cc:81] => Filtered observations: 171
+I20261010 16:59:55.299463 2163894 incremental_mapper.cc:90] => Changed observations: 0.044434
+I20261010 16:59:55.353438 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:55.353482 2163894 bundle_adjustment.cc:942] 
+    Residuals : 8046
+   Parameters : 4768
+   Iterations : 6
+         Time : 0.050683 [s]
+ Initial cost : 0.583136 [px]
+   Final cost : 0.549902 [px]
+  Termination : Convergence
+
+I20261010 16:59:55.357270 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 16:59:55.357290 2163894 incremental_mapper.cc:79] => Completed observations: 53
+I20261010 16:59:55.357293 2163894 incremental_mapper.cc:81] => Filtered observations: 2
+I20261010 16:59:55.357297 2163894 incremental_mapper.cc:90] => Changed observations: 0.013671
+I20261010 16:59:55.357326 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:59:55.357931 2163894 incremental_mapper.cc:175] => Completed observations: 2
+I20261010 16:59:55.358335 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:55.358340 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 16:59:55.358354 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  2.533680e+03    0.00e+00    1.57e+03   0.00e+00   0.00e+00  1.00e+04        0    4.36e-03    1.01e-02
+   1  2.517208e+03    1.65e+01    1.09e+02   0.00e+00   1.00e+00  3.00e+04        1    7.08e-03    1.72e-02
+   2  2.516968e+03    2.40e-01    2.32e+02   1.90e+00   1.00e+00  9.00e+04        1    7.76e-03    2.49e-02
+   3  2.516901e+03    6.69e-02    9.40e+01   1.09e+00   1.00e+00  2.70e+05        1    7.04e-03    3.20e-02
+   4  2.516895e+03    5.94e-03    8.56e+00   3.42e-01   1.01e+00  8.10e+05        1    6.77e-03    3.88e-02
+   5  2.516895e+03    9.60e-05    8.94e-01   4.54e-02   1.01e+00  2.43e+06        1    6.76e-03    4.55e-02
+   6  2.516895e+03    3.13e-07    3.33e-01   2.50e-03   1.03e+00  7.29e+06        1    6.79e-03    5.24e-02
+   7  2.516895e+03    6.11e-10    1.73e-02   8.51e-05   1.04e+00  2.19e+07        1    6.71e-03    5.91e-02
+I20261010 16:59:55.420689 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:55.420723 2163894 bundle_adjustment.cc:942] 
+    Residuals : 8150
+   Parameters : 4843
+   Iterations : 8
+         Time : 0.0592489 [s]
+ Initial cost : 0.557567 [px]
+   Final cost : 0.555717 [px]
+  Termination : Convergence
+
+I20261010 16:59:55.422796 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:59:55.423269 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:55.423743 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 16:59:55.423749 2163894 incremental_mapper.cc:119] => Changed observations: 0.000000
+I20261010 16:59:55.423756 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:55.581370 2163894 misc.cc:198] 
+==============================================================================
+Registering image #27 (5)
+==============================================================================
+I20261010 16:59:55.581409 2163894 incremental_mapper.cc:495] => Image sees 713 / 1785 points
+I20261010 16:59:55.619328 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:55.619369 2163894 bundle_adjustment.cc:942] 
+    Residuals : 1414
+   Parameters : 6
+   Iterations : 25
+         Time : 0.025794 [s]
+ Initial cost : 0.698998 [px]
+   Final cost : 0.66158 [px]
+  Termination : Convergence
+
+I20261010 16:59:55.620175 2163894 incremental_mapper.cc:40] => Continued observations: 706
+I20261010 16:59:55.622537 2163894 incremental_mapper.cc:43] => Added observations: 691
+I20261010 16:59:55.767558 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:55.767612 2163894 bundle_adjustment.cc:942] 
+    Residuals : 10944
+   Parameters : 5782
+   Iterations : 12
+         Time : 0.140156 [s]
+ Initial cost : 0.595411 [px]
+   Final cost : 0.52972 [px]
+  Termination : Convergence
+
+I20261010 16:59:55.772342 2163894 incremental_mapper.cc:78] => Merged observations: 19
+I20261010 16:59:55.772365 2163894 incremental_mapper.cc:79] => Completed observations: 40
+I20261010 16:59:55.772369 2163894 incremental_mapper.cc:81] => Filtered observations: 128
+I20261010 16:59:55.772372 2163894 incremental_mapper.cc:90] => Changed observations: 0.034174
+I20261010 16:59:55.846689 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:55.846738 2163894 bundle_adjustment.cc:942] 
+    Residuals : 10768
+   Parameters : 5701
+   Iterations : 6
+         Time : 0.0699229 [s]
+ Initial cost : 0.611031 [px]
+   Final cost : 0.584803 [px]
+  Termination : Convergence
+
+I20261010 16:59:55.851279 2163894 incremental_mapper.cc:78] => Merged observations: 5
+I20261010 16:59:55.851298 2163894 incremental_mapper.cc:79] => Completed observations: 18
+I20261010 16:59:55.851302 2163894 incremental_mapper.cc:81] => Filtered observations: 1
+I20261010 16:59:55.851306 2163894 incremental_mapper.cc:90] => Changed observations: 0.004458
+I20261010 16:59:55.851332 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:59:55.852141 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:59:55.852710 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:55.852725 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 16:59:55.852741 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  3.734788e+03    0.00e+00    7.24e+02   0.00e+00   0.00e+00  1.00e+04        0    6.05e-03    1.42e-02
+   1  3.725824e+03    8.96e+00    4.67e+01   0.00e+00   1.00e+00  3.00e+04        1    1.00e-02    2.43e-02
+   2  3.725753e+03    7.04e-02    2.05e+01   7.11e-01   1.00e+00  9.00e+04        1    9.59e-03    3.39e-02
+   3  3.725729e+03    2.46e-02    2.00e+01   5.86e-01   9.99e-01  2.70e+05        1    9.41e-03    4.33e-02
+   4  3.725727e+03    1.97e-03    2.65e+00   1.99e-01   1.00e+00  8.10e+05        1    9.39e-03    5.27e-02
+   5  3.725727e+03    2.57e-05    1.06e+00   2.43e-02   1.01e+00  2.43e+06        1    9.40e-03    6.21e-02
+   6  3.725727e+03    5.79e-08    1.01e-01   1.11e-03   1.02e+00  7.29e+06        1    9.46e-03    7.16e-02
+   7  3.725727e+03    6.46e-11    3.86e-03   2.92e-05   1.30e+00  2.19e+07        1    9.43e-03    8.10e-02
+I20261010 16:59:55.938705 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:55.938730 2163894 bundle_adjustment.cc:942] 
+    Residuals : 10802
+   Parameters : 5722
+   Iterations : 8
+         Time : 0.0812099 [s]
+ Initial cost : 0.588005 [px]
+   Final cost : 0.587291 [px]
+  Termination : Convergence
+
+I20261010 16:59:55.941152 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:59:55.941728 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:55.942344 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 16:59:55.942353 2163894 incremental_mapper.cc:119] => Changed observations: 0.000000
+I20261010 16:59:55.942359 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:56.093024 2163894 misc.cc:198] 
+==============================================================================
+Registering image #17 (6)
+==============================================================================
+I20261010 16:59:56.093060 2163894 incremental_mapper.cc:495] => Image sees 406 / 1043 points
+I20261010 16:59:56.119964 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:56.119995 2163894 bundle_adjustment.cc:942] 
+    Residuals : 786
+   Parameters : 6
+   Iterations : 36
+         Time : 0.0183699 [s]
+ Initial cost : 0.805488 [px]
+   Final cost : 0.761692 [px]
+  Termination : Convergence
+
+I20261010 16:59:56.120388 2163894 incremental_mapper.cc:40] => Continued observations: 391
+I20261010 16:59:56.121567 2163894 incremental_mapper.cc:43] => Added observations: 374
+I20261010 16:59:56.382882 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:56.382926 2163894 bundle_adjustment.cc:942] 
+    Residuals : 12332
+   Parameters : 6235
+   Iterations : 20
+         Time : 0.256099 [s]
+ Initial cost : 0.573821 [px]
+   Final cost : 0.536706 [px]
+  Termination : Convergence
+
+I20261010 16:59:56.387099 2163894 incremental_mapper.cc:78] => Merged observations: 17
+I20261010 16:59:56.387120 2163894 incremental_mapper.cc:79] => Completed observations: 23
+I20261010 16:59:56.387123 2163894 incremental_mapper.cc:81] => Filtered observations: 142
+I20261010 16:59:56.387126 2163894 incremental_mapper.cc:90] => Changed observations: 0.029517
+I20261010 16:59:56.459661 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:56.459707 2163894 bundle_adjustment.cc:942] 
+    Residuals : 12094
+   Parameters : 6190
+   Iterations : 5
+         Time : 0.0677838 [s]
+ Initial cost : 0.630373 [px]
+   Final cost : 0.604342 [px]
+  Termination : Convergence
+
+I20261010 16:59:56.463719 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 16:59:56.463738 2163894 incremental_mapper.cc:79] => Completed observations: 19
+I20261010 16:59:56.463752 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 16:59:56.463755 2163894 incremental_mapper.cc:90] => Changed observations: 0.003142
+I20261010 16:59:56.463775 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:59:56.464758 2163894 incremental_mapper.cc:175] => Completed observations: 2
+I20261010 16:59:56.465441 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:56.465452 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 16:59:56.465466 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  4.509606e+03    0.00e+00    9.18e+02   0.00e+00   0.00e+00  1.00e+04        0    9.83e-03    2.05e-02
+   1  4.492954e+03    1.67e+01    2.45e+01   0.00e+00   1.00e+00  3.00e+04        1    1.24e-02    3.30e-02
+   2  4.492926e+03    2.79e-02    2.72e+01   4.93e-01   1.00e+00  9.00e+04        1    1.09e-02    4.39e-02
+   3  4.492918e+03    8.54e-03    9.65e+00   2.76e-01   9.99e-01  2.70e+05        1    1.10e-02    5.49e-02
+   4  4.492917e+03    7.54e-04    1.88e+00   8.72e-02   9.99e-01  8.10e+05        1    1.14e-02    6.63e-02
+   5  4.492917e+03    1.11e-05    8.26e-01   1.11e-02   1.00e+00  2.43e+06        1    1.10e-02    7.73e-02
+   6  4.492917e+03    2.36e-08    5.28e-02   5.09e-04   1.01e+00  7.29e+06        1    1.16e-02    8.89e-02
+I20261010 16:59:56.559279 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:56.559317 2163894 bundle_adjustment.cc:942] 
+    Residuals : 12136
+   Parameters : 6214
+   Iterations : 7
+         Time : 0.0891321 [s]
+ Initial cost : 0.609581 [px]
+   Final cost : 0.608452 [px]
+  Termination : Convergence
+
+I20261010 16:59:56.562459 2163894 incremental_mapper.cc:175] => Completed observations: 3
+I20261010 16:59:56.563349 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:56.564065 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 16:59:56.564076 2163894 incremental_mapper.cc:119] => Changed observations: 0.000494
+I20261010 16:59:56.564083 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:56.713162 2163894 misc.cc:198] 
+==============================================================================
+Registering image #16 (7)
+==============================================================================
+I20261010 16:59:56.713204 2163894 incremental_mapper.cc:495] => Image sees 413 / 750 points
+I20261010 16:59:56.732106 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:56.732160 2163894 bundle_adjustment.cc:942] 
+    Residuals : 816
+   Parameters : 6
+   Iterations : 17
+         Time : 0.0103519 [s]
+ Initial cost : 0.83426 [px]
+   Final cost : 0.7789 [px]
+  Termination : Convergence
+
+I20261010 16:59:56.732739 2163894 incremental_mapper.cc:40] => Continued observations: 407
+I20261010 16:59:56.733752 2163894 incremental_mapper.cc:43] => Added observations: 170
+I20261010 16:59:56.885264 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:56.885310 2163894 bundle_adjustment.cc:942] 
+    Residuals : 11378
+   Parameters : 4718
+   Iterations : 13
+         Time : 0.144531 [s]
+ Initial cost : 0.605145 [px]
+   Final cost : 0.574148 [px]
+  Termination : Convergence
+
+I20261010 16:59:56.889523 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 16:59:56.889547 2163894 incremental_mapper.cc:79] => Completed observations: 12
+I20261010 16:59:56.889551 2163894 incremental_mapper.cc:81] => Filtered observations: 121
+I20261010 16:59:56.889555 2163894 incremental_mapper.cc:90] => Changed observations: 0.021879
+I20261010 16:59:56.926978 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:56.927019 2163894 bundle_adjustment.cc:942] 
+    Residuals : 11160
+   Parameters : 4688
+   Iterations : 3
+         Time : 0.0324969 [s]
+ Initial cost : 0.691923 [px]
+   Final cost : 0.670466 [px]
+  Termination : Convergence
+
+I20261010 16:59:56.931134 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 16:59:56.931156 2163894 incremental_mapper.cc:79] => Completed observations: 13
+I20261010 16:59:56.931161 2163894 incremental_mapper.cc:81] => Filtered observations: 1
+I20261010 16:59:56.931164 2163894 incremental_mapper.cc:90] => Changed observations: 0.002345
+I20261010 16:59:56.931183 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:59:56.932267 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:59:56.932966 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:56.932981 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 16:59:56.932999 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  5.381180e+03    0.00e+00    1.82e+03   0.00e+00   0.00e+00  1.00e+04        0    8.45e-03    1.87e-02
+   1  5.358664e+03    2.25e+01    2.32e+02   0.00e+00   1.00e+00  3.00e+04        1    1.76e-02    3.63e-02
+   2  5.358625e+03    3.97e-02    9.11e+00   3.91e-01   1.02e+00  9.00e+04        1    1.29e-02    4.92e-02
+   3  5.358622e+03    2.48e-03    2.00e+00   9.32e-02   9.98e-01  2.70e+05        1    1.24e-02    6.16e-02
+   4  5.358622e+03    1.67e-04    1.34e+00   3.09e-02   9.97e-01  8.10e+05        1    1.26e-02    7.42e-02
+   5  5.358622e+03    2.25e-06    3.25e-01   4.14e-03   1.00e+00  2.43e+06        1    1.30e-02    8.72e-02
+   6  5.358622e+03    4.26e-09    1.87e-02   1.80e-04   1.00e+00  7.29e+06        1    1.31e-02    1.00e-01
+I20261010 16:59:57.038790 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:57.038834 2163894 bundle_adjustment.cc:942] 
+    Residuals : 13102
+   Parameters : 6415
+   Iterations : 7
+         Time : 0.10067 [s]
+ Initial cost : 0.64087 [px]
+   Final cost : 0.639525 [px]
+  Termination : Convergence
+
+I20261010 16:59:57.042601 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 16:59:57.043449 2163894 incremental_mapper.cc:178] => Merged observations: 5
+I20261010 16:59:57.044222 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 16:59:57.044235 2163894 incremental_mapper.cc:119] => Changed observations: 0.000916
+I20261010 16:59:57.044245 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  5.379681e+03    0.00e+00    1.12e+03   0.00e+00   0.00e+00  1.00e+04        0    7.90e-03    1.82e-02
+   1  5.374342e+03    5.34e+00    4.41e+00   0.00e+00   1.00e+00  3.00e+04        1    1.37e-02    3.19e-02
+   2  5.374341e+03    1.01e-03    1.87e+00   3.10e-02   1.01e+00  9.00e+04        1    1.34e-02    4.54e-02
+   3  5.374341e+03    1.65e-04    1.78e+00   2.43e-02   9.98e-01  2.70e+05        1    1.26e-02    5.80e-02
+   4  5.374341e+03    1.32e-05    7.22e-01   8.88e-03   9.98e-01  8.10e+05        1    1.26e-02    7.06e-02
+   5  5.374341e+03    1.69e-07    1.02e-01   1.10e-03   1.00e+00  2.43e+06        1    1.26e-02    8.32e-02
+   6  5.374341e+03    3.27e-10    5.23e-03   4.62e-05   1.06e+00  7.29e+06        1    1.29e-02    9.62e-02
+I20261010 16:59:57.145875 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:57.145913 2163894 bundle_adjustment.cc:942] 
+    Residuals : 13104
+   Parameters : 6412
+   Iterations : 7
+         Time : 0.0964608 [s]
+ Initial cost : 0.640732 [px]
+   Final cost : 0.640414 [px]
+  Termination : Convergence
+
+I20261010 16:59:57.149266 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:59:57.150103 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:57.150842 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 16:59:57.150852 2163894 incremental_mapper.cc:119] => Changed observations: 0.000000
+I20261010 16:59:57.150859 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:57.304373 2163894 misc.cc:198] 
+==============================================================================
+Registering image #23 (8)
+==============================================================================
+I20261010 16:59:57.304410 2163894 incremental_mapper.cc:495] => Image sees 341 / 3270 points
+I20261010 16:59:57.319803 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:57.319845 2163894 bundle_adjustment.cc:942] 
+    Residuals : 602
+   Parameters : 6
+   Iterations : 15
+         Time : 0.00625801 [s]
+ Initial cost : 0.85159 [px]
+   Final cost : 0.837921 [px]
+  Termination : Convergence
+
+I20261010 16:59:57.320530 2163894 incremental_mapper.cc:40] => Continued observations: 298
+I20261010 16:59:57.322494 2163894 incremental_mapper.cc:43] => Added observations: 565
+I20261010 16:59:57.540274 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:57.540328 2163894 bundle_adjustment.cc:942] 
+    Residuals : 12920
+   Parameters : 5402
+   Iterations : 17
+         Time : 0.211102 [s]
+ Initial cost : 0.656888 [px]
+   Final cost : 0.54159 [px]
+  Termination : Convergence
+
+I20261010 16:59:57.545219 2163894 incremental_mapper.cc:78] => Merged observations: 11
+I20261010 16:59:57.545243 2163894 incremental_mapper.cc:79] => Completed observations: 10
+I20261010 16:59:57.545248 2163894 incremental_mapper.cc:81] => Filtered observations: 104
+I20261010 16:59:57.545251 2163894 incremental_mapper.cc:90] => Changed observations: 0.019043
+I20261010 16:59:57.591506 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:57.591557 2163894 bundle_adjustment.cc:942] 
+    Residuals : 12736
+   Parameters : 5345
+   Iterations : 3
+         Time : 0.040693 [s]
+ Initial cost : 0.642735 [px]
+   Final cost : 0.624385 [px]
+  Termination : Convergence
+
+I20261010 16:59:57.596294 2163894 incremental_mapper.cc:78] => Merged observations: 5
+I20261010 16:59:57.596318 2163894 incremental_mapper.cc:79] => Completed observations: 9
+I20261010 16:59:57.596323 2163894 incremental_mapper.cc:81] => Filtered observations: 4
+I20261010 16:59:57.596325 2163894 incremental_mapper.cc:90] => Changed observations: 0.002781
+I20261010 16:59:57.596346 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:59:57.597524 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:59:57.598364 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:57.598374 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 16:59:57.598392 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  6.030727e+03    0.00e+00    9.05e+03   0.00e+00   0.00e+00  1.00e+04        0    9.17e-03    2.06e-02
+   1  5.988765e+03    4.20e+01    1.98e+03   0.00e+00   1.01e+00  3.00e+04        1    1.56e-02    3.62e-02
+   2  5.987096e+03    1.67e+00    3.05e+02   1.66e+00   9.99e-01  9.00e+04        1    1.59e-02    5.22e-02
+   3  5.986475e+03    6.21e-01    3.38e+02   1.50e+00   9.96e-01  2.70e+05        1    1.46e-02    6.68e-02
+   4  5.986419e+03    5.65e-02    4.65e+01   5.47e-01   9.96e-01  8.10e+05        1    1.45e-02    8.12e-02
+   5  5.986418e+03    7.91e-04    1.88e+00   6.97e-02   9.98e-01  2.43e+06        1    1.48e-02    9.60e-02
+   6  5.986418e+03    1.44e-06    3.17e-01   2.92e-03   1.01e+00  7.29e+06        1    1.46e-02    1.11e-01
+   7  5.986418e+03    7.27e-10    1.08e-02   5.20e-05   1.02e+00  2.19e+07        1    1.45e-02    1.25e-01
+I20261010 16:59:57.729648 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:57.729686 2163894 bundle_adjustment.cc:942] 
+    Residuals : 14652
+   Parameters : 7123
+   Iterations : 8
+         Time : 0.125473 [s]
+ Initial cost : 0.641559 [px]
+   Final cost : 0.639197 [px]
+  Termination : Convergence
+
+I20261010 16:59:57.733533 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 16:59:57.734519 2163894 incremental_mapper.cc:178] => Merged observations: 4
+I20261010 16:59:57.735366 2163894 incremental_mapper.cc:160] => Filtered observations: 1
+I20261010 16:59:57.735376 2163894 incremental_mapper.cc:119] => Changed observations: 0.000819
+I20261010 16:59:57.735387 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  6.006052e+03    0.00e+00    1.25e+03   0.00e+00   0.00e+00  1.00e+04        0    9.02e-03    2.03e-02
+   1  5.988640e+03    1.74e+01    7.28e+01   0.00e+00   1.00e+00  3.00e+04        1    1.50e-02    3.53e-02
+   2  5.988609e+03    3.20e-02    3.28e+00   1.39e-01   1.00e+00  9.00e+04        1    1.40e-02    4.93e-02
+   3  5.988608e+03    8.05e-04    1.71e+00   4.05e-02   1.00e+00  2.70e+05        1    1.40e-02    6.34e-02
+   4  5.988608e+03    2.53e-05    9.47e-01   1.04e-02   9.97e-01  8.10e+05        1    1.37e-02    7.71e-02
+   5  5.988608e+03    2.90e-07    1.29e-01   1.19e-03   9.98e-01  2.43e+06        1    1.38e-02    9.09e-02
+   6  5.988608e+03    5.04e-10    6.47e-03   4.64e-05   1.08e+00  7.29e+06        1    1.40e-02    1.05e-01
+I20261010 16:59:57.847039 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:57.847074 2163894 bundle_adjustment.cc:942] 
+    Residuals : 14652
+   Parameters : 7120
+   Iterations : 7
+         Time : 0.105163 [s]
+ Initial cost : 0.640245 [px]
+   Final cost : 0.639314 [px]
+  Termination : Convergence
+
+I20261010 16:59:57.850719 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 16:59:57.851665 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:57.852499 2163894 incremental_mapper.cc:160] => Filtered observations: 1
+I20261010 16:59:57.852509 2163894 incremental_mapper.cc:119] => Changed observations: 0.000273
+I20261010 16:59:57.852515 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:58.006096 2163894 misc.cc:198] 
+==============================================================================
+Registering image #26 (9)
+==============================================================================
+I20261010 16:59:58.006132 2163894 incremental_mapper.cc:495] => Image sees 616 / 3247 points
+I20261010 16:59:58.032099 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:58.032141 2163894 bundle_adjustment.cc:942] 
+    Residuals : 1200
+   Parameters : 6
+   Iterations : 15
+         Time : 0.0144861 [s]
+ Initial cost : 0.621289 [px]
+   Final cost : 0.608967 [px]
+  Termination : Convergence
+
+I20261010 16:59:58.032871 2163894 incremental_mapper.cc:40] => Continued observations: 592
+I20261010 16:59:58.036154 2163894 incremental_mapper.cc:43] => Added observations: 1028
+I20261010 16:59:58.268082 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:58.268139 2163894 bundle_adjustment.cc:942] 
+    Residuals : 14148
+   Parameters : 5432
+   Iterations : 19
+         Time : 0.224687 [s]
+ Initial cost : 0.584907 [px]
+   Final cost : 0.533109 [px]
+  Termination : Convergence
+
+I20261010 16:59:58.274370 2163894 incremental_mapper.cc:78] => Merged observations: 27
+I20261010 16:59:58.274390 2163894 incremental_mapper.cc:79] => Completed observations: 55
+I20261010 16:59:58.274394 2163894 incremental_mapper.cc:81] => Filtered observations: 84
+I20261010 16:59:58.274397 2163894 incremental_mapper.cc:90] => Changed observations: 0.021911
+I20261010 16:59:58.320957 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:58.320988 2163894 bundle_adjustment.cc:942] 
+    Residuals : 14090
+   Parameters : 5387
+   Iterations : 3
+         Time : 0.039958 [s]
+ Initial cost : 0.638702 [px]
+   Final cost : 0.62339 [px]
+  Termination : Convergence
+
+I20261010 16:59:58.326653 2163894 incremental_mapper.cc:78] => Merged observations: 14
+I20261010 16:59:58.326673 2163894 incremental_mapper.cc:79] => Completed observations: 16
+I20261010 16:59:58.326676 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 16:59:58.326680 2163894 incremental_mapper.cc:90] => Changed observations: 0.003975
+I20261010 16:59:58.326709 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:59:58.328060 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 16:59:58.329056 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:58.329066 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 16:59:58.329084 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  6.895655e+03    0.00e+00    5.82e+03   0.00e+00   0.00e+00  1.00e+04        0    1.08e-02    2.50e-02
+   1  6.852040e+03    4.36e+01    1.92e+03   0.00e+00   1.01e+00  3.00e+04        1    1.87e-02    4.38e-02
+   2  6.851531e+03    5.09e-01    9.81e+01   7.81e-01   1.00e+00  9.00e+04        1    1.75e-02    6.13e-02
+   3  6.851313e+03    2.19e-01    9.47e+01   6.75e-01   9.97e-01  2.70e+05        1    1.82e-02    7.95e-02
+   4  6.851283e+03    2.97e-02    1.85e+01   2.95e-01   9.97e-01  8.10e+05        1    1.76e-02    9.72e-02
+   5  6.851282e+03    6.81e-04    1.98e+00   4.87e-02   9.98e-01  2.43e+06        1    1.74e-02    1.15e-01
+   6  6.851282e+03    2.07e-06    3.30e-01   2.72e-03   1.00e+00  7.29e+06        1    1.77e-02    1.32e-01
+   7  6.851282e+03    1.25e-09    1.20e-02   5.93e-05   9.97e-01  2.19e+07        1    2.33e-02    1.56e-01
+I20261010 16:59:58.492977 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:58.493032 2163894 bundle_adjustment.cc:942] 
+    Residuals : 17868
+   Parameters : 8485
+   Iterations : 8
+         Time : 0.156187 [s]
+ Initial cost : 0.621226 [px]
+   Final cost : 0.619224 [px]
+  Termination : Convergence
+
+I20261010 16:59:58.497663 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 16:59:58.498842 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:58.499897 2163894 incremental_mapper.cc:160] => Filtered observations: 2
+I20261010 16:59:58.499907 2163894 incremental_mapper.cc:119] => Changed observations: 0.000336
+I20261010 16:59:58.499915 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:58.655292 2163894 misc.cc:198] 
+==============================================================================
+Registering image #19 (10)
+==============================================================================
+I20261010 16:59:58.655329 2163894 incremental_mapper.cc:495] => Image sees 276 / 600 points
+I20261010 16:59:58.665357 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:58.665385 2163894 bundle_adjustment.cc:942] 
+    Residuals : 520
+   Parameters : 6
+   Iterations : 13
+         Time : 0.004076 [s]
+ Initial cost : 0.794994 [px]
+   Final cost : 0.792647 [px]
+  Termination : Convergence
+
+I20261010 16:59:58.665666 2163894 incremental_mapper.cc:40] => Continued observations: 259
+I20261010 16:59:58.666270 2163894 incremental_mapper.cc:43] => Added observations: 114
+I20261010 16:59:58.806365 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:58.806408 2163894 bundle_adjustment.cc:942] 
+    Residuals : 11756
+   Parameters : 3674
+   Iterations : 14
+         Time : 0.132108 [s]
+ Initial cost : 0.575432 [px]
+   Final cost : 0.544389 [px]
+  Termination : Convergence
+
+I20261010 16:59:58.810966 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 16:59:58.810985 2163894 incremental_mapper.cc:79] => Completed observations: 8
+I20261010 16:59:58.810990 2163894 incremental_mapper.cc:81] => Filtered observations: 77
+I20261010 16:59:58.810994 2163894 incremental_mapper.cc:90] => Changed observations: 0.012656
+I20261010 16:59:58.855520 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:58.855552 2163894 bundle_adjustment.cc:942] 
+    Residuals : 11618
+   Parameters : 3656
+   Iterations : 4
+         Time : 0.0390592 [s]
+ Initial cost : 0.647978 [px]
+   Final cost : 0.635316 [px]
+  Termination : Convergence
+
+I20261010 16:59:58.860394 2163894 incremental_mapper.cc:78] => Merged observations: 7
+I20261010 16:59:58.860417 2163894 incremental_mapper.cc:79] => Completed observations: 3
+I20261010 16:59:58.860421 2163894 incremental_mapper.cc:81] => Filtered observations: 1
+I20261010 16:59:58.860425 2163894 incremental_mapper.cc:90] => Changed observations: 0.001655
+I20261010 16:59:58.860441 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:59:58.861990 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 16:59:58.863029 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:58.863040 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 16:59:58.863058 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  7.369512e+03    0.00e+00    3.08e+03   0.00e+00   0.00e+00  1.00e+04        0    1.23e-02    2.72e-02
+   1  7.352973e+03    1.65e+01    2.21e+02   0.00e+00   1.00e+00  3.00e+04        1    2.10e-02    4.82e-02
+   2  7.352750e+03    2.23e-01    7.24e+01   1.29e+00   1.00e+00  9.00e+04        1    2.01e-02    6.83e-02
+   3  7.352738e+03    1.23e-02    2.08e+00   3.12e-01   1.00e+00  2.70e+05        1    2.04e-02    8.87e-02
+   4  7.352737e+03    2.75e-04    1.52e+00   2.37e-02   9.98e-01  8.10e+05        1    2.01e-02    1.09e-01
+   5  7.352737e+03    4.78e-06    2.30e-01   3.21e-03   9.97e-01  2.43e+06        1    1.99e-02    1.29e-01
+I20261010 16:59:58.999748 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:58.999789 2163894 bundle_adjustment.cc:942] 
+    Residuals : 18478
+   Parameters : 8611
+   Iterations : 6
+         Time : 0.129262 [s]
+ Initial cost : 0.631527 [px]
+   Final cost : 0.630808 [px]
+  Termination : Convergence
+
+I20261010 16:59:59.004532 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 16:59:59.005726 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:59.006788 2163894 incremental_mapper.cc:160] => Filtered observations: 1
+I20261010 16:59:59.006798 2163894 incremental_mapper.cc:119] => Changed observations: 0.000216
+I20261010 16:59:59.006814 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:59.155763 2163894 misc.cc:198] 
+==============================================================================
+Registering image #11 (11)
+==============================================================================
+I20261010 16:59:59.155805 2163894 incremental_mapper.cc:495] => Image sees 357 / 606 points
+I20261010 16:59:59.169667 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:59.169701 2163894 bundle_adjustment.cc:942] 
+    Residuals : 676
+   Parameters : 6
+   Iterations : 13
+         Time : 0.00556087 [s]
+ Initial cost : 0.847873 [px]
+   Final cost : 0.803613 [px]
+  Termination : Convergence
+
+I20261010 16:59:59.170028 2163894 incremental_mapper.cc:40] => Continued observations: 327
+I20261010 16:59:59.170606 2163894 incremental_mapper.cc:43] => Added observations: 93
+I20261010 16:59:59.353804 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:59.353850 2163894 bundle_adjustment.cc:942] 
+    Residuals : 12484
+   Parameters : 3443
+   Iterations : 17
+         Time : 0.17569 [s]
+ Initial cost : 0.612138 [px]
+   Final cost : 0.563995 [px]
+  Termination : Convergence
+
+I20261010 16:59:59.358883 2163894 incremental_mapper.cc:78] => Merged observations: 42
+I20261010 16:59:59.358909 2163894 incremental_mapper.cc:79] => Completed observations: 9
+I20261010 16:59:59.358914 2163894 incremental_mapper.cc:81] => Filtered observations: 94
+I20261010 16:59:59.358917 2163894 incremental_mapper.cc:90] => Changed observations: 0.020783
+I20261010 16:59:59.396915 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:59.396958 2163894 bundle_adjustment.cc:942] 
+    Residuals : 12332
+   Parameters : 3419
+   Iterations : 3
+         Time : 0.0321641 [s]
+ Initial cost : 0.662972 [px]
+   Final cost : 0.648221 [px]
+  Termination : Convergence
+
+I20261010 16:59:59.401748 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 16:59:59.401768 2163894 incremental_mapper.cc:79] => Completed observations: 4
+I20261010 16:59:59.401773 2163894 incremental_mapper.cc:81] => Filtered observations: 1
+I20261010 16:59:59.401780 2163894 incremental_mapper.cc:90] => Changed observations: 0.000725
+I20261010 16:59:59.401799 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 16:59:59.403388 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 16:59:59.404451 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:59.404464 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 16:59:59.404482 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  7.957743e+03    0.00e+00    7.12e+03   0.00e+00   0.00e+00  1.00e+04        0    1.29e-02    2.82e-02
+   1  7.931142e+03    2.66e+01    1.05e+02   0.00e+00   1.00e+00  3.00e+04        1    2.00e-02    4.82e-02
+   2  7.930897e+03    2.45e-01    3.17e+01   4.62e-01   1.00e+00  9.00e+04        1    2.06e-02    6.89e-02
+   3  7.930886e+03    1.12e-02    5.90e+00   1.67e-01   1.00e+00  2.70e+05        1    2.52e-02    9.41e-02
+   4  7.930886e+03    4.75e-04    1.98e+00   3.96e-02   9.99e-01  8.10e+05        1    1.95e-02    1.14e-01
+   5  7.930886e+03    9.41e-06    3.86e-01   5.32e-03   9.99e-01  2.43e+06        1    2.01e-02    1.34e-01
+I20261010 16:59:59.546424 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:59.546465 2163894 bundle_adjustment.cc:942] 
+    Residuals : 19156
+   Parameters : 8674
+   Iterations : 6
+         Time : 0.134155 [s]
+ Initial cost : 0.644529 [px]
+   Final cost : 0.643441 [px]
+  Termination : Convergence
+
+I20261010 16:59:59.551462 2163894 incremental_mapper.cc:175] => Completed observations: 2
+I20261010 16:59:59.553031 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:59.554170 2163894 incremental_mapper.cc:160] => Filtered observations: 3
+I20261010 16:59:59.554183 2163894 incremental_mapper.cc:119] => Changed observations: 0.000522
+I20261010 16:59:59.554195 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  7.921160e+03    0.00e+00    1.73e+03   0.00e+00   0.00e+00  1.00e+04        0    1.21e-02    3.01e-02
+   1  7.903994e+03    1.72e+01    2.40e+01   0.00e+00   1.00e+00  3.00e+04        1    2.03e-02    5.04e-02
+   2  7.903976e+03    1.79e-02    1.94e+00   4.33e-02   1.00e+00  9.00e+04        1    1.94e-02    6.98e-02
+   3  7.903973e+03    2.95e-03    1.96e+00   5.59e-02   9.98e-01  2.70e+05        1    2.31e-02    9.29e-02
+   4  7.903973e+03    2.93e-04    1.48e+00   2.73e-02   9.97e-01  8.10e+05        1    1.91e-02    1.12e-01
+   5  7.903973e+03    5.27e-06    2.90e-01   4.18e-03   9.99e-01  2.43e+06        1    1.90e-02    1.31e-01
+I20261010 16:59:59.696551 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:59.696597 2163894 bundle_adjustment.cc:942] 
+    Residuals : 19154
+   Parameters : 8674
+   Iterations : 6
+         Time : 0.131512 [s]
+ Initial cost : 0.643079 [px]
+   Final cost : 0.642381 [px]
+  Termination : Convergence
+
+I20261010 16:59:59.702035 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 16:59:59.703307 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 16:59:59.704392 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 16:59:59.704403 2163894 incremental_mapper.cc:119] => Changed observations: 0.000000
+I20261010 16:59:59.704409 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 16:59:59.854224 2163894 misc.cc:198] 
+==============================================================================
+Registering image #25 (12)
+==============================================================================
+I20261010 16:59:59.854261 2163894 incremental_mapper.cc:495] => Image sees 228 / 398 points
+I20261010 16:59:59.865835 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 16:59:59.865864 2163894 bundle_adjustment.cc:942] 
+    Residuals : 466
+   Parameters : 6
+   Iterations : 16
+         Time : 0.00448585 [s]
+ Initial cost : 0.827522 [px]
+   Final cost : 0.815219 [px]
+  Termination : Convergence
+
+I20261010 16:59:59.866225 2163894 incremental_mapper.cc:40] => Continued observations: 223
+I20261010 16:59:59.866770 2163894 incremental_mapper.cc:43] => Added observations: 115
+I20261010 16:59:59.973591 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 16:59:59.973620 2163894 bundle_adjustment.cc:942] 
+    Residuals : 10460
+   Parameters : 1649
+   Iterations : 13
+         Time : 0.100818 [s]
+ Initial cost : 0.639056 [px]
+   Final cost : 0.619671 [px]
+  Termination : Convergence
+
+I20261010 16:59:59.978050 2163894 incremental_mapper.cc:78] => Merged observations: 36
+I20261010 16:59:59.978067 2163894 incremental_mapper.cc:79] => Completed observations: 14
+I20261010 16:59:59.978071 2163894 incremental_mapper.cc:81] => Filtered observations: 116
+I20261010 16:59:59.978075 2163894 incremental_mapper.cc:90] => Changed observations: 0.026843
+I20261010 17:00:00.007320 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:00.007345 2163894 bundle_adjustment.cc:942] 
+    Residuals : 10266
+   Parameters : 1604
+   Iterations : 3
+         Time : 0.0240788 [s]
+ Initial cost : 0.748182 [px]
+   Final cost : 0.73295 [px]
+  Termination : Convergence
+
+I20261010 17:00:00.011416 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:00.011440 2163894 incremental_mapper.cc:79] => Completed observations: 7
+I20261010 17:00:00.011445 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:00.011448 2163894 incremental_mapper.cc:90] => Changed observations: 0.001150
+I20261010 17:00:00.157258 2163894 misc.cc:198] 
+==============================================================================
+Registering image #10 (13)
+==============================================================================
+I20261010 17:00:00.157289 2163894 incremental_mapper.cc:495] => Image sees 262 / 1067 points
+I20261010 17:00:00.168337 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:00.168365 2163894 bundle_adjustment.cc:942] 
+    Residuals : 496
+   Parameters : 6
+   Iterations : 14
+         Time : 0.00413704 [s]
+ Initial cost : 0.779689 [px]
+   Final cost : 0.775444 [px]
+  Termination : Convergence
+
+I20261010 17:00:00.168686 2163894 incremental_mapper.cc:40] => Continued observations: 245
+I20261010 17:00:00.169446 2163894 incremental_mapper.cc:43] => Added observations: 179
+I20261010 17:00:00.375597 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:00.375636 2163894 bundle_adjustment.cc:942] 
+    Residuals : 12394
+   Parameters : 3116
+   Iterations : 21
+         Time : 0.199972 [s]
+ Initial cost : 0.575419 [px]
+   Final cost : 0.516782 [px]
+  Termination : Convergence
+
+I20261010 17:00:00.380507 2163894 incremental_mapper.cc:78] => Merged observations: 18
+I20261010 17:00:00.380528 2163894 incremental_mapper.cc:79] => Completed observations: 7
+I20261010 17:00:00.380533 2163894 incremental_mapper.cc:81] => Filtered observations: 67
+I20261010 17:00:00.380537 2163894 incremental_mapper.cc:90] => Changed observations: 0.014072
+I20261010 17:00:00.416965 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:00.416998 2163894 bundle_adjustment.cc:942] 
+    Residuals : 12278
+   Parameters : 3083
+   Iterations : 3
+         Time : 0.030884 [s]
+ Initial cost : 0.60953 [px]
+   Final cost : 0.599814 [px]
+  Termination : Convergence
+
+I20261010 17:00:00.421382 2163894 incremental_mapper.cc:78] => Merged observations: 5
+I20261010 17:00:00.421401 2163894 incremental_mapper.cc:79] => Completed observations: 13
+I20261010 17:00:00.421406 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:00.421408 2163894 incremental_mapper.cc:90] => Changed observations: 0.002778
+I20261010 17:00:00.421423 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 17:00:00.423079 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 17:00:00.424240 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:00.424252 2163894 incremental_mapper.cc:105] => Retriangulated observations: 0
+I20261010 17:00:00.424273 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  8.813568e+03    0.00e+00    3.85e+03   0.00e+00   0.00e+00  1.00e+04        0    1.23e-02    2.88e-02
+   1  8.778468e+03    3.51e+01    1.11e+02   0.00e+00   1.00e+00  3.00e+04        1    2.17e-02    5.05e-02
+   2  8.778338e+03    1.30e-01    5.12e+00   3.31e-01   1.00e+00  9.00e+04        1    2.08e-02    7.14e-02
+   3  8.778332e+03    6.23e-03    2.58e+00   1.25e-01   1.00e+00  2.70e+05        1    2.12e-02    9.25e-02
+   4  8.778331e+03    4.55e-04    1.89e+00   3.78e-02   9.99e-01  8.10e+05        1    2.08e-02    1.13e-01
+   5  8.778331e+03    7.43e-06    3.89e-01   5.11e-03   1.00e+00  2.43e+06        1    2.07e-02    1.34e-01
+I20261010 17:00:00.567011 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:00.567061 2163894 bundle_adjustment.cc:942] 
+    Residuals : 20396
+   Parameters : 8998
+   Iterations : 6
+         Time : 0.134536 [s]
+ Initial cost : 0.65736 [px]
+   Final cost : 0.656045 [px]
+  Termination : Convergence
+
+I20261010 17:00:00.572276 2163894 incremental_mapper.cc:175] => Completed observations: 5
+I20261010 17:00:00.573666 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:00.574849 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 17:00:00.574860 2163894 incremental_mapper.cc:119] => Changed observations: 0.000490
+I20261010 17:00:00.574868 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 17:00:00.722841 2163894 misc.cc:198] 
+==============================================================================
+Registering image #20 (14)
+==============================================================================
+I20261010 17:00:00.722878 2163894 incremental_mapper.cc:495] => Image sees 127 / 1898 points
+I20261010 17:00:00.729790 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:00.729822 2163894 bundle_adjustment.cc:942] 
+    Residuals : 218
+   Parameters : 6
+   Iterations : 15
+         Time : 0.00212002 [s]
+ Initial cost : 0.852662 [px]
+   Final cost : 0.777878 [px]
+  Termination : Convergence
+
+I20261010 17:00:00.729972 2163894 incremental_mapper.cc:40] => Continued observations: 108
+I20261010 17:00:00.731607 2163894 incremental_mapper.cc:43] => Added observations: 508
+I20261010 17:00:00.889731 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:00.889796 2163894 bundle_adjustment.cc:942] 
+    Residuals : 7718
+   Parameters : 1622
+   Iterations : 26
+         Time : 0.153031 [s]
+ Initial cost : 0.707836 [px]
+   Final cost : 0.654883 [px]
+  Termination : No convergence
+
+I20261010 17:00:00.894384 2163894 incremental_mapper.cc:78] => Merged observations: 8
+I20261010 17:00:00.894414 2163894 incremental_mapper.cc:79] => Completed observations: 11
+I20261010 17:00:00.894419 2163894 incremental_mapper.cc:81] => Filtered observations: 152
+I20261010 17:00:00.894423 2163894 incremental_mapper.cc:90] => Changed observations: 0.035338
+I20261010 17:00:00.919202 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:00.919251 2163894 bundle_adjustment.cc:942] 
+    Residuals : 7818
+   Parameters : 2036
+   Iterations : 3
+         Time : 0.0203052 [s]
+ Initial cost : 0.716561 [px]
+   Final cost : 0.699346 [px]
+  Termination : Convergence
+
+I20261010 17:00:00.923504 2163894 incremental_mapper.cc:78] => Merged observations: 7
+I20261010 17:00:00.923533 2163894 incremental_mapper.cc:79] => Completed observations: 38
+I20261010 17:00:00.923537 2163894 incremental_mapper.cc:81] => Filtered observations: 2
+I20261010 17:00:00.923542 2163894 incremental_mapper.cc:90] => Changed observations: 0.009474
+I20261010 17:00:01.074014 2163894 misc.cc:198] 
+==============================================================================
+Registering image #24 (15)
+==============================================================================
+I20261010 17:00:01.074052 2163894 incremental_mapper.cc:495] => Image sees 311 / 1919 points
+I20261010 17:00:01.086678 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:01.086707 2163894 bundle_adjustment.cc:942] 
+    Residuals : 588
+   Parameters : 6
+   Iterations : 21
+         Time : 0.00775599 [s]
+ Initial cost : 0.835786 [px]
+   Final cost : 0.735443 [px]
+  Termination : Convergence
+
+I20261010 17:00:01.086989 2163894 incremental_mapper.cc:40] => Continued observations: 291
+I20261010 17:00:01.088994 2163894 incremental_mapper.cc:43] => Added observations: 531
+I20261010 17:00:01.240154 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:01.240199 2163894 bundle_adjustment.cc:942] 
+    Residuals : 9044
+   Parameters : 2723
+   Iterations : 20
+         Time : 0.145617 [s]
+ Initial cost : 0.696178 [px]
+   Final cost : 0.645177 [px]
+  Termination : Convergence
+
+I20261010 17:00:01.245093 2163894 incremental_mapper.cc:78] => Merged observations: 6
+I20261010 17:00:01.245113 2163894 incremental_mapper.cc:79] => Completed observations: 39
+I20261010 17:00:01.245117 2163894 incremental_mapper.cc:81] => Filtered observations: 171
+I20261010 17:00:01.245121 2163894 incremental_mapper.cc:90] => Changed observations: 0.038779
+I20261010 17:00:01.278792 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:01.278832 2163894 bundle_adjustment.cc:942] 
+    Residuals : 8782
+   Parameters : 2627
+   Iterations : 4
+         Time : 0.028887 [s]
+ Initial cost : 0.7163 [px]
+   Final cost : 0.690463 [px]
+  Termination : Convergence
+
+I20261010 17:00:01.283696 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:01.283721 2163894 incremental_mapper.cc:79] => Completed observations: 57
+I20261010 17:00:01.283725 2163894 incremental_mapper.cc:81] => Filtered observations: 3
+I20261010 17:00:01.283730 2163894 incremental_mapper.cc:90] => Changed observations: 0.011031
+I20261010 17:00:01.283749 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 17:00:01.285848 2163894 incremental_mapper.cc:175] => Completed observations: 3
+I20261010 17:00:01.287220 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:01.287232 2163894 incremental_mapper.cc:105] => Retriangulated observations: 13
+I20261010 17:00:01.287374 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  2.156816e+04    0.00e+00    6.32e+04   0.00e+00   0.00e+00  1.00e+04        0    1.57e-02    3.43e-02
+   1  1.115131e+04    1.04e+04    3.23e+03   0.00e+00   9.98e-01  3.00e+04        1    3.27e-02    6.70e-02
+   2  1.113674e+04    1.46e+01    8.38e+02   3.75e+00   9.94e-01  9.00e+04        1    3.50e-02    1.02e-01
+   3  1.113657e+04    1.72e-01    7.28e+01   8.63e-01   9.93e-01  2.70e+05        1    3.46e-02    1.37e-01
+   4  1.113657e+04    2.00e-03    1.97e+00   9.85e-02   1.00e+00  8.10e+05        1    3.20e-02    1.69e-01
+   5  1.113657e+04    2.38e-05    6.54e-01   8.81e-03   1.00e+00  2.43e+06        1    2.90e-02    1.98e-01
+I20261010 17:00:01.495535 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:01.495582 2163894 bundle_adjustment.cc:942] 
+    Residuals : 22946
+   Parameters : 10240
+   Iterations : 6
+         Time : 0.198507 [s]
+ Initial cost : 0.969512 [px]
+   Final cost : 0.696662 [px]
+  Termination : Convergence
+
+I20261010 17:00:01.502214 2163894 incremental_mapper.cc:175] => Completed observations: 4
+I20261010 17:00:01.503959 2163894 incremental_mapper.cc:178] => Merged observations: 6
+I20261010 17:00:01.505406 2163894 incremental_mapper.cc:160] => Filtered observations: 27
+I20261010 17:00:01.505424 2163894 incremental_mapper.cc:119] => Changed observations: 0.003225
+I20261010 17:00:01.505435 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.017081e+04    0.00e+00    1.62e+04   0.00e+00   0.00e+00  1.00e+04        0    1.57e-02    3.63e-02
+   1  1.004816e+04    1.23e+02    6.45e+02   0.00e+00   1.00e+00  3.00e+04        1    3.20e-02    6.83e-02
+   2  1.004705e+04    1.12e+00    4.01e+02   2.33e+00   1.00e+00  9.00e+04        1    2.97e-02    9.80e-02
+   3  1.004700e+04    4.47e-02    3.22e+01   5.66e-01   1.00e+00  2.70e+05        1    2.89e-02    1.27e-01
+   4  1.004700e+04    3.91e-04    2.00e+00   5.66e-02   1.01e+00  8.10e+05        1    3.05e-02    1.57e-01
+   5  1.004700e+04    1.98e-06    2.47e-01   3.14e-03   1.02e+00  2.43e+06        1    2.97e-02    1.87e-01
+I20261010 17:00:01.703948 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:01.703992 2163894 bundle_adjustment.cc:942] 
+    Residuals : 22900
+   Parameters : 10213
+   Iterations : 6
+         Time : 0.187895 [s]
+ Initial cost : 0.666438 [px]
+   Final cost : 0.66237 [px]
+  Termination : Convergence
+
+I20261010 17:00:01.711026 2163894 incremental_mapper.cc:175] => Completed observations: 4
+I20261010 17:00:01.712841 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:01.714381 2163894 incremental_mapper.cc:160] => Filtered observations: 5
+I20261010 17:00:01.714398 2163894 incremental_mapper.cc:119] => Changed observations: 0.000786
+I20261010 17:00:01.714409 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.002217e+04    0.00e+00    2.81e+03   0.00e+00   0.00e+00  1.00e+04        0    1.87e-02    3.99e-02
+   1  9.991173e+03    3.10e+01    5.31e+01   0.00e+00   1.00e+00  3.00e+04        1    3.17e-02    7.16e-02
+   2  9.991122e+03    5.06e-02    4.95e+00   2.86e-01   1.00e+00  9.00e+04        1    3.04e-02    1.02e-01
+   3  9.991115e+03    7.15e-03    1.95e+00   6.21e-02   9.99e-01  2.70e+05        1    2.88e-02    1.31e-01
+   4  9.991115e+03    6.22e-04    1.93e+00   2.98e-02   9.98e-01  8.10e+05        1    2.77e-02    1.59e-01
+   5  9.991115e+03    1.02e-05    3.00e-01   4.69e-03   1.00e+00  2.43e+06        1    2.53e-02    1.84e-01
+I20261010 17:00:01.910082 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:01.910122 2163894 bundle_adjustment.cc:942] 
+    Residuals : 22898
+   Parameters : 10213
+   Iterations : 6
+         Time : 0.184458 [s]
+ Initial cost : 0.66158 [px]
+   Final cost : 0.660554 [px]
+  Termination : Convergence
+
+I20261010 17:00:01.916548 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 17:00:01.918284 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:01.919713 2163894 incremental_mapper.cc:160] => Filtered observations: 1
+I20261010 17:00:01.919729 2163894 incremental_mapper.cc:119] => Changed observations: 0.000175
+I20261010 17:00:01.919737 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 17:00:02.082098 2163894 misc.cc:198] 
+==============================================================================
+Registering image #13 (16)
+==============================================================================
+I20261010 17:00:02.082136 2163894 incremental_mapper.cc:495] => Image sees 288 / 864 points
+I20261010 17:00:02.096179 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:02.096228 2163894 bundle_adjustment.cc:942] 
+    Residuals : 404
+   Parameters : 6
+   Iterations : 18
+         Time : 0.00661087 [s]
+ Initial cost : 0.83434 [px]
+   Final cost : 0.793672 [px]
+  Termination : Convergence
+
+I20261010 17:00:02.096562 2163894 incremental_mapper.cc:40] => Continued observations: 199
+I20261010 17:00:02.098165 2163894 incremental_mapper.cc:43] => Added observations: 288
+I20261010 17:00:02.253983 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:02.254033 2163894 bundle_adjustment.cc:942] 
+    Residuals : 6302
+   Parameters : 2075
+   Iterations : 26
+         Time : 0.149266 [s]
+ Initial cost : 0.888542 [px]
+   Final cost : 0.690487 [px]
+  Termination : No convergence
+
+I20261010 17:00:02.259281 2163894 incremental_mapper.cc:78] => Merged observations: 33
+I20261010 17:00:02.259306 2163894 incremental_mapper.cc:79] => Completed observations: 4
+I20261010 17:00:02.259310 2163894 incremental_mapper.cc:81] => Filtered observations: 102
+I20261010 17:00:02.259313 2163894 incremental_mapper.cc:90] => Changed observations: 0.029518
+I20261010 17:00:02.281672 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:02.281702 2163894 bundle_adjustment.cc:942] 
+    Residuals : 6130
+   Parameters : 2018
+   Iterations : 3
+         Time : 0.0176148 [s]
+ Initial cost : 0.823942 [px]
+   Final cost : 0.804486 [px]
+  Termination : Convergence
+
+I20261010 17:00:02.286219 2163894 incremental_mapper.cc:78] => Merged observations: 6
+I20261010 17:00:02.286240 2163894 incremental_mapper.cc:79] => Completed observations: 18
+I20261010 17:00:02.286244 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:02.286248 2163894 incremental_mapper.cc:90] => Changed observations: 0.005193
+I20261010 17:00:02.445519 2163894 misc.cc:198] 
+==============================================================================
+Registering image #15 (17)
+==============================================================================
+I20261010 17:00:02.445559 2163894 incremental_mapper.cc:495] => Image sees 220 / 578 points
+I20261010 17:00:02.460598 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:02.460642 2163894 bundle_adjustment.cc:942] 
+    Residuals : 356
+   Parameters : 6
+   Iterations : 28
+         Time : 0.00816703 [s]
+ Initial cost : 0.798262 [px]
+   Final cost : 0.777245 [px]
+  Termination : Convergence
+
+I20261010 17:00:02.460958 2163894 incremental_mapper.cc:40] => Continued observations: 174
+I20261010 17:00:02.462097 2163894 incremental_mapper.cc:43] => Added observations: 179
+I20261010 17:00:02.590302 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:02.590353 2163894 bundle_adjustment.cc:942] 
+    Residuals : 5164
+   Parameters : 1820
+   Iterations : 26
+         Time : 0.122498 [s]
+ Initial cost : 0.89627 [px]
+   Final cost : 0.733313 [px]
+  Termination : No convergence
+
+I20261010 17:00:02.594652 2163894 incremental_mapper.cc:78] => Merged observations: 16
+I20261010 17:00:02.594673 2163894 incremental_mapper.cc:79] => Completed observations: 10
+I20261010 17:00:02.594678 2163894 incremental_mapper.cc:81] => Filtered observations: 67
+I20261010 17:00:02.594681 2163894 incremental_mapper.cc:90] => Changed observations: 0.022153
+I20261010 17:00:02.611964 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:02.611989 2163894 bundle_adjustment.cc:942] 
+    Residuals : 5064
+   Parameters : 1799
+   Iterations : 3
+         Time : 0.0133991 [s]
+ Initial cost : 0.877605 [px]
+   Final cost : 0.856222 [px]
+  Termination : Convergence
+
+I20261010 17:00:02.615429 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:02.615445 2163894 incremental_mapper.cc:79] => Completed observations: 5
+I20261010 17:00:02.615449 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:02.615453 2163894 incremental_mapper.cc:90] => Changed observations: 0.001206
+I20261010 17:00:02.615466 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 17:00:02.617542 2163894 incremental_mapper.cc:175] => Completed observations: 4
+I20261010 17:00:02.619047 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:02.619059 2163894 incremental_mapper.cc:105] => Retriangulated observations: 9
+I20261010 17:00:02.619316 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.301937e+04    0.00e+00    2.22e+04   0.00e+00   0.00e+00  1.00e+04        0    2.36e-02    4.46e-02
+   1  1.137752e+04    1.64e+03    1.65e+03   0.00e+00   9.99e-01  3.00e+04        1    3.85e-02    8.31e-02
+   2  1.137052e+04    7.00e+00    1.39e+03   2.54e+00   9.99e-01  9.00e+04        1    2.72e-02    1.10e-01
+   3  1.136956e+04    9.54e-01    5.19e+02   1.43e+00   9.99e-01  2.70e+05        1    3.09e-02    1.41e-01
+   4  1.136948e+04    8.32e-02    4.75e+01   4.17e-01   9.99e-01  8.10e+05        1    2.90e-02    1.70e-01
+   5  1.136948e+04    1.37e-03    1.98e+00   5.37e-02   1.00e+00  2.43e+06        1    2.94e-02    2.00e-01
+   6  1.136948e+04    3.16e-06    2.00e-01   2.60e-03   1.01e+00  7.29e+06        1    2.97e-02    2.29e-01
+I20261010 17:00:02.859649 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:02.859688 2163894 bundle_adjustment.cc:942] 
+    Residuals : 24340
+   Parameters : 10630
+   Iterations : 7
+         Time : 0.230039 [s]
+ Initial cost : 0.731366 [px]
+   Final cost : 0.683455 [px]
+  Termination : Convergence
+
+I20261010 17:00:02.866657 2163894 incremental_mapper.cc:175] => Completed observations: 4
+I20261010 17:00:02.868496 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:02.870048 2163894 incremental_mapper.cc:160] => Filtered observations: 14
+I20261010 17:00:02.870066 2163894 incremental_mapper.cc:119] => Changed observations: 0.001479
+I20261010 17:00:02.870077 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.108727e+04    0.00e+00    1.76e+04   0.00e+00   0.00e+00  1.00e+04        0    1.73e-02    4.01e-02
+   1  1.098011e+04    1.07e+02    6.66e+02   0.00e+00   9.99e-01  3.00e+04        1    3.24e-02    7.25e-02
+   2  1.097964e+04    4.67e-01    7.35e+01   1.16e+00   9.99e-01  9.00e+04        1    3.16e-02    1.04e-01
+   3  1.097963e+04    1.10e-02    3.79e+00   2.34e-01   1.00e+00  2.70e+05        1    2.90e-02    1.33e-01
+   4  1.097963e+04    7.83e-05    8.16e-01   1.60e-02   1.00e+00  8.10e+05        1    2.96e-02    1.63e-01
+I20261010 17:00:03.045006 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:03.045044 2163894 bundle_adjustment.cc:942] 
+    Residuals : 24320
+   Parameters : 10621
+   Iterations : 5
+         Time : 0.163529 [s]
+ Initial cost : 0.675197 [px]
+   Final cost : 0.671912 [px]
+  Termination : Convergence
+
+I20261010 17:00:03.051916 2163894 incremental_mapper.cc:175] => Completed observations: 2
+I20261010 17:00:03.053678 2163894 incremental_mapper.cc:178] => Merged observations: 8
+I20261010 17:00:03.055220 2163894 incremental_mapper.cc:160] => Filtered observations: 3
+I20261010 17:00:03.055238 2163894 incremental_mapper.cc:119] => Changed observations: 0.001069
+I20261010 17:00:03.055248 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.098975e+04    0.00e+00    5.58e+03   0.00e+00   0.00e+00  1.00e+04        0    1.77e-02    3.98e-02
+   1  1.097167e+04    1.81e+01    3.57e+01   0.00e+00   1.00e+00  3.00e+04        1    3.09e-02    7.07e-02
+   2  1.097162e+04    5.33e-02    5.34e+00   2.69e-01   1.00e+00  9.00e+04        1    2.97e-02    1.01e-01
+   3  1.097161e+04    8.10e-03    1.99e+00   3.89e-02   9.99e-01  2.70e+05        1    2.95e-02    1.30e-01
+   4  1.097161e+04    6.79e-04    1.89e+00   2.59e-02   9.99e-01  8.10e+05        1    2.99e-02    1.60e-01
+   5  1.097161e+04    1.04e-05    2.64e-01   4.06e-03   1.00e+00  2.43e+06        1    2.91e-02    1.89e-01
+I20261010 17:00:03.256338 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:03.256377 2163894 bundle_adjustment.cc:942] 
+    Residuals : 24318
+   Parameters : 10618
+   Iterations : 6
+         Time : 0.189868 [s]
+ Initial cost : 0.672249 [px]
+   Final cost : 0.671694 [px]
+  Termination : Convergence
+
+I20261010 17:00:03.263346 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 17:00:03.265170 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:03.266674 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 17:00:03.266695 2163894 incremental_mapper.cc:119] => Changed observations: 0.000082
+I20261010 17:00:03.266705 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 17:00:03.425410 2163894 misc.cc:198] 
+==============================================================================
+Registering image #2 (18)
+==============================================================================
+I20261010 17:00:03.425450 2163894 incremental_mapper.cc:495] => Image sees 184 / 514 points
+I20261010 17:00:03.434793 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:03.434831 2163894 bundle_adjustment.cc:942] 
+    Residuals : 346
+   Parameters : 6
+   Iterations : 11
+         Time : 0.00278687 [s]
+ Initial cost : 0.706937 [px]
+   Final cost : 0.683453 [px]
+  Termination : Convergence
+
+I20261010 17:00:03.435109 2163894 incremental_mapper.cc:40] => Continued observations: 168
+I20261010 17:00:03.435642 2163894 incremental_mapper.cc:43] => Added observations: 39
+I20261010 17:00:03.673688 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:03.673736 2163894 bundle_adjustment.cc:942] 
+    Residuals : 11734
+   Parameters : 2225
+   Iterations : 24
+         Time : 0.227693 [s]
+ Initial cost : 0.609664 [px]
+   Final cost : 0.573013 [px]
+  Termination : Convergence
+
+I20261010 17:00:03.678844 2163894 incremental_mapper.cc:78] => Merged observations: 11
+I20261010 17:00:03.678874 2163894 incremental_mapper.cc:79] => Completed observations: 16
+I20261010 17:00:03.678879 2163894 incremental_mapper.cc:81] => Filtered observations: 42
+I20261010 17:00:03.678882 2163894 incremental_mapper.cc:90] => Changed observations: 0.010073
+I20261010 17:00:03.714664 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:03.714713 2163894 bundle_adjustment.cc:942] 
+    Residuals : 11684
+   Parameters : 2207
+   Iterations : 3
+         Time : 0.0300128 [s]
+ Initial cost : 0.684376 [px]
+   Final cost : 0.676492 [px]
+  Termination : Convergence
+
+I20261010 17:00:03.719655 2163894 incremental_mapper.cc:78] => Merged observations: 14
+I20261010 17:00:03.719679 2163894 incremental_mapper.cc:79] => Completed observations: 6
+I20261010 17:00:03.719684 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:03.719687 2163894 incremental_mapper.cc:90] => Changed observations: 0.002930
+I20261010 17:00:03.871296 2163894 misc.cc:198] 
+==============================================================================
+Registering image #3 (19)
+==============================================================================
+I20261010 17:00:03.871332 2163894 incremental_mapper.cc:495] => Image sees 111 / 412 points
+I20261010 17:00:03.879650 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:03.879680 2163894 bundle_adjustment.cc:942] 
+    Residuals : 182
+   Parameters : 6
+   Iterations : 31
+         Time : 0.00374103 [s]
+ Initial cost : 0.853039 [px]
+   Final cost : 0.764961 [px]
+  Termination : Convergence
+
+I20261010 17:00:03.879793 2163894 incremental_mapper.cc:40] => Continued observations: 89
+I20261010 17:00:03.880458 2163894 incremental_mapper.cc:43] => Added observations: 115
+I20261010 17:00:03.975824 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:03.975868 2163894 bundle_adjustment.cc:942] 
+    Residuals : 4242
+   Parameters : 1568
+   Iterations : 26
+         Time : 0.09251 [s]
+ Initial cost : 0.796005 [px]
+   Final cost : 0.684883 [px]
+  Termination : No convergence
+
+I20261010 17:00:03.978240 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:03.978258 2163894 incremental_mapper.cc:79] => Completed observations: 3
+I20261010 17:00:03.978263 2163894 incremental_mapper.cc:81] => Filtered observations: 85
+I20261010 17:00:03.978276 2163894 incremental_mapper.cc:90] => Changed observations: 0.035845
+I20261010 17:00:03.991600 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:03.991627 2163894 bundle_adjustment.cc:942] 
+    Residuals : 4078
+   Parameters : 1508
+   Iterations : 3
+         Time : 0.0111148 [s]
+ Initial cost : 0.761243 [px]
+   Final cost : 0.739017 [px]
+  Termination : Convergence
+
+I20261010 17:00:03.993664 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:03.993680 2163894 incremental_mapper.cc:79] => Completed observations: 13
+I20261010 17:00:03.993685 2163894 incremental_mapper.cc:81] => Filtered observations: 3
+I20261010 17:00:03.993688 2163894 incremental_mapper.cc:90] => Changed observations: 0.006743
+I20261010 17:00:03.993700 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 17:00:03.996048 2163894 incremental_mapper.cc:175] => Completed observations: 3
+I20261010 17:00:03.997545 2163894 incremental_mapper.cc:178] => Merged observations: 6
+I20261010 17:00:03.997557 2163894 incremental_mapper.cc:105] => Retriangulated observations: 10
+I20261010 17:00:03.997941 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  3.089286e+04    0.00e+00    6.93e+04   0.00e+00   0.00e+00  1.00e+04        0    1.74e-02    3.82e-02
+   1  2.238066e+04    8.51e+03    1.81e+04   0.00e+00   9.99e-01  3.00e+04        1    2.97e-02    6.79e-02
+   2  2.233537e+04    4.53e+01    8.05e+02   1.35e+00   1.03e+00  9.00e+04        1    2.79e-02    9.57e-02
+   3  2.233451e+04    8.62e-01    1.51e+02   3.91e-01   1.01e+00  2.70e+05        1    2.92e-02    1.25e-01
+   4  2.233445e+04    5.62e-02    1.66e+01   2.06e-01   1.00e+00  8.10e+05        1    2.84e-02    1.53e-01
+   5  2.233445e+04    7.92e-04    1.75e+00   3.00e-02   1.00e+00  2.43e+06        1    2.90e-02    1.82e-01
+   6  2.233445e+04    1.77e-06    1.05e-01   1.56e-03   1.01e+00  7.29e+06        1    2.93e-02    2.12e-01
+I20261010 17:00:04.220973 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:04.221012 2163894 bundle_adjustment.cc:942] 
+    Residuals : 24984
+   Parameters : 10726
+   Iterations : 7
+         Time : 0.212288 [s]
+ Initial cost : 1.11198 [px]
+   Final cost : 0.945489 [px]
+  Termination : Convergence
+
+I20261010 17:00:04.227484 2163894 incremental_mapper.cc:175] => Completed observations: 28
+I20261010 17:00:04.229184 2163894 incremental_mapper.cc:178] => Merged observations: 4
+I20261010 17:00:04.230584 2163894 incremental_mapper.cc:160] => Filtered observations: 44
+I20261010 17:00:04.230597 2163894 incremental_mapper.cc:119] => Changed observations: 0.006084
+I20261010 17:00:04.230608 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.185082e+04    0.00e+00    3.02e+04   0.00e+00   0.00e+00  1.00e+04        0    1.56e-02    3.59e-02
+   1  1.124567e+04    6.05e+02    8.75e+03   0.00e+00   9.97e-01  3.00e+04        1    2.73e-02    6.33e-02
+   2  1.124036e+04    5.31e+00    2.55e+02   1.64e+00   1.00e+00  9.00e+04        1    2.61e-02    8.94e-02
+   3  1.124021e+04    1.45e-01    1.81e+01   2.68e-01   9.99e-01  2.70e+05        1    2.60e-02    1.15e-01
+   4  1.124020e+04    8.49e-03    1.98e+00   6.22e-02   9.99e-01  8.10e+05        1    2.64e-02    1.42e-01
+   5  1.124020e+04    1.11e-04    5.44e-01   1.11e-02   1.00e+00  2.43e+06        1    2.61e-02    1.68e-01
+I20261010 17:00:04.409425 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:04.409469 2163894 bundle_adjustment.cc:942] 
+    Residuals : 24952
+   Parameters : 10699
+   Iterations : 6
+         Time : 0.168481 [s]
+ Initial cost : 0.689162 [px]
+   Final cost : 0.671173 [px]
+  Termination : Convergence
+
+I20261010 17:00:04.415925 2163894 incremental_mapper.cc:175] => Completed observations: 7
+I20261010 17:00:04.417670 2163894 incremental_mapper.cc:178] => Merged observations: 11
+I20261010 17:00:04.419054 2163894 incremental_mapper.cc:160] => Filtered observations: 1
+I20261010 17:00:04.419066 2163894 incremental_mapper.cc:119] => Changed observations: 0.001523
+I20261010 17:00:04.419077 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.128441e+04    0.00e+00    1.79e+03   0.00e+00   0.00e+00  1.00e+04        0    1.55e-02    3.63e-02
+   1  1.126867e+04    1.57e+01    1.20e+01   0.00e+00   1.00e+00  3.00e+04        1    2.87e-02    6.50e-02
+   2  1.126866e+04    9.76e-03    1.76e+00   1.30e-01   1.00e+00  9.00e+04        1    2.69e-02    9.18e-02
+   3  1.126866e+04    6.59e-04    7.43e-01   2.14e-02   9.99e-01  2.70e+05        1    2.60e-02    1.18e-01
+I20261010 17:00:04.547865 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:04.547907 2163894 bundle_adjustment.cc:942] 
+    Residuals : 24964
+   Parameters : 10696
+   Iterations : 4
+         Time : 0.118423 [s]
+ Initial cost : 0.67233 [px]
+   Final cost : 0.671861 [px]
+  Termination : Convergence
+
+I20261010 17:00:04.554584 2163894 incremental_mapper.cc:175] => Completed observations: 4
+I20261010 17:00:04.556296 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:04.557667 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 17:00:04.557679 2163894 incremental_mapper.cc:119] => Changed observations: 0.000320
+I20261010 17:00:04.557688 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 17:00:04.703219 2163894 misc.cc:198] 
+==============================================================================
+Registering image #1 (20)
+==============================================================================
+I20261010 17:00:04.703256 2163894 incremental_mapper.cc:495] => Image sees 95 / 258 points
+I20261010 17:00:04.709892 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:04.709923 2163894 bundle_adjustment.cc:942] 
+    Residuals : 158
+   Parameters : 6
+   Iterations : 16
+         Time : 0.00172901 [s]
+ Initial cost : 0.768467 [px]
+   Final cost : 0.742114 [px]
+  Termination : Convergence
+
+I20261010 17:00:04.710031 2163894 incremental_mapper.cc:40] => Continued observations: 75
+I20261010 17:00:04.710479 2163894 incremental_mapper.cc:43] => Added observations: 39
+I20261010 17:00:04.957188 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:04.957242 2163894 bundle_adjustment.cc:942] 
+    Residuals : 11450
+   Parameters : 2009
+   Iterations : 26
+         Time : 0.239728 [s]
+ Initial cost : 0.638113 [px]
+   Final cost : 0.599354 [px]
+  Termination : No convergence
+
+I20261010 17:00:04.963423 2163894 incremental_mapper.cc:78] => Merged observations: 12
+I20261010 17:00:04.963469 2163894 incremental_mapper.cc:79] => Completed observations: 9
+I20261010 17:00:04.963477 2163894 incremental_mapper.cc:81] => Filtered observations: 42
+I20261010 17:00:04.963482 2163894 incremental_mapper.cc:90] => Changed observations: 0.009349
+I20261010 17:00:05.004387 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:05.004437 2163894 bundle_adjustment.cc:942] 
+    Residuals : 11394
+   Parameters : 1982
+   Iterations : 3
+         Time : 0.0332601 [s]
+ Initial cost : 0.689287 [px]
+   Final cost : 0.682491 [px]
+  Termination : Convergence
+
+I20261010 17:00:05.009461 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:05.009502 2163894 incremental_mapper.cc:79] => Completed observations: 7
+I20261010 17:00:05.009507 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:05.009510 2163894 incremental_mapper.cc:90] => Changed observations: 0.001043
+I20261010 17:00:05.168083 2163894 misc.cc:198] 
+==============================================================================
+Registering image #6 (21)
+==============================================================================
+I20261010 17:00:05.168128 2163894 incremental_mapper.cc:495] => Image sees 62 / 637 points
+I20261010 17:00:05.173897 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:05.173929 2163894 bundle_adjustment.cc:942] 
+    Residuals : 86
+   Parameters : 6
+   Iterations : 23
+         Time : 0.001688 [s]
+ Initial cost : 0.905955 [px]
+   Final cost : 0.881837 [px]
+  Termination : Convergence
+
+I20261010 17:00:05.174014 2163894 incremental_mapper.cc:40] => Continued observations: 43
+I20261010 17:00:05.174763 2163894 incremental_mapper.cc:43] => Added observations: 107
+I20261010 17:00:05.377197 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:05.377254 2163894 bundle_adjustment.cc:942] 
+    Residuals : 9418
+   Parameters : 1733
+   Iterations : 26
+         Time : 0.195348 [s]
+ Initial cost : 0.652682 [px]
+   Final cost : 0.623802 [px]
+  Termination : No convergence
+
+I20261010 17:00:05.381462 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:05.381484 2163894 incremental_mapper.cc:79] => Completed observations: 0
+I20261010 17:00:05.381488 2163894 incremental_mapper.cc:81] => Filtered observations: 49
+I20261010 17:00:05.381491 2163894 incremental_mapper.cc:90] => Changed observations: 0.008593
+I20261010 17:00:05.409260 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:05.409318 2163894 bundle_adjustment.cc:942] 
+    Residuals : 9320
+   Parameters : 1706
+   Iterations : 3
+         Time : 0.0230048 [s]
+ Initial cost : 0.746854 [px]
+   Final cost : 0.738204 [px]
+  Termination : Convergence
+
+I20261010 17:00:05.413527 2163894 incremental_mapper.cc:78] => Merged observations: 9
+I20261010 17:00:05.413554 2163894 incremental_mapper.cc:79] => Completed observations: 5
+I20261010 17:00:05.413559 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:05.413563 2163894 incremental_mapper.cc:90] => Changed observations: 0.002477
+I20261010 17:00:05.413575 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 17:00:05.415948 2163894 incremental_mapper.cc:175] => Completed observations: 1
+I20261010 17:00:05.417517 2163894 incremental_mapper.cc:178] => Merged observations: 6
+I20261010 17:00:05.417531 2163894 incremental_mapper.cc:105] => Retriangulated observations: 17
+I20261010 17:00:05.417829 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  2.390088e+04    0.00e+00    5.23e+04   0.00e+00   0.00e+00  1.00e+04        0    1.59e-02    3.67e-02
+   1  2.146705e+04    2.43e+03    4.93e+04   0.00e+00   9.70e-01  3.00e+04        1    2.87e-02    6.55e-02
+   2  2.139598e+04    7.11e+01    7.37e+03   6.65e+00   1.00e+00  9.00e+04        1    2.79e-02    9.34e-02
+   3  2.139440e+04    1.58e+00    1.12e+03   2.18e+00   1.01e+00  2.70e+05        1    2.75e-02    1.21e-01
+   4  2.139432e+04    8.45e-02    4.77e+01   3.89e-01   1.01e+00  8.10e+05        1    2.77e-02    1.49e-01
+   5  2.139432e+04    1.09e-03    1.63e+00   4.13e-02   1.02e+00  2.43e+06        1    3.00e-02    1.79e-01
+   6  2.139432e+04    5.55e-06    2.81e-01   2.78e-03   1.09e+00  7.29e+06        1    3.06e-02    2.09e-01
+I20261010 17:00:05.638870 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:05.638914 2163894 bundle_adjustment.cc:942] 
+    Residuals : 25396
+   Parameters : 10846
+   Iterations : 7
+         Time : 0.21001 [s]
+ Initial cost : 0.970117 [px]
+   Final cost : 0.917839 [px]
+  Termination : Convergence
+
+I20261010 17:00:05.645520 2163894 incremental_mapper.cc:175] => Completed observations: 10
+I20261010 17:00:05.647212 2163894 incremental_mapper.cc:178] => Merged observations: 9
+I20261010 17:00:05.648638 2163894 incremental_mapper.cc:160] => Filtered observations: 39
+I20261010 17:00:05.648650 2163894 incremental_mapper.cc:119] => Changed observations: 0.004568
+I20261010 17:00:05.648663 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.185851e+04    0.00e+00    1.63e+04   0.00e+00   0.00e+00  1.00e+04        0    1.70e-02    3.81e-02
+   1  1.162400e+04    2.35e+02    9.05e+03   0.00e+00   1.00e+00  3.00e+04        1    3.12e-02    6.93e-02
+   2  1.161238e+04    1.16e+01    7.21e+03   6.22e+00   9.91e-01  9.00e+04        1    2.60e-02    9.53e-02
+   3  1.161034e+04    2.04e+00    1.25e+03   2.11e+00   9.98e-01  2.70e+05        1    2.61e-02    1.21e-01
+   4  1.161022e+04    1.21e-01    6.11e+01   4.13e-01   1.00e+00  8.10e+05        1    2.57e-02    1.47e-01
+   5  1.161022e+04    1.24e-03    1.97e+00   3.95e-02   1.00e+00  2.43e+06        1    2.56e-02    1.73e-01
+   6  1.161022e+04    1.84e-06    1.11e-01   1.57e-03   1.01e+00  7.29e+06        1    2.59e-02    1.99e-01
+I20261010 17:00:05.858601 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:05.858641 2163894 bundle_adjustment.cc:942] 
+    Residuals : 25338
+   Parameters : 10798
+   Iterations : 7
+         Time : 0.199244 [s]
+ Initial cost : 0.684115 [px]
+   Final cost : 0.676915 [px]
+  Termination : Convergence
+
+I20261010 17:00:05.866034 2163894 incremental_mapper.cc:175] => Completed observations: 3
+I20261010 17:00:05.867722 2163894 incremental_mapper.cc:178] => Merged observations: 5
+I20261010 17:00:05.869153 2163894 incremental_mapper.cc:160] => Filtered observations: 3
+I20261010 17:00:05.869165 2163894 incremental_mapper.cc:119] => Changed observations: 0.000868
+I20261010 17:00:05.869176 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.162283e+04    0.00e+00    2.44e+03   0.00e+00   0.00e+00  1.00e+04        0    1.53e-02    3.60e-02
+   1  1.160054e+04    2.23e+01    8.17e+01   0.00e+00   1.00e+00  3.00e+04        1    2.69e-02    6.29e-02
+   2  1.160053e+04    1.35e-02    1.99e+00   1.25e-01   1.00e+00  9.00e+04        1    2.56e-02    8.85e-02
+   3  1.160053e+04    1.95e-03    1.95e+00   1.51e-02   9.99e-01  2.70e+05        1    2.57e-02    1.14e-01
+   4  1.160053e+04    1.15e-04    5.68e-01   7.95e-03   9.99e-01  8.10e+05        1    2.56e-02    1.40e-01
+I20261010 17:00:06.020113 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:06.020149 2163894 bundle_adjustment.cc:942] 
+    Residuals : 25338
+   Parameters : 10792
+   Iterations : 5
+         Time : 0.140305 [s]
+ Initial cost : 0.677282 [px]
+   Final cost : 0.676632 [px]
+  Termination : Convergence
+
+I20261010 17:00:06.026228 2163894 incremental_mapper.cc:175] => Completed observations: 0
+I20261010 17:00:06.027868 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:06.029253 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 17:00:06.029264 2163894 incremental_mapper.cc:119] => Changed observations: 0.000000
+I20261010 17:00:06.029282 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 17:00:06.186950 2163894 misc.cc:198] 
+==============================================================================
+Registering image #5 (22)
+==============================================================================
+I20261010 17:00:06.186982 2163894 incremental_mapper.cc:495] => Image sees 57 / 492 points
+I20261010 17:00:06.190874 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:06.190902 2163894 bundle_adjustment.cc:942] 
+    Residuals : 100
+   Parameters : 6
+   Iterations : 12
+         Time : 0.000806093 [s]
+ Initial cost : 0.781078 [px]
+   Final cost : 0.771289 [px]
+  Termination : Convergence
+
+I20261010 17:00:06.190990 2163894 incremental_mapper.cc:40] => Continued observations: 50
+I20261010 17:00:06.191387 2163894 incremental_mapper.cc:43] => Added observations: 65
+I20261010 17:00:06.271759 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:06.271793 2163894 bundle_adjustment.cc:942] 
+    Residuals : 6214
+   Parameters : 788
+   Iterations : 17
+         Time : 0.0757329 [s]
+ Initial cost : 0.725417 [px]
+   Final cost : 0.709797 [px]
+  Termination : Convergence
+
+I20261010 17:00:06.275274 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:06.275291 2163894 incremental_mapper.cc:79] => Completed observations: 0
+I20261010 17:00:06.275295 2163894 incremental_mapper.cc:81] => Filtered observations: 35
+I20261010 17:00:06.275300 2163894 incremental_mapper.cc:90] => Changed observations: 0.007437
+I20261010 17:00:06.291282 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:06.291307 2163894 bundle_adjustment.cc:942] 
+    Residuals : 5972
+   Parameters : 512
+   Iterations : 3
+         Time : 0.013011 [s]
+ Initial cost : 0.800447 [px]
+   Final cost : 0.793232 [px]
+  Termination : Convergence
+
+I20261010 17:00:06.293785 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:06.293800 2163894 incremental_mapper.cc:79] => Completed observations: 2
+I20261010 17:00:06.293804 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:06.293808 2163894 incremental_mapper.cc:90] => Changed observations: 0.000633
+I20261010 17:00:06.439878 2163894 misc.cc:198] 
+==============================================================================
+Registering image #7 (23)
+==============================================================================
+I20261010 17:00:06.439924 2163894 incremental_mapper.cc:495] => Image sees 68 / 192 points
+I20261010 17:00:06.445149 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:06.445185 2163894 bundle_adjustment.cc:942] 
+    Residuals : 102
+   Parameters : 6
+   Iterations : 13
+         Time : 0.000895023 [s]
+ Initial cost : 0.815032 [px]
+   Final cost : 0.789979 [px]
+  Termination : Convergence
+
+I20261010 17:00:06.445261 2163894 incremental_mapper.cc:40] => Continued observations: 51
+I20261010 17:00:06.445742 2163894 incremental_mapper.cc:43] => Added observations: 73
+I20261010 17:00:06.569202 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:06.569248 2163894 bundle_adjustment.cc:942] 
+    Residuals : 6156
+   Parameters : 890
+   Iterations : 26
+         Time : 0.11965 [s]
+ Initial cost : 0.878424 [px]
+   Final cost : 0.825748 [px]
+  Termination : No convergence
+
+I20261010 17:00:06.572358 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:06.572381 2163894 incremental_mapper.cc:79] => Completed observations: 2
+I20261010 17:00:06.572384 2163894 incremental_mapper.cc:81] => Filtered observations: 89
+I20261010 17:00:06.572387 2163894 incremental_mapper.cc:90] => Changed observations: 0.026285
+I20261010 17:00:06.589815 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:06.589844 2163894 bundle_adjustment.cc:942] 
+    Residuals : 5982
+   Parameters : 824
+   Iterations : 3
+         Time : 0.0136499 [s]
+ Initial cost : 0.833299 [px]
+   Final cost : 0.821254 [px]
+  Termination : Convergence
+
+I20261010 17:00:06.592623 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:06.592640 2163894 incremental_mapper.cc:79] => Completed observations: 13
+I20261010 17:00:06.592645 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:06.592648 2163894 incremental_mapper.cc:90] => Changed observations: 0.003852
+I20261010 17:00:06.742385 2163894 misc.cc:198] 
+==============================================================================
+Registering image #8 (24)
+==============================================================================
+I20261010 17:00:06.742417 2163894 incremental_mapper.cc:495] => Image sees 70 / 269 points
+I20261010 17:00:06.751881 2163894 misc.cc:205] 
+Pose refinement report
+----------------------
+I20261010 17:00:06.751911 2163894 bundle_adjustment.cc:942] 
+    Residuals : 96
+   Parameters : 6
+   Iterations : 101
+         Time : 0.00617409 [s]
+ Initial cost : 0.788802 [px]
+   Final cost : 0.752815 [px]
+  Termination : No convergence
+
+I20261010 17:00:06.751992 2163894 incremental_mapper.cc:40] => Continued observations: 47
+I20261010 17:00:06.752602 2163894 incremental_mapper.cc:43] => Added observations: 79
+I20261010 17:00:06.814376 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:06.814410 2163894 bundle_adjustment.cc:942] 
+    Residuals : 2934
+   Parameters : 437
+   Iterations : 26
+         Time : 0.059108 [s]
+ Initial cost : 1.01447 [px]
+   Final cost : 0.975306 [px]
+  Termination : No convergence
+
+I20261010 17:00:06.816928 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:06.816947 2163894 incremental_mapper.cc:79] => Completed observations: 1
+I20261010 17:00:06.816951 2163894 incremental_mapper.cc:81] => Filtered observations: 52
+I20261010 17:00:06.816955 2163894 incremental_mapper.cc:90] => Changed observations: 0.024357
+I20261010 17:00:06.826617 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:06.826644 2163894 bundle_adjustment.cc:942] 
+    Residuals : 2812
+   Parameters : 359
+   Iterations : 3
+         Time : 0.00719094 [s]
+ Initial cost : 0.852979 [px]
+   Final cost : 0.839869 [px]
+  Termination : Convergence
+
+I20261010 17:00:06.829358 2163894 incremental_mapper.cc:78] => Merged observations: 0
+I20261010 17:00:06.829375 2163894 incremental_mapper.cc:79] => Completed observations: 4
+I20261010 17:00:06.829380 2163894 incremental_mapper.cc:81] => Filtered observations: 0
+I20261010 17:00:06.829382 2163894 incremental_mapper.cc:90] => Changed observations: 0.001624
+I20261010 17:00:06.829393 2163894 misc.cc:198] 
+==============================================================================
+Retriangulation
+==============================================================================
+I20261010 17:00:06.831769 2163894 incremental_mapper.cc:175] => Completed observations: 3
+I20261010 17:00:06.833305 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:06.833317 2163894 incremental_mapper.cc:105] => Retriangulated observations: 81
+I20261010 17:00:06.834658 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  2.203426e+05    0.00e+00    3.14e+05   0.00e+00   0.00e+00  1.00e+04        0    1.90e-02    4.13e-02
+   1  9.904132e+04    1.21e+05    1.09e+05   0.00e+00   9.66e-01  3.00e+04        1    3.21e-02    7.34e-02
+   2  9.696672e+04    2.07e+03    2.05e+04   1.02e+01   9.45e-01  9.00e+04        1    2.94e-02    1.03e-01
+   3  9.690637e+04    6.03e+01    5.92e+02   1.38e+00   9.53e-01  2.70e+05        1    2.92e-02    1.32e-01
+   4  9.690502e+04    1.35e+00    1.23e+02   6.21e-01   9.12e-01  6.13e+05        1    2.81e-02    1.60e-01
+   5  9.690497e+04    4.99e-02    6.58e+00   4.19e-02   8.99e-01  1.25e+06        1    2.87e-02    1.89e-01
+   6  9.690497e+04    2.01e-03    2.28e+00   1.71e-02   8.88e-01  2.35e+06        1    2.80e-02    2.17e-01
+   7  9.690497e+04    8.98e-05    1.52e+00   5.63e-04   8.88e-01  4.41e+06        1    2.70e-02    2.44e-01
+   8  9.690497e+04    4.32e-06    6.94e-01   6.44e-04   8.96e-01  8.75e+06        1    2.69e-02    2.71e-01
+I20261010 17:00:07.117326 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:07.117364 2163894 bundle_adjustment.cc:942] 
+    Residuals : 25928
+   Parameters : 11035
+   Iterations : 9
+         Time : 0.271376 [s]
+ Initial cost : 2.91518 [px]
+   Final cost : 1.93325 [px]
+  Termination : Convergence
+
+I20261010 17:00:07.124147 2163894 incremental_mapper.cc:175] => Completed observations: 26
+I20261010 17:00:07.125901 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:07.127559 2163894 incremental_mapper.cc:160] => Filtered observations: 358
+I20261010 17:00:07.127573 2163894 incremental_mapper.cc:119] => Changed observations: 0.029620
+I20261010 17:00:07.127583 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.313357e+04    0.00e+00    3.67e+04   0.00e+00   0.00e+00  1.00e+04        0    1.56e-02    3.58e-02
+   1  1.144927e+04    1.68e+03    5.76e+04   0.00e+00   9.41e-01  3.00e+04        1    2.73e-02    6.31e-02
+   2  1.132190e+04    1.27e+02    2.55e+03   1.43e+00   9.95e-01  9.00e+04        1    2.68e-02    8.99e-02
+   3  1.132081e+04    1.09e+00    5.67e+01   1.45e-01   1.00e+00  2.70e+05        1    2.85e-02    1.18e-01
+   4  1.132080e+04    3.75e-03    1.73e+00   2.57e-02   1.01e+00  8.10e+05        1    2.86e-02    1.47e-01
+   5  1.132080e+04    3.31e-05    3.39e-01   5.11e-03   1.01e+00  2.43e+06        1    2.80e-02    1.75e-01
+I20261010 17:00:07.314049 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:07.314087 2163894 bundle_adjustment.cc:942] 
+    Residuals : 25256
+   Parameters : 10771
+   Iterations : 6
+         Time : 0.17578 [s]
+ Initial cost : 0.721123 [px]
+   Final cost : 0.669509 [px]
+  Termination : Convergence
+
+I20261010 17:00:07.320986 2163894 incremental_mapper.cc:175] => Completed observations: 47
+I20261010 17:00:07.322692 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:07.324082 2163894 incremental_mapper.cc:160] => Filtered observations: 3
+I20261010 17:00:07.324095 2163894 incremental_mapper.cc:119] => Changed observations: 0.003959
+I20261010 17:00:07.324105 2163894 misc.cc:198] 
+==============================================================================
+Global bundle adjustment
+==============================================================================
+iter      cost      cost_change  |gradient|   |step|    tr_ratio  tr_radius  ls_iter  iter_time  total_time
+   0  1.148082e+04    0.00e+00    1.05e+04   0.00e+00   0.00e+00  1.00e+04        0    1.64e-02    3.78e-02
+   1  1.140459e+04    7.62e+01    3.49e+02   0.00e+00   1.00e+00  3.00e+04        1    2.97e-02    6.74e-02
+   2  1.140434e+04    2.47e-01    6.11e+01   4.61e-01   1.01e+00  9.00e+04        1    3.12e-02    9.87e-02
+   3  1.140429e+04    5.71e-02    2.16e+01   2.41e-01   1.00e+00  2.70e+05        1    3.10e-02    1.30e-01
+   4  1.140428e+04    5.96e-03    2.22e+00   7.40e-02   1.00e+00  8.10e+05        1    3.11e-02    1.61e-01
+   5  1.140428e+04    1.07e-04    6.73e-01   1.01e-02   1.00e+00  2.43e+06        1    3.10e-02    1.92e-01
+I20261010 17:00:07.527503 2163894 misc.cc:205] 
+Bundle adjustment report
+------------------------
+I20261010 17:00:07.527544 2163894 bundle_adjustment.cc:942] 
+    Residuals : 25344
+   Parameters : 10768
+   Iterations : 6
+         Time : 0.192628 [s]
+ Initial cost : 0.673052 [px]
+   Final cost : 0.670805 [px]
+  Termination : Convergence
+
+I20261010 17:00:07.534425 2163894 incremental_mapper.cc:175] => Completed observations: 5
+I20261010 17:00:07.536124 2163894 incremental_mapper.cc:178] => Merged observations: 0
+I20261010 17:00:07.537524 2163894 incremental_mapper.cc:160] => Filtered observations: 0
+I20261010 17:00:07.537536 2163894 incremental_mapper.cc:119] => Changed observations: 0.000395
+I20261010 17:00:07.537549 2163894 incremental_mapper.cc:167] => Filtered images: 0
+I20261010 17:00:07.700090 2163894 timer.cc:91] Elapsed time: 0.230 [minutes]

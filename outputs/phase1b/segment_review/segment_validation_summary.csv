@@ -1,0 +1,4 @@
+video_id,frames,duration_sec,auto_local_frames,auto_local_sampled_duration_sec,candidate_local_intervals,candidate_segments,short_local_segments,human_confirmed,output
+video_007,116,57.5217,7,3.5,"[{""start"": 47.0217, ""end"": 47.5217, ""frames"": 2}, {""start"": 49.5217, ""end"": 51.5217, ""frames"": 5}]",8,1,False,outputs/phase1b/segment_review/video_007
+video_008,92,45.5217,2,1.0,"[{""start"": 43.02, ""end"": 43.52, ""frames"": 2}]",8,1,False,outputs/phase1b/segment_review/video_008
+video_020,67,33.02,2,1.0,"[{""start"": 29.02, ""end"": 29.52, ""frames"": 2}]",4,1,False,outputs/phase1b/segment_review/video_020

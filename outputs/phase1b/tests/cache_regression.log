@@ -1,0 +1,58 @@
+/home/test/biosoft/enter/lib/python3.13/site-packages/pytest_asyncio/plugin.py:207: PytestDeprecationWarning: The configuration option "asyncio_default_fixture_loop_scope" is unset.
+The event loop scope for asynchronous fixtures will default to the fixture caching scope. Future versions of pytest-asyncio will default the loop scope for asynchronous fixtures to function scope. Set the default fixture loop scope explicitly in order to avoid unexpected behavior in the future. Valid fixture loop scopes are: "function", "class", "module", "package", "session"
+
+  warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+...............F.......                                                  [100%]
+=================================== FAILURES ===================================
+_________ test_newly_discovered_model_outputs_are_cached_on_first_run __________
+
+tmp_path = PosixPath('/tmp/pytest-of-test/pytest-567/test_newly_discovered_model_ou0')
+
+    def test_newly_discovered_model_outputs_are_cached_on_first_run(tmp_path):
+        model = tmp_path / "points3D.bin"
+        def outputs():
+            return [model] if model.exists() else []
+        with stage(tmp_path, "dynamic-output-test", {}, required_outputs=outputs) as run:
+            assert run
+            model.write_bytes(b"first model")
+        with stage(tmp_path, "dynamic-output-test", {}, required_outputs=outputs) as run:
+            assert not run
+        model.write_bytes(b"second model")
+        with stage(tmp_path, "dynamic-output-test", {}, required_outputs=outputs) as run:
+            assert run
+        with stage(tmp_path, "analyze", {}, [model]) as run:
+>           assert not run
+E           assert not True
+
+MDRD/tests/unit/test_phase1b.py:132: AssertionError
+=============================== warnings summary ===============================
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+    prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+    parse = parser.parseString(pattern)
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+    parser.resetCache()
+
+../../home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_mathtext.py:45
+  /home/test/biosoft/enter/lib/python3.13/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+    ParserElement.enablePackrat()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED MDRD/tests/unit/test_phase1b.py::test_newly_discovered_model_outputs_are_cached_on_first_run
+1 failed, 22 passed, 14 warnings in 1.60s

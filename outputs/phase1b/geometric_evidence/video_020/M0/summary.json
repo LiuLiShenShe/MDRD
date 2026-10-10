@@ -1,0 +1,34 @@
+{
+  "video_id": "video_020",
+  "model": "/fj/混合拍摄距离下的三维重建优化问题/outputs/video_020/sfm/final",
+  "scope": "FULL_SCENE_FILTERED_SAME_RECONSTRUCTION_POINTS; NOT_PLANT_GEOMETRY",
+  "same_points_global_and_local": 2455,
+  "median_new_local_direction_deg": 2.200963541121061,
+  "local_direction_p10_deg": 1.5541837704392418,
+  "local_direction_p90_deg": 21.56072121395315,
+  "local_directions_over_5deg": 410,
+  "candidate_pairs": 2211,
+  "pairs_with_raw_matches": 2210,
+  "pairs_with_verified_matches": 1220,
+  "pairs_with_common_tracks": 1752,
+  "pairs_with_verified_but_no_shared_3d_track": 35,
+  "candidate_to_raw_pair_retention": 0.9995477159656264,
+  "raw_to_verified_pair_retention": 0.5520361990950227,
+  "raw_matches_total": 275481,
+  "verified_matches_total": 158966,
+  "filter_rejections": {
+    "nonfinite_or_high_point_error": 0,
+    "short_track": 2443,
+    "invalid_association": 0,
+    "nonpositive_depth": 0,
+    "high_observation_error": 183,
+    "short_after_filter": 52
+  },
+  "plant_pair_match_funnel": null,
+  "limitations": [
+    "Pair retention refers to pairs with at least one match, not retention of identical point correspondences",
+    "Two-view geometrically verified pairs and 3D track overlap are not nested sets",
+    "Only successfully reconstructed tracks have direction gain",
+    "No cross-model point IDs are equated without independently verified correspondences"
+  ]
+}

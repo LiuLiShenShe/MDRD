@@ -36,6 +36,7 @@
 *.7z
 
 # ---- Python caches / envs ----
+/outputs/phase1b/tests/fixtures/
 __pycache__/
 *.py[cod]
 *$py.class

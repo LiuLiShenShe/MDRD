@@ -1,0 +1,18 @@
+I20261010 17:07:26.174055 2213473 option_manager.cc:849] COLMAP 3.9.1 (Commit Unknown on Unknown without CUDA)
+I20261010 17:07:26.174160 2213473 option_manager.cc:851] Options can either be specified via command-line or by defining them in a .ini project file passed to `--project_path`.
+  -h [ --help ] 
+  --random_seed arg (=0)
+  --log_to_stderr arg (=1)
+  --log_level arg (=0)
+  --project_path arg
+  --input_path arg
+  --output_path arg
+  --BundleAdjustment.max_num_iterations arg (=100)
+  --BundleAdjustment.max_linear_solver_iterations arg (=200)
+  --BundleAdjustment.function_tolerance arg (=0)
+  --BundleAdjustment.gradient_tolerance arg (=0)
+  --BundleAdjustment.parameter_tolerance arg (=0)
+  --BundleAdjustment.refine_focal_length arg (=1)
+  --BundleAdjustment.refine_principal_point arg (=0)
+  --BundleAdjustment.refine_extra_params arg (=1)
+  --BundleAdjustment.refine_extrinsics arg (=1)

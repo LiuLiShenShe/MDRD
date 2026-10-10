@@ -1,0 +1,534 @@
+{
+  "selection_policy": "MAX_REGISTRATION_BASELINE: descending registered images, then lexicographic path; retain Pareto audit, no unvalidated weighted score",
+  "baseline_selected": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/final",
+  "phase01_final_path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/final",
+  "candidates": [
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/continued",
+      "registered_images": 2,
+      "registered_filenames": [
+        "frame_000001.png",
+        "frame_000005.png"
+      ],
+      "coverage": {
+        "APPROACH": {
+          "registered": 0,
+          "total": 13,
+          "fraction": 0.0
+        },
+        "GLOBAL": {
+          "registered": 2,
+          "total": 26,
+          "fraction": 0.07692307692307693
+        },
+        "LOCAL": {
+          "registered": 0,
+          "total": 2,
+          "fraction": 0.0
+        },
+        "TRANSITION": {
+          "registered": 0,
+          "total": 2,
+          "fraction": 0.0
+        }
+      },
+      "points3d_raw": 6,
+      "points3d_valid_phase01_filter": 0,
+      "filter_rejections": {
+        "nonfinite_or_high_point_error": 0,
+        "short_track": 6,
+        "invalid_association": 0,
+        "nonpositive_depth": 0,
+        "high_observation_error": 0,
+        "short_after_filter": 0
+      },
+      "tracks_ge_3": 0,
+      "track_length_median": 2.0,
+      "point_error_p50": 2.3089622934506053,
+      "point_error_p90": 2.4971948466404594,
+      "global_local_tracks_raw": 0,
+      "registered_local_without_global_track": [],
+      "trajectory_max_rotation_deg": 52.327300569661226,
+      "trajectory_step_p99_over_median": 1.0,
+      "plant_geometry_support": null,
+      "plant_geometry_support_reason": "Candidate-specific multiview mask evidence is not human-verified",
+      "cameras": [
+        {
+          "model": "SIMPLE_RADIAL",
+          "parameters": [
+            380068.7571325632,
+            1080.0,
+            1920.0,
+            -5819.7473183001275
+          ],
+          "focal_ratio": 98.976238836605,
+          "bogus_parameters": true
+        }
+      ],
+      "artifact_sha256": {
+        "cameras": "d0f6d61d47243bf7fb66bf0f1914decec18d27a880c2d101668d575d0acfd74a",
+        "images": "6906a0afa658de5c036abedf3c5f92755c4b124f72fd7b685b8958e95e92865f",
+        "points3D": "279ba5043996eb7db65806a721d4feab7e123254aa143da84e8729de1d5c97df"
+      },
+      "scope": "FULL_SCENE_CANDIDATE; point counts and in-sample errors are not absolute reconstruction accuracy",
+      "pareto_dominated": true
+    },
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/final",
+      "registered_images": 37,
+      "registered_filenames": [
+        "extra_001253.jpg",
+        "extra_001306.jpg",
+        "extra_001396.jpg",
+        "extra_002259.jpg",
+        "extra_002574.jpg",
+        "extra_002619.jpg",
+        "frame_000001.png",
+        "frame_000005.png",
+        "frame_000038.png",
+        "frame_000043.png",
+        "frame_000044.png",
+        "frame_000045.png",
+        "frame_000046.png",
+        "frame_000047.png",
+        "frame_000048.png",
+        "frame_000049.png",
+        "frame_000054.png",
+        "frame_000058.png",
+        "frame_000063.png",
+        "frame_000068.png",
+        "frame_000072.png",
+        "frame_000077.png",
+        "frame_000078.png",
+        "frame_000079.png",
+        "frame_000080.png",
+        "frame_000081.png",
+        "frame_000082.png",
+        "frame_000083.png",
+        "frame_000084.png",
+        "frame_000085.png",
+        "frame_000086.png",
+        "frame_000087.png",
+        "frame_000088.png",
+        "frame_000089.png",
+        "frame_000090.png",
+        "frame_000091.png",
+        "frame_000092.png"
+      ],
+      "coverage": {
+        "APPROACH": {
+          "registered": 13,
+          "total": 13,
+          "fraction": 1.0
+        },
+        "GLOBAL": {
+          "registered": 20,
+          "total": 26,
+          "fraction": 0.7692307692307693
+        },
+        "LOCAL": {
+          "registered": 2,
+          "total": 2,
+          "fraction": 1.0
+        },
+        "TRANSITION": {
+          "registered": 2,
+          "total": 2,
+          "fraction": 1.0
+        }
+      },
+      "points3d_raw": 2647,
+      "points3d_valid_phase01_filter": 2360,
+      "filter_rejections": {
+        "nonfinite_or_high_point_error": 0,
+        "short_track": 285,
+        "invalid_association": 0,
+        "nonpositive_depth": 0,
+        "high_observation_error": 10,
+        "short_after_filter": 2
+      },
+      "tracks_ge_3": 2362,
+      "track_length_median": 4.0,
+      "point_error_p50": 1.3659486930833138,
+      "point_error_p90": 2.242905104027641,
+      "global_local_tracks_raw": 164,
+      "registered_local_without_global_track": [],
+      "trajectory_max_rotation_deg": 84.05801016016673,
+      "trajectory_step_p99_over_median": 7.4199031264425654,
+      "plant_geometry_support": null,
+      "plant_geometry_support_reason": "Candidate-specific multiview mask evidence is not human-verified",
+      "cameras": [
+        {
+          "model": "SIMPLE_RADIAL",
+          "parameters": [
+            3279.789060852896,
+            1080.0,
+            1920.0,
+            0.022676904331317034
+          ],
+          "focal_ratio": 0.8541117345971083,
+          "bogus_parameters": false
+        }
+      ],
+      "artifact_sha256": {
+        "cameras": "374099fc23953301474af0a62c8dcbfc13376584d1181df9e4844d2cfb41f799",
+        "images": "ffc1d13f5538bf091983997181c6a65f494ecfbc6c75c80b31fc19ea2d31971c",
+        "points3D": "6c9f929393f5d204a59c175687130f3899c4d78121fbf045717bfe559edcb3bc"
+      },
+      "scope": "FULL_SCENE_CANDIDATE; point counts and in-sample errors are not absolute reconstruction accuracy",
+      "pareto_dominated": false
+    },
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/global/0",
+      "registered_images": 2,
+      "registered_filenames": [
+        "frame_000001.png",
+        "frame_000005.png"
+      ],
+      "coverage": {
+        "APPROACH": {
+          "registered": 0,
+          "total": 13,
+          "fraction": 0.0
+        },
+        "GLOBAL": {
+          "registered": 2,
+          "total": 26,
+          "fraction": 0.07692307692307693
+        },
+        "LOCAL": {
+          "registered": 0,
+          "total": 2,
+          "fraction": 0.0
+        },
+        "TRANSITION": {
+          "registered": 0,
+          "total": 2,
+          "fraction": 0.0
+        }
+      },
+      "points3d_raw": 6,
+      "points3d_valid_phase01_filter": 0,
+      "filter_rejections": {
+        "nonfinite_or_high_point_error": 0,
+        "short_track": 6,
+        "invalid_association": 0,
+        "nonpositive_depth": 0,
+        "high_observation_error": 0,
+        "short_after_filter": 0
+      },
+      "tracks_ge_3": 0,
+      "track_length_median": 2.0,
+      "point_error_p50": 2.3089622934506053,
+      "point_error_p90": 2.4971948466404594,
+      "global_local_tracks_raw": 0,
+      "registered_local_without_global_track": [],
+      "trajectory_max_rotation_deg": 52.327300569661226,
+      "trajectory_step_p99_over_median": 1.0,
+      "plant_geometry_support": null,
+      "plant_geometry_support_reason": "Candidate-specific multiview mask evidence is not human-verified",
+      "cameras": [
+        {
+          "model": "SIMPLE_RADIAL",
+          "parameters": [
+            380068.7571325632,
+            1080.0,
+            1920.0,
+            -5819.7473183001275
+          ],
+          "focal_ratio": 98.976238836605,
+          "bogus_parameters": true
+        }
+      ],
+      "artifact_sha256": {
+        "cameras": "d0f6d61d47243bf7fb66bf0f1914decec18d27a880c2d101668d575d0acfd74a",
+        "images": "1e1af92d6160447508c3c8dfa16f51f0e3eadaf1c666189f78482cd2cc451fe3",
+        "points3D": "9c637ea9c51d04695d48cae2b79a3a38ddbdf3c5e565b90f2acec063e3003936"
+      },
+      "scope": "FULL_SCENE_CANDIDATE; point counts and in-sample errors are not absolute reconstruction accuracy",
+      "pareto_dominated": true
+    },
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/joint/0",
+      "registered_images": 37,
+      "registered_filenames": [
+        "extra_001253.jpg",
+        "extra_001306.jpg",
+        "extra_001396.jpg",
+        "extra_002259.jpg",
+        "extra_002574.jpg",
+        "extra_002619.jpg",
+        "frame_000001.png",
+        "frame_000005.png",
+        "frame_000038.png",
+        "frame_000043.png",
+        "frame_000044.png",
+        "frame_000045.png",
+        "frame_000046.png",
+        "frame_000047.png",
+        "frame_000048.png",
+        "frame_000049.png",
+        "frame_000054.png",
+        "frame_000058.png",
+        "frame_000063.png",
+        "frame_000068.png",
+        "frame_000072.png",
+        "frame_000077.png",
+        "frame_000078.png",
+        "frame_000079.png",
+        "frame_000080.png",
+        "frame_000081.png",
+        "frame_000082.png",
+        "frame_000083.png",
+        "frame_000084.png",
+        "frame_000085.png",
+        "frame_000086.png",
+        "frame_000087.png",
+        "frame_000088.png",
+        "frame_000089.png",
+        "frame_000090.png",
+        "frame_000091.png",
+        "frame_000092.png"
+      ],
+      "coverage": {
+        "APPROACH": {
+          "registered": 13,
+          "total": 13,
+          "fraction": 1.0
+        },
+        "GLOBAL": {
+          "registered": 20,
+          "total": 26,
+          "fraction": 0.7692307692307693
+        },
+        "LOCAL": {
+          "registered": 2,
+          "total": 2,
+          "fraction": 1.0
+        },
+        "TRANSITION": {
+          "registered": 2,
+          "total": 2,
+          "fraction": 1.0
+        }
+      },
+      "points3d_raw": 2637,
+      "points3d_valid_phase01_filter": 2239,
+      "filter_rejections": {
+        "nonfinite_or_high_point_error": 0,
+        "short_track": 397,
+        "invalid_association": 0,
+        "nonpositive_depth": 0,
+        "high_observation_error": 0,
+        "short_after_filter": 1
+      },
+      "tracks_ge_3": 2240,
+      "track_length_median": 4.0,
+      "point_error_p50": 1.2892375878298985,
+      "point_error_p90": 2.041372912342703,
+      "global_local_tracks_raw": 164,
+      "registered_local_without_global_track": [],
+      "trajectory_max_rotation_deg": 84.00339790068283,
+      "trajectory_step_p99_over_median": 7.4443051186805125,
+      "plant_geometry_support": null,
+      "plant_geometry_support_reason": "Candidate-specific multiview mask evidence is not human-verified",
+      "cameras": [
+        {
+          "model": "SIMPLE_RADIAL",
+          "parameters": [
+            3278.4011077903183,
+            1080.0,
+            1920.0,
+            0.020352604935197686
+          ],
+          "focal_ratio": 0.853750288487062,
+          "bogus_parameters": false
+        }
+      ],
+      "artifact_sha256": {
+        "cameras": "5641b58c11cb181c119d9e5edbe9bc6815af98a0711ffc5262b5aece8984bbc9",
+        "images": "c867c253034b3cb9ba88f81e6ef6d688f7aff07400144ed4be076a2745d276c0",
+        "points3D": "653ea2d394d4ba4751fb164c1370b65b1ba58219877bc0c263faa695c0aed696"
+      },
+      "scope": "FULL_SCENE_CANDIDATE; point counts and in-sample errors are not absolute reconstruction accuracy",
+      "pareto_dominated": false
+    },
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/registered",
+      "registered_images": 2,
+      "registered_filenames": [
+        "frame_000001.png",
+        "frame_000005.png"
+      ],
+      "coverage": {
+        "APPROACH": {
+          "registered": 0,
+          "total": 13,
+          "fraction": 0.0
+        },
+        "GLOBAL": {
+          "registered": 2,
+          "total": 26,
+          "fraction": 0.07692307692307693
+        },
+        "LOCAL": {
+          "registered": 0,
+          "total": 2,
+          "fraction": 0.0
+        },
+        "TRANSITION": {
+          "registered": 0,
+          "total": 2,
+          "fraction": 0.0
+        }
+      },
+      "points3d_raw": 6,
+      "points3d_valid_phase01_filter": 0,
+      "filter_rejections": {
+        "nonfinite_or_high_point_error": 0,
+        "short_track": 6,
+        "invalid_association": 0,
+        "nonpositive_depth": 0,
+        "high_observation_error": 0,
+        "short_after_filter": 0
+      },
+      "tracks_ge_3": 0,
+      "track_length_median": 2.0,
+      "point_error_p50": 2.3089622934506053,
+      "point_error_p90": 2.4971948466404594,
+      "global_local_tracks_raw": 0,
+      "registered_local_without_global_track": [],
+      "trajectory_max_rotation_deg": 52.327300569661226,
+      "trajectory_step_p99_over_median": 1.0,
+      "plant_geometry_support": null,
+      "plant_geometry_support_reason": "Candidate-specific multiview mask evidence is not human-verified",
+      "cameras": [
+        {
+          "model": "SIMPLE_RADIAL",
+          "parameters": [
+            380068.7571325632,
+            1080.0,
+            1920.0,
+            -5819.7473183001275
+          ],
+          "focal_ratio": 98.976238836605,
+          "bogus_parameters": true
+        }
+      ],
+      "artifact_sha256": {
+        "cameras": "d0f6d61d47243bf7fb66bf0f1914decec18d27a880c2d101668d575d0acfd74a",
+        "images": "1e1af92d6160447508c3c8dfa16f51f0e3eadaf1c666189f78482cd2cc451fe3",
+        "points3D": "2cd7ee78d8bc6afc8b078aca612607b24b5b0760e1ed18e5c5953d49c8fba6e8"
+      },
+      "scope": "FULL_SCENE_CANDIDATE; point counts and in-sample errors are not absolute reconstruction accuracy",
+      "pareto_dominated": true
+    },
+    {
+      "path": "/fj/混合拍摄距离下的三维重建优化问题/outputs/phase1b/ablations/video_008/M3/sfm/triangulated",
+      "registered_images": 37,
+      "registered_filenames": [
+        "extra_001253.jpg",
+        "extra_001306.jpg",
+        "extra_001396.jpg",
+        "extra_002259.jpg",
+        "extra_002574.jpg",
+        "extra_002619.jpg",
+        "frame_000001.png",
+        "frame_000005.png",
+        "frame_000038.png",
+        "frame_000043.png",
+        "frame_000044.png",
+        "frame_000045.png",
+        "frame_000046.png",
+        "frame_000047.png",
+        "frame_000048.png",
+        "frame_000049.png",
+        "frame_000054.png",
+        "frame_000058.png",
+        "frame_000063.png",
+        "frame_000068.png",
+        "frame_000072.png",
+        "frame_000077.png",
+        "frame_000078.png",
+        "frame_000079.png",
+        "frame_000080.png",
+        "frame_000081.png",
+        "frame_000082.png",
+        "frame_000083.png",
+        "frame_000084.png",
+        "frame_000085.png",
+        "frame_000086.png",
+        "frame_000087.png",
+        "frame_000088.png",
+        "frame_000089.png",
+        "frame_000090.png",
+        "frame_000091.png",
+        "frame_000092.png"
+      ],
+      "coverage": {
+        "APPROACH": {
+          "registered": 13,
+          "total": 13,
+          "fraction": 1.0
+        },
+        "GLOBAL": {
+          "registered": 20,
+          "total": 26,
+          "fraction": 0.7692307692307693
+        },
+        "LOCAL": {
+          "registered": 2,
+          "total": 2,
+          "fraction": 1.0
+        },
+        "TRANSITION": {
+          "registered": 2,
+          "total": 2,
+          "fraction": 1.0
+        }
+      },
+      "points3d_raw": 2647,
+      "points3d_valid_phase01_filter": 2361,
+      "filter_rejections": {
+        "nonfinite_or_high_point_error": 0,
+        "short_track": 285,
+        "invalid_association": 0,
+        "nonpositive_depth": 0,
+        "high_observation_error": 0,
+        "short_after_filter": 1
+      },
+      "tracks_ge_3": 2362,
+      "track_length_median": 4.0,
+      "point_error_p50": 1.3659486930833138,
+      "point_error_p90": 2.242905104027641,
+      "global_local_tracks_raw": 164,
+      "registered_local_without_global_track": [],
+      "trajectory_max_rotation_deg": 84.00339790068281,
+      "trajectory_step_p99_over_median": 7.4443051186805125,
+      "plant_geometry_support": null,
+      "plant_geometry_support_reason": "Candidate-specific multiview mask evidence is not human-verified",
+      "cameras": [
+        {
+          "model": "SIMPLE_RADIAL",
+          "parameters": [
+            3278.4011077903183,
+            1080.0,
+            1920.0,
+            0.020352604935197686
+          ],
+          "focal_ratio": 0.853750288487062,
+          "bogus_parameters": false
+        }
+      ],
+      "artifact_sha256": {
+        "cameras": "5641b58c11cb181c119d9e5edbe9bc6815af98a0711ffc5262b5aece8984bbc9",
+        "images": "8e80c67539f22723aee42c6a57bb976e0e22ae7a6770a85234bf41360db68c4b",
+        "points3D": "3c286e6314ff2d0ed82c0d61ff6a08713a80710cfd065814d9204cd41d32940b"
+      },
+      "scope": "FULL_SCENE_CANDIDATE; point counts and in-sample errors are not absolute reconstruction accuracy",
+      "pareto_dominated": false
+    }
+  ],
+  "count": 6,
+  "pareto_count": 3
+}

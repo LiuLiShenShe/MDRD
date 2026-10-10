@@ -7,7 +7,7 @@ name = "mdrd"
 version = "0.1.0"
 description = "Traceable mixed-distance reconstruction diagnostics"
 requires-python = ">=3.10"
-dependencies = ["numpy", "pandas", "scipy", "opencv-python", "matplotlib", "plotly", "pycolmap", "PyYAML"]
+dependencies = ["numpy", "pandas", "scipy", "opencv-python", "matplotlib", "plotly", "pycolmap", "PyYAML", "requests"]
 
 [project.scripts]
 mdrd = "mdrd.cli:main"

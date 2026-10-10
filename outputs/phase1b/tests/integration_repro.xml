@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="37.596" timestamp="2026-10-10T15:37:58.013720+08:00" hostname="test"><testcase classname="tests.integration.test_external_pipeline" name="test_colmap_known_trajectory_geometry_and_report" time="36.437" /></testsuite></testsuites>

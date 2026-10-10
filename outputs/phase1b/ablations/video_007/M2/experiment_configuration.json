@@ -1,0 +1,277 @@
+{
+  "phase": "M2",
+  "fixed": {
+    "GLOBAL": [
+      "frame_000001.png",
+      "frame_000007.png",
+      "frame_000016.png",
+      "frame_000022.png",
+      "frame_000028.png",
+      "frame_000034.png",
+      "frame_000040.png",
+      "frame_000046.png",
+      "frame_000052.png",
+      "frame_000059.png",
+      "frame_000065.png",
+      "frame_000071.png",
+      "frame_000077.png",
+      "frame_000083.png",
+      "frame_000089.png",
+      "frame_000097.png",
+      "frame_000107.png",
+      "frame_000108.png",
+      "frame_000109.png",
+      "frame_000110.png",
+      "frame_000111.png",
+      "frame_000112.png",
+      "frame_000113.png",
+      "frame_000114.png",
+      "frame_000115.png",
+      "frame_000116.png"
+    ],
+    "LOCAL": [
+      "frame_000095.png",
+      "frame_000096.png",
+      "frame_000100.png",
+      "frame_000101.png",
+      "frame_000102.png",
+      "frame_000103.png",
+      "frame_000104.png"
+    ],
+    "APPROACH": [
+      "frame_000010.png",
+      "frame_000011.png",
+      "frame_000012.png",
+      "frame_000105.png"
+    ]
+  },
+  "base_images": 37,
+  "extra_images": [],
+  "all_images": [
+    "frame_000001.png",
+    "frame_000007.png",
+    "frame_000010.png",
+    "frame_000011.png",
+    "frame_000012.png",
+    "frame_000016.png",
+    "frame_000022.png",
+    "frame_000028.png",
+    "frame_000034.png",
+    "frame_000040.png",
+    "frame_000046.png",
+    "frame_000052.png",
+    "frame_000059.png",
+    "frame_000065.png",
+    "frame_000071.png",
+    "frame_000077.png",
+    "frame_000083.png",
+    "frame_000089.png",
+    "frame_000095.png",
+    "frame_000096.png",
+    "frame_000097.png",
+    "frame_000100.png",
+    "frame_000101.png",
+    "frame_000102.png",
+    "frame_000103.png",
+    "frame_000104.png",
+    "frame_000105.png",
+    "frame_000107.png",
+    "frame_000108.png",
+    "frame_000109.png",
+    "frame_000110.png",
+    "frame_000111.png",
+    "frame_000112.png",
+    "frame_000113.png",
+    "frame_000114.png",
+    "frame_000115.png",
+    "frame_000116.png"
+  ],
+  "images": [
+    {
+      "filename": "frame_000001.png",
+      "sha256": "e32330889147fa0847a2d243541054c0ffa8dfc9df240e61b42616a59d7891f7",
+      "timestamp_sec": 0.0
+    },
+    {
+      "filename": "frame_000007.png",
+      "sha256": "a697919dd6dd25dac2e9cbf86a5848dce10fdf9b9ec2fb37f88175bd2580422f",
+      "timestamp_sec": 3.0
+    },
+    {
+      "filename": "frame_000010.png",
+      "sha256": "31b72ddc0d8f62d7ba6a870b6a1e9e69cae18fa271b2f0ec73e5d9d4de5d0a27",
+      "timestamp_sec": 4.51667
+    },
+    {
+      "filename": "frame_000011.png",
+      "sha256": "424a3cd71fd5c689174d3e148fc23c0d76397018f9563c2aa2bc93ed7a89f128",
+      "timestamp_sec": 5.01667
+    },
+    {
+      "filename": "frame_000012.png",
+      "sha256": "e719c78773c0d3e7140933eb3df8ef998430a2f1a6e9441a47b6dd8f7f12cefd",
+      "timestamp_sec": 5.51667
+    },
+    {
+      "filename": "frame_000016.png",
+      "sha256": "3471a6fc09448b819ac1808d63d7c27f0d72d3afae36d0b5e8be40f445df5a71",
+      "timestamp_sec": 7.51667
+    },
+    {
+      "filename": "frame_000022.png",
+      "sha256": "b830a4414a7527bd035a70cde15b9a569a1bb085f607449114eb670c35e34a8b",
+      "timestamp_sec": 10.5183
+    },
+    {
+      "filename": "frame_000028.png",
+      "sha256": "de0f03d19e4e80c57398db33d05b3462056901238d2a49b13b195d3054376bac",
+      "timestamp_sec": 13.5183
+    },
+    {
+      "filename": "frame_000034.png",
+      "sha256": "1b3256206cf6185be584433d585ede8ff16efa3b418fbea692aa008e353df38c",
+      "timestamp_sec": 16.5183
+    },
+    {
+      "filename": "frame_000040.png",
+      "sha256": "a76144409fea3891028e0a35cb4d80d27aeab534f9b5caea0250e21dfcdf07cb",
+      "timestamp_sec": 19.5183
+    },
+    {
+      "filename": "frame_000046.png",
+      "sha256": "9323ec0c382bd99c41f7df6a851719e6a6fcff92a98e56ded6e320cd8fda1c36",
+      "timestamp_sec": 22.5183
+    },
+    {
+      "filename": "frame_000052.png",
+      "sha256": "6db505cce6e4b5f30bb7f1a82fe185469fcd5b964fd898220dfab9ceecee402f",
+      "timestamp_sec": 25.5183
+    },
+    {
+      "filename": "frame_000059.png",
+      "sha256": "23d8b64d1b9134f25d80a7e6e872e7965fe2e3d0d64b1356569ba8aee9e41a71",
+      "timestamp_sec": 29.02
+    },
+    {
+      "filename": "frame_000065.png",
+      "sha256": "1d6393a350164c354f92f1b0d86805ea4c6708fc51e64972f1464e633226c903",
+      "timestamp_sec": 32.02
+    },
+    {
+      "filename": "frame_000071.png",
+      "sha256": "0307d98bc4919dd3434de6219b537e11da29f9023f4ad8bd4db878352e850cda",
+      "timestamp_sec": 35.02
+    },
+    {
+      "filename": "frame_000077.png",
+      "sha256": "780d7fb6b56d4a5845cb5e32cea21159462831dd510934dcca9be9431bd4f343",
+      "timestamp_sec": 38.02
+    },
+    {
+      "filename": "frame_000083.png",
+      "sha256": "0f2524cee3018de6c9d487e0f9b5e2c2485c22c4e1a6d0fef19db8392bf8e0b9",
+      "timestamp_sec": 41.02
+    },
+    {
+      "filename": "frame_000089.png",
+      "sha256": "a26653db9a742150f6cf21bac0871ce048466b0f34425b4f19b3ac2c2518e594",
+      "timestamp_sec": 44.02
+    },
+    {
+      "filename": "frame_000095.png",
+      "sha256": "b8b0d553e2344e668e176cdf9c77849b06c1356f17728f6156f385202bbbdb55",
+      "timestamp_sec": 47.0217
+    },
+    {
+      "filename": "frame_000096.png",
+      "sha256": "767ae03d55c5f6de90c51798b60b6a1fe7ab250575e6d6b1f01f76d9e3c93b93",
+      "timestamp_sec": 47.5217
+    },
+    {
+      "filename": "frame_000097.png",
+      "sha256": "6078878a3035f6ac67378ab07028f80a8a82430b1105a8184254292607c97703",
+      "timestamp_sec": 48.0217
+    },
+    {
+      "filename": "frame_000100.png",
+      "sha256": "363cfa11dcae4f3fec23eaa03654bf836db539439c8f8a96b146a8223eb7976a",
+      "timestamp_sec": 49.5217
+    },
+    {
+      "filename": "frame_000101.png",
+      "sha256": "1dbb4ec0a325657912c3d91a98aef017424d7ca1f45302fd807e022f8676f617",
+      "timestamp_sec": 50.0217
+    },
+    {
+      "filename": "frame_000102.png",
+      "sha256": "06bd0b955570d588a62b233c068c70be70b83c19a9e7ac6fbdf3ec010b0db126",
+      "timestamp_sec": 50.5217
+    },
+    {
+      "filename": "frame_000103.png",
+      "sha256": "f56386598adf05c4528f261abda621f56ab0b1192b90c0c28df1c10f4fac6dbf",
+      "timestamp_sec": 51.0217
+    },
+    {
+      "filename": "frame_000104.png",
+      "sha256": "c94067c01ceec8f98545405fd219ea4c6d9b9552b08ed6d638dff89232190623",
+      "timestamp_sec": 51.5217
+    },
+    {
+      "filename": "frame_000105.png",
+      "sha256": "833b90ef04b7e19a74df98d188d9b8a7ade13c1238e88748fea40a8c2c399ddd",
+      "timestamp_sec": 52.0217
+    },
+    {
+      "filename": "frame_000107.png",
+      "sha256": "d5ecf463e8e65d14e107872ea91f98c29b09bb1c0e190ffd3499c0164cec9004",
+      "timestamp_sec": 53.0217
+    },
+    {
+      "filename": "frame_000108.png",
+      "sha256": "7b14bf19e60f67e79192df5b7fcc0ddb7c83a7bff24db53b82f443d4a1690a2c",
+      "timestamp_sec": 53.5217
+    },
+    {
+      "filename": "frame_000109.png",
+      "sha256": "c753eeff866d9c7bd1885c133886b2b198742c2615b882f1a8388b0853d984d1",
+      "timestamp_sec": 54.0217
+    },
+    {
+      "filename": "frame_000110.png",
+      "sha256": "87b3c6d4064a92d1f72ea9f418ee0eafdb0401018729a3b15b57532ad21f1d15",
+      "timestamp_sec": 54.5217
+    },
+    {
+      "filename": "frame_000111.png",
+      "sha256": "00cbd49f3df558c1b4d101d514f99cbd1cd1fea3a8eaf1ff83126deb864c513c",
+      "timestamp_sec": 55.0217
+    },
+    {
+      "filename": "frame_000112.png",
+      "sha256": "4aecbc29a1c07ee3e6479589893d8132990595feeac35d8c9989d0e9eef288bb",
+      "timestamp_sec": 55.5217
+    },
+    {
+      "filename": "frame_000113.png",
+      "sha256": "cb0095746d87f534add0d3553943bb9cdb13334e1c63b660bdf78f628250933e",
+      "timestamp_sec": 56.0217
+    },
+    {
+      "filename": "frame_000114.png",
+      "sha256": "2c4a1cf5f16551405a079bb004f38093c801eea88f1f1fd5361aff34d634b251",
+      "timestamp_sec": 56.5217
+    },
+    {
+      "filename": "frame_000115.png",
+      "sha256": "44e463868aea2a0c9189a74d9bffd009c98e153e877f10d7fc366fa15043b5f8",
+      "timestamp_sec": 57.0217
+    },
+    {
+      "filename": "frame_000116.png",
+      "sha256": "cb3b32e86f41822182ea15c8aa6dae3c042953764cc1497db5f3f4bef210d406",
+      "timestamp_sec": 57.5217
+    }
+  ],
+  "scope": "Same original GLOBAL/LOCAL target frames for M1/M2/M3; M2 adds original approach, M3 additionally selected source-video transition frames"
+}
